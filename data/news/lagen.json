@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-24T10:00:00.000Z",
+  "updated_at": "2026-10-24T16:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-24-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-24",
+      "window_from": "2026-10-24T10:00:00.000Z",
+      "window_to": "2026-10-24T16:00:00.000Z",
+      "stand": "2026-10-24T16:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 7,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-2594946a66045bc6",
+          "slug": "westjordanland-palastinenser-fordern-internationalen-druck-nach-israelischem-armeeeinsat-045bc6",
+          "title": "Laut DER SPIEGEL: Palästinenser fordern internationalen Druck nach israelischem Armeeeinsatz",
+          "state": "neu",
+          "at": "2026-10-24T15:38:52.346Z",
+          "score": 5.9413
+        },
+        {
+          "story_id": "wt-4536b1aea53c3db0",
+          "slug": "russischer-angriffskrieg-starlink-satellitensystem-funktioniert-wieder-uber-der-ukraine--3c3db0",
+          "title": "Nach Angaben des ukrainischen Verteidigungsministers funktioniert Starlink in der Ukraine wieder uneingeschränkt",
+          "state": "neu",
+          "at": "2026-10-24T14:59:20.791Z",
+          "score": 5.8315
+        },
+        {
+          "story_id": "wt-a54dc6933f12814b",
+          "slug": "drei-weitere-festnahmen-nach-schussen-bei-paris-12814b",
+          "title": "Laut ZDFheute: Schüsse nahe Paris – ein Mensch tot, fünf verletzt",
+          "state": "neu",
+          "at": "2026-10-24T14:28:53.208Z",
+          "score": 9.7469
+        },
+        {
+          "story_id": "wt-a2be1b69b19102aa",
+          "slug": "nach-todlichem-angriff-israelische-armee-startet-grossoffensive-im-westjordanland-9102aa",
+          "title": "Israelische Armee startet laut eigener Darstellung Großoffensive im Westjordanland",
+          "state": "fortgeschrieben",
+          "at": "2026-10-24T13:33:18.417Z",
+          "score": 9.3425
+        },
+        {
+          "story_id": "wt-19deeb82898ad2c3",
+          "slug": "kriminalitat-polizei-findet-bei-autokontrolle-scharfe-pistole-8ad2c3",
+          "title": "Laut stern: Polizei findet bei Autokontrolle scharfe Pistole",
+          "state": "neu",
+          "at": "2026-10-24T12:28:40.950Z",
+          "score": 3.7493
+        },
+        {
+          "story_id": "wt-891fe47a20457b91",
+          "slug": "schusse-auf-berliner-bar-unbekannter-feuert-in-wilmersdorf-auf-fensterfront-457b91",
+          "title": "Schüsse auf Berliner Bar in Wilmersdorf – Polizei-Sondertruppe ermittelt",
+          "state": "neu",
+          "at": "2026-10-24T11:26:48.625Z",
+          "score": 5.2411
+        },
+        {
+          "story_id": "wt-80497942dbedf5d8",
+          "slug": "angriff-vor-bar-messerangriff-in-neukollner-pannierstrasse-zwei-verletzte-edf5d8",
+          "title": "Messerangriff vor Neuköllner Bar: Verletzte und flüchtige Täter",
+          "state": "neu",
+          "at": "2026-10-24T10:38:00.025Z",
+          "score": 5.1056
+        },
+        {
+          "story_id": "wt-d9a097da62f6699b",
+          "slug": "messerangriff-vor-einer-bar-in-berlin-neukolln-zwei-verletzte-in-der-pannierstrasse-tate-f6699b",
+          "title": "Laut Tagesspiegel: Messerangriff vor Bar in Berlin-Neukölln – zwei Verletzte",
+          "state": "neu",
+          "at": "2026-10-24T10:36:55.302Z",
+          "score": 3.1026
+        },
+        {
+          "story_id": "wt-66966643b571496c",
+          "slug": "ukraine-news-trump-verteidigt-neue-russland-politik-71496c",
+          "title": "Laut MDR: Trump verteidigt Aussetzung von Russland-Sanktionen als Beitrag zu Verhandlungen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-24T10:13:00.569Z",
+          "score": 4.7861
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-24-mittagslage",
       "slot": "mittagslage",
@@ -81,12 +170,7 @@
           "at": "2026-10-24T05:08:35.456Z",
           "score": 4.9405
         }
-      ],
-      "processing_status": {
-        "state": "processing_limited",
-        "checked_at": "2026-10-24T15:19:23.369Z",
-        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
-      }
+      ]
     },
     {
       "lage_id": "2026-10-24-morgenlage",
@@ -5450,47 +5534,6 @@
           "state": "fortgeschrieben",
           "at": "2026-09-24T16:30:22.984Z",
           "score": 4.7922
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-24-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-24",
-      "window_from": "2026-09-24T10:00:00.000Z",
-      "window_to": "2026-09-24T16:00:00.000Z",
-      "stand": "2026-09-24T16:00:00.000Z",
-      "headline": "Das sind die 3 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 3,
-        "neu": 2,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-e96883120bffa0d1",
-          "slug": "flughafen-ber-was-steckt-hinter-der-drohnen-sichtung-am-flughafen-ber-ffa0d1",
-          "title": "Laut Bericht: Polizei ermittelt nach Drohnen-Alarm am BER – Gefahr bleibt unklar",
-          "state": "fortgeschrieben",
-          "at": "2026-09-24T12:57:23.809Z",
-          "score": 5.2428
-        },
-        {
-          "story_id": "wt-bd73e58fbac3546b",
-          "slug": "mehrere-explosionen-mindestens-acht-tote-bei-russischen-angriffen-auf-die-ukraine-c3546b",
-          "title": "Laut Deutschlandfunk: Erneute russische Angriffe in der Ukraine mit mindestens acht Toten",
-          "state": "neu",
-          "at": "2026-09-24T12:46:04.870Z",
-          "score": 10.2037
-        },
-        {
-          "story_id": "wt-a203a680aa91d35f",
-          "slug": "schusse-boller-benzin-polizei-ermittelt-nach-zwei-vorfallen-in-heidenheim-91d35f",
-          "title": "Laut Polizei und Staatsanwaltschaft: Ermittlungen nach Schüssen und möglicher Brandstiftung in Heidenheim",
-          "state": "neu",
-          "at": "2026-09-24T12:31:12.322Z",
-          "score": 6
         }
       ]
     }
