@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-24T12:21:22.587Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-24T13:23:21.268Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -228,13 +228,16 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/nach-todlichem-angriff-israelische-armee-startet-grossoffensive-im-westjordanland-9102aa/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/nach-todlichem-angriff-israelische-armee-startet-grossoffensive-im-westjordanland-9102aa/",
-      "title": "Nach tödlichem Angriff: Israelische Armee startet laut israelischer Armee Großoffensive im Westjordanland",
-      "summary": "Die israelische Armee meldet nach dem Tod von zwei Soldaten eine Großoffensive im Westjordanland. Umfang, Dauer, Verantwortlichkeit und Folgen der Einsätze sind auf Grundlage der vorliegenden Einzelquelle offen.",
+      "title": "Israelische Armee startet laut eigener Darstellung Großoffensive im Westjordanland",
+      "summary": "Die israelische Armee meldet eine mehrtägige Operation im Raum Hebron; Umfang und Folgen bleiben offen. Nach palästinensischen Angaben wurden rund 250 Familien vertrieben, eine unabhängige Bestätigung liegt nicht vor.",
       "date_published": "2026-10-24T05:37:52.000Z",
       "date_modified": "2026-10-24T05:37:52.000Z",
       "_woek_released_at": "2026-10-24T06:23:39.895Z",
       "tags": [
-        "Geopolitik"
+        "Geopolitik",
+        "Politik",
+        "Soziales",
+        "Demokratie"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
@@ -242,7 +245,7 @@
         "human": {
           "magnitude": 4,
           "direction": "negative",
-          "status": "potential"
+          "status": "emerging"
         },
         "planet": {
           "magnitude": 1,
@@ -250,8 +253,8 @@
           "status": "potential"
         },
         "democracy": {
-          "magnitude": 4,
-          "direction": "negative",
+          "magnitude": 3,
+          "direction": "mixed",
           "status": "potential"
         }
       }
