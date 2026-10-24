@@ -15,14 +15,35 @@
     },
     "queue": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
-      "active": false
+      "active": true
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
+      "active": true
+    },
+    "academy": {
+      "firstSeen": "2026-10-24T15:06:06.150Z",
+      "active": false
+    },
+    "institute": {
+      "firstSeen": "2026-10-24T15:06:06.150Z",
+      "active": false
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-24T15:06:06.150Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "62d69d138a642e6b21992064",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 121 Minuten. Kapazitätswarteschlange: 628; redaktionelle Ablehnungen: 305.\nSeit: 2026-10-24T14:51:24.993Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "5b0eff8d8c444ff78005e3c7",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 3 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-24T14:51:24.993Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3526,11 +3547,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-polizei-findet-bei-autokontrolle-scharfe-pistole-8ad2c3/": {
         "first_seen_at": "2026-10-24T13:06:30.795Z",
         "source_at": "2026-10-24T12:10:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/drei-weitere-festnahmen-nach-schussen-bei-paris-12814b/": {
+        "first_seen_at": "2026-10-24T15:06:06.150Z",
+        "source_at": "2026-10-24T13:03:00.000Z"
       }
     },
-    "last_new_at": "2026-10-24T13:06:30.795Z",
-    "checked_at": "2026-10-24T14:51:24.993Z",
-    "last_current_new_at": "2026-10-24T13:06:30.795Z"
+    "last_new_at": "2026-10-24T15:06:06.150Z",
+    "checked_at": "2026-10-24T15:06:06.150Z",
+    "last_current_new_at": "2026-10-24T15:06:06.150Z"
   },
   "recovery_attempts": [
     {
