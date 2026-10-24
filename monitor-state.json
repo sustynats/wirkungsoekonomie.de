@@ -20,21 +20,22 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
-    },
-    "academy": {
-      "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": true
-    },
-    "institute": {
-      "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "605f39d8ca27d4753efb85bc",
+      "content": "✓ WÖk-Störung behoben\nAkademie\nPrüfung: 2026-10-24T16:21:14.170Z"
+    },
+    {
+      "id": "0a93463fc4a1d8d4c4365b45",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-24T16:21:14.170Z"
+    },
+    {
+      "id": "f06748a9e1f22342acc2fabd",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-24T16:21:14.170Z"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3546,11 +3547,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/russischer-angriffskrieg-starlink-satellitensystem-funktioniert-wieder-uber-der-ukraine--3c3db0/": {
         "first_seen_at": "2026-10-24T15:51:07.847Z",
         "source_at": "2026-10-24T14:22:32.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/westjordanland-palastinenser-fordern-internationalen-druck-nach-israelischem-armeeeinsat-045bc6/": {
+        "first_seen_at": "2026-10-24T16:21:14.170Z",
+        "source_at": "2026-10-24T14:25:00.000Z"
       }
     },
-    "last_new_at": "2026-10-24T15:51:07.847Z",
-    "checked_at": "2026-10-24T15:51:07.847Z",
-    "last_current_new_at": "2026-10-24T15:51:07.847Z"
+    "last_new_at": "2026-10-24T16:21:14.170Z",
+    "checked_at": "2026-10-24T16:21:14.170Z",
+    "last_current_new_at": "2026-10-24T16:21:14.170Z"
   },
   "recovery_attempts": [
     {
