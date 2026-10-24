@@ -1,7 +1,88 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-23T16:00:00.000Z",
+  "updated_at": "2026-10-24T04:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-24-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-24",
+      "window_from": "2026-10-23T16:00:00.000Z",
+      "window_to": "2026-10-24T04:00:00.000Z",
+      "stand": "2026-10-24T04:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 8,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-75a4fc97266aacc7",
+          "slug": "nahost-israel-startet-im-westjordanland-anti-terror-operation-6aacc7",
+          "title": "Israel startet laut Armee eine Operation im Westjordanland",
+          "state": "neu",
+          "at": "2026-10-24T03:02:48.001Z",
+          "score": 9.9206
+        },
+        {
+          "story_id": "wt-742e0fd1fda655a9",
+          "slug": "sozialdemokratie-juso-chef-turmer-gegen-erneute-kandidatur-klingbeils-fur-parteivorsitz-a655a9",
+          "title": "Laut Deutschlandfunk: Juso-Chef Türmer gegen erneute Kandidatur Klingbeils",
+          "state": "neu",
+          "at": "2026-10-24T01:45:49.743Z",
+          "score": 5.8137
+        },
+        {
+          "story_id": "wt-614cc77751ca6bd1",
+          "slug": "nahost-westjordanland-israel-bereitet-abriegelung-vor-ca6bd1",
+          "title": "Nach Angaben der israelischen Regierung: Vorbereitung auf vollständige Abriegelung des Westjordanlands",
+          "state": "neu",
+          "at": "2026-10-24T00:29:47.624Z",
+          "score": 9.708
+        },
+        {
+          "story_id": "wt-4173234af0f073b5",
+          "slug": "notfalle-gasleitung-bei-bauarbeiten-beschadigt-anwohner-evakuiert-f073b5",
+          "title": "Laut stern: Gasleitung bei Bauarbeiten beschädigt – Anwohner in Wetter evakuiert",
+          "state": "neu",
+          "at": "2026-10-23T20:54:38.148Z",
+          "score": 9.4092
+        },
+        {
+          "story_id": "wt-d3c8c9e82ec31eda",
+          "slug": "waffenruhe-fur-von-russland-besetzter-ukrainischer-stadt-c31eda",
+          "title": "Nach tagesschau-Bericht: Lokale Waffenruhe soll Evakuierung aus Oleschky ermöglichen",
+          "state": "neu",
+          "at": "2026-10-23T18:33:55.798Z",
+          "score": 7.2138
+        },
+        {
+          "story_id": "wt-2e291b765d4d85fd",
+          "slug": "innenminister-spricht-von-terror-tat-bei-paris-4d85fd",
+          "title": "Nach Angaben der tagesschau: Schüsse in mehreren Vororten von Paris",
+          "state": "neu",
+          "at": "2026-10-23T17:43:39.799Z",
+          "score": 5.144
+        },
+        {
+          "story_id": "wt-84b596aa9e1775d9",
+          "slug": "drohnenalarm-in-moskau-flughafen-scheremetjewo-vorubergehend-evakuiert-1775d9",
+          "title": "Laut Tagesspiegel: Flughafen Scheremetjewo in Moskau vorübergehend evakuiert",
+          "state": "neu",
+          "at": "2026-10-23T17:16:45.701Z",
+          "score": 5.1066
+        },
+        {
+          "story_id": "wt-e44560e2177caacc",
+          "slug": "moskau-flughafen-scheremetjewo-nach-drohnen-alarm-evakuiert-7caacc",
+          "title": "Laut DER SPIEGEL: Flughafen Scheremetjewo nach Drohnenalarm evakuiert",
+          "state": "neu",
+          "at": "2026-10-23T16:49:49.091Z",
+          "score": 5.0692
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-23-abendlage",
       "slot": "abendlage",
@@ -5408,143 +5489,6 @@
           "state": "neu",
           "at": "2026-09-24T05:27:45.883Z",
           "score": 5.2438
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-24-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-24",
-      "window_from": "2026-09-23T16:00:00.000Z",
-      "window_to": "2026-09-24T04:00:00.000Z",
-      "stand": "2026-09-24T04:00:00.000Z",
-      "headline": "Das sind die 15 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 15,
-        "neu": 14,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-026df753c04e25bf",
-          "slug": "schwarze-rauchsaule-grossbrand-in-iserlohn-summern-4e25bf",
-          "title": "Großbrand auf Firmengelände in Iserlohn-Sümmern unter Kontrolle",
-          "state": "neu",
-          "at": "2026-09-24T02:42:38.850Z",
-          "score": 5.8926
-        },
-        {
-          "story_id": "wt-6561456909f1710d",
-          "slug": "ukraine-news-wadephul-wirft-russland-eskalation-hybrider-angriffe-vor-f1710d",
-          "title": "Wadephul wirft Russland laut MDR eine Eskalation hybrider Angriffe vor",
-          "state": "neu",
-          "at": "2026-09-24T01:34:56.286Z",
-          "score": 9.7985
-        },
-        {
-          "story_id": "wt-4b81bebf126d28c7",
-          "slug": "krieg-gegen-die-ukraine-russland-beschiesst-kiew-mit-ballistischen-raketen-6d28c7",
-          "title": "Nächtlicher Raketenbeschuss erschüttert Kiew",
-          "state": "neu",
-          "at": "2026-09-24T00:27:52.007Z",
-          "score": 9.7054
-        },
-        {
-          "story_id": "wt-8a69d5567f8159b0",
-          "slug": "bundesregierung-kassenbon-soll-ab-2028-digital-werden-8159b0",
-          "title": "Laut Deutschlandfunk: Kabinett billigt Entwurf für digitale Kassenbons ab 2028",
-          "state": "neu",
-          "at": "2026-09-23T23:23:57.979Z",
-          "score": 5.6166
-        },
-        {
-          "story_id": "wt-767fecd1006ac3e2",
-          "slug": "versteckte-sich-im-albertinum-ein-kriegsverbrecher-6ac3e2",
-          "title": "Fragen zur Vergangenheit eines früheren Albertinum-Aufsehers",
-          "state": "neu",
-          "at": "2026-09-23T22:13:35.941Z",
-          "score": 9.5189
-        },
-        {
-          "story_id": "wt-16154ce75b2cc5e9",
-          "slug": "betrieb-am-ber-wegen-drohnensichtung-kurzzeitig-eingestellt-2cc5e9",
-          "title": "Laut Bundespolizei: BER-Flugbetrieb wegen Drohnensichtung kurzzeitig eingestellt",
-          "state": "neu",
-          "at": "2026-09-23T21:00:19.567Z",
-          "score": 5.4171
-        },
-        {
-          "story_id": "wt-c30b0d64c6d6f4ad",
-          "slug": "haftstrafe-fur-ex-erzieher-wegen-kindesmissbrauchs-d6f4ad",
-          "title": "Laut WDR: Landgericht Aachen verhängt acht Jahre Haft gegen Ex-Erzieher",
-          "state": "neu",
-          "at": "2026-09-23T20:11:40.291Z",
-          "score": 9.3495
-        },
-        {
-          "story_id": "wt-b97abcfbead68ab5",
-          "slug": "weltkriegsbombe-in-braunsbedra-soll-am-donnerstag-entscharft-werden-d68ab5",
-          "title": "In Braunsbedra soll am Donnerstag eine Weltkriegsbombe entschärft werden",
-          "state": "neu",
-          "at": "2026-09-23T19:58:42.932Z",
-          "score": 5.3315
-        },
-        {
-          "story_id": "wt-0e16e8c556cf543a",
-          "slug": "grevenbroich-kugelbombe-in-der-nahe-von-strommast-im-rheinland-gefunden-cf543a",
-          "title": "Grevenbroich: Kugelbombe nahe Hochspannungsmast entschärft",
-          "state": "neu",
-          "at": "2026-09-23T19:30:21.947Z",
-          "score": 5.2922
-        },
-        {
-          "story_id": "wt-f8f713c6b1b28558",
-          "slug": "illegaler-schusswaffen-handel-berliner-polizei-nimmt-sieben-verdachtige-bei-razzia-fest-b28558",
-          "title": "Laut Polizei: Sieben Verdächtige bei Berliner Razzia wegen illegalen Schusswaffenhandels festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-23T18:59:45.118Z",
-          "score": 6.9997
-        },
-        {
-          "story_id": "wt-e05f736d52f70fe3",
-          "slug": "feuerwerkskorper-wurde-sichergestellt-polizei-findet-kugelbombe-in-der-nahe-von-hochspan-f70fe3",
-          "title": "Laut Tagesspiegel: Kugelbombe nahe Hochspannungsmast sichergestellt",
-          "state": "neu",
-          "at": "2026-09-23T18:29:22.897Z",
-          "score": 5.2075
-        },
-        {
-          "story_id": "wt-ffb76cabb449c36d",
-          "slug": "415-unfalle-auf-schulwegen-warum-es-nicht-mehr-schulstrassen-gibt-49c36d",
-          "title": "Pilotprojekt für Schulstraße in Esslingen gestartet",
-          "state": "neu",
-          "at": "2026-09-23T17:43:42.251Z",
-          "score": 5.144
-        },
-        {
-          "story_id": "wt-1f97e0b31f3179b6",
-          "slug": "verdachtiger-gegenstand-polizei-findet-feuerwerkskorper-in-nahe-von-strommast-3179b6",
-          "title": "Laut Bericht: Feuerwerkskörper nahe Strommast bei Frimmersdorf entdeckt",
-          "state": "neu",
-          "at": "2026-09-23T17:13:00.015Z",
-          "score": 5.1014
-        },
-        {
-          "story_id": "wt-ed3ec00945854509",
-          "slug": "entscharfung-geplant-weltkriegsbombe-in-braunsbedra-entscharfung-am-donnerstag-854509",
-          "title": "Laut stern: Evakuierung um Weltkriegsbombe in Braunsbedra geplant",
-          "state": "neu",
-          "at": "2026-09-23T16:41:20.801Z",
-          "score": 5.0574
-        },
-        {
-          "story_id": "wt-d7f4b31de1545cd1",
-          "slug": "haushalt-2027-personalausstattung-im-fokus-545cd1",
-          "title": "Haushaltsausschuss berät über umstrittene Personalausstattung zentraler Institutionen",
-          "state": "neu",
-          "at": "2026-09-23T16:30:16.631Z",
-          "score": 7.5421
         }
       ]
     }
