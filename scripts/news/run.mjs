@@ -59,6 +59,7 @@ import { sameEventByFacts } from "./ereignisfakten.mjs";
 import { configuredHourlyQuota } from "./stundenkontingent.mjs";
 import { articleSourceOrder, canReuseReview, reviewCheckpoint, sourceReviewFingerprint } from "./evidence-packets.mjs";
 import { unchangedPublishedFollowup, waitForFollowupEvidence } from './followup-reuse.mjs';
+import { UNKNOWN_PROVIDER_OUTCOME, unresolvedProviderRequest, providerOutcomeUncertain, holdProviderRequest, retainKnownProviderRequests } from './provider-outcome.mjs';
 import { numberTokens, evidenceNumberTokens, numericEvidenceReceipt } from "./numeric-evidence.mjs";
 import { MEDIA_ANALYSIS_VERSION, applySelfFrameRewrites, detectMediaImpactTrigger, effectiveMediaImpactTrigger, estimateMediaUsage, mediaTriggerRecord, sanitizeMediaImpact } from "./media-impact.mjs";
 import { reconcileKnownSourceAliases, reconcileSourceIdentity, sourceIntegrityForStory, sourceIntegrityRecord } from "./source-integrity.mjs";
@@ -1032,11 +1033,12 @@ export function aiProviderCoverageDegraded(report = {}) {
 }
 
 export function queueSnapshot(stories = [], now = new Date().toISOString(), before = 0, { budgetBlocked = false } = {}) {
-  const rows = stories.filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update));
+  const rows = stories.filter((story) => !isMerged(story) && ((!story.published && story.listed !== false) || story.pending_update || unresolvedProviderRequest(story) != null));
   const snapshot = { before: Number(before || 0), after: rows.length, retryable: 0, capacity: 0, technical: 0, editorial: 0, oldest_minutes: 0, oldest_technical_minutes: 0, by_reason: {} };
   for (const story of rows) {
     const pending = story.pending_update || story;
-    const reason = pending.reason || story.pending_reason || "UNCLASSIFIED";
+    const unknownRequest = unresolvedProviderRequest(story);
+    const reason = unknownRequest != null ? UNKNOWN_PROVIDER_OUTCOME : pending.reason || story.pending_reason || "UNCLASSIFIED";
     const errors = pending.quality_errors || story.quality_errors || [];
     const retryCount = pending.quality_retry_count ?? story.quality_retry_count ?? 0;
     const retryAfter = pending.quality_retry_after || story.quality_retry_after || null;
@@ -1047,7 +1049,12 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     snapshot.oldest_minutes = Math.max(snapshot.oldest_minutes, ageMinutes);
     snapshot.by_reason[reason] = Number(snapshot.by_reason[reason] || 0) + 1;
     const structuralRetry = shouldRetryQualityGate(reason, errors, retryCount, retryAfter, retryAfter || now);
-    if (CAPACITY_HOLD_REASONS.has(reason)) {
+    if (unknownRequest != null) {
+      snapshot.technical += 1; // Requires reconciliation, NOT an automatic retry.
+      const failedAt = Date.parse(unknownRequest.reported_run_started_at || unknownRequest.at || '');
+      snapshot.oldest_technical_minutes = Math.max(snapshot.oldest_technical_minutes,
+        Number.isFinite(failedAt) ? Math.max(0, (Date.parse(now) - failedAt) / 60000) : ageMinutes);
+    } else if (CAPACITY_HOLD_REASONS.has(reason)) {
       snapshot.capacity += 1;
       snapshot.retryable += 1;
     } else if (TECHNICAL_HOLD_REASONS.has(reason) || structuralRetry) {
@@ -1067,6 +1074,8 @@ export function queueSnapshot(stories = [], now = new Date().toISOString(), befo
     ? "technical_delay"
     : snapshot.retryable
       ? "draining"
+      : snapshot.technical
+        ? "technical_holds"
       : snapshot.editorial
         ? "editorial_holds"
         : "clear";
@@ -1397,7 +1406,9 @@ export async function runWirkungsticker(options = {}) {
   const pruneBefore = nowDate.getTime() - 120 * 24 * 60 * 60 * 1000;
   for (const [id, record] of Object.entries(state.seen_items)) if (Date.parse(record.last_seen || 0) < pruneBefore) delete state.seen_items[id];
 
-  const repartition = repartitionOversizedSourceQueues(storyStore.stories || [], now);
+  report.provider_outcome_holds = retainKnownProviderRequests(storyStore.stories || []);
+  const routableStories = (storyStore.stories || []).filter(story => unresolvedProviderRequest(story) == null);
+  const repartition = repartitionOversizedSourceQueues(routableStories, now);
   report.source_queue_repartitions = repartition.changes;
   const freshUrls = new Set(changedItems.map(item => item.url));
   changedItems.push(...repartition.requeued_sources.filter(item => !freshUrls.has(item.url)));
@@ -1409,42 +1420,42 @@ export async function runWirkungsticker(options = {}) {
   // consolidation. Generic place matching rightly cannot infer town/state
   // equivalence from their headlines; this mapping is evidence-bound and
   // idempotent, and changes no paid analysis or historical article text.
-  const leizenMerges = consolidateLeizenDuplicates(storyStore.stories || [], now);
+  const leizenMerges = consolidateLeizenDuplicates(routableStories, now);
   report.living_file_merges = leizenMerges;
   report.retired_stories += leizenMerges.length;
   // Exact, documented source-edition pair; no new analysis or paid retry.
-  const kirchnerConsolidation = consolidateKirchnerDuplicates(storyStore.stories || [], now);
+  const kirchnerConsolidation = consolidateKirchnerDuplicates(routableStories, now);
   report.kirchner_duplicate_consolidation = kirchnerConsolidation;
   report.living_file_merges.push(...kirchnerConsolidation.changes);
   report.retired_stories += kirchnerConsolidation.changes.length;
   // Another reviewed exact pair; preserve both paid editions.
-  const kamenConsolidation = consolidateKamenDuplicates(storyStore.stories || [], now);
+  const kamenConsolidation = consolidateKamenDuplicates(routableStories, now);
   report.kamen_duplicate_consolidation = kamenConsolidation;
   report.living_file_merges.push(...kamenConsolidation.changes);
   report.retired_stories += kamenConsolidation.changes.length;
   // A verified DLF URL change split one event into two paid publications.
   // Keep both full texts; the archived document also remains a routing alias.
-  const sanctionsConsolidation = consolidateTrumpSanctionsDuplicates(storyStore.stories || [], now);
+  const sanctionsConsolidation = consolidateTrumpSanctionsDuplicates(routableStories, now);
   report.trump_sanctions_duplicate_consolidation = sanctionsConsolidation;
   report.living_file_merges.push(...sanctionsConsolidation.changes);
   report.retired_stories += sanctionsConsolidation.changes.length;
-  const hofheimConsolidation = consolidateHofheimDuplicates(storyStore.stories || [], now);
+  const hofheimConsolidation = consolidateHofheimDuplicates(routableStories, now);
   report.hofheim_duplicate_consolidation = hofheimConsolidation;
   report.living_file_merges.push(...hofheimConsolidation.changes);
   report.retired_stories += hofheimConsolidation.changes.length;
-  const obersontheimConsolidation = consolidateObersontheimDuplicates(storyStore.stories || [], now);
+  const obersontheimConsolidation = consolidateObersontheimDuplicates(routableStories, now);
   report.obersontheim_duplicate_consolidation = obersontheimConsolidation;
   report.living_file_merges.push(...obersontheimConsolidation.changes);
   report.retired_stories += obersontheimConsolidation.changes.length;
-  const tabaksteuerConsolidation = consolidateTabaksteuerDuplicates(storyStore.stories || [], now);
+  const tabaksteuerConsolidation = consolidateTabaksteuerDuplicates(routableStories, now);
   report.tabaksteuer_duplicate_consolidation = tabaksteuerConsolidation;
   report.living_file_merges.push(...tabaksteuerConsolidation.changes);
   report.retired_stories += tabaksteuerConsolidation.changes.length;
-  const oleschkyConsolidation = consolidateOleschkyDuplicates(storyStore.stories || [], now);
+  const oleschkyConsolidation = consolidateOleschkyDuplicates(routableStories, now);
   report.oleschky_duplicate_consolidation = oleschkyConsolidation;
   report.living_file_merges.push(...oleschkyConsolidation.changes);
   report.retired_stories += oleschkyConsolidation.changes.length;
-  const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
+  const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(routableStories), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
   const matchableStories = (storyStore.stories || [])
@@ -1503,7 +1514,13 @@ export async function runWirkungsticker(options = {}) {
     });
   for (const candidate of freshCandidates) bumpCandidateFunnel(sourceFunnel, candidate, "story_candidates");
   for (const candidate of retryCandidates) bumpCandidateFunnel(sourceFunnel, candidate, "queue_retries");
-  const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories);
+  const clusters = attachRelatedTickerHistory([...freshCandidates, ...retryCandidates], storyStore.stories).filter(candidate => {
+    const held = unresolvedProviderRequest(candidate.existing_story || candidate);
+    if (held == null) return true;
+    report.provider_outcome_holds.push({ story_id: candidate.story_id, run_id: held.run_id || null, reason: UNKNOWN_PROVIDER_OUTCOME });
+    newsroom.decisions.push({ at: now, story_id: candidate.story_id, decision: 'unknown_provider_outcome_hold' });
+    return false; // Before LIFO, local rejection, repartition, paid slots or reuse.
+  });
   for (const candidate of clusters) {
     candidate.followup_due = dueFollowupIds.has(candidate.story_id);
     candidate.deepening_due = dueDeepeningIds.has(candidate.story_id);
@@ -2123,8 +2140,9 @@ export async function runWirkungsticker(options = {}) {
         const budgetBlocked = reason === 'AI_BUDGET_EXHAUSTED';
         const providerBillingBlocked = PROVIDER_BILLING_ERRORS.has(reason);
         const providerRateLimited = /AI_PROVIDER_ERROR:429/.test(reason);
+        const uncertainRequest = providerOutcomeUncertain(error, { started: aiRequestStarted, costRecorded: aiCostRecorded });
         const rateLimited = budgetBlocked || providerRateLimited;
-        const deferred = rateLimited || providerBillingBlocked ? selected.slice(offset) : batch;
+        const deferred = uncertainRequest ? batch : rateLimited || providerBillingBlocked ? selected.slice(offset) : batch;
         if (providerBillingBlocked) report.ai_provider_billing_blocked = true;
         if (budgetBlocked) {
           report.budget_blocked = true;
@@ -2136,10 +2154,25 @@ export async function runWirkungsticker(options = {}) {
           report.failed_batch_offset = offset;
         }
         for (const candidate of deferred) {
-          const holdReason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
+          const holdReason = uncertainRequest ? UNKNOWN_PROVIDER_OUTCOME : budgetBlocked ? 'AI_BUDGET_BLOCKED' : providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
           bumpCandidateFunnel(sourceFunnel, candidate, rateLimited ? "capacity_deferred" : "technical_retries");
-          byId.set(candidate.story_id, pendingRecord(candidate, holdReason, now, [reason]));
+          const pending = pendingRecord(candidate, holdReason, now, [reason]);
+          byId.set(candidate.story_id, uncertainRequest ? holdProviderRequest(pending, {
+            status: 'unknown', at: now, run_id: report.run_id, error_code: reason,
+            request_attempts: Number(error.requestAttempts ?? 1), raw_response: 'not_confirmed',
+            recorded_pending_hash: candidate.content_hash || null,
+          }) : pending);
+          if (uncertainRequest) report.provider_outcome_holds.push({ story_id: candidate.story_id, run_id: report.run_id, reason: holdReason });
           report.quality_holds.push({ story_id: candidate.story_id, reason: holdReason });
+        }
+        if (uncertainRequest && (rateLimited || providerBillingBlocked)) {
+          // Only this batch was sent. A later refusal cannot invent unknown
+          // provider writes for the untouched neighbours.
+          for (const candidate of selected.slice(offset + batch.length)) {
+            const reason = providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
+            byId.set(candidate.story_id, pendingRecord(candidate, reason, now));
+            report.quality_holds.push({ story_id: candidate.story_id, reason });
+          }
         }
         // Ein ausgeschöpftes Client-Limit sperrt alle weiteren Aufrufe dieses
         // Laufs. Bei 5xx/Timeout ist dagegen nur die betroffene Story vertagt;
