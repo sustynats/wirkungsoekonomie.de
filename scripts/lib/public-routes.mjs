@@ -184,7 +184,9 @@ export function collectPublicRoutes(root) {
 
 export function writePublicRoutes(root, output = path.join(root, DEFAULT_MANIFEST), { check = false } = {}) {
   const manifest = collectPublicRoutes(root);
-  const serialized = `${JSON.stringify(manifest, null, 2)}\n`;
+  // This generated lookup is not a manuscript or an immutable source snapshot.
+  // Keep its values and the exact regeneration gate, without shipping indentation.
+  const serialized = `${JSON.stringify(manifest)}\n`;
   const absoluteOutput = path.resolve(output);
   if (check) {
     if (!fs.existsSync(absoluteOutput) || fs.readFileSync(absoluteOutput, "utf8") !== serialized) {
