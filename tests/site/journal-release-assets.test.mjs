@@ -5,8 +5,57 @@ import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { journalAssetName, journalPdfs, journalReleaseEntries, releaseListe, syncJournalReleaseAssets, JOURNAL_PREFIX, JOURNAL_TAG } from '../../scripts/assets/sync-journal-release-assets.mjs';
+import {publicReleaseImageUrl, verifyPublicReleaseImages} from '../../scripts/assets/public-release-images.mjs';
+import vm from 'node:vm';
 
 const repo = fileURLToPath(new URL('../../', import.meta.url));
+
+test('explicit public PNG release entries are immutable, content-bound and opt-in', () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'public-release-image-'));
+  const relative = 'assets/img/blog/example.png', original = Buffer.from('unchanged public PNG bytes');
+  try {
+    fs.mkdirSync(path.join(root, 'assets/img/blog'), {recursive:true});
+    fs.writeFileSync(path.join(root, relative), original);
+    const url = publicReleaseImageUrl(relative, original);
+    assert.match(url, /__example__[a-f0-9]{64}\.png$/);
+    assert.equal(verifyPublicReleaseImages(root, new Map([[relative, url]])), 1);
+    assert.equal(verifyPublicReleaseImages(root, new Map()), 0);
+    assert.throws(() => publicReleaseImageUrl('../private.png', original), /PATH_INVALID/);
+    assert.throws(() => publicReleaseImageUrl('assets/img/blog/../private.png', original), /PATH_INVALID/);
+    assert.throws(() => verifyPublicReleaseImages(root, new Map([['assets/img/blog/../../private.png', url]])), /PATH_INVALID/);
+    fs.writeFileSync(path.join(root, relative), 'changed bytes');
+    assert.throws(() => verifyPublicReleaseImages(root, new Map([[relative, url]])), /BYTES_MISMATCH/);
+    assert.deepEqual(fs.readFileSync(path.join(root, relative)), Buffer.from('changed bytes'));
+  } finally {fs.rmSync(root, {recursive:true, force:true});}
+});
+
+test('actual artifact rewrite maps only opted-in images, retaining suffixes and prior release formats', () => {
+  const source = fs.readFileSync(path.join(repo, 'scripts/quality/build-public-artifact.mjs'), 'utf8');
+  const start = source.indexOf('function releaseAssetReferenceVariants(');
+  const end = source.indexOf('function shouldCopyRootFile(', start);
+  assert.ok(start > 0 && end > start);
+  const relative = 'assets/img/blog/example.png';
+  const imageUrl = publicReleaseImageUrl(relative, Buffer.from('unchanged public bytes'));
+  const pdf = 'assets/pdf/example.pdf', pdfUrl = 'https://github.com/example/releases/download/v1/example.pdf';
+  const context = {publicReleaseAssets: new Map([[relative,imageUrl],[pdf,pdfUrl]])};
+  vm.createContext(context);
+  vm.runInContext(source.slice(start, end), context);
+  for (const prefix of ['', '/', '../', '../../', 'https://wirkungsoekonomie.de/']) {
+    const before = '<img src="' + prefix + relative + '?v=1#image">';
+    const after = '<img src="' + imageUrl + '?v=1#image">';
+    assert.equal(context.rewritePublicReleaseAssetReferences(before), after);
+    assert.equal(context.rewritePublicReleaseAssetReferences(after), after);
+  }
+  assert.equal(context.rewritePublicReleaseAssetReferences('{"image":"/' + relative + '"}'), '{"image":"' + imageUrl + '"}');
+  const untouched = '<img src="/assets/img/blog/not-opted-in.png"><p>Unchanged reader text.</p>';
+  assert.equal(context.rewritePublicReleaseAssetReferences(untouched), untouched);
+  assert.equal(context.rewritePublicReleaseAssetReferences('<a href="/' + pdf + '">PDF</a>'), '<a href="' + pdfUrl + '">PDF</a>');
+});
+
+test('the real image release registry matches the complete unchanged local originals', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(repo, 'assets/data/public-release-assets.json')));
+  assert.equal(verifyPublicReleaseImages(repo, new Map(Object.entries(manifest.assets))), 3);
+});
 
 function fixture(dateien) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'journal-release-'));

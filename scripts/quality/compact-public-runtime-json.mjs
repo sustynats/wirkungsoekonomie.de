@@ -21,6 +21,9 @@ export const PUBLIC_RUNTIME_JSON = Object.freeze([
   'api/v1/glossary/index.json',
   'api/v1/canvases.json',
   'api/v1/canvases/index.json',
+  // Browser-only wrapper around the already approved lexicon data. The approved
+  // download (daten.json), its release archive and approval hashes stay untouched.
+  'wirkungslexikon/runtime.json',
   'wirkungsticker/feed.json',
   'news/feed.json',
   // Public projection produced by publicStory(), NOT data/news/stories.json,
