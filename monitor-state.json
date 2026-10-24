@@ -13,12 +13,17 @@
       "firstSeen": "2026-10-11T07:15:14.451Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-10-24T08:20:53.765Z",
-      "active": true
+    "editorial-coverage": {
+      "firstSeen": "2026-10-24T10:35:54.488Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6754f8bf64f28d7bfb76359b",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-24T10:35:54.488Z"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3494,11 +3499,23 @@
       "https://wirkungsoekonomie.de/wirkungsticker/bildung-bundesschulerkonferenz-fordert-mehr-geld-und-kundigt-proteste-im-november-an-e19e7d/": {
         "first_seen_at": "2026-10-24T07:36:13.829Z",
         "source_at": "2026-10-24T06:32:18.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/fussball-bayern-cheftrainer-kompany-muss-nach-zusammenbruch-im-krankenhaus-bleiben-81c565/": {
+        "first_seen_at": "2026-10-24T10:35:54.488Z",
+        "source_at": "2026-10-24T08:56:40.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/nach-flammen-unbewohnbar-haus-im-oberallgau-brennt-31-menschen-evakuiert-fd325e/": {
+        "first_seen_at": "2026-10-24T10:35:54.488Z",
+        "source_at": "2026-10-24T07:26:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-waffenruhe-um-oleschky-moskau-und-kiew-stimmen-zu-cd49ab/": {
+        "first_seen_at": "2026-10-24T10:35:54.488Z",
+        "source_at": "2026-10-23T18:28:59.000Z"
       }
     },
-    "last_new_at": "2026-10-24T07:36:13.829Z",
-    "checked_at": "2026-10-24T10:20:45.592Z",
-    "last_current_new_at": "2026-10-24T07:36:13.829Z"
+    "last_new_at": "2026-10-24T10:35:54.488Z",
+    "checked_at": "2026-10-24T10:35:54.488Z",
+    "last_current_new_at": "2026-10-24T10:35:54.488Z"
   },
   "recovery_attempts": [
     {
