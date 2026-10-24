@@ -2169,7 +2169,7 @@ export async function runWirkungsticker(options = {}) {
           // Only this batch was sent. A later refusal cannot invent unknown
           // provider writes for the untouched neighbours.
           for (const candidate of selected.slice(offset + batch.length)) {
-            const reason = providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
+            const reason = budgetBlocked ? 'AI_BUDGET_BLOCKED' : providerRateLimited ? 'AI_HOURLY_CALL_LIMIT' : 'AI_PROVIDER_UNAVAILABLE';
             byId.set(candidate.story_id, pendingRecord(candidate, reason, now));
             report.quality_holds.push({ story_id: candidate.story_id, reason });
           }

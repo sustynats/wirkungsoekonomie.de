@@ -155,7 +155,11 @@ test('an unresolved request is visible as a technical reconciliation hold, never
     'an absent pending label cannot make an unresolved write invisible');
 });
 
-test('an untouched neighbour is not fenced after a later explicit refusal in an uncertain request', async t => {
+for (const [message, properties, untouchedReason] of [
+  ['AI_PROVIDER_ERROR:429', { requestAttempts: 2, providerNotCalled: false }, 'AI_HOURLY_CALL_LIMIT'],
+  ['AI_BUDGET_EXHAUSTED', { requestAttempts: 2, providerNotCalled: false, budgetScope: 'news' }, 'AI_BUDGET_BLOCKED'],
+  ['AI_PROVIDER_QUOTA_EXHAUSTED', { requestAttempts: 2, providerNotCalled: false }, 'AI_PROVIDER_UNAVAILABLE'],
+]) test(`an untouched neighbour is not fenced after ${message} in an uncertain request`, async t => {
   configure(t); const input = fixture(), neighbour = structuredClone(input.storyStore.stories[0]);
   neighbour.story_id = 'wt-neighbour'; neighbour.title = 'Bund beschließt Bildungsgesetz nach neuer Vergleichsstudie';
   neighbour.slug = 'bildung';
@@ -166,14 +170,14 @@ test('an untouched neighbour is not fenced after a later explicit refusal in an 
   let state, calls = 0, affected;
   await runWirkungsticker({ ...input, captureState: value => state = value, callAiImpl: async stories => {
     calls++; affected = stories[0].story_id;
-    throw Object.assign(Error('AI_PROVIDER_ERROR:429'), { requestAttempts: 2, providerNotCalled: false });
+    throw Object.assign(Error(message), properties);
   } });
   assert.equal(calls, 1);
   const held = state.storyStore.stories.find(s => s.story_id === affected);
   const untouched = state.storyStore.stories.find(s => s.story_id !== affected);
   assert.equal(held.provider_request_hold.status, 'unknown');
   assert.equal(untouched.provider_request_hold, undefined);
-  assert.equal(untouched.pending_update.reason, 'AI_HOURLY_CALL_LIMIT');
+  assert.equal(untouched.pending_update.reason, untouchedReason);
 });
 
 test('one unresolved write does not consume a paid slot or stop another ordinary candidate', async t => {
