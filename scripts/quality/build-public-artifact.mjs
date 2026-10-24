@@ -131,7 +131,7 @@ const publicReleaseAssetRewrites = [...publicReleaseAssets.entries()].flatMap(([
   releaseAssetReferenceVariants(relative).map((variant) => [variant, url]),
 );
 const publicReleaseAssetRewriteMap = new Map(publicReleaseAssetRewrites);
-const publicReleaseAssetPattern = /(?:https:\/\/wirkungsoekonomie\.de\/|\/|(?:\.\.\/){1,8})?(?:assets\/audio|assets\/video|assets\/pdf|assets\/downloads|content\/governance|public\/downloads|docs)\/[^"'<>\\]+?\.(?:docx|mp3|mp4|pdf|xlsx|zip)(?=[?#"'<>\\\s]|$)/gi;
+const publicReleaseAssetPattern = /(?:https:\/\/wirkungsoekonomie\.de\/|\/|(?:\.\.\/){1,8})?(?:assets\/audio|assets\/video|assets\/pdf|assets\/downloads|assets\/img\/blog|content\/governance|public\/downloads|docs)\/[^"'<>\\]+?\.(?:docx|mp3|mp4|pdf|png|xlsx|zip)(?=[?#"'<>\\\s]|$)/gi;
 
 function rewritePublicReleaseAssetReferences(content) {
   if (!publicReleaseAssets.size) return content;
