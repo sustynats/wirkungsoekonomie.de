@@ -146,6 +146,30 @@ test('validates all candidates before writing and tolerates absent optional cata
   assert.deepEqual(compactPublicRuntimeJson(empty), {files: [], saved_bytes: 0});
 });
 
+test('lexicon runtime compaction preserves all approved tokens, downloads and frozen release sources', t => {
+  const {root, artifact, put} = fixture(t);
+  const relative = 'wirkungslexikon/runtime.json';
+  assert.ok(PUBLIC_RUNTIME_JSON.includes(relative));
+  const original = String.raw`{
+    "data": {"releaseVersion": "V9", "entries": [{"text": "Unchanged  wording\nGrüße 😀",
+      "large_integer": 9007199254740993, "numeric_token": 1.2300e+04}]},
+    "config": {"mode": "public", "approvalReceipt": "unchanged"}
+  }`;
+  const file = put(`_site/${relative}`, original);
+  const protectedPaths = [relative, '_site/wirkungslexikon/daten.json',
+    '_site/wirkungslexikon/example/daten.json', '_site/wirkungslexikon/example/index.html',
+    'content/wirkungslexikon/publication-policy.json', 'content/wirkungslexikon/publication-v9.json',
+    '_site/downloads/approved-lexicon.tar.gz'];
+  for (const name of protectedPaths) put(name, original);
+  const report = compactPublicRuntimeJson(artifact);
+  assert.deepEqual(report.files.map(entry => entry.path), [relative]);
+  assert.ok(report.saved_bytes > 0);
+  assert.deepEqual(fs.readFileSync(file), compactJsonBytes(Buffer.from(original)));
+  assert.deepEqual(JSON.parse(fs.readFileSync(file)), JSON.parse(original));
+  for (const name of protectedPaths) assert.equal(fs.readFileSync(path.join(root, name), 'utf8'), original);
+  assert.equal(compactPublicRuntimeJson(artifact).saved_bytes, 0);
+});
+
 test('preserves the exact routing manifest bytes and its unchanged regeneration gate', t => {
   const {artifact, put} = fixture(t);
   put('_site/index.html', '<html lang="de"><head><title>Home</title><link rel="canonical" href="https://wirkungsoekonomie.de/"></head><body><main><h1>Home</h1></main></body></html>');
