@@ -23,18 +23,31 @@
     },
     "academy": {
       "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": false
+      "active": true
     },
     "institute": {
       "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": false
+      "active": true
     },
     "editorial-status": {
       "firstSeen": "2026-10-24T15:06:06.150Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9d78ce29f91abc448983c0b2",
+      "content": "⚠ WÖk-Betriebsstörung\nAkademie: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-24T15:06:06.150Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "c000ccea4589663b56ddb1d8",
+      "content": "⚠ WÖk-Betriebsstörung\nInstitut: Zeitüberschreitung oder Verbindungsfehler\nSeit: 2026-10-24T15:06:06.150Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "26617ce9098a8a7a3dc4562d",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-24T15:06:06.150Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3545,7 +3558,7 @@
       }
     },
     "last_new_at": "2026-10-24T15:06:06.150Z",
-    "checked_at": "2026-10-24T15:06:06.150Z",
+    "checked_at": "2026-10-24T15:21:15.260Z",
     "last_current_new_at": "2026-10-24T15:06:06.150Z"
   },
   "recovery_attempts": [
