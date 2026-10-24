@@ -55,8 +55,14 @@ test("the checked build artifact is deterministic and stale manifests fail", () 
   const root = fixture();
   try {
     const output = path.join(root, "assets/data/public-routes.json");
-    writePublicRoutes(root, output);
+    const manifest = writePublicRoutes(root, output);
+    const bytes = fs.readFileSync(output, "utf8");
+    assert.equal(bytes, `${JSON.stringify(manifest)}\n`);
+    assert.deepEqual(JSON.parse(bytes), collectPublicRoutes(root));
     assert.doesNotThrow(() => writePublicRoutes(root, output, { check: true }));
+    fs.writeFileSync(output, `${JSON.stringify(manifest, null, 2)}\n`);
+    assert.throws(() => writePublicRoutes(root, output, { check: true }), /missing or stale/);
+    writePublicRoutes(root, output);
     fs.appendFileSync(path.join(root, "verstehen/index.html"), "\n<p>Neue Ausgabe</p>");
     assert.throws(() => writePublicRoutes(root, output, { check: true }), /missing or stale/);
   } finally {
