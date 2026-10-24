@@ -305,6 +305,11 @@ export function mergeLivingFiles(stories, groups, now) {
   for (const group of groups) {
     const canonical = byId.get(group.canonical_id);
     if (!canonical || canonical.listed === false || (!canonical.published && !group.unpublished_only)) continue;
+    // A routing change cannot reconcile an uncertain provider write. Preserve
+    // the complete group, including pending sources and retained aliases.
+    const roots = [canonical, ...group.duplicate_ids.map(id => byId.get(id))].filter(Boolean);
+    const members = [...roots, ...roots.flatMap(story => (story.living_file?.merged_story_ids || []).map(id => byId.get(id)))].filter(Boolean);
+    if (members.some(story => story.provider_request_hold != null)) continue;
     for (const id of group.duplicate_ids) {
       const duplicate = byId.get(id);
       if (!duplicate || duplicate === canonical || isMerged(duplicate) || duplicate.listed === false) continue;
