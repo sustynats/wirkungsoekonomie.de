@@ -23,14 +23,19 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-24T17:09:35.107Z",
-      "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-24T17:09:35.107Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "488b009691a353425962e48f",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-24T17:09:35.107Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "91de440253bddcb12b8d74e1",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-24T17:36:35.532Z"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3550,11 +3555,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/tschechiens-parlament-stimmt-in-erster-lesung-fur-abschaffung-von-rundfunkgebuhren-9930c6/": {
         "first_seen_at": "2026-10-24T16:51:45.342Z",
         "source_at": "2026-10-24T12:27:01.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/koln-bonn-und-dusseldorf-demos-gegen-abschiebungen-an-flughafen-in-nrw-d8acad/": {
+        "first_seen_at": "2026-10-24T17:36:35.532Z",
+        "source_at": "2026-10-24T15:35:57.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/als-eines-der-ersten-eu-lander-griechenland-untersagt-soziale-medien-fur-unter-15-jahrig-643c9c/": {
+        "first_seen_at": "2026-10-24T17:36:35.532Z",
+        "source_at": "2026-10-23T14:12:19.000Z"
       }
     },
-    "last_new_at": "2026-10-24T16:51:45.342Z",
-    "checked_at": "2026-10-24T17:09:35.107Z",
-    "last_current_new_at": "2026-10-24T16:51:45.342Z"
+    "last_new_at": "2026-10-24T17:36:35.532Z",
+    "checked_at": "2026-10-24T17:36:35.532Z",
+    "last_current_new_at": "2026-10-24T17:36:35.532Z"
   },
   "recovery_attempts": [
     {
