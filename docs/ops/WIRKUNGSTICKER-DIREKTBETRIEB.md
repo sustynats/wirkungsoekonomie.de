@@ -5,6 +5,26 @@ Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-Ch
 
 ## Betriebsschalter und Wiederanlauf (23.09.2026)
 
+### Unklarer Ausgang eines gestarteten Nachrichtenaufrufs (24.10.2026)
+
+Ein Timeout, Verbindungsabbruch oder 5xx ohne bestaetigte rohe Antwort beweist
+nicht, dass der Anbieter keine Generierung begonnen hat. Der normale Worker
+behaelt deshalb seine Kostenreservierung und einen dauerhaften
+`provider_request_hold` mit Status `AI_PROVIDER_OUTCOME_UNKNOWN`. Die Akte
+wartet auf belegte Klaerung, nicht auf einen automatischen weiteren Aufruf.
+Ein neuer Zeitabschnitt, neue Quellen, Neubewertung oder Zusammenfuehrung
+duerfen diese unbekannte Schreibwirkung nicht als erledigt behandeln.
+Explizit nachgewiesene lokale bzw. Nicht-Ausfuehrungs-Ablehnungen bleiben
+getrennt; weder Budget, Modell, Kontingent noch bezahlte Antwort wird geaendert.
+
+Der erste Altfall ist durch Run `40092521984`, Report an
+`dc50ae574025c2f6fe60519f02d9b9e3929d8a40` und dessen SHA-256
+`3118e1eb2c0b553951d4016c1a0fc666c5ffd8c98245c5abf73ddae97fae6f71`
+belegt: `wt-a2be1b69b19102aa`, Anbieterfehler 520. Seine Sperre rekonstruiert
+keine unbekannte Anbieterantwort und veraendert keinen veroeffentlichten Text.
+Eine Aufhebung erfordert bestaetigte Ausfuehrungs-/Rohantwortbelege und eine
+gesondert gepruefte Fortsetzung; keine automatische Entsperrung.
+
 ### Ergaenzung vom 01.10.2026: jede neue beobachtete Folge als privater Entwurf
 
 Fuer alle aktiv konfigurierten Sendungen und Podcasts ist kein neuer Einzelauftrag
