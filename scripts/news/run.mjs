@@ -48,6 +48,7 @@ import { consolidateHofheimDuplicates, retainedHofheimPaidInput } from './consol
 import { consolidateObersontheimDuplicates, retainedObersontheimPaidInput } from './consolidate-obersontheim-duplicates.mjs';
 import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from './consolidate-tabaksteuer-duplicates.mjs';
 import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './consolidate-oleschky-duplicates.mjs';
+import { consolidateNeukoellnDuplicates, retainedNeukoellnPaidInput } from './consolidate-neukoelln-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1444,6 +1445,10 @@ export async function runWirkungsticker(options = {}) {
   report.oleschky_duplicate_consolidation = oleschkyConsolidation;
   report.living_file_merges.push(...oleschkyConsolidation.changes);
   report.retired_stories += oleschkyConsolidation.changes.length;
+  const neukoellnConsolidation = consolidateNeukoellnDuplicates(storyStore.stories || [], now);
+  report.neukoelln_duplicate_consolidation = neukoellnConsolidation;
+  report.living_file_merges.push(...neukoellnConsolidation.changes);
+  report.retired_stories += neukoellnConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(storyStore.stories || []), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1629,6 +1634,14 @@ export async function runWirkungsticker(options = {}) {
   // Check size before assigning paid slots. A blocked file must never starve the
   // next eligible story or be mislabeled as an outage of the AI provider.
   const ready = eligible.filter(candidate => {
+    if (retainedNeukoellnPaidInput(candidate, storyStore.stories)) {
+      const reason = 'ALREADY_PUBLISHED_SOURCE_EDITION';
+      (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
+        archived_story_id: 'wt-80497942dbedf5d8', reason });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
+        decision: 'retained_published_source_input', reason });
+      return false;
+    }
     if (retainedOleschkyPaidInput(candidate, storyStore.stories)) {
       const reason = 'ALREADY_PUBLISHED_SOURCE_EDITION';
       (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
