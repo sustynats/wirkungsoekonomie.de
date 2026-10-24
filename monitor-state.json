@@ -16,13 +16,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-23T18:06:04.141Z",
       "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-24T01:51:14.976Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "456050231991047f702d9215",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-24T02:20:48.505Z"
+    }
+  ],
   "dailyDate": "2026-10-23",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3478,11 +3479,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nahost-westjordanland-israel-bereitet-abriegelung-vor-ca6bd1/": {
         "first_seen_at": "2026-10-24T01:21:31.808Z",
         "source_at": "2026-10-23T08:19:45.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sozialdemokratie-juso-chef-turmer-gegen-erneute-kandidatur-klingbeils-fur-parteivorsitz-a655a9/": {
+        "first_seen_at": "2026-10-24T02:20:48.505Z",
+        "source_at": "2026-10-24T01:15:49.000Z"
       }
     },
-    "last_new_at": "2026-10-24T01:21:31.808Z",
-    "checked_at": "2026-10-24T02:06:26.800Z",
-    "last_current_new_at": "2026-10-23T21:36:32.544Z"
+    "last_new_at": "2026-10-24T02:20:48.505Z",
+    "checked_at": "2026-10-24T02:20:48.505Z",
+    "last_current_new_at": "2026-10-24T02:20:48.505Z"
   },
   "recovery_attempts": [
     {
