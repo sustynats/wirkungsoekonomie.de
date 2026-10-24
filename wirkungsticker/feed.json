@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-23T22:56:57.390Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-24T00:26:08.669Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -276,6 +276,39 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/nahost-westjordanland-israel-bereitet-abriegelung-vor-ca6bd1/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/nahost-westjordanland-israel-bereitet-abriegelung-vor-ca6bd1/",
+      "title": "Nach Angaben der israelischen Regierung: Vorbereitung auf vollständige Abriegelung des Westjordanlands",
+      "summary": "Israel soll nach einem Angriff nahe Hebron eine vollständige Abriegelung des Westjordanlands vorbereiten. Belegt sind die politische Anweisung und Angaben zu Opfern; Umsetzung, Tatablauf und Verantwortlichkeit bleiben offen.",
+      "date_published": "2026-10-23T08:19:45.000Z",
+      "date_modified": "2026-10-23T08:19:45.000Z",
+      "_woek_released_at": "2026-10-24T00:29:47.624Z",
+      "tags": [
+        "Demokratie",
+        "Politik",
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 4,
+          "direction": "negative",
           "status": "potential"
         }
       }
