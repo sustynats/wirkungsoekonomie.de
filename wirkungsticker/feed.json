@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-24T13:23:21.268Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-24T14:22:02.184Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -7,10 +7,41 @@
   "language": "de",
   "items": [
     {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/drei-weitere-festnahmen-nach-schussen-bei-paris-12814b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/drei-weitere-festnahmen-nach-schussen-bei-paris-12814b/",
+      "title": "Laut ZDFheute: Schüsse nahe Paris – ein Mensch tot, fünf verletzt",
+      "summary": "Bei Schüssen nahe Paris starb laut ZDFheute ein Mensch, fünf weitere wurden verletzt, darunter ein Kind in Lebensgefahr. Ein Terrorverdacht und ein rassistischer Hintergrund werden geprüft; der Ermittlungsstand ist offen.",
+      "date_published": "2026-10-24T13:03:00.000Z",
+      "date_modified": "2026-10-24T13:03:00.000Z",
+      "_woek_released_at": "2026-10-24T14:28:53.208Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "emerging"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "neutral",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
+    {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-polizei-findet-bei-autokontrolle-scharfe-pistole-8ad2c3/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-polizei-findet-bei-autokontrolle-scharfe-pistole-8ad2c3/",
       "title": "Laut stern: Polizei findet bei Autokontrolle scharfe Pistole",
-      "summary": "Bei einer Autokontrolle in Heimfeld wurde laut stern eine scharfe Schusswaffe entdeckt. Der weitere Ermittlungsstand und die Umstände des Fundes sind offen.",
+      "summary": "Bei einer Autokontrolle in Heimfeld wurde laut stern eine scharfe Schusswaffe gefunden. Die Angaben sind nicht unabhängig bestätigt; Umstände, Herkunft der Waffe und ein möglicher Drogeneinfluss bleiben offen.",
       "date_published": "2026-10-24T12:10:14.000Z",
       "date_modified": "2026-10-24T12:10:14.000Z",
       "_woek_released_at": "2026-10-24T12:28:40.950Z",
@@ -21,7 +52,7 @@
       "_woek_late_delivery": false,
       "_woek_impact_profile": {
         "human": {
-          "magnitude": 2,
+          "magnitude": 1,
           "direction": "negative",
           "status": "potential"
         },
