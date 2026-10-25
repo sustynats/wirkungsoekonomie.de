@@ -60,6 +60,14 @@ if(supplementForm){
  }catch(error){result.textContent=error.message;}finally{button.disabled=false;}});
 }
 const researchSearch=document.getElementById('research-search'),researchMode=document.getElementById('research-mode');
+const v11Search=document.getElementById('v11-search');
+if(v11Search){
+ const form=v11Search.form,type=document.getElementById('v11-type'),topic=document.getElementById('v11-topic'),open=document.getElementById('v11-open');
+ const normalize=s=>s.normalize('NFKC').toLocaleLowerCase('de').replaceAll('ß','ss');
+ const rows=[...document.querySelectorAll('[data-v11-item]')].map(el=>({el,text:normalize(el.dataset.search)}));
+ const filter=()=>{const words=normalize(v11Search.value).trim().split(/\s+/).filter(Boolean);let count=0;for(const {el,text} of rows){el.hidden=!(words.every(w=>text.includes(w))&&(!type.value||el.dataset.type===type.value)&&(!topic.value||el.dataset.topic===topic.value)&&(!open.value||el.dataset.open===open.value));if(!el.hidden)count++;}document.getElementById('v11-count').textContent=count+' Fassungen';};
+ form.addEventListener('submit',e=>e.preventDefault());form.addEventListener('input',filter);form.addEventListener('change',filter);form.addEventListener('reset',()=>setTimeout(filter,0));
+}
 if(researchSearch&&researchMode){const filter=()=>{const q=researchSearch.value.toLocaleLowerCase('de'),mode=researchMode.value;let count=0;for(const row of document.querySelectorAll('[data-research-item]')){row.hidden=!(row.textContent.toLocaleLowerCase('de').includes(q)&&(!mode||row.dataset.sourceMode===mode));if(!row.hidden)count++;}document.getElementById('research-count').textContent=count+' private Objekte';};researchSearch.addEventListener('input',filter);researchMode.addEventListener('change',filter);}
 if(reviewForm){
  const select=document.querySelector('#review-select'),input=document.querySelector('#review-json'),result=document.querySelector('#review-result');let revision=null,type=null;

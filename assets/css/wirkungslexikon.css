@@ -879,3 +879,11 @@ a.wl-area:hover{box-shadow:var(--wl-shadow-lift);border-top-color:var(--wl-green
 .wl-inventory { display:flex; flex-wrap:wrap; gap:.3rem .8rem; margin:.4rem 0 0; color:inherit; font-size:.82rem; line-height:1.25; }
 .wl-inventory > span { white-space:nowrap; }
 @media (max-width:700px) { .wl-hero--lookup:has(.wl-inventory) { padding-block:.5rem; } }
+/* Private typed editorial additions reuse the lexicon's layout and tokens. */
+.wl-v11-example { border-inline-start: 4px solid var(--wl-ev-potenzial-line); padding: var(--wl-s4); background: var(--wl-ev-potenzial-bg); border-radius: var(--wl-r); }
+.wl-v11-list { list-style: none; padding: 0; }
+.wl-v11-list > li { border-block-end: 1px solid var(--wl-line-ui); padding-block: var(--wl-s4); }
+.wl-v11-list > li[hidden] { display: none; }
+.wl-v11-filters { display: grid; gap: .5rem; }
+.wl-v11-path { display: grid; gap: 1rem; }
+.wl-v11-hash { overflow-wrap: anywhere; }
