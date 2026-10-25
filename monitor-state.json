@@ -19,14 +19,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-25T13:05:55.399Z",
-      "active": false
-    },
-    "publication": {
-      "firstSeen": "2026-10-25T13:05:55.399Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5889cb5b3a59d4d362d9fbd5",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 2 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-25T13:05:55.399Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3650,11 +3651,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/investitionsschutzgesetz-bundesregierung-plant-hohe-hurden-fur-vergesellschaftungen-962546/": {
         "first_seen_at": "2026-10-25T12:20:56.542Z",
         "source_at": "2026-10-25T11:00:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kinderkriegen-in-krisenzeiten-ed8998/": {
+        "first_seen_at": "2026-10-25T13:20:57.709Z",
+        "source_at": "2026-10-25T10:58:00.000Z"
       }
     },
-    "last_new_at": "2026-10-25T12:20:56.542Z",
-    "checked_at": "2026-10-25T13:05:55.399Z",
-    "last_current_new_at": "2026-10-25T12:20:56.542Z"
+    "last_new_at": "2026-10-25T13:20:57.709Z",
+    "checked_at": "2026-10-25T13:20:57.709Z",
+    "last_current_new_at": "2026-10-25T13:20:57.709Z"
   },
   "recovery_attempts": [
     {
