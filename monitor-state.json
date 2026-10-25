@@ -20,13 +20,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-25T13:05:55.399Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-25T16:00:27.743Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "f844571f63bd733893279b89",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-25T16:36:29.610Z"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3666,11 +3667,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/wetter-betrieb-des-europa-parks-wegen-sturms-erneut-eingeschrankt-f16f37/": {
         "first_seen_at": "2026-10-25T15:20:59.767Z",
         "source_at": "2026-10-25T11:33:28.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vergesellschaftung-linke-vorstoss-zu-investitionsschutzgesetz-rechtswidrig-8a24c6/": {
+        "first_seen_at": "2026-10-25T16:36:29.610Z",
+        "source_at": "2026-10-25T14:38:22.000Z"
       }
     },
-    "last_new_at": "2026-10-25T15:20:59.767Z",
-    "checked_at": "2026-10-25T16:21:20.801Z",
-    "last_current_new_at": "2026-10-25T15:20:59.767Z"
+    "last_new_at": "2026-10-25T16:36:29.610Z",
+    "checked_at": "2026-10-25T16:36:29.610Z",
+    "last_current_new_at": "2026-10-25T16:36:29.610Z"
   },
   "recovery_attempts": [
     {
