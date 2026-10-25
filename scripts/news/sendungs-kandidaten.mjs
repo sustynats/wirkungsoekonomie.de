@@ -531,7 +531,7 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           await store.observe(`episode-metadata:${show.id}:${hash(episode.guid).slice(0, 32)}`, {
             show_id: show.id, title: episode.title, published_at: episode.published_at,
             url: episode.page, shownotes: episode.summary, checked_at: now,
-            draft_policy: AUTOMATIC_DRAFT_POLICY, already_requested: Boolean(seen(episode.page)),
+            draft_policy: AUTOMATIC_DRAFT_POLICY, already_requested: Boolean(seen(episode.page) || seen(episode.media) || seen(episode.podcast_basis)),
             candidate_job_id: priorRequest?.input.job_id || previous?.job_id || null,
           });
           if (promotion && (await store.observation(`github-attempt:${promotion.input.job_id}`)
@@ -549,7 +549,9 @@ export async function proposeEpisodeCandidates({ session = null, root = ROOT, no
           if (previous && !retryable && !promotion) continue;
           // Die URL-Prüfung schützt vor Dubletten zu Natalies eigenen Aufträgen;
           // beim eigenen Wiederholungsversuch ist die Herkunft bekannt.
-          if (seen(episode.page) || seen(episode.media)) continue;
+          // A matched podcast is the same episode even when the video has a
+          // different address and kind. Check before fetching or buying words.
+          if (seen(episode.page) || seen(episode.media) || seen(episode.podcast_basis)) continue;
           // Ein offener Auftrag Natalies zur selben Sendung und zum selben Thema
           // zählt wie eine bekannte Adresse: ihre Fassung hat Vorrang.
           const twin = previous && !promotion ? null : duplicateRequestFor(episode, show, ownRequests);
