@@ -100,6 +100,11 @@ const SPECIFIC_STORY_CONCEPTS = [
 
 // Nur exakte Begriffe abwerten: "mode" darf weder "modernes" noch "Modelle" treffen.
 const LOW_RELEVANCE = /\b(?:prominent(?:e|en|er|es)?|celebrity|lifestyle|mode|rezept|filmstar|unterhaltung|lotto|sport(?:ergebnis)?|fußballergebnis|fussballergebnis|produktwerbung|gewinnspiel)\b/i;
+// A general feed's "Politik" label and words such as "entschieden" must not
+// admit a race result. Keep the existing soft penalty, not a sport blacklist:
+// concrete policy, employment or safety developments can still take priority.
+const FORMULA_ONE_CONTEXT = /\b(?:formel[- ]?1|formula[- ](?:1|one)|f1)\b/i;
+const RACE_RESULT_CONTEXT = /\b(?:qualifying|pole[- ]?position|grand[- ]prix|gro(?:ß|ss)(?:en|er|e) preis|rennen|races?|weltmeister\w*|sieg(?:er|t|en)?|wins?)\b/i;
 const TECHNOLOGY_ROUTINE = /\b(?:hands-on|kaufberatung|bestenliste|preisvergleich|rabatt|deal|gutschein|smartphone[- ]?test|laptop[- ]?test|produkttest|gaming|videospiel|spielkonsole|firmware[- ]?update|app[- ]?update|patchday|neue\s+version|jetzt\s+(?:erhältlich|erhaeltlich|kaufen))\b/i;
 const TECHNOLOGY_SYSTEMIC = /\b(?:cyberangriff|hackerangriff|datenleck|data breach|zero[- ]day|aktiv\s+ausgenutzt|actively exploited|kritische\s+infrastruktur|versorgung|plattformregulierung|digital markets act|digital services act|ai act|kartell|wettbewerbsbehörde|wettbewerbsbehoerde|massenentlassung|stellenabbau|chipkrise|lieferkette|milliard|grundrecht|datenschutz|überwachung|ueberwachung)\b/i;
 const STATUS_RULES = [
@@ -616,7 +621,7 @@ export function classifyItem(item, source = {}, now = new Date().toISOString()) 
     score += weight;
     drivers.push(label);
   }
-  if (LOW_RELEVANCE.test(text)) {
+  if (LOW_RELEVANCE.test(text) || (FORMULA_ONE_CONTEXT.test(originalText) && RACE_RESULT_CONTEXT.test(originalText))) {
     // Keine starre Blacklist: starke materielle Signale können den Abzug überwiegen.
     score -= score >= 52 ? 10 : 32;
     drivers.push("standardmäßig geringe Relevanz");
