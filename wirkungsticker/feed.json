@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-25T18:06:47.981Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-25T18:51:26.278Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -95,6 +95,39 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/sturm-boelo-zehntausende-in-grossbritannien-ohne-strom-flugausfalle-in-amsterdam-3a163b/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/sturm-boelo-zehntausende-in-grossbritannien-ohne-strom-flugausfalle-in-amsterdam-3a163b/",
+      "title": "Nach Berichten: Sturm führt in Großbritannien zu Stromausfällen und Flugausfällen",
+      "summary": "Ein Sturm hat in Teilen Großbritanniens Stromausfälle und am Flughafen Amsterdam Flugstreichungen ausgelöst. Das Wirkungspotenzial betrifft vor allem Versorgung, Mobilität und die Belastbarkeit regionaler Infrastruktur.",
+      "date_published": "2026-10-25T13:42:55.000Z",
+      "date_modified": "2026-10-25T13:42:55.000Z",
+      "_woek_released_at": "2026-10-25T18:56:26.421Z",
+      "tags": [
+        "Energie",
+        "Europa",
+        "Finanzen"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
