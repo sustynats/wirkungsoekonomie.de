@@ -20,13 +20,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-25T13:05:55.399Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-25T14:50:51.683Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6e48f33579d62685fc081d41",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-25T15:20:59.767Z"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3662,11 +3663,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/waffen-in-berlin-polizei-registriert-mehr-schusswaffengebrauch-in-berlin-1ac526/": {
         "first_seen_at": "2026-10-25T14:52:20.035Z",
         "source_at": "2026-10-25T13:21:56.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/wetter-betrieb-des-europa-parks-wegen-sturms-erneut-eingeschrankt-f16f37/": {
+        "first_seen_at": "2026-10-25T15:20:59.767Z",
+        "source_at": "2026-10-25T11:33:28.000Z"
       }
     },
-    "last_new_at": "2026-10-25T14:52:20.035Z",
-    "checked_at": "2026-10-25T15:05:59.012Z",
-    "last_current_new_at": "2026-10-25T14:52:20.035Z"
+    "last_new_at": "2026-10-25T15:20:59.767Z",
+    "checked_at": "2026-10-25T15:20:59.767Z",
+    "last_current_new_at": "2026-10-25T15:20:59.767Z"
   },
   "recovery_attempts": [
     {
