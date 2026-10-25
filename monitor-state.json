@@ -20,10 +20,19 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-25T07:06:17.214Z",
+      "active": false
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-10-24",
+  "outbox": [
+    {
+      "id": "830aa9760452050ee67a0338",
+      "content": "WÖk Tagesbericht · 2026-10-25 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 1063 live · 872 aktuelle Lagen und Einzelakten aus 897 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-10-24) 28; heute bisher 5 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-10-25T06:48:39.365Z; 885 offene Prüfungen, 44 aktive Quellen.\nQueue: 886 offen (616 Kapazität · 1 technisch · 269 redaktionell); Status technical_delay.\nQuellen-Funnel heute: 20272 Feed-Einträge → 290 neu/aktualisiert → 365 Story-Kandidaten → 17595 geeignet → 10 KI → 6 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 551; redaktionelle Quellenbeiträge: 974.\nProduktive Quellen im letzten Lauf: MDR.\nEreignischeck (begrenzter Quellenbestand): 15 größere Ereignisse · 9 mit Veröffentlichung · 6 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $1.04 · heute $0.12 · Monat $24.08.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 370 Erstveröffentlichungen · 705 Aktualisierungen · 1934 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 8.82 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 154 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nDirekte Nachrichtenverarbeitung: geschätzte KI-Kosten je heutiger Erstveröffentlichung/Aktualisierung $0.017; WÖk-Analysen und Batch separat.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €25.60 (Limit €110.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Private Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\n⚠ Nachrichten-Warteschlange: 1 technisch blockierte Akte(n); älteste technische Blockade seit 1100 Minuten. Kapazitätswarteschlange: 616; redaktionelle Ablehnungen: 269.\n⚠ Redaktionelle Themenabdeckung: 4 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -3598,11 +3607,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/musk-wirft-ukrainischem-militar-verstoss-gegen-starlink-nutzungsbedingungen-vor-dec8d7/": {
         "first_seen_at": "2026-10-25T06:35:58.960Z",
         "source_at": "2026-10-25T03:30:26.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-musk-beschuldigt-kiew-starlink-missbrauchlich-genutzt-zu-haben-1dd322/": {
+        "first_seen_at": "2026-10-25T07:06:17.214Z",
+        "source_at": "2026-10-25T06:09:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/koalition-der-willigen-deutsche-stabsoffiziere-und-tankflugzeuge-fur-ukraine-ubung-d2ca17/": {
+        "first_seen_at": "2026-10-25T07:06:17.214Z",
+        "source_at": "2026-10-25T04:00:52.000Z"
       }
     },
-    "last_new_at": "2026-10-25T06:35:58.960Z",
-    "checked_at": "2026-10-25T06:35:58.960Z",
-    "last_current_new_at": "2026-10-25T06:35:58.960Z"
+    "last_new_at": "2026-10-25T07:06:17.214Z",
+    "checked_at": "2026-10-25T07:06:17.214Z",
+    "last_current_new_at": "2026-10-25T07:06:17.214Z"
   },
   "recovery_attempts": [
     {
