@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-25T11:41:53.072Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-25T12:04:15.527Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -32,6 +32,37 @@
         },
         "democracy": {
           "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/kinderkriegen-in-krisenzeiten-ed8998/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/kinderkriegen-in-krisenzeiten-ed8998/",
+      "title": "Studie laut ZDFheute: Kinderwunsch in Deutschland gesunken",
+      "summary": "ZDFheute berichtet unter Berufung auf eine Studie von einem gesunkenen Kinderwunsch in Deutschland. Der Befund ist relevant für Demografie und Krisenwahrnehmung, bleibt wegen fehlender Studienangaben und unabhängiger Bestätigung vorläufig.",
+      "date_published": "2026-10-25T10:58:00.000Z",
+      "date_modified": "2026-10-25T10:58:00.000Z",
+      "_woek_released_at": "2026-10-25T12:12:36.490Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
           "direction": "negative",
           "status": "potential"
         }
@@ -72,10 +103,10 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245/",
-      "title": "Geplantes Gesetz könnte Vergesellschaftungen erschweren",
-      "summary": "Die Bundesregierung will laut vorliegenden Medienberichten ein Gesetz vorlegen, das Vergesellschaftungen erschweren könnte. Welche Regeln geplant sind und ob der Entwurf verabschiedet wird, bleibt offen.",
-      "date_published": "2026-10-25T10:01:48.000Z",
-      "date_modified": "2026-10-25T10:01:48.000Z",
+      "title": "Laut Deutschlandfunk: Dobrindt legt Eckpunkte für höhere Hürden bei Vergesellschaftungen vor",
+      "summary": "Die Bundesregierung arbeitet laut Deutschlandfunk an Eckpunkten, die Vergesellschaftungen großer Wohnungsbestände erschweren könnten. Inhalt, Gesetzesverfahren und Folgen für Berlin bleiben teilweise offen.",
+      "date_published": "2026-10-25T10:03:16.000Z",
+      "date_modified": "2026-10-25T10:03:16.000Z",
       "_woek_released_at": "2026-10-25T10:36:49.102Z",
       "tags": [
         "Politik"
@@ -89,7 +120,7 @@
           "status": "potential"
         },
         "planet": {
-          "magnitude": 1,
+          "magnitude": 2,
           "direction": "open",
           "status": "potential"
         },
