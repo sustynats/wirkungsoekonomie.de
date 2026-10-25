@@ -8,7 +8,7 @@ import { erschoepfteAuftraege, selectEditorialRequests, processEditorialRequest,
 import { buildCandidateRequest, selectEditorialCandidates, proposeEditorialCandidates } from '../../scripts/news/redaktions-kandidaten.mjs';
 import { supplementBrief } from '../../scripts/news/editorial-supplement.mjs';
 import { prepareApiJob, PERSONAL_PREVIEW_SCOPE } from '../../scripts/news/bridge/api-processor.mjs';
-import { editorialRepairRequest, editorialRunNeedsAttention } from '../../scripts/news/redaktionsworker.mjs';
+import { editorialRepairRequest, editorialRunNeedsAttention, publishedEpisodeForRequest } from '../../scripts/news/redaktionsworker.mjs';
 
 const owner = '123456789012345678';
 const knowledge = { hash: 'a'.repeat(64), instructions: 'Synthetische Redaktionsanweisung für den Test.', compatibleHashes: [] };
@@ -42,6 +42,40 @@ function fakeSession(jobs) {
 }
 const jobId = 'wt_20260915T200000Z_' + 'b'.repeat(24);
 function queuedJob(id = jobId) { const input = packetFor(id); return { input, candidate: { story_id: 'wt-test', sources: [] }, status: 'queued', created_at: input.created_at, attempts: {}, intake: { owner, kind: 'opinion_analysis', fingerprint: 'f'.repeat(64) } }; }
+
+test('an automatic video of an already published podcast costs nothing and changes no job or paid attempt', async () => {
+  const job = queuedJob();
+  job.intake.trigger_type = 'automatic_episode';
+  job.input.origin = { proposed_by: 'github_direct_worker', show_id: 'synthetic-show' };
+  job.input.request.kind = 'watched';
+  job.input.request.links = ['https://www.youtube.com/watch?v=abcdefghijk', 'https://episodes.example/79#t=30'];
+  job.input.input_hash = hash(job.input.request);
+  const edition = { format: 'approved_editorial', subtype: 'listened', analysis_id: 'published-test',
+    content_hash: 'c'.repeat(64), published_at: now(), source_media: { original_url: 'https://episodes.example/79' } };
+  const session = fakeSession([job]), original = structuredClone(job);
+  const result = await processEditorialRequest(session, job, { knowledge, now, publishedEditions: [edition], excerpts: true,
+    fetchImpl: async () => assert.fail('no source fetch for a published episode'),
+    draft: async () => assert.fail('no duplicate paid draft') });
+  assert.equal(result.status, 'already_published_episode');
+  assert.equal(result.provider_called, false);
+  assert.equal(result.published_content_hash, edition.content_hash);
+  assert.deepEqual(await session.store.get(jobId), original);
+  assert.deepEqual(session.calls, []);
+  assert.equal(session.observations.size, 0);
+  assert.equal(session.files.size, 0);
+  session.observations.set(`github-attempt:${jobId}`, { provider_called: true, status: 'started', version: 'redaktionsworker-8' });
+  const attempt = structuredClone(session.observations.get(`github-attempt:${jobId}`));
+  const exhausted = await processEditorialRequest(session, job, { knowledge, now, publishedEditions: [edition] });
+  assert.equal(exhausted.status, 'attempt_exhausted', 'unknown provider effects retain their existing block');
+  assert.deepEqual(session.observations.get(`github-attempt:${jobId}`), attempt);
+  const manual = structuredClone(job); manual.intake.draft_id = 'owner-request';
+  assert.equal(publishedEpisodeForRequest(manual, [edition]), null, 'explicit owner work remains possible');
+  const next = structuredClone(job); next.input.request.links[1] = 'https://episodes.example/80';
+  assert.equal(publishedEpisodeForRequest(next, [edition]), null, 'another episode must not be suppressed');
+  next.input.request.links[1] = 'https://episodes.example/79?episode=80';
+  assert.equal(publishedEpisodeForRequest(next, [edition]), null, 'episode-defining query parameters remain distinct');
+  assert.equal(publishedEpisodeForRequest(job, [{ ...edition, published_at: null }]), null);
+});
 
 test('web-enabled editorial work has no contradictory no-tools instruction; other clients stay unchanged', () => {
   assert.match(JSON.parse(prepareApiJob(packetFor(jobId), knowledge).prompt).task, /Keine Tools aufrufen/);

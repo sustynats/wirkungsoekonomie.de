@@ -56,6 +56,23 @@ const isoDay = (value) => String(value).slice(0, 10);
 export const manualRequest = (row) => Boolean(row?.intake?.draft_id)
   || /^manual/.test(String(row?.intake?.trigger_type || '')) || row?.intake?.manual_research === true;
 
+// Automatic video/audio proposals carry episode addresses, not research links.
+// Only an exact published original address proves this is the same episode.
+// Explicit owner requests and revision/supplement work retain their own path.
+export function publishedEpisodeForRequest(job, editions = []) {
+  if (manualRequest(job) || job?.intake?.trigger_type !== 'automatic_episode'
+    || job?.input?.origin?.proposed_by !== 'github_direct_worker'
+    || !['listened', 'watched'].includes(job?.input?.request?.kind)) return null;
+  // Query parameters can identify different episodes. Only fragments and a
+  // trailing slash are immaterial here; do not apply a broad topic/URL match.
+  const address = value => { const url = new URL(value); url.hash = ''; return url.href.replace(/\/$/, ''); };
+  const links = new Set((job.input.request.links || []).filter(url => /^https?:\/\//.test(url)).map(address));
+  return editions.find(edition => edition.format === 'approved_editorial'
+    && ['listened', 'watched'].includes(edition.subtype) && edition.published_at && edition.content_hash
+    && /^https?:\/\//.test(edition.source_media?.original_url || '')
+    && links.has(address(edition.source_media.original_url))) || null;
+}
+
 export const DEFAULT_EDITORIAL_MODEL = 'gpt-5.6-luna';
 export const DEFAULT_AUTHOR_ANALYSIS_MODEL = 'gpt-6-astra';
 
@@ -651,7 +668,7 @@ async function archiveUnusableEditorialAnswer(session, id, packet, error, pass, 
   return { answer_archives: archives, raw_answer_preserved: localPreserved || archives.length > 0, archive_errors: failures };
 }
 
-export async function processEditorialRequest(session, row, { knowledge, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
+export async function processEditorialRequest(session, row, { knowledge, root = ROOT, publishedEditions = null, draft = draftEditorialOutput, now = () => new Date().toISOString(), rawOutputDir = process.env.WOEK_NEWS_RAW_OUTPUT_DIR, staleClaimHours = STALE_CLAIM_HOURS, fetchImpl = fetch, excerpts = process.env.WOEK_EDITORIAL_SOURCE_EXCERPTS !== 'false',
   repairPass = process.env.WOEK_EDITORIAL_REPAIR !== 'false', env = process.env } = {}) {
   const id = row.input.job_id;
   const job = await session.store.get(id);
@@ -674,6 +691,13 @@ export async function processEditorialRequest(session, row, { knowledge, draft =
   if (attempt?.provider_called && !contractFixed) return { job_id: id, status: 'attempt_exhausted', delivered: attempt.status === 'output_delivered', attempt_status: attempt.status, attempted_at: attempt.at || null };
   const outputPath = bridgePath('20_OUTPUT_READY', `${id}.output.json`);
   if (await session.transport.metadata(outputPath) || await session.transport.metadata(bridgePath('30_ACK', `${id}.ack.json`))) return { job_id: id, status: 'already_delivered' };
+  if (!manualRequest(job) && job.intake?.trigger_type === 'automatic_episode') {
+    const editions = publishedEditions ?? JSON.parse(fs.readFileSync(path.join(root, 'data/news/personal-editorials.json'), 'utf8')).editions;
+    if (!Array.isArray(editions)) throw Error('EDITORIAL_PUBLISHED_EPISODES_INVALID');
+    const published = publishedEpisodeForRequest(job, editions);
+    if (published) return { job_id: id, status: 'already_published_episode', provider_called: false,
+      published_analysis_id: published.analysis_id, published_content_hash: published.content_hash };
+  }
   const name = `${id}.input.json`, sourcePath = bridgePath('00_INBOX', name), claimPath = bridgePath('10_CLAIMED', name);
   const ownClaim = await session.store.observation(`github-claim:${name}`);
   const foreignClaim = await session.transport.metadata(claimPath);
@@ -861,7 +885,7 @@ export async function runRedaktionsworker({ session = null, root = ROOT, knowled
       // mitnehmen. Vorher brach der ganze Lauf ab, und damit lag auch die
       // automatische Spur - anderthalb Stunden am 17.09.2026.
       let result;
-      try { result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, draft, now, fetchImpl, env }); }
+      try { result = await processEditorialRequest(live, row, { knowledge: resolvedKnowledge, root, draft, now, fetchImpl, env }); }
       catch (error) {
         const code = /^[A-Z_0-9:.-]+$/.test(error?.message || '') ? error.message : 'EDITORIAL_REQUEST_FAILED';
         result = { job_id: row.input.job_id, status: 'request_failed', error: code };
