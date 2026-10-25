@@ -24,6 +24,10 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-25T19:36:03.241Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-25T19:37:00.939Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3682,11 +3686,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/prasidentschaftswahl-in-bulgarien-begonnen-a556d6/": {
         "first_seen_at": "2026-10-25T18:51:20.473Z",
         "source_at": "2026-10-25T07:51:33.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/sturm-boelo-zehntausende-in-grossbritannien-ohne-strom-flugausfalle-in-amsterdam-3a163b/": {
+        "first_seen_at": "2026-10-25T19:37:00.939Z",
+        "source_at": "2026-10-25T13:42:55.000Z"
       }
     },
-    "last_new_at": "2026-10-25T18:51:20.473Z",
-    "checked_at": "2026-10-25T19:36:03.241Z",
-    "last_current_new_at": "2026-10-25T18:51:20.473Z"
+    "last_new_at": "2026-10-25T19:37:00.939Z",
+    "checked_at": "2026-10-25T19:37:00.939Z",
+    "last_current_new_at": "2026-10-25T19:37:00.939Z"
   },
   "recovery_attempts": [
     {
