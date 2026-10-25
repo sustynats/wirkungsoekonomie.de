@@ -169,6 +169,29 @@ test('a missing video feed queues its official podcast with free words once, wit
   assert.equal(observations.get(`github-episode-day:${now.slice(0, 10)}`).proposed, 1);
 });
 
+test('a matched video cannot requeue its already requested podcast or fetch its words again', async () => {
+  const page = 'https://episodes.example/79';
+  const show = { id: 'synthetic-show', show_name: 'Synthetic Show', kind: 'watched', youtube_channel_id: 'UCtest',
+    feed: 'https://feeds.example/video', podcast_feed: 'https://feeds.example/audio' };
+  const title = 'KI und die Zukunft der Universität mit einem Gast';
+  const feed = `<feed><entry><yt:videoId>abcdefghijk</yt:videoId><title>${title} - Synthetic Show</title><published>2026-09-15T01:00:00Z</published></entry></feed>`;
+  const podcast = `<rss><item><title>${title}</title><link>${page}</link><pubDate>2026-09-15T01:00:00Z</pubDate><itunes:duration>3600</itunes:duration><enclosure url="https://media.example/79.mp3"/><podcast:transcript url="https://media.example/79.vtt" type="text/vtt"/></item></rss>`;
+  const player = 'var ytInitialPlayerResponse = ' + JSON.stringify({ playabilityStatus: { status: 'OK' },
+    videoDetails: { videoId: 'abcdefghijk', channelId: 'UCtest', lengthSeconds: '3600' } }) + ';';
+  const fixture = fakeSession({ links: [page] });
+  const report = await proposeEpisodeCandidates({ session: fixture.session, root: '/nonexistent', now, shows: [show], env: {},
+    fetchImpl: async url => {
+      assert.ok([show.feed, show.podcast_feed, 'https://www.youtube.com/watch?v=abcdefghijk'].includes(url), 'no duplicate transcript fetch');
+      return { ok: true, text: async () => url === show.feed ? feed : url === show.podcast_feed ? podcast : player };
+    }, transcribeImpl: async () => assert.fail('no duplicate paid transcription') });
+  assert.deepEqual(report.proposed, []);
+  assert.equal(report.fresh_episodes, 0);
+  assert.equal(report.transcribed_today, 0);
+  assert.equal(fixture.jobs.length, 1);
+  assert.equal(fixture.files.size, 0);
+  assert.equal([...fixture.observations.values()].find(value => value.url === 'https://www.youtube.com/watch?v=abcdefghijk').already_requested, true);
+});
+
 test('audio billing refusals use the existing classifier; rate limits and server errors stay distinct', async () => {
   const fs = await import('node:fs'), os = await import('node:os'), path = await import('node:path');
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'woek-transcription-billing-test-'));
