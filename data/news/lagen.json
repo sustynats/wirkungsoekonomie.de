@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-25T11:00:00.000Z",
+  "updated_at": "2026-10-25T17:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-25-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-25",
+      "window_from": "2026-10-25T11:00:00.000Z",
+      "window_to": "2026-10-25T17:00:00.000Z",
+      "stand": "2026-10-25T17:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 8,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-964662102ac96893",
+          "slug": "frontstadt-oleschky-wie-die-evakuierung-funktionieren-soll-c96893",
+          "title": "Oleschky: Lokale Waffenruhe soll Evakuierung ermöglichen",
+          "state": "neu",
+          "at": "2026-10-25T16:38:05.300Z",
+          "score": 7.9391
+        },
+        {
+          "story_id": "wt-194359957b8a24c6",
+          "slug": "vergesellschaftung-linke-vorstoss-zu-investitionsschutzgesetz-rechtswidrig-8a24c6",
+          "title": "Laut stern und Tagesspiegel hält Berlins Linke Dobrindts Vorstoß für verfassungswidrig",
+          "state": "neu",
+          "at": "2026-10-25T15:48:43.114Z",
+          "score": 5.802
+        },
+        {
+          "story_id": "wt-db1ecc3e143e8245",
+          "slug": "wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245",
+          "title": "Laut Deutschlandfunk: Dobrindt legt Eckpunkte für höhere Hürden bei Vergesellschaftungen vor",
+          "state": "fortgeschrieben",
+          "at": "2026-10-25T15:47:44.034Z",
+          "score": 8.0493
+        },
+        {
+          "story_id": "wt-0bf3dd2bdaf16f37",
+          "slug": "wetter-betrieb-des-europa-parks-wegen-sturms-erneut-eingeschrankt-f16f37",
+          "title": "Laut stern: Sturm schränkt Betrieb des Europa-Parks erneut ein",
+          "state": "neu",
+          "at": "2026-10-25T14:38:41.741Z",
+          "score": 5.6075
+        },
+        {
+          "story_id": "wt-69336b076a1ac526",
+          "slug": "waffen-in-berlin-polizei-registriert-mehr-schusswaffengebrauch-in-berlin-1ac526",
+          "title": "Laut Polizei: Mehr Schusswaffenfälle in Berlin im ersten Halbjahr",
+          "state": "neu",
+          "at": "2026-10-25T14:12:22.475Z",
+          "score": 5.7341
+        },
+        {
+          "story_id": "wt-ac36dd5222426036",
+          "slug": "schaden-am-hochzeitskran-sicherung-von-hafenkran-zieht-sich-bewohner-mussen-warten-426036",
+          "title": "Laut stern: Sicherung des beschädigten „Hochzeitskrans“ verzögert sich",
+          "state": "neu",
+          "at": "2026-10-25T13:08:48.889Z",
+          "score": 9.3578
+        },
+        {
+          "story_id": "wt-675d3d2ad2ed8998",
+          "slug": "kinderkriegen-in-krisenzeiten-ed8998",
+          "title": "Studie laut ZDFheute: Kinderwunsch in Deutschland gesunken",
+          "state": "neu",
+          "at": "2026-10-25T12:12:36.490Z",
+          "score": 5.2017
+        },
+        {
+          "story_id": "wt-328d30c46a962546",
+          "slug": "investitionsschutzgesetz-bundesregierung-plant-hohe-hurden-fur-vergesellschaftungen-962546",
+          "title": "Laut Deutschlandfunk: Dobrindt plant hohe Hürden für Vergesellschaftungen",
+          "state": "neu",
+          "at": "2026-10-25T11:48:28.111Z",
+          "score": 8.4427
+        },
+        {
+          "story_id": "wt-72c57fe9c3e47d07",
+          "slug": "tansanias-inhaftierter-oppositionsfuhrer-lissu-kundigt-hungerstreik-an-e47d07",
+          "title": "Laut stern: Inhaftierter Oppositionsführer Lissu plant Hungerstreik",
+          "state": "neu",
+          "at": "2026-10-25T11:05:31.725Z",
+          "score": 9.0154
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-25-mittagslage",
       "slot": "mittagslage",
