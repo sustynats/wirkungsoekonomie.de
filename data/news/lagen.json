@@ -1,7 +1,120 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-25T05:00:00.000Z",
+  "updated_at": "2026-10-25T11:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-25-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-25",
+      "window_from": "2026-10-25T05:00:00.000Z",
+      "window_to": "2026-10-25T11:00:00.000Z",
+      "stand": "2026-10-25T11:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 11,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-db1ecc3e143e8245",
+          "slug": "wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245",
+          "title": "Geplantes Gesetz könnte Vergesellschaftungen erschweren",
+          "state": "neu",
+          "at": "2026-10-25T10:36:49.102Z",
+          "score": 7.9356
+        },
+        {
+          "story_id": "wt-40157f0da8737eaa",
+          "slug": "haftbefehl-erlassen-angriff-mit-messer-28-jahriger-lebensgefahrlich-verletzt-737eaa",
+          "title": "Laut Stern: 28-Jähriger nach Messerangriff lebensgefährlich verletzt, Haftbefehl erlassen",
+          "state": "neu",
+          "at": "2026-10-25T09:49:03.006Z",
+          "score": 5.8029
+        },
+        {
+          "story_id": "wt-c55337e9127cf93e",
+          "slug": "mit-den-hornern-attackiert-kuh-stosst-spaziergangerin-um-76-jahrige-schwer-verletzt-7cf93e",
+          "title": "Laut stern: Kuh stößt 76-Jährige um und verletzt sie schwer",
+          "state": "neu",
+          "at": "2026-10-25T09:47:54.926Z",
+          "score": 5.7998
+        },
+        {
+          "story_id": "wt-0f2240aed9295266",
+          "slug": "bundeswehr-nimmt-an-ukraine-manover-teil-kyjiws-verbundete-wollen-den-waffenstillstand-u-295266",
+          "title": "Bundeswehr beteiligt sich laut Verteidigungsministerium an Ukraine-Manöver",
+          "state": "neu",
+          "at": "2026-10-25T09:25:53.752Z",
+          "score": 5.7386
+        },
+        {
+          "story_id": "wt-c4524d61bef27ad7",
+          "slug": "musk-wirft-ukraine-verstoss-bei-starlink-nutzung-vor-f27ad7",
+          "title": "Laut tagesschau: Musk wirft Ukraine Verstoß bei Starlink-Nutzung vor",
+          "state": "neu",
+          "at": "2026-10-25T09:03:02.628Z",
+          "score": 5.6751
+        },
+        {
+          "story_id": "wt-71261ee52a9d029d",
+          "slug": "notenbanken-in-der-klemme-zwischen-inflation-schuldenkrise-und-ki-risiken-9d029d",
+          "title": "Laut manager magazin: Fed und EZB vor Zinsentscheidungen",
+          "state": "neu",
+          "at": "2026-10-25T08:16:45.401Z",
+          "score": 3.5465
+        },
+        {
+          "story_id": "wt-53f9a871782395b5",
+          "slug": "klimaschutz-was-wurde-ein-sieg-von-flavio-bolsonaro-fur-den-regenwald-bedeuten-2395b5",
+          "title": "Flávio Bolsonaro und der Amazonas: mögliche Folgen eines Wahlsiegs",
+          "state": "neu",
+          "at": "2026-10-25T07:32:54.933Z",
+          "score": 7.4248
+        },
+        {
+          "story_id": "wt-559eac731a18e618",
+          "slug": "migration-frontex-soll-zentrale-eu-abschiebeagentur-werden-18e618",
+          "title": "Laut EU-Migrationskommissar Brunner soll Frontex zentrale EU-Abschiebeagentur werden",
+          "state": "neu",
+          "at": "2026-10-25T07:13:43.798Z",
+          "score": 5.3715
+        },
+        {
+          "story_id": "wt-66966643b571496c",
+          "slug": "ukraine-news-trump-verteidigt-neue-russland-politik-71496c",
+          "title": "Laut MDR: Trump verteidigt Aussetzung von Russland-Sanktionen als Beitrag zu Verhandlungen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-25T06:48:23.903Z",
+          "score": 5.0511
+        },
+        {
+          "story_id": "wt-a88e2164221dd322",
+          "slug": "ukraine-krieg-musk-beschuldigt-kiew-starlink-missbrauchlich-genutzt-zu-haben-1dd322",
+          "title": "Laut Deutschlandfunk: Musk wirft Kiew missbräuchliche Nutzung von Starlink vor",
+          "state": "neu",
+          "at": "2026-10-25T06:24:39.351Z",
+          "score": 7.2352
+        },
+        {
+          "story_id": "wt-fc7daac742d2ca17",
+          "slug": "koalition-der-willigen-deutsche-stabsoffiziere-und-tankflugzeuge-fur-ukraine-ubung-d2ca17",
+          "title": "Verbündete planen Ukraine-Übung mit deutscher Beteiligung",
+          "state": "neu",
+          "at": "2026-10-25T06:23:32.678Z",
+          "score": 5.2321
+        },
+        {
+          "story_id": "wt-bb275c9f8adec8d7",
+          "slug": "musk-wirft-ukrainischem-militar-verstoss-gegen-starlink-nutzungsbedingungen-vor-dec8d7",
+          "title": "Laut Elon Musk: Ukraine soll Starlink für offensive Drohnenangriffe genutzt haben",
+          "state": "neu",
+          "at": "2026-10-25T06:01:48.266Z",
+          "score": 5.1717
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-25-morgenlage",
       "slot": "morgenlage",
