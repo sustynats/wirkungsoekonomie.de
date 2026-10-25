@@ -48,7 +48,7 @@ test('an automatic video of an already published podcast costs nothing and chang
   job.intake.trigger_type = 'automatic_episode';
   job.input.origin = { proposed_by: 'github_direct_worker', show_id: 'synthetic-show' };
   job.input.request.kind = 'watched';
-  job.input.request.links = ['https://www.youtube.com/watch?v=abcdefghijk', 'https://episodes.example/79?source=video'];
+  job.input.request.links = ['https://www.youtube.com/watch?v=abcdefghijk', 'https://episodes.example/79#t=30'];
   job.input.input_hash = hash(job.input.request);
   const edition = { format: 'approved_editorial', subtype: 'listened', analysis_id: 'published-test',
     content_hash: 'c'.repeat(64), published_at: now(), source_media: { original_url: 'https://episodes.example/79' } };
@@ -72,6 +72,8 @@ test('an automatic video of an already published podcast costs nothing and chang
   assert.equal(publishedEpisodeForRequest(manual, [edition]), null, 'explicit owner work remains possible');
   const next = structuredClone(job); next.input.request.links[1] = 'https://episodes.example/80';
   assert.equal(publishedEpisodeForRequest(next, [edition]), null, 'another episode must not be suppressed');
+  next.input.request.links[1] = 'https://episodes.example/79?episode=80';
+  assert.equal(publishedEpisodeForRequest(next, [edition]), null, 'episode-defining query parameters remain distinct');
   assert.equal(publishedEpisodeForRequest(job, [{ ...edition, published_at: null }]), null);
 });
 

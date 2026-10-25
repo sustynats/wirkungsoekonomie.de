@@ -29,7 +29,6 @@ import { withRequestDeadline } from './request-deadline.mjs';
 import { acquireLane } from './bridge/acquire-lane.mjs';
 import { isIP } from 'node:net';
 import { modelRates } from './budget.mjs';
-import { episodeUrlKey } from './youtube-episodes.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 export const WORKER_ACTOR = 'github_direct_worker';
@@ -64,11 +63,14 @@ export function publishedEpisodeForRequest(job, editions = []) {
   if (manualRequest(job) || job?.intake?.trigger_type !== 'automatic_episode'
     || job?.input?.origin?.proposed_by !== 'github_direct_worker'
     || !['listened', 'watched'].includes(job?.input?.request?.kind)) return null;
-  const links = new Set((job.input.request.links || []).filter(url => /^https?:\/\//.test(url)).map(episodeUrlKey));
+  // Query parameters can identify different episodes. Only fragments and a
+  // trailing slash are immaterial here; do not apply a broad topic/URL match.
+  const address = value => { const url = new URL(value); url.hash = ''; return url.href.replace(/\/$/, ''); };
+  const links = new Set((job.input.request.links || []).filter(url => /^https?:\/\//.test(url)).map(address));
   return editions.find(edition => edition.format === 'approved_editorial'
     && ['listened', 'watched'].includes(edition.subtype) && edition.published_at && edition.content_hash
     && /^https?:\/\//.test(edition.source_media?.original_url || '')
-    && links.has(episodeUrlKey(edition.source_media.original_url))) || null;
+    && links.has(address(edition.source_media.original_url))) || null;
 }
 
 export const DEFAULT_EDITORIAL_MODEL = 'gpt-5.6-luna';
