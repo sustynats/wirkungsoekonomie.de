@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-25T07:06:55.753Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-25T07:29:15.502Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,39 @@
         "democracy": {
           "magnitude": 2,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/klimaschutz-was-wurde-ein-sieg-von-flavio-bolsonaro-fur-den-regenwald-bedeuten-2395b5/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/klimaschutz-was-wurde-ein-sieg-von-flavio-bolsonaro-fur-den-regenwald-bedeuten-2395b5/",
+      "title": "Flávio Bolsonaro und der Amazonas: mögliche Folgen eines Wahlsiegs",
+      "summary": "Der Stern beschreibt Flávio Bolsonaros Pläne zur wirtschaftlichen Erschließung des Amazonas und mögliche Folgen für den Regenwald. Welche Maßnahmen, Gebiete und Umwelteffekte gemeint wären, bleibt offen.",
+      "date_published": "2026-10-25T06:31:00.000Z",
+      "date_modified": "2026-10-25T06:31:00.000Z",
+      "_woek_released_at": "2026-10-25T07:32:54.933Z",
+      "tags": [
+        "Klima",
+        "Wirtschaft",
+        "Demokratie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 3,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "negative",
           "status": "potential"
         }
       }
