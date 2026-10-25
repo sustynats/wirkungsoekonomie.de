@@ -24,6 +24,10 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-25T14:50:51.683Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-25T14:52:20.035Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3658,11 +3662,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/schaden-am-hochzeitskran-sicherung-von-hafenkran-zieht-sich-bewohner-mussen-warten-426036/": {
         "first_seen_at": "2026-10-25T13:51:22.782Z",
         "source_at": "2026-10-25T12:21:18.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/waffen-in-berlin-polizei-registriert-mehr-schusswaffengebrauch-in-berlin-1ac526/": {
+        "first_seen_at": "2026-10-25T14:52:20.035Z",
+        "source_at": "2026-10-25T13:21:56.000Z"
       }
     },
-    "last_new_at": "2026-10-25T13:51:22.782Z",
-    "checked_at": "2026-10-25T14:50:51.683Z",
-    "last_current_new_at": "2026-10-25T13:51:22.782Z"
+    "last_new_at": "2026-10-25T14:52:20.035Z",
+    "checked_at": "2026-10-25T14:52:20.035Z",
+    "last_current_new_at": "2026-10-25T14:52:20.035Z"
   },
   "recovery_attempts": [
     {
