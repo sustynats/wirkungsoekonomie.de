@@ -17,12 +17,25 @@
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-24T14:51:24.993Z",
+    "editorial-status": {
+      "firstSeen": "2026-10-25T10:36:30.020Z",
+      "active": false
+    },
+    "run": {
+      "firstSeen": "2026-10-25T10:36:30.020Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "fe1b78c65a6cc767e622cd20",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-25T10:36:30.020Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "9c39e6bbdeb9b757e928a73e",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-25T10:36:30.020Z"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3626,11 +3639,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/bundeswehr-nimmt-an-ukraine-manover-teil-kyjiws-verbundete-wollen-den-waffenstillstand-u-295266/": {
         "first_seen_at": "2026-10-25T10:21:36.057Z",
         "source_at": "2026-10-25T09:03:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/haftbefehl-erlassen-angriff-mit-messer-28-jahriger-lebensgefahrlich-verletzt-737eaa/": {
+        "first_seen_at": "2026-10-25T10:36:30.020Z",
+        "source_at": "2026-10-25T09:35:39.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mit-den-hornern-attackiert-kuh-stosst-spaziergangerin-um-76-jahrige-schwer-verletzt-7cf93e/": {
+        "first_seen_at": "2026-10-25T10:36:30.020Z",
+        "source_at": "2026-10-25T09:10:33.000Z"
       }
     },
-    "last_new_at": "2026-10-25T10:21:36.057Z",
-    "checked_at": "2026-10-25T10:21:36.057Z",
-    "last_current_new_at": "2026-10-25T10:21:36.057Z"
+    "last_new_at": "2026-10-25T10:36:30.020Z",
+    "checked_at": "2026-10-25T10:36:30.020Z",
+    "last_current_new_at": "2026-10-25T10:36:30.020Z"
   },
   "recovery_attempts": [
     {
