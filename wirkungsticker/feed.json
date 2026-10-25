@@ -1,11 +1,42 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-25T15:41:23.223Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-25T16:30:11.008Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/frontstadt-oleschky-wie-die-evakuierung-funktionieren-soll-c96893/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/frontstadt-oleschky-wie-die-evakuierung-funktionieren-soll-c96893/",
+      "title": "Oleschky: Lokale Waffenruhe soll Evakuierung ermöglichen",
+      "summary": "Für Oleschky ist eine lokale Waffenruhe mit humanitären Zielen angekündigt. Ihr praktischer Erfolg hängt von Kontrolle, Einhaltung und dem Zugang für Hilfe und Zivilisten ab.",
+      "date_published": "2026-10-25T16:03:00.000Z",
+      "date_modified": "2026-10-25T16:03:00.000Z",
+      "_woek_released_at": "2026-10-25T16:38:05.300Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/vergesellschaftung-linke-vorstoss-zu-investitionsschutzgesetz-rechtswidrig-8a24c6/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/vergesellschaftung-linke-vorstoss-zu-investitionsschutzgesetz-rechtswidrig-8a24c6/",
@@ -134,13 +165,14 @@
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/investitionsschutzgesetz-bundesregierung-plant-hohe-hurden-fur-vergesellschaftungen-962546/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/investitionsschutzgesetz-bundesregierung-plant-hohe-hurden-fur-vergesellschaftungen-962546/",
-      "title": "Bundesregierung plant hohe Hürden für Vergesellschaftungen",
-      "summary": "Die Bundesregierung plant laut vorliegenden Berichten ein Gesetz, das Vergesellschaftungen großer Wohnungsbestände erschweren könnte. Die Eckpunkte sind noch kein beschlossenes oder geltendes Recht.",
+      "title": "Laut Deutschlandfunk: Dobrindt plant hohe Hürden für Vergesellschaftungen",
+      "summary": "Die Bundesregierung plant laut vorliegenden Berichten höhere rechtliche Hürden für Vergesellschaftungen großer Wohnungsbestände. Wie verbindlich die Eckpunkte werden und welche Folgen sie für Berlin haben, ist offen.",
       "date_published": "2026-10-25T11:00:00.000Z",
       "date_modified": "2026-10-25T11:00:00.000Z",
       "_woek_released_at": "2026-10-25T11:48:28.111Z",
       "tags": [
-        "Politik"
+        "Politik",
+        "Demokratie"
       ],
       "_woek_type": "Wirkungsakte",
       "_woek_late_delivery": false,
@@ -157,7 +189,7 @@
         },
         "democracy": {
           "magnitude": 3,
-          "direction": "negative",
+          "direction": "mixed",
           "status": "potential"
         }
       }
