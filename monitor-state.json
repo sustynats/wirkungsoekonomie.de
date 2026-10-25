@@ -21,12 +21,17 @@
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
     },
-    "institute": {
-      "firstSeen": "2026-10-25T01:06:00.360Z",
-      "active": true
+    "editorial-status": {
+      "firstSeen": "2026-10-25T01:36:19.686Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "279d6b14a67a0a60bc375367",
+      "content": "✓ WÖk-Störung behoben\nInstitut\nPrüfung: 2026-10-25T01:36:19.686Z"
+    }
+  ],
   "dailyDate": "2026-10-24",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3597,7 +3602,7 @@
       }
     },
     "last_new_at": "2026-10-24T22:51:31.004Z",
-    "checked_at": "2026-10-25T01:21:06.483Z",
+    "checked_at": "2026-10-25T01:36:19.686Z",
     "last_current_new_at": "2026-10-24T22:51:31.004Z"
   },
   "recovery_attempts": [
