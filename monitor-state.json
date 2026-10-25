@@ -20,13 +20,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-25T10:50:59.804Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-25T10:50:59.804Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "57b2fa51954833bce62ba56b",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-25T11:21:09.133Z"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3638,11 +3639,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/mit-den-hornern-attackiert-kuh-stosst-spaziergangerin-um-76-jahrige-schwer-verletzt-7cf93e/": {
         "first_seen_at": "2026-10-25T10:36:30.020Z",
         "source_at": "2026-10-25T09:10:33.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245/": {
+        "first_seen_at": "2026-10-25T11:21:09.133Z",
+        "source_at": "2026-10-25T10:01:48.000Z"
       }
     },
-    "last_new_at": "2026-10-25T10:36:30.020Z",
-    "checked_at": "2026-10-25T11:06:00.477Z",
-    "last_current_new_at": "2026-10-25T10:36:30.020Z"
+    "last_new_at": "2026-10-25T11:21:09.133Z",
+    "checked_at": "2026-10-25T11:21:09.133Z",
+    "last_current_new_at": "2026-10-25T11:21:09.133Z"
   },
   "recovery_attempts": [
     {
