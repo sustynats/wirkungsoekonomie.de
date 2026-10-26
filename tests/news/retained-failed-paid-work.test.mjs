@@ -5,14 +5,15 @@ import {documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage} from '..
 test('the two confirmed paid inputs retain spending locks without exposing answers', () => {
   for (const id of ['wt-c637d82374e8e890', 'wt-2c796868270ba89b']) {
     const [attempt] = documentedFailedPaidAttempts(id);
-    assert.equal(attempt.retry_count, 1); assert.match(attempt.fingerprint, /^[a-f0-9]{64}$/);
+    const count = id === 'wt-c637d82374e8e890' ? 2 : 1;
+    assert.equal(attempt.retry_count, count); assert.match(attempt.fingerprint, /^[a-f0-9]{64}$/);
     assert.match(attempt.evidence_fingerprint, /^[a-f0-9]{64}$/);
     assert.equal(attempt.recovery.run_id, 40321851363);
     assert.equal(attempt.recovery.provider_outcome, 'completed_quality_held');
     assert.equal(attempt.recovery.publication_committed, false);
     assert.ok(!JSON.stringify(attempt).includes('answer'));
     attempt.retry_count = 0;
-    assert.equal(documentedFailedPaidAttempts(id)[0].retry_count, 1, 'callers cannot reset the retained receipt');
+    assert.equal(documentedFailedPaidAttempts(id)[0].retry_count, count, 'callers cannot reset either retained receipt');
   }
   assert.deepEqual(documentedFailedPaidAttempts('wt_20261009T210310Z_ca8c7e26149310de572a1b17'), []);
   assert.deepEqual(documentedFailedPaidAttempts('__proto__'), []);
