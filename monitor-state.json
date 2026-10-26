@@ -20,13 +20,14 @@
     "delivery-workflows": {
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-26T21:41:10.213Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "8aeda042b3610295288f4ba1",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-26T21:51:28.743Z"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3762,11 +3763,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-auf-flohmarkt-16-jahriger-offenbar-fur-weitere-anrufe-verantwortlich-a606d4/": {
         "first_seen_at": "2026-10-26T18:06:05.846Z",
         "source_at": "2026-10-26T14:11:51.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/todlicher-schusswaffenangriff-bei-paris-verdachtiger-bestreitet-rassistisches-motiv-b6d916/": {
+        "first_seen_at": "2026-10-26T21:51:28.743Z",
+        "source_at": "2026-10-26T20:51:14.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/backwarenhersteller-aryzta-schliesst-werk-in-nordhausen-b162f6/": {
+        "first_seen_at": "2026-10-26T21:51:28.743Z",
+        "source_at": "2026-10-26T18:39:45.000Z"
       }
     },
-    "last_new_at": "2026-10-26T18:06:05.846Z",
-    "checked_at": "2026-10-26T21:41:10.213Z",
-    "last_current_new_at": "2026-10-26T18:06:05.846Z"
+    "last_new_at": "2026-10-26T21:51:28.743Z",
+    "checked_at": "2026-10-26T21:51:28.743Z",
+    "last_current_new_at": "2026-10-26T21:51:28.743Z"
   },
   "recovery_attempts": [
     {
