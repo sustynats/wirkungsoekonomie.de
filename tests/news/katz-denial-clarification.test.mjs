@@ -5,6 +5,7 @@ import {applyReviewedKatzDenialClarification as apply, applyDocumentedKatzDenial
 import {storyPage} from '../../scripts/news/build.mjs';
 import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
 import {capacityReview} from './fixtures/capacity-review.mjs';
+import {assessmentBasis, persistedImpactAssessmentErrors} from '../../scripts/news/migrate-impact-assessments.mjs';
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const at = '2026-10-26T11:00:00.000Z';
@@ -30,6 +31,7 @@ function fixture() {
     versions: [{version: 1, source_summary, analysis: structuredClone(analysis), provider: 'paid-original'}],
     original_potential_assessment: structuredClone(analysis.impact_assessment), impact_assessment: structuredClone(analysis.impact_assessment),
     paid_output_marker: {opaque: 'preserve'}, ai_retry: {retry_count: 1, fingerprint: 'paid'}};
+  story.impact_assessment_basis = assessmentBasis(story);
   const reviewed = {story_id: story.story_id, version: 1, published_at: story.published_at, content_hash: story.content_hash,
     summary_sha256: hash(source_summary), ...Object.fromEntries(['analysis', 'sources', 'claims', 'versions'].map(key => [`${key}_sha256`, hash(JSON.stringify(story[key]))]))};
   return {story, reviewed};
@@ -46,13 +48,38 @@ test('only the two wrong referents change; every paid original, claim and assess
   const restored = structuredClone(r.analysis); restored.detail_summary = original.analysis.detail_summary;
   assert.deepEqual(restored, original.analysis);
   for (const key of Object.keys(original)) {
-    if (!['source_summary', 'analysis', 'current_version', 'updated_at', 'last_updated', 'versions'].includes(key)) assert.deepEqual(r[key], original[key], key);
+    if (!['source_summary', 'analysis', 'current_version', 'updated_at', 'last_updated', 'versions', 'impact_assessment_basis'].includes(key)) assert.deepEqual(r[key], original[key], key);
   }
   assert.deepEqual(r.versions[0], original.versions[0]);
   assert.equal(r.versions[1].provider, null); assert.equal(r.versions[1].model, null);
   assert.match(r.corrections[0].note, /fälschlich/); assert.match(r.corrections[0].note, /Erstfassung bleibt/);
   const repeated = apply(r, reviewed, '2026-10-27T00:00:00Z');
   assert.equal(repeated.status, 'already_applied'); assert.deepEqual(repeated.record, r);
+});
+
+test('the unchanged assessment stays valid against the corrected persisted basis', () => {
+  const {story, reviewed} = fixture(), original = structuredClone(story);
+  assert.deepEqual(persistedImpactAssessmentErrors(story), []);
+  const result = apply(story, reviewed, at); assert.equal(result.status, 'applied');
+  assert.deepEqual(persistedImpactAssessmentErrors(result.record), []);
+  assert.equal(result.record.impact_assessment_basis, assessmentBasis(result.record));
+  assert.notEqual(result.record.impact_assessment_basis, original.impact_assessment_basis);
+  assert.equal(result.record.corrections[0].previous_impact_assessment_basis, original.impact_assessment_basis);
+  assert.equal(result.record.corrections[0].impact_assessment_basis, result.record.impact_assessment_basis);
+  for (const key of ['impact_assessment', 'original_potential_assessment', 'current_potential_assessment', 'impact_history', 'impact_semantic_review', 'observed_effects']) {
+    assert.deepEqual(result.record[key], original[key], key);
+  }
+  result.record.analysis.detail_summary += ' A later unreviewed change.';
+  assert.deepEqual(persistedImpactAssessmentErrors(result.record), ['IMPACT_PERSISTED_BASIS_MISMATCH']);
+});
+
+test('a stale basis or invalid original assessment is held before the wording change', () => {
+  for (const change of [s => {s.impact_assessment_basis = 'stale';}, s => {s.impact_assessment.dimensions.human.magnitude = 99;}]) {
+    const {story, reviewed} = fixture(); change(story); const original = structuredClone(story);
+    const result = apply(story, reviewed, at);
+    assert.equal(result.status, 'held'); assert.equal(result.reason, 'CORRECTION_VALIDATION_FAILED');
+    assert.deepEqual(story, original); assert.deepEqual(result.record, original);
+  }
 });
 
 test('changed editions, sources, paid history, holds and source gates refuse the correction atomically', () => {
