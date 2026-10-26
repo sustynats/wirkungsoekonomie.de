@@ -5,6 +5,7 @@
 import {createHash} from 'node:crypto';
 import {validateAnalysis} from './lib.mjs';
 import {unchangedCapacityReview} from './unchanged-capacity-review.mjs';
+import {assessmentBasis, persistedImpactAssessmentErrors} from './migrate-impact-assessments.mjs';
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const TYPE = 'katz_denial_wording_clarification';
@@ -47,10 +48,16 @@ export function applyReviewedKatzDenialClarification(existing, reviewed, at) {
   if (existing.source_summary.split(wrongSummary).length !== 2 || existing.analysis.detail_summary?.split(wrongDetail).length !== 2) {
     return held('CORRECTION_NOT_APPLICABLE');
   }
+  const existingImpactErrors = persistedImpactAssessmentErrors(existing);
+  if (existingImpactErrors.length) return {...held('CORRECTION_VALIDATION_FAILED'), issues: existingImpactErrors};
   const record = structuredClone(existing);
   record.source_summary = record.source_summary.replace(wrongSummary, clarified);
   record.analysis.detail_summary = record.analysis.detail_summary.replace(wrongDetail, clarified);
-  const errors = validateAnalysis({...record.analysis, source_summary: record.source_summary}, record, {validateSourceSummaryNumbers: false, persisted: true});
+  // The basis covers the entire analysis, including this wording-only summary.
+  // Rebind that metadata without changing or releasing any assessment again.
+  record.impact_assessment_basis = assessmentBasis(record);
+  const errors = [...validateAnalysis({...record.analysis, source_summary: record.source_summary}, record, {validateSourceSummaryNumbers: false, persisted: true}),
+    ...persistedImpactAssessmentErrors(record)];
   if (errors.length) return {...held('CORRECTION_VALIDATION_FAILED'), issues: errors};
   record.current_version++;
   record.updated_at = record.last_updated = at;
@@ -60,6 +67,7 @@ export function applyReviewedKatzDenialClarification(existing, reviewed, at) {
     provider: null, model: null, mode: 'katz_denial_wording_clarification_no_generation',
     original_summary_sha256: reviewed.summary_sha256, method_sources: []});
   record.corrections = [...(existing.corrections || []), {at, type: TYPE, original_summary_sha256: reviewed.summary_sha256,
+    previous_impact_assessment_basis: existing.impact_assessment_basis, impact_assessment_basis: record.impact_assessment_basis,
     note: 'Die erste Fassung bezog Katz’ Zurückweisung im Nachrichtentext und im Überblick fälschlich auf die Aussage, Israel plane vor der Wahl keinen Angriff auf den Iran. Katz erklärt laut dem verlinkten Bericht gerade, dass ein solcher Angriff nicht geplant sei; zurückgewiesen wird der Bericht über einen angeblichen Führungskonflikt. Die beiden Formulierungen wurden präzisiert. Die Erstfassung bleibt im Versionsverlauf erhalten. Quellen, Claims und Wirkungsbewertung wurden nicht neu erzeugt oder unabhängig bestätigt.'}];
   record.publication_history = [...(existing.publication_history || []), {version: record.current_version,
     published_at: at, source_count: record.sources.length, change: TYPE}];
