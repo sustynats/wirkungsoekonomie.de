@@ -76,10 +76,12 @@ export async function rebuildPublication({ run = exec, env = process.env } = {})
 // Actions checks out one commit. An unbounded pull can fetch years of binary
 // publication history while holding the shared publication lane. Fetch only
 // enough history to prove the common ancestor; never rebase unrelated roots.
+// An unchanged main is already the worker commit's parent. Fetch its tip first
+// instead of downloading 64 large publication snapshots before proving that.
 export async function fetchPublicationBase(run = git) {
   const shallow = stdout(await run(["rev-parse", "--is-shallow-repository"])).trim() === "true";
   if (!shallow) { await run(["fetch", "--no-tags", "origin", "main"]); return; }
-  for (const depth of [64, 256, 1024]) {
+  for (const depth of [1, 64, 256, 1024]) {
     await run(["fetch", "--no-tags", `--depth=${depth}`, "origin", "main"]);
     try {
       const base=stdout(await run(["merge-base", "HEAD", "FETCH_HEAD"])).trim();

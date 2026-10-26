@@ -54,7 +54,16 @@ test('actual artifact rewrite maps only opted-in images, retaining suffixes and 
 
 test('the real image release registry matches the complete unchanged local originals', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(repo, 'assets/data/public-release-assets.json')));
-  assert.equal(verifyPublicReleaseImages(repo, new Map(Object.entries(manifest.assets))), 3);
+  const optedIn = [
+    'assets/img/blog/2026-08-20-deutschlands-nachhaltigkeitsarchitektur-wirkungssteuerung.png',
+    'assets/img/blog/2026-08-21-enap-woek-benchmark-fuenf-bundesvorhaben.png',
+    'assets/img/blog/2026-08-05-das-bessere-spiel.png',
+    'assets/img/blog/2026-05-21-wirkung-ist-nicht-wirkungsmanagement.png',
+    'assets/img/blog/2026-08-03-atomkraft-wetterabhaengigkeit-hinter-beton.png',
+    'assets/img/blog/kostenwahrheit-eu-vorschriften-wirkungsoekonomie.png',
+  ];
+  assert.deepEqual(Object.keys(manifest.assets).filter(key => key.startsWith('assets/img/')).sort(), optedIn.sort());
+  assert.equal(verifyPublicReleaseImages(repo, new Map(Object.entries(manifest.assets))), optedIn.length);
 });
 
 function fixture(dateien) {
