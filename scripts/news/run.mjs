@@ -48,6 +48,7 @@ import { consolidateHofheimDuplicates, retainedHofheimPaidInput } from './consol
 import { consolidateObersontheimDuplicates, retainedObersontheimPaidInput } from './consolidate-obersontheim-duplicates.mjs';
 import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from './consolidate-tabaksteuer-duplicates.mjs';
 import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './consolidate-oleschky-duplicates.mjs';
+import { consolidateUlm5Duplicates, retainedUlm5PaidInput } from './consolidate-ulm5-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
@@ -1455,6 +1456,10 @@ export async function runWirkungsticker(options = {}) {
   report.oleschky_duplicate_consolidation = oleschkyConsolidation;
   report.living_file_merges.push(...oleschkyConsolidation.changes);
   report.retired_stories += oleschkyConsolidation.changes.length;
+  const ulm5Consolidation = consolidateUlm5Duplicates(routableStories, now);
+  report.ulm5_duplicate_consolidation = ulm5Consolidation;
+  report.living_file_merges.push(...ulm5Consolidation.changes);
+  report.retired_stories += ulm5Consolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(routableStories), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1666,7 +1671,8 @@ export async function runWirkungsticker(options = {}) {
     }
     const retainedArchived = retainedSanctionsPaidInput(candidate, storyStore.stories) ? 'wt-e6f5bced9f7c773a'
       : retainedHofheimPaidInput(candidate, storyStore.stories) ? 'wt-e083b8d828fa80c8'
-      : retainedObersontheimPaidInput(candidate, storyStore.stories) ? 'wt-9909c1676a2f8602' : null;
+      : retainedObersontheimPaidInput(candidate, storyStore.stories) ? 'wt-9909c1676a2f8602'
+      : retainedUlm5PaidInput(candidate, storyStore.stories) ? 'wt-71236d6e6263c885' : null;
     if (retainedArchived) {
       (report.retained_published_source_inputs ||= []).push({ story_id: candidate.story_id,
         archived_story_id: retainedArchived, reason: 'ALREADY_PUBLISHED_SOURCE_EDITION' });
