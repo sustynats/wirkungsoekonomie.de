@@ -2,8 +2,8 @@
 import { eventCompatibility } from "./newsroom.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
-import { projectionCache } from './projection-cache.mjs';
-const subjects = projectionCache(), names = projectionCache(), visits = projectionCache();
+import { projectionCache, recordProjectionCache } from './projection-cache.mjs';
+const subjects = recordProjectionCache(), names = recordProjectionCache(), visits = recordProjectionCache();
 const documents = projectionCache(4096);
 const DAY = 86400000;
 const time = (value) => Date.parse(value || "") || 0;
@@ -32,8 +32,8 @@ export function delegationNames(item) {
 }
 
 export function diplomaticVisit(item) {
-  const key = JSON.stringify([item.title, item.source_summary, item.summary, item.sources?.[0]?.summary]);
-  return visits(key, () => deriveDiplomaticVisit(item));
+  const fields = [item.title, item.source_summary, item.summary, item.sources?.[0]?.summary];
+  return visits(item, fields, () => deriveDiplomaticVisit(item));
 }
 
 function deriveDiplomaticVisit(item) {
@@ -135,8 +135,8 @@ function electionJurisdictions(text) {
 // ingestion guard and the presentation-only case files. No country/company
 // allowlist; an ambiguous comparison must not bridge two different subjects.
 export function namedSubjects(item) {
-  const key = JSON.stringify([item.title, item.source_summary, item.summary, item.sources?.[0]?.title, item.sources?.[0]?.summary]);
-  return names(key, () => deriveNamedSubjects(item));
+  const fields = [item.title, item.source_summary, item.summary, item.sources?.[0]?.title, item.sources?.[0]?.summary];
+  return names(item, fields, () => deriveNamedSubjects(item));
 }
 
 function deriveNamedSubjects(item) {
@@ -188,8 +188,8 @@ function publicNetworkPlace(title, lead) {
 }
 
 export function fileSubject(item, { sourcePlace = false } = {}) {
-  const key = JSON.stringify([item.title, item.summary, item.source_summary, item.sources?.[0]?.summary, item.event_geography, sourcePlace]);
-  return subjects(key, () => deriveFileSubject(item, sourcePlace));
+  const fields = [item.title, item.summary, item.source_summary, item.sources?.[0]?.summary, item.event_geography, sourcePlace];
+  return subjects(item, fields, () => deriveFileSubject(item, sourcePlace));
 }
 
 function deriveFileSubject(item, sourcePlace) {
