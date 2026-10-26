@@ -23,6 +23,7 @@ import { compactEvidenceSegments, serializeEvidencePackets, expandEvidenceSegmen
 import { MEDIA_IMPACT_SCHEMA, MEDIA_PROMPT_RULES, detectMediaImpactTrigger, mediaImpactValidationErrors, mediaTriggerForAnalysis } from "./media-impact.mjs";
 import { scoreEvent, EVENT_RELEVANCE_VERSION } from './event-relevance.mjs';
 import { explicitEventPlaces } from './event-identity.mjs';
+import {withRequestDeadline} from './request-deadline.mjs';
 
 const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
@@ -355,13 +356,10 @@ export async function fetchFeed(source, policy, fetchImpl = fetch) {
   for (let redirect = 0; redirect <= Number(policy.max_redirects || 3); redirect += 1) {
     await assertSafeFeedUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
     if (mustRespectRobots(source, current, policy)) await respectRobots(current, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), Number(policy.request_timeout_ms || 18000));
-    let response;
-    try {
-      response = await fetchImpl(current, {
+    const result = await withRequestDeadline(async signal => {
+      const response = await fetchImpl(current, {
         redirect: "manual",
-        signal: controller.signal,
+        signal,
         headers: {
           Accept: source.source_type === "html_index" ? "text/html" : source.source_type.endsWith("_json")
             ? "application/json"
@@ -375,15 +373,14 @@ export async function fetchFeed(source, policy, fetchImpl = fetch) {
     if (response.status >= 300 && response.status < 400) {
       const location = response.headers.get("location");
       if (!location || redirect === Number(policy.max_redirects || 3)) throw new Error("FEED_REDIRECT_INVALID");
-      current = new URL(location, current).href;
-      continue;
+      return {redirect_url:new URL(location, current).href};
     }
     if (!response.ok) throw new Error(`FEED_HTTP_${response.status}`);
     const body = await readLimitedBody(response, Number(policy.max_feed_bytes || 1500000));
     return { body, final_url: current, etag: response.headers.get("etag"), last_modified: response.headers.get("last-modified") };
-    } finally {
-      clearTimeout(timer);
-    }
+    }, {timeoutMs:Number(policy.request_timeout_ms || 18000), code:'FEED_REQUEST_TIMEOUT'});
+    if (result.redirect_url) { current = result.redirect_url; continue; }
+    return result;
   }
   throw new Error("FEED_REDIRECT_LIMIT");
 }
@@ -430,13 +427,10 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
   for (let redirect = 0; redirect <= Number(policy.max_redirects || 3); redirect += 1) {
     await assertSafeFeedUrl(current, allowedHosts, { resolveDns: policy.resolve_dns !== false });
     if (mustRespectRobots(source, current, policy)) await respectRobots(current, policy, fetchImpl, assertSafeFeedUrl, allowedHosts);
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), Number(policy.request_timeout_ms || 18000));
-    let response;
-    try {
-      response = await fetchImpl(current, {
+    const result = await withRequestDeadline(async signal => {
+      const response = await fetchImpl(current, {
         redirect: "manual",
-        signal: controller.signal,
+        signal,
         headers: {
           Accept: "text/html, application/xhtml+xml;q=0.9, text/plain;q=0.7",
           "User-Agent": policy.user_agent,
@@ -445,8 +439,7 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
     if (response.status >= 300 && response.status < 400) {
       const location = response.headers.get("location");
       if (!location || redirect === Number(policy.max_redirects || 3)) throw new Error("ARTICLE_REDIRECT_INVALID");
-      current = new URL(location, current).href;
-      continue;
+      return {redirect_url:new URL(location, current).href};
     }
     if (!response.ok) throw new Error(`ARTICLE_HTTP_${response.status}`);
     const contentType = response.headers.get("content-type") || "";
@@ -465,9 +458,9 @@ export async function fetchPublicArticle(item, source, policy = {}, fetchImpl = 
     const body = await readLimitedBody(response, Number(policy.max_article_bytes || 2000000));
     assertPublicArticle(body);
     return { body, final_url: current };
-    } finally {
-      clearTimeout(timer);
-    }
+    }, {timeoutMs:Number(policy.request_timeout_ms || 18000), code:'ARTICLE_REQUEST_TIMEOUT'});
+    if (result.redirect_url) { current = result.redirect_url; continue; }
+    return result;
   }
   throw new Error("ARTICLE_REDIRECT_LIMIT");
 }
