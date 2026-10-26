@@ -1,7 +1,125 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-25T17:00:00.000Z",
+  "updated_at": "2026-10-26T05:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-26-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-26",
+      "window_from": "2026-10-25T17:00:00.000Z",
+      "window_to": "2026-10-26T05:00:00.000Z",
+      "stand": "2026-10-26T05:00:00.000Z",
+      "headline": "Das sind die 12 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 12,
+        "neu": 8,
+        "fortgeschrieben": 4
+      },
+      "entries": [
+        {
+          "story_id": "wt-77ef9adb7d212b7c",
+          "slug": "vereinigte-arabische-emirate-strande-nahe-dubai-nach-olverschmutzung-offenbar-infolge-de-212b7c",
+          "title": "Laut Deutschlandfunk: Strände nahe Dubai nach Ölverschmutzung geschlossen",
+          "state": "neu",
+          "at": "2026-10-26T04:51:15.430Z",
+          "score": 7.9879
+        },
+        {
+          "story_id": "wt-9cd20e27ff03b0fd",
+          "slug": "cold-case-vor-dem-abschluss-gewalttat-an-madchen-vor-fast-33-jahren-urteil-erwartet-03b0fd",
+          "title": "Cold Case vor dem Abschluss: Urteil nach fast 33 Jahren erwartet",
+          "state": "neu",
+          "at": "2026-10-26T03:31:43.897Z",
+          "score": 7.8774
+        },
+        {
+          "story_id": "wt-7192c1b8d6aab2a4",
+          "slug": "brasilien-lula-gewinnt-prasidentschaftswahl-gegen-flavio-bolsonaro-knapp-aab2a4",
+          "title": "Laut DER SPIEGEL: Lula gewinnt Brasiliens Präsidentschaftswahl knapp",
+          "state": "neu",
+          "at": "2026-10-26T02:18:54.661Z",
+          "score": 7.7763
+        },
+        {
+          "story_id": "wt-db1ecc3e143e8245",
+          "slug": "wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245",
+          "title": "Laut Deutschlandfunk: Dobrindt legt Eckpunkte für höhere Hürden bei Vergesellschaftungen vor",
+          "state": "fortgeschrieben",
+          "at": "2026-10-26T00:05:59.692Z",
+          "score": 5.8417
+        },
+        {
+          "story_id": "wt-f8dc30e634d24a7a",
+          "slug": "huthi-anschlag-aufnahmen-zeigen-gewaltige-explosion-in-flughafen-von-riad-d24a7a",
+          "title": "Laut stern: Aufnahmen zeigen Explosion am Flughafen von Riad",
+          "state": "fortgeschrieben",
+          "at": "2026-10-25T21:48:08.088Z",
+          "score": 9.1502
+        },
+        {
+          "story_id": "wt-6cca6ba233753ac1",
+          "slug": "eugh-starkt-ikea-im-markenrechtsstreit-gegen-rechte-partei-aus-belgien-753ac1",
+          "title": "Laut manager magazin stärkt EuGH Ikea im Markenstreit mit belgischer rechter Partei",
+          "state": "fortgeschrieben",
+          "at": "2026-10-25T21:47:18.752Z",
+          "score": 5.149
+        },
+        {
+          "story_id": "wt-311db35547bf9443",
+          "slug": "ukraine-krieg-selenskyj-hofft-auf-fortschritte-bei-verhandlungen-bf9443",
+          "title": "Neue Friedensgespräche im November: Selenskyj erwartet Fortschritte",
+          "state": "neu",
+          "at": "2026-10-25T21:26:29.355Z",
+          "score": 5.3701
+        },
+        {
+          "story_id": "wt-5de1ced4cbdf439f",
+          "slug": "sachsen-anhalt-wie-das-wahlergebnis-den-alltag-bestimmt-df439f",
+          "title": "Sachsen-Anhalt nach der Wahl: Unsicherheit prägt den Alltag",
+          "state": "neu",
+          "at": "2026-10-25T20:41:14.169Z",
+          "score": 7.3073
+        },
+        {
+          "story_id": "wt-0f33c63f453a163b",
+          "slug": "sturm-boelo-zehntausende-in-grossbritannien-ohne-strom-flugausfalle-in-amsterdam-3a163b",
+          "title": "Nach Berichten: Sturm führt in Großbritannien zu Stromausfällen und Flugausfällen",
+          "state": "neu",
+          "at": "2026-10-25T18:56:26.421Z",
+          "score": 5.1617
+        },
+        {
+          "story_id": "wt-1b4838ff78a556d6",
+          "slug": "prasidentschaftswahl-in-bulgarien-begonnen-a556d6",
+          "title": "Laut stern hat die Präsidentschaftswahl in Bulgarien begonnen",
+          "state": "neu",
+          "at": "2026-10-25T18:15:00.650Z",
+          "score": 7.1042
+        },
+        {
+          "story_id": "wt-349fbfa230412f50",
+          "slug": "rassistischer-angriff-in-pariser-vorstadt-psychisch-kranker-tater-stand-unter-drogen-412f50",
+          "title": "Toter und fünf Verletzte nach Angriff in Pariser Vorstädten – Hintergründe teils offen",
+          "state": "neu",
+          "at": "2026-10-25T18:13:53.234Z",
+          "score": 9.1026
+        },
+        {
+          "story_id": "wt-328d30c46a962546",
+          "slug": "investitionsschutzgesetz-bundesregierung-plant-hohe-hurden-fur-vergesellschaftungen-962546",
+          "title": "Laut Deutschlandfunk: Dobrindt plant hohe Hürden für Vergesellschaftungen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-25T17:51:05.712Z",
+          "score": 4.821
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-26T05:09:30.578Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-25-abendlage",
       "slot": "abendlage",
@@ -5698,55 +5816,6 @@
           "state": "neu",
           "at": "2026-09-26T05:13:37.826Z",
           "score": 5.2045
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-26-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-26",
-      "window_from": "2026-09-25T16:00:00.000Z",
-      "window_to": "2026-09-26T04:00:00.000Z",
-      "stand": "2026-09-26T04:00:00.000Z",
-      "headline": "Das sind die 4 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 4,
-        "neu": 3,
-        "fortgeschrieben": 1
-      },
-      "entries": [
-        {
-          "story_id": "wt-31cd32a138d4d77d",
-          "slug": "detonation-weit-zu-horen-gefahrgut-transporter-explodiert-auf-a1-d4d77d",
-          "title": "Gefahrgut-Transporter explodiert auf A1 – niemand verletzt",
-          "state": "neu",
-          "at": "2026-09-25T20:02:36.981Z",
-          "score": 9.337
-        },
-        {
-          "story_id": "wt-6cce7ef135ca04b4",
-          "slug": "funf-vermisste-nach-gebaudeexplosion-nahe-akropolis-in-athen-ca04b4",
-          "title": "Gebäudeexplosion nahe Akropolis: Berichte nennen fünf oder sechs Vermisste",
-          "state": "neu",
-          "at": "2026-09-25T19:17:34.942Z",
-          "score": 3.2744
-        },
-        {
-          "story_id": "wt-ff0d970ac3d3793b",
-          "slug": "schusse-auf-restaurant-in-bad-godesberg-d3793b",
-          "title": "Laut WDR: Schüsse treffen Restaurant in Bad Godesberg",
-          "state": "neu",
-          "at": "2026-09-25T18:09:43.216Z",
-          "score": 5.1802
-        },
-        {
-          "story_id": "wt-1783a4db8d17924b",
-          "slug": "evakuierung-gasleck-in-greiz-wohngebiet-weitraumig-abgesperrt-17924b",
-          "title": "Laut Stern: Nach Gasgeruch werden 50 Anwohner in Greiz evakuiert",
-          "state": "fortgeschrieben",
-          "at": "2026-09-25T17:00:18.714Z",
-          "score": 5.3338
         }
       ]
     }
