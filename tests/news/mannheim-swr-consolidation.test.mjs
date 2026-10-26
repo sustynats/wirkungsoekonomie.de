@@ -5,6 +5,7 @@ import { clusterItems } from '../../scripts/news/lib.mjs';
 import { runWirkungsticker } from '../../scripts/news/run.mjs';
 import { retiredStoryPage, storyPage } from '../../scripts/news/build.mjs';
 import { readRepositoryJson } from '../../scripts/news/newsroom-store.mjs';
+import {capacityReview} from './fixtures/capacity-review.mjs';
 
 const at = '2026-10-26T10:30:00.000Z';
 const canonicalId = 'wt-9a186192b81f5883', duplicateId = 'wt-aab7a43e50d1d749';
@@ -128,4 +129,12 @@ test('the normal serial runner applies and repeats the repair without a provider
   assert.equal(first.mannheim_swr_duplicate_consolidation.status, 'applied'); assert.equal(first.retired_stories, 1); assert.equal(first.public_changed, true);
   const second = await runWirkungsticker({ ...options, storyStore: captured.storyStore, state: captured.state });
   assert.equal(second.mannheim_swr_duplicate_consolidation.status, 'already_applied'); assert.equal(second.retired_stories, 0); assert.equal(calls, 0);
+});
+
+test('a later unchanged capacity review is preserved and never marked as assessed by the SWR routing fix', () => {
+  const pair = fixture(); pair.forEach(story => {story.pending_update = capacityReview(story, at);});
+  const before = structuredClone(pair);
+  assert.equal(consolidate(pair, at).status, 'applied');
+  pair.forEach((story, i) => {assert.deepEqual(story.pending_update, before[i].pending_update); assert.deepEqual(story.versions, before[i].versions);});
+  assert.equal(retained({story_id: canonicalId, existing_story: pair[0], sources: pair[0].sources}, pair), false, 'queued assessments keep the normal gates');
 });

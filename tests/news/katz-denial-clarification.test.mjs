@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {applyReviewedKatzDenialClarification as apply, applyDocumentedKatzDenialClarification} from '../../scripts/news/clarify-katz-denial.mjs';
 import {storyPage} from '../../scripts/news/build.mjs';
 import {syntheticPotentialAssessment} from './fixtures/impact21.mjs';
+import {capacityReview} from './fixtures/capacity-review.mjs';
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const at = '2026-10-26T11:00:00.000Z';
@@ -79,4 +80,13 @@ test('the rendered correction is visible and the first version remains in the re
   const html = storyPage(record);
   assert.match(html, /Korrektur vom/); assert.match(html, /fälschlich/);
   assert.match(html, /katz|Katz/); assert.match(html, /Version 1/); assert.match(html, /Version 2/);
+});
+
+test('the local wording correction leaves an unchanged capacity review and paid assessment untouched', () => {
+  const {story, reviewed} = fixture(); story.pending_update = capacityReview(story, at);
+  const before = structuredClone(story);
+  const result = apply(story, reviewed, at); assert.equal(result.status, 'applied');
+  assert.deepEqual(result.record.pending_update, before.pending_update);
+  assert.deepEqual(result.record.impact_assessment, before.impact_assessment);
+  assert.deepEqual(result.record.versions[0], before.versions[0]);
 });

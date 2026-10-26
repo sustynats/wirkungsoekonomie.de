@@ -4,6 +4,7 @@
 // No sources, claims, impact assessments or paid originals are replaced.
 import {createHash} from 'node:crypto';
 import {validateAnalysis} from './lib.mjs';
+import {unchangedCapacityReview} from './unchanged-capacity-review.mjs';
 
 const hash = value => createHash('sha256').update(value).digest('hex');
 const TYPE = 'katz_denial_wording_clarification';
@@ -29,7 +30,8 @@ export function applyReviewedKatzDenialClarification(existing, reviewed, at) {
   }
   if (!Number.isFinite(Date.parse(at)) || Date.parse(at) < Date.parse(existing.updated_at)) return held('CORRECTION_DATE_INVALID');
   if (!existing.published || existing.listed === false || existing.retirement || existing.manual_only || existing.editorial_approval_hash
-    || existing.provider_request_hold != null || existing.pending_update != null || existing.review_checkpoint != null
+    || existing.provider_request_hold != null || existing.review_checkpoint != null
+    || (existing.pending_update != null && !unchangedCapacityReview(existing, at))
     || existing.source_integrity?.status !== 'verified' || existing.source_integrity.publication_status !== 'eligible'
     || !Array.isArray(existing.source_integrity.issue_codes) || existing.source_integrity.issue_codes.length
     || !Array.isArray(existing.source_integrity.warning_codes) || existing.source_integrity.warning_codes.length
