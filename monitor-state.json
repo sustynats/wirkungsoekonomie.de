@@ -23,10 +23,15 @@
     },
     "editorial-coverage": {
       "firstSeen": "2026-10-26T22:21:15.066Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "11a723b2bc0197cb9b498b2f",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 5 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-26T22:21:15.066Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3781,7 +3786,7 @@
       }
     },
     "last_new_at": "2026-10-26T22:21:15.066Z",
-    "checked_at": "2026-10-26T22:21:15.066Z",
+    "checked_at": "2026-10-26T22:36:25.523Z",
     "last_current_new_at": "2026-10-26T22:21:15.066Z"
   },
   "recovery_attempts": [
