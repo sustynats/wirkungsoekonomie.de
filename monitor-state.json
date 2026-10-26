@@ -24,13 +24,14 @@
     "run": {
       "firstSeen": "2026-10-26T13:05:53.602Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-26T14:21:10.578Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "7d35a4c4b61ca2d16168af11",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-26T15:06:45.386Z"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3754,11 +3755,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nach-schussen-in-farmsen-berne-polizei-hat-neue-spur-6bf68b/": {
         "first_seen_at": "2026-10-26T12:21:18.738Z",
         "source_at": "2026-10-26T11:19:35.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-bochum-ein-mann-ist-tot-08053c/": {
+        "first_seen_at": "2026-10-26T15:06:45.386Z",
+        "source_at": "2026-10-26T12:39:48.000Z"
       }
     },
-    "last_new_at": "2026-10-26T12:21:18.738Z",
-    "checked_at": "2026-10-26T14:51:41.643Z",
-    "last_current_new_at": "2026-10-26T12:21:18.738Z"
+    "last_new_at": "2026-10-26T15:06:45.386Z",
+    "checked_at": "2026-10-26T15:06:45.386Z",
+    "last_current_new_at": "2026-10-26T15:06:45.386Z"
   },
   "recovery_attempts": [
     {
