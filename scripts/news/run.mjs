@@ -1111,7 +1111,7 @@ function governanceHoldFor(error, now) {
 
 export function isRetryableFeedError(error) {
   const message = error instanceof Error ? error.message : String(error);
-  return /fetch failed|network|socket|timed?\s*out|abort|ECONNRESET|EAI_AGAIN|FEED_HTTP_(?:408|425|429|5\d\d)/i.test(message);
+  return /fetch failed|network|socket|timed?\s*out|abort|ECONNRESET|EAI_AGAIN|FEED_REQUEST_TIMEOUT|FEED_HTTP_(?:408|425|429|5\d\d)/i.test(message);
 }
 
 export async function fetchFeedWithRetry(source, policy, fetchImpl = fetchFeed, options = {}) {
@@ -1246,9 +1246,15 @@ export async function runWirkungsticker(options = {}) {
     editorial_status: "running",
   };
   const discoveryStarted = performance.now();
+  const importCheckpoint = (stage, counts = {}) => {
+    if (mode !== 'api' || options.dryRun || process.env.GITHUB_ACTIONS !== 'true') return;
+    console.error(JSON.stringify({news_import_progress:{stage, run_id:report.run_id, at:new Date().toISOString(),
+      elapsed_ms:Math.round(performance.now()-discoveryStarted), ...counts}}));
+  };
   const discoveryCheckpoint = async (stage, counts = {}) => {
-    if (!bridge || options.dryRun || bridgePhase === 'import') return;
+    importCheckpoint(stage, counts);
     const progress = { stage, run_id: report.run_id, at: new Date().toISOString(), elapsed_ms: Math.round(performance.now() - discoveryStarted), ...counts };
+    if (!bridge || options.dryRun || bridgePhase === 'import') return;
     await bridge.store.observe('discovery-progress', progress);
     console.error(JSON.stringify({ discovery_progress: progress }));
   };
@@ -1270,12 +1276,14 @@ export async function runWirkungsticker(options = {}) {
   const fetchResults = await mapLimit(dueSources, Number(process.env.WOEK_NEWS_FETCH_CONCURRENCY || 3), async (source) => fetchDiscoverySource({
     store: bridge && !options.dryRun && bridgePhase !== 'import' ? bridge.store : null,
     source, now, fetchSource: async cached => {
+    importCheckpoint('source_request_started', {source_id:source.source_id});
     const fetchResult = await fetchFeedWithRetry(
       { ...datedSource(source, now), etag: cached?.fetched.etag || state.source_status[source.source_id]?.etag, last_modified: cached?.fetched.last_modified || state.source_status[source.source_id]?.last_modified, max_items: source.max_items || registry.policy.max_items_per_source },
       registry.policy,
       options.fetchFeedImpl || fetchFeed,
       { delayImpl: options.fetchRetryDelayImpl },
     );
+    importCheckpoint('source_request_completed', {source_id:source.source_id,attempts:fetchResult.attempts});
     const { fetched } = fetchResult;
     const items = fetched.not_modified ? [] : parseFeed(fetched.body, { ...source, max_items: source.max_items || registry.policy.max_items_per_source })
       .map((item) => annotateSourceItem(item, source, now))
@@ -1885,6 +1893,7 @@ export async function runWirkungsticker(options = {}) {
   }
 
   const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
+  importCheckpoint('verification_selected', {selected:selected.length, ai_enabled:aiEnabled});
   if (selected.length && aiEnabled) {
     assertAutomaticImpactTransport(typeof options.callAiImpl === 'function');
     // Direktbetrieb: bis zu vier Aufrufe je Lauf mit je bis zu sechs Minuten.
@@ -2385,11 +2394,13 @@ export async function runWirkungsticker(options = {}) {
   report.cost_monitoring = operatingCostSummary(usage, state.cost_monitoring_started_at, state.budget_fx, report.completed_at);
 
   if (!options.dryRun) {
+    importCheckpoint('persisting', {ai_calls:report.ai_calls,published:report.published_stories,updated:report.updated_stories});
     writeJson(files.state, state);
     writeJson(files.stories, storyStore);
     writeJson(files.usage, usage);
     writeJson(files.report, report);
     writeJson(files.newsroom, newsroom);
+    importCheckpoint('persisted', {ai_calls:report.ai_calls,published:report.published_stories,updated:report.updated_stories});
     if (bridge?.editorialEnabled && bridgePhase !== 'discovery' && fs.existsSync(path.join(ROOT, 'data/news/editorial-analyses.json'))) {
       report.bridge_editorial_results = await (await import('./bridge/editorial.mjs')).importEditorialJobs(bridge, ROOT, now);
       if (report.bridge_editorial_results.some(r => r.changed)) report.public_changed = true;
