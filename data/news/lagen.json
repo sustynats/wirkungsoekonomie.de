@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-26T11:00:00.000Z",
+  "updated_at": "2026-10-26T17:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-26-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-26",
+      "window_from": "2026-10-26T11:00:00.000Z",
+      "window_to": "2026-10-26T17:00:00.000Z",
+      "stand": "2026-10-26T17:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 5,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-1f89a8507cb2de84",
+          "slug": "bergneustadt-schusse-auf-63-jahrigen-beim-gassigehen-b2de84",
+          "title": "Laut WDR: 63-Jähriger in Bergneustadt beim Gassigehen angeschossen",
+          "state": "neu",
+          "at": "2026-10-26T16:43:18.405Z",
+          "score": 10
+        },
+        {
+          "story_id": "wt-44d56f5975c5ef6e",
+          "slug": "herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e",
+          "title": "Herbstferien: Mehrere Straßen- und Bahnverbindungen in NRW wegen Bauarbeiten eingeschränkt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-26T16:42:24.404Z",
+          "score": 5.7011
+        },
+        {
+          "story_id": "wt-45167cc62da606d4",
+          "slug": "bombendrohung-auf-flohmarkt-16-jahriger-offenbar-fur-weitere-anrufe-verantwortlich-a606d4",
+          "title": "Laut Polizei und Staatsanwaltschaft: 16-Jähriger mit weiteren Bombendrohungs-Anrufen in Verbindung gebracht",
+          "state": "neu",
+          "at": "2026-10-26T14:51:10.996Z",
+          "score": 5.6422
+        },
+        {
+          "story_id": "wt-537ab218dc45ff9c",
+          "slug": "nahost-katz-israel-plant-vor-der-wahl-keinen-angriff-auf-den-iran-45ff9c",
+          "title": "Laut Verteidigungsminister Katz plant Israel vor der Wahl keinen Angriff auf den Iran",
+          "state": "fortgeschrieben",
+          "at": "2026-10-26T13:26:13.041Z",
+          "score": 5.1562
+        },
+        {
+          "story_id": "wt-1725f2e46708053c",
+          "slug": "explosion-in-bochum-ein-mann-ist-tot-08053c",
+          "title": "Explosion in Bochum: Laut Polizei wurden dort Drogen hergestellt",
+          "state": "neu",
+          "at": "2026-10-26T13:04:00.633Z",
+          "score": 7.3445
+        },
+        {
+          "story_id": "wt-e1a975bf916bf68b",
+          "slug": "nach-schussen-in-farmsen-berne-polizei-hat-neue-spur-6bf68b",
+          "title": "Neue Spur nach Schüssen in Farmsen-Berne",
+          "state": "neu",
+          "at": "2026-10-26T11:47:11.427Z",
+          "score": 5.1311
+        },
+        {
+          "story_id": "wt-50a7c7eea0fd9410",
+          "slug": "backwarenhersteller-hunderte-betroffen-grossbacker-aryzta-schliesst-zwei-werke-fd9410",
+          "title": "Laut Stern: Aryzta schließt in Deutschland zwei Werke",
+          "state": "neu",
+          "at": "2026-10-26T11:16:41.333Z",
+          "score": 5.0464
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-26-mittagslage",
       "slot": "mittagslage",
@@ -5706,95 +5779,6 @@
           "state": "neu",
           "at": "2026-09-26T16:44:48.541Z",
           "score": 10
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-26-abendlage",
-      "slot": "abendlage",
-      "label": "Abendlage",
-      "date": "2026-09-26",
-      "window_from": "2026-09-26T10:00:00.000Z",
-      "window_to": "2026-09-26T16:00:00.000Z",
-      "stand": "2026-09-26T16:00:00.000Z",
-      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 9,
-        "neu": 5,
-        "fortgeschrieben": 4
-      },
-      "entries": [
-        {
-          "story_id": "wt-17a8f50307926f08",
-          "slug": "bomben-sprengung-am-rheinufer-in-bornheim-hersel-926f08",
-          "title": "Weltkriegsbombe im Rhein gefunden – etwa 500 Anwohner betroffen",
-          "state": "neu",
-          "at": "2026-09-26T15:29:04.689Z",
-          "score": 9.9141
-        },
-        {
-          "story_id": "wt-37f7dd9252599acf",
-          "slug": "offentliche-fahndung-mit-fotos-15-jahriger-getotet-verdachtige-manner-stellen-sich-599acf",
-          "title": "15-Jähriger im Hochsauerland getötet: Zwei gesuchte Männer stellen sich",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T14:33:07.713Z",
-          "score": 5.5087
-        },
-        {
-          "story_id": "wt-e6c76316a52244a8",
-          "slug": "angriff-tote-und-verletzte-nach-explosion-in-pakistan-2244a8",
-          "title": "Explosion an Polizeikontrollposten erschüttert Grenzgebiet zwischen Pakistan und Afghanistan",
-          "state": "neu",
-          "at": "2026-09-26T14:13:59.957Z",
-          "score": 9.7056
-        },
-        {
-          "story_id": "wt-d4a15dc3205d5150",
-          "slug": "unfalle-sechs-tote-nach-hausexplosion-in-athen-5d5150",
-          "title": "Laut Feuerwehr: Sechs Leichen nach Hausexplosion in Athen geborgen",
-          "state": "neu",
-          "at": "2026-09-26T13:00:59.561Z",
-          "score": 9.5028
-        },
-        {
-          "story_id": "wt-4ab54dd84b4c8ff0",
-          "slug": "nach-explosion-in-athen-leichen-von-zwei-us-touristen-aus-trummern-geborgen-4c8ff0",
-          "title": "Laut stern: Zwei US-Touristen nach Explosion in Athen aus Trümmern geborgen",
-          "state": "neu",
-          "at": "2026-09-26T11:58:54.839Z",
-          "score": 9.7096
-        },
-        {
-          "story_id": "wt-a7678f5793431a52",
-          "slug": "waffen-festnahme-nach-schussen-mit-schreckschusswaffe-in-merseburg-431a52",
-          "title": "Laut stern: Festnahme nach Schüssen mit Schreckschusswaffe in Merseburg",
-          "state": "neu",
-          "at": "2026-09-26T11:41:45.072Z",
-          "score": 3.2826
-        },
-        {
-          "story_id": "wt-73b3b73c6285aa6d",
-          "slug": "polizeieinsatz-schusse-auf-kolner-pizzeria-und-wohnung-85aa6d",
-          "title": "Laut stern: Schüsse treffen Kölner Pizzeria und Wohnung",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T10:51:35.754Z",
-          "score": 2.8933
-        },
-        {
-          "story_id": "wt-dc78e52bf1c1afb9",
-          "slug": "mindestens-drei-tote-bei-angriff-an-schule-c1afb9",
-          "title": "Mindestens drei Tote bei Schüssen an Schule auf den Philippinen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T10:37:32.692Z",
-          "score": 7.3543
-        },
-        {
-          "story_id": "wt-fbeee8eda9c20888",
-          "slug": "israel-gaza-krieg-warnung-vor-hamas-angriff-bericht-erhoht-druck-auf-netanyahu-c20888",
-          "title": "Laut DER SPIEGEL: Recherche stützt Bericht über Warnungen vor Hamas-Invasion",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T10:35:41.932Z",
-          "score": 4.8492
         }
       ]
     }
