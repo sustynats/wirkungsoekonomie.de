@@ -25,12 +25,17 @@
       "firstSeen": "2026-10-26T22:21:15.066Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-26T23:51:42.784Z",
-      "active": false
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-26T23:57:41.153Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5a594353a64be3f7bb632382",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-26T23:57:41.153Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3789,7 +3794,7 @@
       }
     },
     "last_new_at": "2026-10-26T23:21:04.327Z",
-    "checked_at": "2026-10-26T23:51:42.784Z",
+    "checked_at": "2026-10-26T23:57:41.153Z",
     "last_current_new_at": "2026-10-26T23:21:04.327Z"
   },
   "recovery_attempts": [
