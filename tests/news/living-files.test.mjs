@@ -492,6 +492,40 @@ test("inflected closure wording alone is not a concrete common object", () => {
   assert.deepEqual(relatedStories(bridge, [bridge, museum]), []);
 });
 
+test("attributed headlines need a shared subject beyond their publisher introduction", () => {
+  for (const [prefix, publisher] of [
+    ["Nach Angaben des Deutschlandfunks:", "Deutschlandfunk"],
+    ["Nach Informationen des Hamburger Abendblatts:", "Hamburger Abendblatt"],
+    ["Laut Berliner Morgenpost:", "Berliner Morgenpost"],
+  ]) {
+    const sweden = story("sweden", `${prefix} Regierungsbildung in Schweden erneut gescheitert`, {
+      source_summary: `${publisher} berichtet über die Regierungsbildung in Schweden und die fehlende Mehrheit.`,
+    });
+    const majority = story("majority", "Regierungsbildung in Schweden: Parteien suchen eine Mehrheit", {
+      source_summary: "Die Parteien in Schweden beraten über eine Mehrheit für die Regierungsbildung.",
+    });
+    const unrelated = story("insolvency", `${prefix} Getty Images beantragt Insolvenz`, {
+      source_summary: `${publisher} berichtet über den Insolvenzantrag des Bildanbieters Getty Images.`,
+    });
+    const corpus = [sweden, majority, unrelated,
+      ...Array.from({ length: 20 }, (_, i) => story(`other-${i}`, `Unabhängiges Ereignis ${i}`))];
+    const before = structuredClone(corpus);
+    assert.deepEqual(relatedStories(sweden, corpus).map(({ story }) => story.story_id), ["majority"], prefix);
+    assert.doesNotMatch(renderRelatedStories(sweden, corpus), /Getty Images/);
+    assert.deepEqual(corpus, before, "display matching must preserve attributed titles, sources and histories");
+  }
+});
+
+test("a broadcaster remains a concrete subject when it is the news actor", () => {
+  const app = story("app", "Deutschlandfunk modernisiert Nachrichten-App", {
+    source_summary: "Deutschlandfunk modernisiert die Nachrichten-App für seine Hörerschaft.",
+  });
+  const release = story("release", "Deutschlandfunk modernisiert Nachrichten-App für Smartphones", {
+    source_summary: "Die Nachrichten-App des Deutschlandfunks erhält neue Funktionen.",
+  });
+  assert.deepEqual(relatedStories(app, [app, release]).map(({ story }) => story.story_id), ["release"]);
+});
+
 test("headless runs consolidate before AI and never retry a retired duplicate", async () => {
   const registrySource = { source_id: "test", publisher_id: "test", name: "Test", url: "https://example.org/", feed_url: "https://example.org/rss", enabled: true, source_type: "official_rss", primary_source: true, access: { status: "public", article: "metadata_only", cost_usd: 0 }, frequency_class: "high_frequency" };
   const canonical = structuredClone(dormagen);

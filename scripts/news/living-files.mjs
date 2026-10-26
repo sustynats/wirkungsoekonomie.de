@@ -411,7 +411,10 @@ const terms = (text) => unique((normal(text).match(/[a-z0-9]{4,}/g) || []).filte
 // Closure wording describes a status, not a shared concrete object. Keep this
 // display-only filter separate from terms(), which also serves deduplication.
 const relatedTerms = (text) => terms(text).filter((word) => !/^(?:vorubergehend|gesperrt|sperrung|sicherheitsgrund)/.test(word));
-const relationText = (story) => `${story.title || ""} ${String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 450)}`;
+// Attribution names the evidence source, not a shared subject. Strip only a
+// leading colon-delimited qualifier for display matching, never stored titles.
+const relatedHeadline = (text) => String(text || "").replace(/^\s*(?:laut|nach\s+(?:angaben|informationen|darstellung))\s+[^:\n]{1,180}:\s*/iu, "");
+const relationText = (story) => `${relatedHeadline(story.title)} ${String(story.source_summary || "").split(/\n\s*\n/)[0].slice(0, 450)}`;
 
 export function relatedStories(story, stories, limit = 5) {
   const active = stories.filter((item) => item.published && item.analysis && item.listed !== false && !isMerged(item));
@@ -423,7 +426,7 @@ export function relatedStories(story, stories, limit = 5) {
     const topics = topicKeys(item);
     const sharedTopic = leftTopics.find(([key]) => topics.some(([other]) => key === other));
     const shared = relatedTerms(relationText(item)).filter((word) => left.includes(word) && frequency.get(word) <= Math.max(3, active.length * 0.2));
-    const titleShared = relatedTerms(item.title).filter((word) => relatedTerms(story.title).includes(word) && shared.includes(word));
+    const titleShared = relatedTerms(relatedHeadline(item.title)).filter((word) => relatedTerms(relatedHeadline(story.title)).includes(word) && shared.includes(word));
     if (!sharedTopic && !(shared.length >= 3 && titleShared.length >= 2)) return [];
     return [{ story: item, reason: sharedTopic?.[1] || "Gemeinsamer konkreter Gegenstand", score: (sharedTopic ? 10 : 0) + Math.min(6, shared.length) }];
   }).sort((a, b) => b.score - a.score || time(b.story.last_updated) - time(a.story.last_updated) || a.story.story_id.localeCompare(b.story.story_id)).slice(0, Math.max(0, Math.min(5, limit)));
