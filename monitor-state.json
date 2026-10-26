@@ -16,9 +16,22 @@
     "queue": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-26T07:32:23.010Z",
+      "active": false
+    },
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-26T07:32:23.010Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "3555f8cd99bf83f2fb7ed5da",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-26T07:32:23.010Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3706,11 +3719,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/regierungsbildung-in-berlin-schuster-nehme-linke-abkehr-von-antisemitismus-nicht-ab-202e3f/": {
         "first_seen_at": "2026-10-26T07:05:55.649Z",
         "source_at": "2026-10-26T06:00:08.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/kriminalpolizei-ermittelt-explosion-in-mannheimer-cafe-angriff-mit-sprengkorper-fee0cf/": {
+        "first_seen_at": "2026-10-26T07:32:23.010Z",
+        "source_at": "2026-10-26T06:29:29.000Z"
       }
     },
-    "last_new_at": "2026-10-26T07:05:55.649Z",
-    "checked_at": "2026-10-26T07:20:54.359Z",
-    "last_current_new_at": "2026-10-26T07:05:55.649Z"
+    "last_new_at": "2026-10-26T07:32:23.010Z",
+    "checked_at": "2026-10-26T07:32:23.010Z",
+    "last_current_new_at": "2026-10-26T07:32:23.010Z"
   },
   "recovery_attempts": [
     {
