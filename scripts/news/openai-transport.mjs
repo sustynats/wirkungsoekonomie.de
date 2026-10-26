@@ -15,6 +15,7 @@ import { modelRates } from './budget.mjs';
 import { evidenceGroups } from './newsroom.mjs';
 import { sourceNumberTokens } from './numeric-evidence.mjs';
 import { newsBatchInputReadiness } from './news-input-readiness.mjs';
+import {withRequestDeadline} from './request-deadline.mjs';
 
 export const OPENAI_RESPONSES_URL = 'https://api.openai.com/v1/responses';
 export const DEFAULT_NEWS_MODEL = 'gpt-5.4-mini';
@@ -617,6 +618,20 @@ export function providerBillingRefusal(status, payload) {
   return null;
 }
 
+function archiveCompletedResponse(payload, stories, model, rawDir) {
+  if (!rawDir) return;
+  try {
+    fs.mkdirSync(rawDir, { recursive: true });
+    const stamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const ids = stories.map(s => s.story_id).join('_').slice(0, 80) || 'call';
+    fs.writeFileSync(rawDir + '/' + stamp + '-' + ids + '.json', JSON.stringify({
+      model:typeof payload?.model === 'string' && payload.model ? payload.model : model,
+      status:payload?.status || null, incomplete:payload?.incomplete_details || null,
+      usage:decodeUsage(payload), answer:finalOutputText(payload), story_ids:stories.map(s=>s.story_id),
+    }, null, 2));
+  } catch { /* diagnosis copy is best effort */ }
+}
+
 export async function callOpenAiDirect(stories, options = {}) {
   const apiKey = options.apiKey || process.env.OPENAI_API_KEY;
   if (!apiKey) throw Object.assign(new Error('OPENAI_API_KEY_MISSING'), { requestAttempts: 0, providerNotCalled: true, localRefusal: true });
@@ -660,12 +675,20 @@ export async function callOpenAiDirect(stories, options = {}) {
   let response, payload, attempts = 0;
   for (let attempt = 1; attempt <= transportAttempts; attempt += 1) {
     attempts = attempt;
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000));
     try {
-      response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal: controller.signal, body,
-        headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` } });
-      payload = await response.json().catch(() => null);
+      ({response,payload} = await withRequestDeadline(async signal => {
+        if(process.env.GITHUB_ACTIONS==='true') console.error(JSON.stringify({news_import_progress:{stage:'provider_request_started',
+          at:new Date().toISOString(),run_id:process.env.GITHUB_RUN_ID||null,story_ids:stories.map(s=>s.story_id),attempt}}));
+        const response = await fetchImpl(OPENAI_RESPONSES_URL, { method: 'POST', signal, body,
+          headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` } });
+        const payload = await response.json().catch(() => null);
+        // Retain even a late completed body after the deadline has rejected.
+        // It is evidence for reconciliation, never permission to replay it.
+        if (response.ok) archiveCompletedResponse(payload, stories, model, options.rawOutputDir || process.env.WOEK_NEWS_RAW_OUTPUT_DIR);
+        if(process.env.GITHUB_ACTIONS==='true') console.error(JSON.stringify({news_import_progress:{stage:'provider_response_received',
+          at:new Date().toISOString(),run_id:process.env.GITHUB_RUN_ID||null,story_ids:stories.map(s=>s.story_id),attempt,status:response.status}}));
+        return {response,payload};
+      }, {timeoutMs:Number(options.timeoutMs || process.env.WOEK_NEWS_AI_TIMEOUT_MS || 240000), code:'AI_REQUEST_TIMEOUT'}));
       if (response.ok) break;
       if (response.status === 401 || response.status === 403) throw Object.assign(new Error('AI_PROVIDER_AUTH_FAILED'), { requestAttempts: attempts, providerNotCalled: attempts === 1 });
       const billingRefusal = providerBillingRefusal(response.status, payload);
@@ -686,25 +709,18 @@ export async function callOpenAiDirect(stories, options = {}) {
       throw Object.assign(new Error(`AI_PROVIDER_ERROR:${response.status}`), { requestAttempts: attempts });
     } catch (error) {
       if (error.requestAttempts !== undefined) throw error;
+      // The server may already have started generation. A deadline is an
+      // uncertain write, even if fetch/body promises fail to observe abort.
+      if (error.message === 'AI_REQUEST_TIMEOUT') { error.requestAttempts = attempts; throw error; }
       if (attempt < transportAttempts && (error?.name === 'AbortError' || error instanceof TypeError)) { await (options.retryDelayImpl || sleep)(attempt * 15000); continue; }
       error.requestAttempts = attempts;
       throw error;
-    } finally { clearTimeout(timer); }
+    }
   }
   const usage = decodeUsage(payload);
   const reportedModel = typeof payload?.model === 'string' && payload.model ? payload.model : model;
   const answer = finalOutputText(payload);
-  // Private diagnosis copy of the paid answer (never committed; the workflow
-  // keeps it as a short-lived run artifact). Gate failures become explainable.
   const rawDir = options.rawOutputDir || process.env.WOEK_NEWS_RAW_OUTPUT_DIR;
-  if (rawDir) {
-    try {
-      fs.mkdirSync(rawDir, { recursive: true });
-      const stamp = new Date().toISOString().replace(/[:.]/g, '-');
-      const ids = stories.map(s => s.story_id).join('_').slice(0, 80) || 'call';
-      fs.writeFileSync(rawDir + '/' + stamp + '-' + ids + '.json', JSON.stringify({ model: reportedModel, status: payload?.status || null, incomplete: payload?.incomplete_details || null, usage, answer, story_ids: stories.map(s => s.story_id) }, null, 2));
-    } catch { /* diagnosis copy is best effort */ }
-  }
   if (!answer) {
     const error = Object.assign(new Error('AI_PROVIDER_OUTPUT_INVALID'), { requestAttempts: attempts, promptChars: prompt.length });
     error.billingEvidence = { model: reportedModel, reported_usage: usage };
