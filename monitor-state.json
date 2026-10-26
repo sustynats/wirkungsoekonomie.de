@@ -17,28 +17,29 @@
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
     },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-26T12:45:10.432Z",
-      "active": true
-    },
-    "run": {
-      "firstSeen": "2026-10-26T13:05:53.602Z",
-      "active": true
-    },
     "delivery-workflows": {
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
-    },
-    "lage": {
-      "firstSeen": "2026-10-26T18:06:05.846Z",
-      "active": true
-    },
-    "editorial-status": {
-      "firstSeen": "2026-10-26T21:06:15.112Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "1e8591ed2f7a3c6db5a9c7f8",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-26T21:36:34.637Z"
+    },
+    {
+      "id": "d4fd68460dd88a7bcb6def8e",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-26T21:36:34.637Z"
+    },
+    {
+      "id": "f5a1059fb4ba8d2eba8f9f8d",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-26T21:36:34.637Z"
+    },
+    {
+      "id": "261984093ea0ef3c153a571e",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Lage\nPrüfung: 2026-10-26T21:36:34.637Z"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3777,7 +3778,7 @@
       }
     },
     "last_new_at": "2026-10-26T18:06:05.846Z",
-    "checked_at": "2026-10-26T21:21:39.450Z",
+    "checked_at": "2026-10-26T21:36:34.637Z",
     "last_current_new_at": "2026-10-26T18:06:05.846Z"
   },
   "recovery_attempts": [
