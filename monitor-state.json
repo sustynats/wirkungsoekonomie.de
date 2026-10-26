@@ -17,16 +17,17 @@
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-26T09:51:22.395Z",
-      "active": false
-    },
     "editorial-coverage": {
       "firstSeen": "2026-10-26T09:51:22.395Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "9b022855b5333412d94187d4",
+      "content": "⚠ WÖk-Abdeckungshinweis\nRedaktionelle Themenabdeckung: 1 Hinweise auf überfällige Themen-/Ereignislücken im beobachteten Quellenbestand. Nachprüfungen laufen in der bestehenden Queue; hohe Relevanz ersetzt keine Belege. Kein Nachweis eines KI-Ausfalls.\nSeit: 2026-10-26T09:51:22.395Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3730,11 +3731,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/nahost-katz-israel-plant-vor-der-wahl-keinen-angriff-auf-den-iran-45ff9c/": {
         "first_seen_at": "2026-10-26T09:36:02.274Z",
         "source_at": "2026-10-26T07:56:32.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-einem-cafe-in-mannheim-1f5883/": {
+        "first_seen_at": "2026-10-26T10:06:20.437Z",
+        "source_at": "2026-10-26T09:04:35.000Z"
       }
     },
-    "last_new_at": "2026-10-26T09:36:02.274Z",
-    "checked_at": "2026-10-26T09:51:22.395Z",
-    "last_current_new_at": "2026-10-26T09:36:02.274Z"
+    "last_new_at": "2026-10-26T10:06:20.437Z",
+    "checked_at": "2026-10-26T10:06:20.437Z",
+    "last_current_new_at": "2026-10-26T10:06:20.437Z"
   },
   "recovery_attempts": [
     {
