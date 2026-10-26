@@ -553,7 +553,7 @@ export function existingStoryMatch(item, entry, now) {
   const compatibleSources = rooted.sources.filter((source) => !subjectConflict(item, source));
   const storyReferences = storyReferenceKeys(entry.story.title, ...compatibleSources.flatMap((source) => [source.title, source.summary]));
   if ([...itemReferences].some((reference) => storyReferences.has(reference))) return 0.99;
-  const anchors = [rooted.sources[0], { ...rooted.sources[0], title: entry.story.title }].filter(Boolean);
+  const anchors = entry.match_anchors || [rooted.sources[0], { ...rooted.sources[0], title: entry.story.title }].filter(Boolean);
   if (anchors.some(source => {
     const match = eventCompatibility(item, source);
     return match.same_event && ['structured_event_facts', 'institution_proceeding_day', 'specific_incident_place_day'].includes(match.reason);
@@ -740,8 +740,12 @@ export function preAnalyzeStory(story, now = new Date().toISOString()) {
 export function clusterItems(items, existingStories = [], now = new Date().toISOString()) {
   const clusters = [];
   const occupiedIds = new Set(existingStories.map(story => story.story_id));
-  const existing = matchingStories(existingStories).map((story) => ({ story, title: story.title, last_updated: story.last_updated,
-    anchored_story: { ...story, sources: anchoredSources(story) } }));
+  const existing = matchingStories(existingStories).map((story) => {
+    const sources = anchoredSources(story);
+    return { story, title: story.title, last_updated: story.last_updated,
+      anchored_story: { ...story, sources },
+      match_anchors: [sources[0], { ...sources[0], title: story.title }].filter(Boolean) };
+  });
   const sorted = items.map((item) => ({ item, match: existing
       .filter((entry) => !isMerged(entry.story))
       .map((entry) => ({ ...entry, similarity: existingStoryMatch(item, entry, now) }))
