@@ -21,12 +21,17 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-26T21:55:04.277Z",
-      "active": true
+    "editorial-coverage": {
+      "firstSeen": "2026-10-26T22:21:15.066Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "703186a871658b4b91650a41",
+      "content": "✓ WÖk-Störung behoben\nPrivate Redaktionsverarbeitung\nPrüfung: 2026-10-26T22:21:15.066Z"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3770,11 +3775,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/backwarenhersteller-aryzta-schliesst-werk-in-nordhausen-b162f6/": {
         "first_seen_at": "2026-10-26T21:51:28.743Z",
         "source_at": "2026-10-26T18:39:45.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/skandinavien-regierungsbildung-in-schweden-erneut-gescheitert-a83bba/": {
+        "first_seen_at": "2026-10-26T22:21:15.066Z",
+        "source_at": "2026-10-26T20:53:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/verteidigungsministertreffen-pistorius-spricht-putin-ernsthaften-friedenswillen-ab-d9e916/": {
+        "first_seen_at": "2026-10-26T22:21:15.066Z",
+        "source_at": "2026-10-26T19:08:59.000Z"
       }
     },
-    "last_new_at": "2026-10-26T21:51:28.743Z",
-    "checked_at": "2026-10-26T22:06:37.005Z",
-    "last_current_new_at": "2026-10-26T21:51:28.743Z"
+    "last_new_at": "2026-10-26T22:21:15.066Z",
+    "checked_at": "2026-10-26T22:21:15.066Z",
+    "last_current_new_at": "2026-10-26T22:21:15.066Z"
   },
   "recovery_attempts": [
     {
