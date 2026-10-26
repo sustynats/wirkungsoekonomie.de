@@ -25,12 +25,21 @@
       "firstSeen": "2026-10-26T13:05:53.602Z",
       "active": true
     },
-    "publication": {
-      "firstSeen": "2026-10-26T17:36:38.301Z",
-      "active": true
+    "delivery-workflows": {
+      "firstSeen": "2026-10-26T18:06:05.846Z",
+      "active": false
+    },
+    "lage": {
+      "firstSeen": "2026-10-26T18:06:05.846Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "2c799ee49acfa2a034d17cce",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-26T18:06:05.846Z"
+    }
+  ],
   "dailyDate": "2026-10-26",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3758,11 +3767,19 @@
       "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-bochum-ein-mann-ist-tot-08053c/": {
         "first_seen_at": "2026-10-26T15:06:45.386Z",
         "source_at": "2026-10-26T12:39:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bergneustadt-schusse-auf-63-jahrigen-beim-gassigehen-b2de84/": {
+        "first_seen_at": "2026-10-26T18:06:05.846Z",
+        "source_at": "2026-10-26T15:22:35.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-auf-flohmarkt-16-jahriger-offenbar-fur-weitere-anrufe-verantwortlich-a606d4/": {
+        "first_seen_at": "2026-10-26T18:06:05.846Z",
+        "source_at": "2026-10-26T14:11:51.000Z"
       }
     },
-    "last_new_at": "2026-10-26T15:06:45.386Z",
-    "checked_at": "2026-10-26T17:51:52.593Z",
-    "last_current_new_at": "2026-10-26T15:06:45.386Z"
+    "last_new_at": "2026-10-26T18:06:05.846Z",
+    "checked_at": "2026-10-26T18:06:05.846Z",
+    "last_current_new_at": "2026-10-26T18:06:05.846Z"
   },
   "recovery_attempts": [
     {
