@@ -67,15 +67,15 @@ test("persistent push failures stop after three attempts", async () => {
 test('a shallow publication fetch is bounded and requires a proven common ancestor',async()=>{
  const calls=[];let bases=0;
  await fetchPublicationBase(async args=>{calls.push(args);if(args[1]==='--is-shallow-repository')return 'true';if(args[0]==='merge-base'){if(++bases===1)throw Error('missing');return 'a'.repeat(40);}return '';});
- assert.deepEqual(calls.filter(a=>a[0]==='fetch').map(a=>a[2]),['--depth=64','--depth=256']);
+ assert.deepEqual(calls.filter(a=>a[0]==='fetch').map(a=>a[2]),['--depth=1','--depth=64']);
  assert.ok(calls.filter(a=>a[0]==='fetch').every(a=>a.includes('--no-tags')));
  const failed=[];
  await assert.rejects(fetchPublicationBase(async args=>{failed.push(args);if(args[1]==='--is-shallow-repository')return 'true';if(args[0]==='merge-base')throw Error('unrelated');return '';}),/PUBLISH_COMMON_ANCESTOR_NOT_FOUND/);
- assert.equal(failed.filter(a=>a[0]==='fetch').length,3);
+ assert.equal(failed.filter(a=>a[0]==='fetch').length,4);
  assert.ok(failed.every(a=>!a.includes('--unshallow')&&!a.includes('--force')));
 });
 
-test('a real depth-one Actions checkout retains its new article while integrating upstream',async t=>{
+for (const upstreamAdvance of [false, true]) test(`a real depth-one Actions checkout preserves its article (upstream advance=${upstreamAdvance})`,async t=>{
  const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-shallow-publish-'));
  t.after(()=>removeTestRepository(root));
  const cmd=(cwd,args)=>execFileSync('git',args,{cwd,encoding:'utf8',stdio:['ignore','pipe','pipe'],env:{...process.env,GIT_EDITOR:'true'}});
@@ -86,12 +86,12 @@ test('a real depth-one Actions checkout retains its new article while integratin
  cmd(root,['clone','--depth=1','--branch','main','file://'+origin,worker]);identity(worker);
  assert.equal(cmd(worker,['rev-parse','--is-shallow-repository']).trim(),'true');
  fs.writeFileSync(path.join(worker,'article.txt'),'new verified article');cmd(worker,['add','.']);cmd(worker,['commit','-m','article']);
- fs.writeFileSync(path.join(editor,'upstream.txt'),'new release');cmd(editor,['commit','-am','release']);cmd(editor,['push']);
+ if(upstreamAdvance){fs.writeFileSync(path.join(editor,'upstream.txt'),'new release');cmd(editor,['commit','-am','release']);cmd(editor,['push']);}
  const calls=[];
  await publishGitUpdate({run:async args=>{calls.push(args);return cmd(worker,args);},rebuild:async()=>{},sleep:async()=>{}});
- assert.ok(calls.some(a=>a.includes('--depth=64')));
+ assert.deepEqual(calls.filter(a=>a[0]==='fetch').map(a=>a.find(v=>v.startsWith('--depth='))),upstreamAdvance?['--depth=1','--depth=64']:['--depth=1']);
  assert.equal(cmd(worker,['show','origin/main:article.txt']),'new verified article');
- assert.equal(cmd(worker,['show','origin/main:upstream.txt']),'new release');
+ assert.equal(cmd(worker,['show','origin/main:upstream.txt']),upstreamAdvance?'new release':'base');
 });
 
 test("only reproducible publication outputs are eligible for conflict recovery",()=>{
