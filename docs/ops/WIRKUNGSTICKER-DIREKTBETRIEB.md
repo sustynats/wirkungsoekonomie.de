@@ -5,6 +5,32 @@ Verbindliche Betriebsarchitektur des Wirkungstickers. Sie ersetzt die Dropbox-Ch
 
 ## Betriebsschalter und Wiederanlauf (23.09.2026)
 
+### Quellengebundene Ereigniszuordnung Musk/Starlink (25.10.2026)
+
+Zwei registrierte Stern-Quellenfassungen wurden als getrennte Erstmeldungen
+angelegt: `wt-a083782d5fd928e5` und `wt-bb275c9f8adec8d7`. Beide beschreiben
+denselben zugeschriebenen Musk-Vorwurf zur ukrainischen Starlink-Nutzung fuer
+Drohnenangriffe. Die zweite Fassung ergaenzt seine Aussage zu einer angeblich
+geschlossenen Luecke; das ist keine unabhaengige Bestaetigung oder ein zweites
+Ereignis. Die Quellenbindung umfasst die URLs mit den Dokumentkennungen
+`38447346` und `38447638` samt ihren gespeicherten Inhalts-Hashes.
+
+`consolidate-starlink-duplicates.mjs` ordnet ausschliesslich diese beiden
+unveraenderten V1-Fassungen im normalen seriellen Lauf zu. Die aeltere Akte
+bleibt gelistet, die zweite vollstaendig und mit sichtbarem Archivhinweis
+lesbar. Texte, ergaenzende Angaben, Quellen, Bewertungen, Publikationsdaten,
+Versionshistorie und bezahlte Antworten bleiben unveraendert erhalten. Es
+entsteht weder eine neue Bewertung noch eine neue Quellenaussage.
+
+Geaenderte Quellen oder Fassungen, offene Nachpruefungen, unbekannte
+Anbieteranfragen, persoenliche Freigaben und abweichende Routingmarker sperren
+die Erstzuordnung atomar. Die blosse Vereinigung der beiden bereits bezahlten
+Quellenpakete kauft keine Ersatzantwort; echte neue Evidenz und ausdrueckliche
+Nachpruefungen behalten saemtliche bisherigen Gates. Kein allgemeiner
+Starlink-/Musk-/Ukraine-Matcher, keine Budget-, Modell- oder Kontingentaenderung.
+Die Ruecknahme erfordert eine gepruefte Routingkorrektur; historische Texte
+oder bezahlte Antworten duerfen dabei nicht geloescht werden.
+
 ### Unklarer Ausgang eines gestarteten Nachrichtenaufrufs (24.10.2026)
 
 Ein Timeout, Verbindungsabbruch oder 5xx ohne bestaetigte rohe Antwort beweist
