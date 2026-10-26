@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-26T07:37:24.983Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-26T08:00:34.058Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -95,6 +95,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ohne-tower-keine-metro-kaum-personal-sydneys-neuer-flughafen-ist-eroffnet-und-erste-pass-2a06fb/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ohne-tower-keine-metro-kaum-personal-sydneys-neuer-flughafen-ist-eroffnet-und-erste-pass-2a06fb/",
+      "title": "Laut Tagesspiegel: Sydneys neuer Flughafen ist eröffnet – ohne Metro und Kontrollturm",
+      "summary": "Sydneys neuer Flughafen ist laut Tagesspiegel eröffnet, obwohl Metro und Kontrollturm fehlen. Die Folgen für Reisende und den weiteren Betrieb sind aus der vorliegenden Einzelquelle noch nicht belastbar messbar.",
+      "date_published": "2026-10-26T05:45:30.000Z",
+      "date_modified": "2026-10-26T05:45:30.000Z",
+      "_woek_released_at": "2026-10-26T08:05:04.385Z",
+      "tags": [
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         }
       }
