@@ -20,6 +20,10 @@
     "delivery-workflows": {
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-26T21:55:04.277Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3769,7 +3773,7 @@
       }
     },
     "last_new_at": "2026-10-26T21:51:28.743Z",
-    "checked_at": "2026-10-26T21:51:28.743Z",
+    "checked_at": "2026-10-26T21:55:04.277Z",
     "last_current_new_at": "2026-10-26T21:51:28.743Z"
   },
   "recovery_attempts": [
