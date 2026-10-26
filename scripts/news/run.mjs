@@ -53,6 +53,7 @@ import { consolidateMannheimSternDuplicates, retainedMannheimSternPaidInput } fr
 import { documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage } from './retained-failed-paid-work.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { applyDocumentedKatzDenialClarification } from './clarify-katz-denial.mjs';
+import { applyDocumentedGassiTopicClarification } from './clarify-gassi-topic.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
@@ -1432,6 +1433,10 @@ export async function runWirkungsticker(options = {}) {
   report.updated_stories += report.source_provenance_clarifications.filter(change => change.status === 'applied').length;
   report.katz_denial_clarification = applyDocumentedKatzDenialClarification(storyStore.stories || [], now);
   report.updated_stories += report.katz_denial_clarification.filter(change => change.status === 'applied').length;
+  report.topic_metadata_clarification = applyDocumentedGassiTopicClarification(storyStore.stories || [], now);
+  report.updated_stories += report.topic_metadata_clarification.filter(change => change.status === 'applied').length;
+  const topicCardIds = new Set(report.topic_metadata_clarification.filter(change => change.cards_only).map(change => change.story_id));
+  for (const change of report.topic_metadata_clarification) if (change.status === 'applied') changedStoryIds.add(change.story_id);
   // The two independently verified Leizen duplicates need an exact-source
   // consolidation. Generic place matching rightly cannot infer town/state
   // equivalence from their headlines; this mapping is evidence-bound and
@@ -2245,7 +2250,7 @@ export async function runWirkungsticker(options = {}) {
         const visual = bridgeImages.get(storyId);
         const bytes = visual?.file ? fs.readFileSync(visual.file) : visual?.status === 'validated' ? await bridge.transport.readBinary((await import('./bridge/contract.mjs')).bridgePath('20_OUTPUT_READY', `${story.bridge_import.job_id}.title.png`)) : null;
         if (bytes && imageDigest(bytes) !== visual.sha256) throw new Error('BRIDGE_VISUAL_HASH_CHANGED');
-        const result = await prepareImage(visual?.brief ? { ...story, visual_brief: visual.brief } : story, { ...(visual?.status === 'fallback' ? { cardsOnly: true } : {}), ...(bytes ? { bridgeAsset: { bytes, ...visual, provider: 'chatgpt_bridge', model: 'chatgpt-images', prompt_version: 'woek-chatgpt-bridge-1', generated_at: visual.visual.generated_at } } : {}) });
+        const result = await prepareImage(visual?.brief ? { ...story, visual_brief: visual.brief } : story, { ...(visual?.status === 'fallback' || topicCardIds.has(storyId) ? { cardsOnly: true } : {}), ...(bytes ? { bridgeAsset: { bytes, ...visual, provider: 'chatgpt_bridge', model: 'chatgpt-images', prompt_version: 'woek-chatgpt-bridge-1', generated_at: visual.visual.generated_at } } : {}) });
         if (result.title_image) {
           if (JSON.stringify(publicTitleImage(story.title_image)) !== JSON.stringify(publicTitleImage(result.title_image))) report.title_images_changed += 1;
           story.title_image = result.title_image;

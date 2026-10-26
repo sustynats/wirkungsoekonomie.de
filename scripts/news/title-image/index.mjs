@@ -284,7 +284,8 @@ function impactPanel(u, { x, y, width, height, dimensions, riskDirections, statu
     const ry = rowsTop + (horizontal ? 0 : index * rowHeight);
     parts.push(icon(meta.icon, rx, ry, 22 * u, color));
     parts.push(textLine(meta.label, rx + 32 * u, ry + 17 * u, "sans-600", 20 * u, PALETTE.white));
-    parts.push(textLine(levelText, rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" }));
+    const levelWidth = Math.max(0, columnWidth - 32 * u - measure(meta.label, "sans-600", 20 * u) - 12 * u);
+    parts.push(`<g data-impact-level="${key}"><title>${escape(`${meta.label}: ${levelText}`)}</title>${textLine(truncateLine(levelText, "sans-500", 15 * u, levelWidth), rx + columnWidth, ry + 17 * u, "sans-500", 15 * u, PALETTE.textMuted, { anchor: "end" })}</g>`);
     const dimension=dimensions?.[key],ring=dimension?.ringStatus;
     const ringMarkup=(presentation,atX,atY,size)=>`<g data-impact-ring="${escape(presentation.ringStatus)}" data-magnitude="${presentation.magnitudeBars ?? "open"}" transform="translate(${atX.toFixed(1)},${atY.toFixed(1)}) scale(${(size/24).toFixed(3)})" color="${color}" role="img"><title>${escape(`${meta.label}: ${presentation.ringLabel}, Tragweite ${Number.isInteger(presentation.magnitudeBars) ? `${presentation.magnitudeBars}/5` : "offen"}, ${presentation.directionLabel}`)}</title>${impactRingSymbol(presentation.ringStatus)}</g>`;
     if(ring)parts.push(ringMarkup(dimension,rx,ry+31*u,23*u));
