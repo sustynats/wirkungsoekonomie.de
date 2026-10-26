@@ -4,6 +4,7 @@
 // This mapping does not infer relationships to other Mannheim publications.
 import { isDeepStrictEqual } from 'node:util';
 import { sourceReviewFingerprint } from './evidence-packets.mjs';
+import { unchangedCapacityReview } from './unchanged-capacity-review.mjs';
 
 const url = 'https://www.swr.de/swraktuell/baden-wuerttemberg/mannheim/explosion-in-mannheim-neckarstadt-100.html';
 const bindings = [
@@ -48,9 +49,11 @@ export function consolidateMannheimSwrDuplicates(stories, at) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   }
   if (routed(canonical, duplicate)) return { status: 'already_applied', changes: [] };
-  // All-or-nothing preflight: no unknown provider write or pending review is
-  // reconciled by a listing correction, including a later capacity marker.
-  if ([canonical, duplicate].some(story => story.listed === false || story.retirement || story.living_file || openWork(story)
+  // Preserve an unchanged capacity envelope; no queued assessment is completed.
+  // Every provider/review hold and every changed or unclassified input still blocks.
+  if ([canonical, duplicate].some(story => story.listed === false || story.retirement || story.living_file
+    || story.provider_request_hold != null || story.review_checkpoint != null
+    || (story.pending_update != null && !unchangedCapacityReview(story, at))
     || !sourceGateClear(story) || Date.parse(story.source_integrity.checked_at) > Date.parse(at))) {
     return { status: 'held', reason: 'SOURCE_EDITION_OR_ROUTING_CHANGED', changes: [] };
   }
