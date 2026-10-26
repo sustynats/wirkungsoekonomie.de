@@ -1,11 +1,104 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-26T13:26:13.041Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-26T16:57:54.654Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
   "feed_url": "https://wirkungsoekonomie.de/wirkungsticker/feed.json",
   "language": "de",
   "items": [
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e/",
+      "title": "Herbstferien: Mehrere Straßen- und Bahnverbindungen in NRW wegen Bauarbeiten eingeschränkt",
+      "summary": "Bauarbeiten schränken am letzten Ferienwochenende mehrere Straßen- und Bahnverbindungen in NRW ein. Wie stark sich Verkehr, Reisezeiten und Ausweichrouten verändern, bleibt offen.",
+      "date_published": "2026-10-26T15:26:50.000Z",
+      "date_modified": "2026-10-26T15:26:50.000Z",
+      "_woek_released_at": "2026-10-19T14:09:12.649Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bergneustadt-schusse-auf-63-jahrigen-beim-gassigehen-b2de84/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bergneustadt-schusse-auf-63-jahrigen-beim-gassigehen-b2de84/",
+      "title": "Laut WDR: 63-Jähriger in Bergneustadt beim Gassigehen angeschossen",
+      "summary": "In Bergneustadt wurde laut WDR auf einen 63-Jährigen geschossen. Die Polizei fahndet, während Ablauf, Zustand des Betroffenen und Motiv offen sind.",
+      "date_published": "2026-10-26T15:22:35.000Z",
+      "date_modified": "2026-10-26T15:22:35.000Z",
+      "_woek_released_at": "2026-10-26T16:43:18.405Z",
+      "tags": [
+        "Energie"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-auf-flohmarkt-16-jahriger-offenbar-fur-weitere-anrufe-verantwortlich-a606d4/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bombendrohung-auf-flohmarkt-16-jahriger-offenbar-fur-weitere-anrufe-verantwortlich-a606d4/",
+      "title": "Laut Polizei und Staatsanwaltschaft: 16-Jähriger mit weiteren Bombendrohungs-Anrufen in Verbindung gebracht",
+      "summary": "Ein 16-Jähriger aus Nordrhein-Westfalen wurde laut Polizei und Staatsanwaltschaft nach einer Bombendrohung in Konstanz ermittelt. Weitere ähnliche Anrufe werden ihm zugerechnet, die Verantwortlichkeit bleibt vorläufig.",
+      "date_published": "2026-10-26T14:11:51.000Z",
+      "date_modified": "2026-10-26T14:11:51.000Z",
+      "_woek_released_at": "2026-10-26T14:51:10.996Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": false,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 0,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-bochum-ein-mann-ist-tot-08053c/",
       "url": "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-bochum-ein-mann-ist-tot-08053c/",
@@ -4354,37 +4447,6 @@
         "Nachgehört"
       ],
       "_woek_type": "Nachgehört"
-    },
-    {
-      "id": "https://wirkungsoekonomie.de/wirkungsticker/herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e/",
-      "url": "https://wirkungsoekonomie.de/wirkungsticker/herbstferien-in-nrw-diese-autobahnen-sind-gesperrt-c5ef6e/",
-      "title": "Herbstferien: Mehrere Autobahnen in NRW wegen Bauarbeiten gesperrt",
-      "summary": "Mehrere Autobahnen in Nordrhein-Westfalen sind in den Herbstferien wegen Bauarbeiten gesperrt. Das kann Reisezeiten und die regionale Verkehrsverteilung beeinflussen; Umfang und Dauer der Folgen bleiben offen.",
-      "date_published": "2026-10-21T07:43:09.000Z",
-      "date_modified": "2026-10-21T07:43:09.000Z",
-      "_woek_released_at": "2026-10-19T14:09:12.649Z",
-      "tags": [
-        "Gesellschaft"
-      ],
-      "_woek_type": "Wirkungsakte",
-      "_woek_late_delivery": false,
-      "_woek_impact_profile": {
-        "human": {
-          "magnitude": 1,
-          "direction": "negative",
-          "status": "observed"
-        },
-        "planet": {
-          "magnitude": 1,
-          "direction": "negative",
-          "status": "potential"
-        },
-        "democracy": {
-          "magnitude": 1,
-          "direction": "negative",
-          "status": "potential"
-        }
-      }
     },
     {
       "id": "https://wirkungsoekonomie.de/wirkungsticker/verkehr-sperrung-auf-a31-zwischen-riepe-und-emden-ost-120fe2/",
