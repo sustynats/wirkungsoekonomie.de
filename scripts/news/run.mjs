@@ -50,6 +50,7 @@ import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from '
 import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './consolidate-oleschky-duplicates.mjs';
 import { consolidateMannheimSwrDuplicates, retainedMannheimSwrPaidInput } from './consolidate-mannheim-swr-duplicates.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
+import { applyDocumentedKatzDenialClarification } from './clarify-katz-denial.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
 import { datedSource } from "./source-adapters.mjs";
 import { createTitleImagePipeline, publicTitleImage } from "./title-image/pipeline.mjs";
@@ -1417,6 +1418,8 @@ export async function runWirkungsticker(options = {}) {
   // atomic update. It changes no sources, paid answer or assessment.
   report.source_provenance_clarifications = applyDocumentedSourceIndependenceClarifications(storyStore.stories || [], now);
   report.updated_stories += report.source_provenance_clarifications.filter(change => change.status === 'applied').length;
+  report.katz_denial_clarification = applyDocumentedKatzDenialClarification(storyStore.stories || [], now);
+  report.updated_stories += report.katz_denial_clarification.filter(change => change.status === 'applied').length;
   // The two independently verified Leizen duplicates need an exact-source
   // consolidation. Generic place matching rightly cannot infer town/state
   // equivalence from their headlines; this mapping is evidence-bound and
