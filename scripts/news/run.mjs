@@ -50,6 +50,7 @@ import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from '
 import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './consolidate-oleschky-duplicates.mjs';
 import { consolidateMannheimSwrDuplicates, retainedMannheimSwrPaidInput } from './consolidate-mannheim-swr-duplicates.mjs';
 import { consolidateMannheimSternDuplicates, retainedMannheimSternPaidInput } from './consolidate-mannheim-stern-duplicates.mjs';
+import { documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage } from './retained-failed-paid-work.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { applyDocumentedKatzDenialClarification } from './clarify-katz-denial.mjs';
 import { refreshBudgetFx, newsBudget, modelRates, costFromUsage, failedRequestCost, NEWS_REQUEST_RESERVATION_USD } from "./budget.mjs";
@@ -810,7 +811,7 @@ function paidInputEvidenceFingerprint(candidate) {
 function paidHistoryForCandidate(candidate) {
   const fingerprint = retryInputFingerprint(candidate);
   const evidenceFingerprint = paidInputEvidenceFingerprint(candidate);
-  return paidRetryHistory(candidate.existing_story).map(attempt => {
+  return paidRetryHistory({ai_retry_history: [...documentedFailedPaidAttempts(candidate.story_id), ...paidRetryHistory(candidate.existing_story)]}).map(attempt => {
     // Bind a legacy receipt only when its original, date-sensitive hash is
     // reproduced exactly. Never guess an old paid input from today's sources.
     if (attempt.version !== AI_PROCESSING_VERSION || attempt.fingerprint !== fingerprint
@@ -1158,6 +1159,7 @@ export async function runWirkungsticker(options = {}) {
   state.cost_monitoring_started_at ||= now;
   const storyStore = structuredClone(options.storyStore || readJson(files.stories));
   const usage = structuredClone(options.usage || readJson(files.usage));
+  const documentedPaidRecovery = options.usage ? null : recoverDocumentedFailedPaidUsage(usage, now);
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
   const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
   const enabledSourceIds = new Set(enabledSources.map(source => source.source_id));
@@ -1180,6 +1182,7 @@ export async function runWirkungsticker(options = {}) {
     usage_recovery: usage.failed_run_recovery ? { status: usage.failed_run_recovery.status,
       checked_at: usage.failed_run_recovery.checked_at,
       unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
+    documented_failed_paid_usage: documentedPaidRecovery,
     status: "running",
     started_at: now,
     berlin_slot: runSchedule.slot || (isAutomatedRun ? `Automatischer Lauf ${String(runSchedule.hourNumber).padStart(2, "0")}:00` : "manueller Lauf"),
