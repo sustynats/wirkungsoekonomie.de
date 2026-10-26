@@ -1,7 +1,104 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-26T05:00:00.000Z",
+  "updated_at": "2026-10-26T11:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-26-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-26",
+      "window_from": "2026-10-26T05:00:00.000Z",
+      "window_to": "2026-10-26T11:00:00.000Z",
+      "stand": "2026-10-26T11:00:00.000Z",
+      "headline": "Das sind die 10 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 10,
+        "neu": 9,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-2c796868270ba89b",
+          "slug": "kriminalpolizei-ermittelt-verletzter-bei-explosion-in-cafe-wer-steckt-dahinter-0ba89b",
+          "title": "Laut stern: Mann bei Explosion in Mannheimer Café verletzt – Hintergründe offen",
+          "state": "neu",
+          "at": "2026-10-26T10:57:28.879Z",
+          "score": 9.993
+        },
+        {
+          "story_id": "wt-db1ecc3e143e8245",
+          "slug": "wohnungen-dobrindt-plant-hohe-hurden-fur-vergesellschaftungen-3e8245",
+          "title": "Laut Deutschlandfunk: Dobrindt legt Eckpunkte für höhere Hürden bei Vergesellschaftungen vor",
+          "state": "fortgeschrieben",
+          "at": "2026-10-26T10:10:04.404Z",
+          "score": 8.1113
+        },
+        {
+          "story_id": "wt-aab7a43e50d1d749",
+          "slug": "explosion-in-mannheimer-cafe-hintergrunde-noch-unklar-d1d749",
+          "title": "Nach Angaben der Polizei: Explosion in Mannheimer Café: eine Person leicht verletzt, Hintergründe offen",
+          "state": "neu",
+          "at": "2026-10-26T09:46:35.533Z",
+          "score": 9.7961
+        },
+        {
+          "story_id": "wt-9a186192b81f5883",
+          "slug": "explosion-in-einem-cafe-in-mannheim-1f5883",
+          "title": "Laut SWR Aktuell: Explosion in Café im Mannheimer Stadtteil Neckarstadt-West",
+          "state": "neu",
+          "at": "2026-10-26T09:22:51.186Z",
+          "score": 5.7301
+        },
+        {
+          "story_id": "wt-537ab218dc45ff9c",
+          "slug": "nahost-katz-israel-plant-vor-der-wahl-keinen-angriff-auf-den-iran-45ff9c",
+          "title": "Laut Verteidigungsminister Katz plant Israel vor der Wahl keinen Angriff auf den Iran",
+          "state": "neu",
+          "at": "2026-10-26T08:56:23.731Z",
+          "score": 5.6567
+        },
+        {
+          "story_id": "wt-95a58279e02a06fb",
+          "slug": "ohne-tower-keine-metro-kaum-personal-sydneys-neuer-flughafen-ist-eroffnet-und-erste-pass-2a06fb",
+          "title": "Laut Tagesspiegel: Sydneys neuer Flughafen ist eröffnet – ohne Metro und Kontrollturm",
+          "state": "neu",
+          "at": "2026-10-26T08:05:04.385Z",
+          "score": 5.5141
+        },
+        {
+          "story_id": "wt-3f1202bcffaf52ec",
+          "slug": "angriff-mit-sprengkorper-explosion-verwustet-mannheimer-cafe-mitarbeiter-wird-verletzt-af52ec",
+          "title": "Explosion in Mannheimer Café – Mitarbeiter laut Tagesspiegel leicht verletzt",
+          "state": "neu",
+          "at": "2026-10-26T07:43:54.828Z",
+          "score": 3.4553
+        },
+        {
+          "story_id": "wt-a20c5882ecfee0cf",
+          "slug": "kriminalpolizei-ermittelt-explosion-in-mannheimer-cafe-angriff-mit-sprengkorper-fee0cf",
+          "title": "Explosion in Mannheimer Café: Kriminalpolizei ermittelt, Hintergründe offen",
+          "state": "neu",
+          "at": "2026-10-26T06:54:13.788Z",
+          "score": 3.3173
+        },
+        {
+          "story_id": "wt-6cd324254a202e3f",
+          "slug": "regierungsbildung-in-berlin-schuster-nehme-linke-abkehr-von-antisemitismus-nicht-ab-202e3f",
+          "title": "Laut Zentralratspräsident Schuster erschwert Antisemitismus-Streit Berlins Koalitionsgespräche",
+          "state": "neu",
+          "at": "2026-10-26T06:29:27.232Z",
+          "score": 5.2485
+        },
+        {
+          "story_id": "wt-5987621cd126d543",
+          "slug": "vorwurf-kriegsverbrechen-prozess-um-nord-stream-anschlag-vor-wichtiger-entscheidung-26d543",
+          "title": "Nord-Stream-Verfahren: Entscheidung über Einstellungsantrag steht an",
+          "state": "neu",
+          "at": "2026-10-26T06:03:41.150Z",
+          "score": 3.1769
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-26-morgenlage",
       "slot": "morgenlage",
