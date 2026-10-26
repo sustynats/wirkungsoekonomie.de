@@ -1,7 +1,7 @@
 // A specific proceeding + institution + event day, never a broad theme/person.
 // Other topics continue through the existing conservative case identity rules.
-import { projectionCache } from './projection-cache.mjs';
-const identities = projectionCache();
+import { recordProjectionCache } from './projection-cache.mjs';
+const identities = recordProjectionCache();
 const berlinDay = new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Berlin', year: 'numeric', month: '2-digit', day: '2-digit' });
 export function explicitEventPlaces(item = {}) {
   const normalize = text => String(text || '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase();
@@ -12,8 +12,8 @@ export function explicitEventPlaces(item = {}) {
 }
 
 export function structuredEventIdentity(item = {}) {
-  const key = JSON.stringify([item.title, item.summary, item.url, item.event_date, item.source_published_at, item.published_at]);
-  return identities(key, () => deriveStructuredEventIdentity(item));
+  const fields = [item.title, item.summary, item.url, item.event_date, item.source_published_at, item.published_at];
+  return identities(item, fields, () => deriveStructuredEventIdentity(item));
 }
 
 function deriveStructuredEventIdentity(item) {

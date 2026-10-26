@@ -3,9 +3,9 @@ import { numberTokens, evidenceNumberTokens, withoutPublisherNames } from "./num
 import { sourceAccess } from "./access-policy.mjs";
 import { courtCaseRelation } from "./court-case-identity.mjs";
 import { structuredEventIdentity } from './event-identity.mjs';
-import { projectionCache } from './projection-cache.mjs';
+import { recordProjectionCache } from './projection-cache.mjs';
 import { followupEvidenceFingerprint } from './followup-reuse.mjs';
-const fingerprints = projectionCache();
+const fingerprints = recordProjectionCache();
 
 const hash = (value) => createHash("sha256").update(String(value)).digest("hex").slice(0, 20);
 const ms = (value) => Date.parse(value || "") || 0;
@@ -148,8 +148,8 @@ function eventFacts(text, title) {
 }
 
 export function eventFingerprint(item) {
-  const key = JSON.stringify([item.title, item.summary, item.event_geography, item.published_at]);
-  return fingerprints(key, () => deriveEventFingerprint(item));
+  const fields = [item.title, item.summary, item.event_geography, item.published_at];
+  return fingerprints(item, fields, () => deriveEventFingerprint(item));
 }
 
 function deriveEventFingerprint(item) {

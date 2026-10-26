@@ -1,10 +1,33 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { projectionCache } from '../../scripts/news/projection-cache.mjs';
+import { projectionCache, recordProjectionCache } from '../../scripts/news/projection-cache.mjs';
 import { structuredEventIdentity } from '../../scripts/news/event-identity.mjs';
 import { eventFingerprint } from '../../scripts/news/newsroom.mjs';
 import { fileSubject, namedSubjects, diplomaticVisit, documentKey } from '../../scripts/news/living-files.mjs';
 import { courtCaseRelation } from '../../scripts/news/court-case-identity.mjs';
+
+test('a complete current-sized catalog scan retains deterministic projections for the next item', () => {
+  const cache=recordProjectionCache();let computations=0;
+  const records=Array.from({length:18000},(_,index)=>({title:`source-projection-${index}`}));
+  for(let pass=0;pass<2;pass++)for(const [index,record]of records.entries()){
+    const result=cache(record,[record.title],()=>{computations++;return{event:index,places:['DE']};});
+    assert.deepEqual(result,{event:index,places:['DE']});
+  }
+  assert.equal(computations,records.length,'a serial scan must not evict the whole catalog before its next comparison');
+});
+
+test('record reuse invalidates changed scalars, array contents and complex fields without retaining large inputs', () => {
+  const read=recordProjectionCache(2), item={title:'A',regions:['DE']};let calls=0;
+  const project=()=>read(item,[item.title,item.regions],()=>{calls++;return{title:item.title,regions:item.regions};});
+  const first=project();assert.equal(project(),first);assert.equal(calls,1);
+  item.regions.push('FR');assert.deepEqual(project().regions,['DE','FR']);assert.equal(calls,2);
+  assert.deepEqual(first.regions,['DE']);item.title='B';assert.equal(project().title,'B');assert.equal(calls,3);
+  item.regions=['IT','FR'];assert.deepEqual(project().regions,['IT','FR']);assert.equal(calls,4);
+  const nested={value:1};const complex=()=>read(item,[nested],()=>nested.value);
+  assert.equal(complex(),1);nested.value=2;assert.equal(complex(),2);
+  let largeCalls=0;const large=()=>read(item,['x'.repeat(20001)],()=>++largeCalls);
+  assert.equal(large(),1);assert.equal(large(),2);
+});
 
 test('bounded projection storage cannot freeze original evidence or be poisoned by callers', () => {
   const cache=projectionCache(2), source={values:['DE']};let calls=0;
