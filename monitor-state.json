@@ -16,13 +16,14 @@
     "queue": {
       "firstSeen": "2026-10-24T14:51:24.993Z",
       "active": true
-    },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-25T21:06:04.647Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "815129ef8fb98400364baf1f",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-26T06:51:24.147Z"
+    }
+  ],
   "dailyDate": "2026-10-25",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3702,11 +3703,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/vereinigte-arabische-emirate-strande-nahe-dubai-nach-olverschmutzung-offenbar-infolge-de-212b7c/": {
         "first_seen_at": "2026-10-26T05:36:02.014Z",
         "source_at": "2026-10-26T04:43:47.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vorwurf-kriegsverbrechen-prozess-um-nord-stream-anschlag-vor-wichtiger-entscheidung-26d543/": {
+        "first_seen_at": "2026-10-26T06:51:24.147Z",
+        "source_at": "2026-10-26T05:30:05.000Z"
       }
     },
-    "last_new_at": "2026-10-26T05:36:02.014Z",
-    "checked_at": "2026-10-26T06:35:56.870Z",
-    "last_current_new_at": "2026-10-26T05:36:02.014Z"
+    "last_new_at": "2026-10-26T06:51:24.147Z",
+    "checked_at": "2026-10-26T06:51:24.147Z",
+    "last_current_new_at": "2026-10-26T06:51:24.147Z"
   },
   "recovery_attempts": [
     {
