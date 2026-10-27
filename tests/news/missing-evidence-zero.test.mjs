@@ -65,6 +65,57 @@ test('a bounded zero remains admissible even when measurements are missing', () 
   assert.ok(!deterministicGateIssues(record).some(x => x.startsWith('IMPACT_ZERO_FROM_MISSING_EVIDENCE')));
 });
 
+test('zero factors justified by absent evidence are held without a causal connector', () => {
+  for (const key of ['human','planet','democracy']) {
+    const {record,assessment} = fixture(key), path = assessment.dimensions[key].primary_paths[0];
+    path.negligibility_rationale = 'Für das betroffene Umfeld ist keine materielle Zustandsänderung belegt oder plausibel spezifiziert.';
+    const before = structuredClone(record);
+    assert.deepEqual(missingEvidenceZeroIssues(assessment), ['IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key]);
+    assert.equal(releaseDeterministicImpact(record).released, false);
+    assert.deepEqual(record,before);
+  }
+});
+
+test('an unrecognized change in the supplied sources does not establish zero', () => {
+  const {assessment} = fixture(), path = assessment.dimensions.planet.primary_paths[0];
+  for (const reason of [
+    'Für den berichteten Vorgang ist in den gelieferten Quellen kein ökologischer Zustandswechsel erkennbar.',
+    'Für den abgegrenzten Gegenstand ist keine materielle Zustandsänderung quellengebunden plausibel.',
+  ]) {
+    path.negligibility_rationale = reason;
+    assert.deepEqual(missingEvidenceZeroIssues(assessment), ['IMPACT_ZERO_FROM_MISSING_EVIDENCE:planet']);
+  }
+  path.negligibility_rationale = 'Identische Räume und unveränderte Wege begrenzen den Vorgang; keine zusätzlichen Reisen.';
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), [], 'a positive bounded basis remains admissible');
+});
+
+test('an audited correction list selects only the matching edition and semantic profile', () => {
+  const first = fixture(), second = fixture();
+  second.record.story_id = second.reviewed.story_id = 'wt-second-audited-zero';
+  second.record.updated_at = second.reviewed.updated_at = '2026-10-27T10:50:00.000Z';
+  second.assessment.evaluation_target.label = second.reviewed.target_label = 'Zweiter synthetischer Vorgang';
+  second.reviewed.profile_sha256 = observationContextFingerprint(second.assessment);
+  const bindings = [first.reviewed,second.reviewed], before = structuredClone(second.record);
+  const projected = project(second.record,second.assessment,bindings);
+  assert.equal(projected.dimensions.planet.magnitude,null);
+  assert.deepEqual(second.record,before);
+  assert.deepEqual(project({},second.assessment,bindings),projected, 'the stripped public DTO selects the same semantic binding');
+  assert.equal(project({...second.record,updated_at:'2026-10-27T11:00:00.000Z'},second.assessment,bindings),second.assessment);
+  assert.equal(project({...second.record,content_hash:'changed'},second.assessment,bindings),second.assessment);
+  assert.equal(project({...second.record,manual_only:true},second.assessment,bindings),second.assessment);
+});
+
+test('the absence check requires all zero factors and several explicit missing-evidence reasons', () => {
+  const {assessment} = fixture(), path = assessment.dimensions.planet.primary_paths[0];
+  path.magnitude_factors.reach.value = 1;
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), []);
+  path.magnitude_factors.reach.value = 0;
+  Object.values(path.magnitude_factors).slice(3).forEach(factor => {factor.rationale = 'Im eng begrenzten Betrachtungsraum praktisch unerheblich.';});
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), [], 'three missing reasons are insufficient for this conservative check');
+  path.magnitude_factors.irreversibility.rationale = 'Keine irreversible Veränderung ist belegt.';
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), ['IMPACT_ZERO_FROM_MISSING_EVIDENCE:planet']);
+});
+
 test('coverage and operational audits do not count an unsupported zero as a complete assessment', () => {
   const {record,assessment,reviewed} = fixture();
   const coverage = impactCoverage([record]);
