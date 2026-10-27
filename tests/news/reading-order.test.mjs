@@ -63,7 +63,9 @@ test("every correction uses a bounded reader notice, with date and unchanged esc
   assert.match(notices[1][1], /&lt;em&gt;keine HTML-Anweisung&lt;\/em&gt;/);
   assert.ok(notices[1].index < html.indexOf('<nav class="wt-subnav"'));
   assert.deepEqual(story, before);
-  assert.doesNotMatch(storyPage({ ...story, corrections: [] }), /class="notice news-correction"/);
+  // An audited display projection can have its own marked correction without
+  // rewriting the paid record. This assertion concerns stored story notices.
+  assert.doesNotMatch(storyPage({ ...story, corrections: [] }), /<aside class="notice news-correction" role="note">/);
   const css = fs.readFileSync(new URL("../../assets/css/news.css", import.meta.url), "utf8");
   const sharedStyle = css.match(/\.news-status-notice,\s*\.news-correction\s*\{([^}]+)\}/)?.[1];
   assert.ok(sharedStyle, "corrections share the existing centered status-notice layout");
