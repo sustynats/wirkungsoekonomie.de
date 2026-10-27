@@ -6,7 +6,7 @@ const normalize = value => String(value || '').normalize('NFKD').replace(/\p{M}/
 const list = value => Array.isArray(value) ? value : [];
 // A conservative contradiction check, not a judgement based on a topic or on
 // low evidence alone. A source's silence cannot establish a zero change.
-const missing = value => /(?:\bkein\w*\b|\bnicht\b|\bfehl\w*\b|\bmangels\b).{0,140}(?:belegt|beschrieben|benannt|genannt|ausgewiesen|bestimmbar|bewertbar|quantifizierbar|ableitbar|angaben|daten|informationen)/u.test(normalize(value));
+const missing = value => /(?:\bkein\w*\b|\bnicht\b|\bfehl\w*\b|\bmangels\b).{0,140}(?:belegt|beschrieben|benannt|genannt|ausgewiesen|bestimmbar|bewertbar|quantifizierbar|ableitbar|erkennbar|quellengebunden plausibel|angaben|daten|informationen)/u.test(normalize(value));
 const bounded = value => /(?:unverandert|identisch|gleichbleibend).{0,60}(?:raume|flache|wege|betrieb|material|energie|volumen|termine|verfahren)|(?:raume|flache|wege|betrieb|material|energie|volumen|termine|verfahren).{0,60}(?:unverandert|identisch|gleichbleibend)|keine? zusatzlichen? (?:wege|reisen|material|energie|flachen|stoffstrome)/u.test(normalize(value));
 
 export function missingEvidenceZeroIssues(assessment = {}) {
@@ -18,11 +18,10 @@ export function missingEvidenceZeroIssues(assessment = {}) {
       const factors = Object.keys(MAGNITUDE_FACTORS).map(name => path.magnitude_factors?.[name]);
       if (!factors.every(factor => factor?.value === 0)) continue;
       const absentFactors = factors.filter(factor => missing(factor.rationale)).length;
-      const rationale = normalize(path.negligibility_rationale);
-      const absenceUsedAsReason = missing(rationale)
-        && /(?:belegt|bestimmbar|bewertbar|quantifizierbar|ableitbar)[^.!?]{0,120}\b(?:daher|deshalb|somit|folglich)\b/u.test(rationale);
-      if (absentFactors >= 4 && (absenceUsedAsReason
-        || missing(dimension?.research_result) && missing(path.mechanism) && missing(path.negligibility_rationale))) {
+      // The contradiction is structural: all factors are zero, most are
+      // justified by absent evidence, and the zero rationale also cites that
+      // absence. It does not depend on a connector such as "deshalb".
+      if (absentFactors >= 4 && missing(path.negligibility_rationale)) {
         issues.push('IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key);
         break;
       }
@@ -32,7 +31,7 @@ export function missingEvidenceZeroIssues(assessment = {}) {
 }
 
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
-const REVIEWED = Object.freeze({
+const REVIEWED = Object.freeze([Object.freeze({
   story_id: 'wt-0927106fd294a8d0', published_at: '2026-10-27T08:30:58.112Z', version: 1,
   content_hash: 'a6d81da81913d2e84cdb772b412fe82966cc4b510132446f9badde5c900ff69d',
   target_label: 'Neuausrichtung des Festivals DOK Leipzig', dimension: 'planet',
@@ -40,14 +39,49 @@ const REVIEWED = Object.freeze({
   dimension_sha256: '34e2770606416032b7e9c7720c8fa85d5fb22aeaf8feabe8b9865a7c7aabc86d',
   at: '2026-10-27T09:43:00.000Z',
   note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltangaben begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
-});
+}), Object.freeze({
+  story_id: 'wt-de5c18859f6150cf', published_at: '2026-10-27T12:17:07.962Z',
+  updated_at: '2026-10-27T12:17:07.962Z', version: 1,
+  content_hash: '65154429d5da712a5019d30fab8769f38fae28df8a5070bfe881b390e73c4f58',
+  target_label: 'Sicherheits- und Vertrauensfolgen eines berichteten Schussvorfalls', dimension: 'planet',
+  profile_sha256: '191f440c97fa8edf7ce5d2c9c0d42302cec28eca7281e0c79abda7f380ab0300',
+  dimension_sha256: '2564d62182fcf214f7c2b91e7a14bcc50252e8bd59ca4c4c9541dd74f57c4750',
+  at: '2026-10-27T12:56:00.000Z',
+  note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
+}), Object.freeze({
+  story_id: 'wt-5987621cd126d543', published_at: '2026-10-26T06:03:41.150Z',
+  updated_at: '2026-10-27T10:50:31.103Z', version: 2,
+  content_hash: 'c74554152ad2165539701a54556c9fdeb1f6ed7d64a34b1531a8705d24f2096e',
+  target_label: 'weiterer gerichtlicher Verfahrensgang', dimension: 'planet',
+  profile_sha256: '9d65e3ac2c67fee3bfe4835a3d7bac839dab87cf8fa973df3735b00c8f32240d',
+  dimension_sha256: '4649b0c59f03ad715cbb0f6b28ef0f6a5fd22f24f4848f13ab17102489ee3cad',
+  at: '2026-10-27T12:56:00.000Z',
+  note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
+}), Object.freeze({
+  story_id: 'wt-2fb8d2cf3286781b', published_at: '2026-10-21T20:51:28.785Z',
+  updated_at: '2026-10-27T12:02:26.862Z', version: 2,
+  content_hash: '0c73e67a9c1a7b5707220d8f05647a0b7415e0863da871e2267000f1d74fbb31',
+  target_label: 'Öffentliche Forderung nach Beteiligung an einem möglichen diplomatischen Treffen', dimension: 'planet',
+  profile_sha256: 'eeb229c62a8c5a436d072b916fd29baac357bc99a5de6dcb72e0c66dae04e7ba',
+  dimension_sha256: '1fefa47a931ecc0874ee4bec92e30c100225929ca64cf574357642be921b5b91',
+  at: '2026-10-27T13:04:00.000Z',
+  note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
+})]);
 
-// One audited, already published edition. Paid originals, stored versions and
+// Audited, already published editions. Paid originals, stored versions and
 // receipts are immutable. A changed profile or source binding needs a new audit.
 export function projectMissingEvidenceCorrection(input = {}, assessment = {}, reviewed = REVIEWED) {
-  if (!input || !assessment || input.published === false || input.manual_only || input.editorial_approval_hash
+  if (Array.isArray(reviewed)) {
+    for (const binding of reviewed) {
+      const projected = projectMissingEvidenceCorrection(input, assessment, binding);
+      if (projected !== assessment) return projected;
+    }
+    return assessment;
+  }
+  if (!input || !assessment || !reviewed || input.published === false || input.manual_only || input.editorial_approval_hash
     || input.story_id && input.story_id !== reviewed.story_id
     || input.published_at && input.published_at !== reviewed.published_at
+    || input.updated_at && reviewed.updated_at && input.updated_at !== reviewed.updated_at
     || input.current_version && input.current_version !== reviewed.version
     || input.content_hash && input.content_hash !== reviewed.content_hash
     || assessment.zero_evidence_correction
