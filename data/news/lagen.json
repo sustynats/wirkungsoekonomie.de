@@ -1,7 +1,93 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-26T17:00:00.000Z",
+  "updated_at": "2026-10-27T05:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-27-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-27",
+      "window_from": "2026-10-26T17:00:00.000Z",
+      "window_to": "2026-10-27T05:00:00.000Z",
+      "stand": "2026-10-27T05:00:00.000Z",
+      "headline": "Das sind die 8 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 8,
+        "neu": 7,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-4c57f23de821f8f2",
+          "slug": "eu-stellt-plane-fur-abschiebeagentur-frontex-vor-21f8f2",
+          "title": "EU stellt Pläne für Ausbau von Frontex vor",
+          "state": "neu",
+          "at": "2026-10-27T03:13:47.035Z",
+          "score": 9.8525
+        },
+        {
+          "story_id": "wt-544a1c7fa90f447e",
+          "slug": "ukraine-news-selenskyj-will-gipfel-mit-trump-und-putin-und-wartet-auf-patriot-raketen-0f447e",
+          "title": "Örtliche Feuerpause in Oleschky laut MDR in Kraft",
+          "state": "neu",
+          "at": "2026-10-27T02:14:35.937Z",
+          "score": 7.7703
+        },
+        {
+          "story_id": "wt-c4ba5718144e84bd",
+          "slug": "france-crowds-fill-marseille-s-old-port-in-anti-racism-protest-4e84bd",
+          "title": "In Marseille versammeln sich Menschen zu Anti-Rassismus-Protest",
+          "state": "neu",
+          "at": "2026-10-26T22:44:50.040Z",
+          "score": 5.4789
+        },
+        {
+          "story_id": "wt-df7c0361c9a83bba",
+          "slug": "skandinavien-regierungsbildung-in-schweden-erneut-gescheitert-a83bba",
+          "title": "Nach Angaben des Deutschlandfunks: Regierungsbildung in Schweden erneut gescheitert",
+          "state": "neu",
+          "at": "2026-10-26T21:33:39.374Z",
+          "score": 7.3801
+        },
+        {
+          "story_id": "wt-8506172a6ed9e916",
+          "slug": "verteidigungsministertreffen-pistorius-spricht-putin-ernsthaften-friedenswillen-ab-d9e916",
+          "title": "Laut Stern: Pistorius zweifelt an Putins Friedenswillen",
+          "state": "neu",
+          "at": "2026-10-26T21:32:47.227Z",
+          "score": 3.3789
+        },
+        {
+          "story_id": "wt-b4cab76953b162f6",
+          "slug": "backwarenhersteller-aryzta-schliesst-werk-in-nordhausen-b162f6",
+          "title": "Aryzta will laut MDR Werk in Nordhausen schließen",
+          "state": "neu",
+          "at": "2026-10-26T21:16:27.930Z",
+          "score": 5.3562
+        },
+        {
+          "story_id": "wt-385c4c7d17b6d916",
+          "slug": "todlicher-schusswaffenangriff-bei-paris-verdachtiger-bestreitet-rassistisches-motiv-b6d916",
+          "title": "Laut Staatsanwalt bestreitet Verdächtiger bei Paris rassistisches Motiv",
+          "state": "neu",
+          "at": "2026-10-26T21:15:54.627Z",
+          "score": 5.3554
+        },
+        {
+          "story_id": "wt-1f89a8507cb2de84",
+          "slug": "bergneustadt-schusse-auf-63-jahrigen-beim-gassigehen-b2de84",
+          "title": "Laut WDR: 63-Jähriger in Bergneustadt beim Gassigehen angeschossen",
+          "state": "fortgeschrieben",
+          "at": "2026-10-26T21:06:33.026Z",
+          "score": 9.0924
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-27T05:10:37.967Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-26-abendlage",
       "slot": "abendlage",
@@ -5711,79 +5797,6 @@
           "state": "neu",
           "at": "2026-09-27T05:11:01.193Z",
           "score": 5.1973
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-27-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-27",
-      "window_from": "2026-09-26T16:00:00.000Z",
-      "window_to": "2026-09-27T04:00:00.000Z",
-      "stand": "2026-09-27T04:00:00.000Z",
-      "headline": "Das sind die 7 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 7,
-        "neu": 3,
-        "fortgeschrieben": 4
-      },
-      "entries": [
-        {
-          "story_id": "wt-450b6403101f043f",
-          "slug": "tater-radelte-davon-schusse-auf-meininger-markt-polizei-sucht-zeugen-1f043f",
-          "title": "Nach Angaben der Polizei: Mann gibt auf Meininger Markt mehrere Schüsse ab und flieht",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T20:57:53.464Z",
-          "score": 9.1637
-        },
-        {
-          "story_id": "wt-94c90931f6874e14",
-          "slug": "gewalt-mann-in-koln-angeschossen-fahndung-nach-verdachtigen-874e14",
-          "title": "Mann in Köln angeschossen – Fahndung nach Verdächtigen",
-          "state": "neu",
-          "at": "2026-09-26T19:56:30.686Z",
-          "score": 9.3285
-        },
-        {
-          "story_id": "wt-6847e65f681b3f78",
-          "slug": "ukraine-unter-russischer-besatzung-hungerkrise-in-oleschky-1b3f78",
-          "title": "Laut DER SPIEGEL droht in Oleschky eine Hungerkatastrophe",
-          "state": "neu",
-          "at": "2026-09-26T18:46:41.422Z",
-          "score": 9.3736
-        },
-        {
-          "story_id": "wt-e5d9220bd864f8c8",
-          "slug": "explosion-auf-wertstoffhof-in-uberlingen-ein-mitarbeiter-schwer-verletzt-64f8c8",
-          "title": "Laut SWR: Explosion auf Wertstoffhof in Überlingen: Mitarbeiter schwer verletzt, Ursache weiter offen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T18:09:52.399Z",
-          "score": 9.4304
-        },
-        {
-          "story_id": "wt-17183454da128b91",
-          "slug": "erneute-explosionen-in-frankfurt-17-jahriger-tatverdachtiger-festgenommen-128b91",
-          "title": "Laut hessenschau: Erneute Explosionen in Frankfurt – 17-jähriger Tatverdächtiger festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T17:44:14.364Z",
-          "score": 4.8948
-        },
-        {
-          "story_id": "wt-2d3f98683f6f8ac9",
-          "slug": "kriminalitat-handelsverband-besorgt-nach-serie-von-explosionen-6f8ac9",
-          "title": "Laut stern: Fünf Läden in Frankfurt und Offenbach durch Detonationen stark beschädigt",
-          "state": "fortgeschrieben",
-          "at": "2026-09-26T17:03:53.826Z",
-          "score": 2.8387
-        },
-        {
-          "story_id": "wt-d495e09b6da8d401",
-          "slug": "explosion-mindestens-elf-tote-bei-anschlag-im-nordwesten-pakistans-a8d401",
-          "title": "Mindestens elf Tote bei Anschlag im Nordwesten Pakistans",
-          "state": "neu",
-          "at": "2026-09-26T16:44:48.541Z",
-          "score": 10
         }
       ]
     }
