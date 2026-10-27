@@ -1,4 +1,5 @@
 import { IMPACT_SCOPE_RULE } from './impact-scope.mjs';
+import { projectReviewedObservationContext } from './observation-context.mjs';
 // Canonical semantics for every ticker surface. No provider calls and no
 // inference of magnitude from relevance, evidence, topic or party identity.
 import { MAGNITUDE_PATH_SCHEMA, MAGNITUDE_FACTORS, pathwayMagnitudeErrors, aggregateMainPaths, calculateMagnitude } from './impact-magnitude.mjs';
@@ -245,7 +246,8 @@ export function migrateImpactAssessment(analysis = {}, context = {}) {
 
 export function deriveImpactPresentation(input = {}, context = {}) {
   const analysis = input.analysis || input;
-  const assessment = ['2.0','2.1'].includes(input.version) && input.dimensions ? input : input.impact_assessment || migrateImpactAssessment(analysis, { title: input.title, ...context });
+  const original = ['2.0','2.1'].includes(input.version) && input.dimensions ? input : input.impact_assessment || migrateImpactAssessment(analysis, { title: input.title, ...context });
+  const assessment = projectReviewedObservationContext(input, original);
   const potential = assessment.semantics_revision === POTENTIAL_REVISION;
   const timeLabels = { ex_ante: 'Ex ante', ongoing: 'Laufende Prüfung', ex_post: 'Ex post' };
   const dimensions = Object.fromEntries(IMPACT_KEYS.map(key => {
