@@ -66,6 +66,15 @@ const REVIEWED = Object.freeze([Object.freeze({
   dimension_sha256: '1fefa47a931ecc0874ee4bec92e30c100225929ca64cf574357642be921b5b91',
   at: '2026-10-27T13:04:00.000Z',
   note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
+}), Object.freeze({
+  story_id: 'wt-19479b38bc79f2bc', published_at: '2026-10-27T13:00:48.573Z',
+  updated_at: '2026-10-27T13:00:48.573Z', version: 1,
+  content_hash: 'fe8df641c77efc9613b2d3a2b815c0cdfd7868c6bec5fcbe44e1e4bd17c84f75',
+  target_label: 'Ermittlungsmaßnahme und ihre mögliche Wirkung auf Sicherheit, Öffentlichkeit und Institutionen', dimension: 'planet',
+  profile_sha256: '9a2e4bbb7dfd24bce21314e75d959028d65ed128e1e89eb6647a8fa2d1c7cbcc',
+  dimension_sha256: 'b4a8cda5a76ce255e24ccdadea30bf72e18c499915f0ca65d31ee7881ff3324f',
+  at: '2026-10-27T17:04:00.000Z',
+  note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
 })]);
 
 // Audited, already published editions. Paid originals, stored versions and
