@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-27T05:00:00.000Z",
+  "updated_at": "2026-10-27T11:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-27-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-27",
+      "window_from": "2026-10-27T05:00:00.000Z",
+      "window_to": "2026-10-27T11:00:00.000Z",
+      "stand": "2026-10-27T11:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 8,
+        "fortgeschrieben": 1
+      },
+      "entries": [
+        {
+          "story_id": "wt-5987621cd126d543",
+          "slug": "vorwurf-kriegsverbrechen-prozess-um-nord-stream-anschlag-vor-wichtiger-entscheidung-26d543",
+          "title": "Nord-Stream-Verfahren wird laut Stern nicht eingestellt",
+          "state": "fortgeschrieben",
+          "at": "2026-10-27T10:50:31.103Z",
+          "score": 3.7237
+        },
+        {
+          "story_id": "wt-ba543ef9ff18988e",
+          "slug": "bahnstrecke-hamburg-berlin-wegen-weltkriegsbombe-gesperrt-18988e",
+          "title": "Laut DER SPIEGEL: Bahnstrecke Hamburg–Berlin wegen Weltkriegsbombe gesperrt",
+          "state": "neu",
+          "at": "2026-10-27T10:49:44.019Z",
+          "score": 5.9715
+        },
+        {
+          "story_id": "wt-29e689850cc358c5",
+          "slug": "bombe-in-mussen-gefunden-wichtige-bahnstrecken-gesperrt-c358c5",
+          "title": "Möglicher Bombenfund in Müssen unterbricht Bahnverkehr und räumt zwei Straßen",
+          "state": "neu",
+          "at": "2026-10-27T10:02:48.805Z",
+          "score": 5.8411
+        },
+        {
+          "story_id": "wt-908a548265753ef4",
+          "slug": "schon-wieder-schusse-auf-ein-wohnhaus-bewohner-entdeckt-einschussloch-an-mehrfamilienhau-753ef4",
+          "title": "Laut Tagesspiegel: Einschussloch an Mehrfamilienhaus in Berlin-Lankwitz entdeckt",
+          "state": "neu",
+          "at": "2026-10-27T09:46:04.205Z",
+          "score": 5.7946
+        },
+        {
+          "story_id": "wt-5f89cb80976c00ee",
+          "slug": "penny-schliesst-seinen-parkplatz-fur-die-anwohner-6c00ee",
+          "title": "Penny schließt seinen Parkplatz für die Anwohner",
+          "state": "neu",
+          "at": "2026-10-27T08:58:20.632Z",
+          "score": 5.6621
+        },
+        {
+          "story_id": "wt-0927106fd294a8d0",
+          "slug": "dok-leipzig-beginnt-unter-neuer-leitung-94a8d0",
+          "title": "DOK Leipzig eröffnet unter neuer Leitung",
+          "state": "neu",
+          "at": "2026-10-27T08:30:58.112Z",
+          "score": 5.586
+        },
+        {
+          "story_id": "wt-552cafd187e7c9a4",
+          "slug": "ukraine-krieg-waffenruhe-in-verminter-frontstadt-oleschky-in-kraft-humanitare-hilfe-soll-e7c9a4",
+          "title": "Laut Deutschlandfunk ist örtliche Waffenruhe in Oleschky in Kraft",
+          "state": "neu",
+          "at": "2026-10-27T07:47:57.131Z",
+          "score": 7.4665
+        },
+        {
+          "story_id": "wt-f081b399229e898a",
+          "slug": "chipindustrie-infineon-investiert-1-1-milliarden-in-osterreich-9e898a",
+          "title": "Laut stern und Tagesspiegel: Infineon plant 1,1 Milliarden Euro für neue Fertigung in Österreich",
+          "state": "neu",
+          "at": "2026-10-27T07:47:01.194Z",
+          "score": 5.4639
+        },
+        {
+          "story_id": "wt-2b60f3b3f3abd2ad",
+          "slug": "tater-auf-der-flucht-auto-fahrt-in-menschengruppe-polizei-schiesst-auf-wagen-abd2ad",
+          "title": "Nach Angaben des Deutschlandfunks: Auto fährt bei Hannover in Menschengruppe",
+          "state": "neu",
+          "at": "2026-10-27T06:15:07.799Z",
+          "score": 9.793
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-27-morgenlage",
       "slot": "morgenlage",
