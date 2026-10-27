@@ -21,12 +21,21 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "run": {
-      "firstSeen": "2026-10-27T16:06:06.381Z",
-      "active": true
+    "institute": {
+      "firstSeen": "2026-10-27T16:36:18.039Z",
+      "active": false
+    },
+    "editorial-coverage": {
+      "firstSeen": "2026-10-27T16:36:18.039Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "22697b43cbcfe9fe1e8262d6",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-27T16:36:18.039Z"
+    }
+  ],
   "dailyDate": "2026-10-27",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3842,11 +3851,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/obduktionsergebnis-nach-explosion-in-bochum-opfer-starb-durch-chemikalien-3767a0/": {
         "first_seen_at": "2026-10-27T15:05:59.355Z",
         "source_at": "2026-10-27T13:26:34.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mitteldeutschland-sucht-ingenieurinnen-und-ingenieure-37308d/": {
+        "first_seen_at": "2026-10-27T16:36:18.039Z",
+        "source_at": "2026-10-27T15:00:44.000Z"
       }
     },
-    "last_new_at": "2026-10-27T15:05:59.355Z",
-    "checked_at": "2026-10-27T16:06:06.381Z",
-    "last_current_new_at": "2026-10-27T15:05:59.355Z"
+    "last_new_at": "2026-10-27T16:36:18.039Z",
+    "checked_at": "2026-10-27T16:36:18.039Z",
+    "last_current_new_at": "2026-10-27T16:36:18.039Z"
   },
   "recovery_attempts": [
     {
