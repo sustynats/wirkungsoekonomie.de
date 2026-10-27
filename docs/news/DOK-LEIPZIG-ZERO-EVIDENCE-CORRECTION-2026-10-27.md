@@ -22,6 +22,10 @@ Korrektur ist keine neue ökologische Bewertung und behauptet keine nachgewiesen
 Umweltwirkung. Eine belastbare Einschätzung bleibt fachlich offen.
 Coverage und Betriebsprüfung zählen dieses offene Profil nicht als vollständig
 bewertet; die strenge Freigabe neuer vollständiger Profile bleibt bestehen.
+Der Live-Nachweis unterscheidet die exakt gebundene historische Korrektur von
+vollständig modellierten Profilen und vergleicht dafür den ganzen Artikelinhalt
+sowie die gesamten App-/Feed-Karten mit dem unveränderlichen Deployment-Artefakt.
+Eine beliebige offene Skala oder ein hinzugefügter Korrekturmarker genügt nicht.
 
 Die Projektion gilt ausschließlich für die unveränderte veröffentlichte Fassung:
 
