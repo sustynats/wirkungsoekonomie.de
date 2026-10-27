@@ -21,12 +21,21 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-27T16:36:18.039Z",
+    "run": {
+      "firstSeen": "2026-10-27T18:06:00.492Z",
       "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "532661774ab6e9a4adfcbb78",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-27T18:06:00.492Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "5803e6516b05b07a83388c6e",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-27T18:06:00.492Z"
+    }
+  ],
   "dailyDate": "2026-10-27",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3846,11 +3855,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/mitteldeutschland-sucht-ingenieurinnen-und-ingenieure-37308d/": {
         "first_seen_at": "2026-10-27T16:36:18.039Z",
         "source_at": "2026-10-27T15:00:44.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/tabaksteuer-bundesfinanzministerium-will-gesetzesfehler-korrigieren-80836a/": {
+        "first_seen_at": "2026-10-27T18:06:00.492Z",
+        "source_at": "2026-10-27T16:53:11.000Z"
       }
     },
-    "last_new_at": "2026-10-27T16:36:18.039Z",
-    "checked_at": "2026-10-27T17:36:10.068Z",
-    "last_current_new_at": "2026-10-27T16:36:18.039Z"
+    "last_new_at": "2026-10-27T18:06:00.492Z",
+    "checked_at": "2026-10-27T18:06:00.492Z",
+    "last_current_new_at": "2026-10-27T18:06:00.492Z"
   },
   "recovery_attempts": [
     {
