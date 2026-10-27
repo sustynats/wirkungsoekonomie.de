@@ -10,6 +10,7 @@ import { modelledPublicationIssues } from './impact-scope.mjs';
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
 import { retainPotentialHistory } from './impact-potential.mjs';
 import { IMPACT_VERSION } from './impact-assessment.mjs';
+import { missingEvidenceZeroIssues } from './missing-evidence-zero.mjs';
 
 export const DETERMINISTIC_GATE_VERSION = 'deterministic-gate-2';
 
@@ -31,7 +32,7 @@ export function deterministicGateIssues(record) {
   const assessment = record?.impact_assessment;
   if (!assessment) return ['IMPACT_ASSESSMENT_REQUIRED'];
   if (assessment.version !== IMPACT_VERSION) return ['IMPACT_VERSION_INVALID'];
-  const issues = [...semanticIssues(assessment, record, { secondPassComplete: secondPassComplete(assessment) }), ...modelledPublicationIssues(assessment)];
+  const issues = [...semanticIssues(assessment, record, { secondPassComplete: secondPassComplete(assessment) }), ...modelledPublicationIssues(assessment), ...missingEvidenceZeroIssues(assessment)];
   return [...new Set(issues)];
 }
 
