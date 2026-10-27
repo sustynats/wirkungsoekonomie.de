@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-27T16:56:24.674Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-27T18:16:20.698Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -34,6 +34,37 @@
         "democracy": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-lokale-feuerpause-bei-oleschky-angriffe-gehen-weiter-651a96/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-lokale-feuerpause-bei-oleschky-angriffe-gehen-weiter-651a96/",
+      "title": "Laut Deutschlandfunk: Angriffe trotz lokaler Feuerpause fortgesetzt",
+      "summary": "Eine lokale Feuerpause bei Oleschky gilt laut Deutschlandfunk, während die gegenseitigen Angriffe weitergehen. Der Bericht nennt Tote und Schäden, lässt aber Umfang und Einhaltung der Feuerpause offen.",
+      "date_published": "2026-10-27T16:12:37.000Z",
+      "date_modified": "2026-10-27T16:12:37.000Z",
+      "_woek_released_at": "2026-10-27T18:22:10.619Z",
+      "tags": [
+        "Geopolitik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
