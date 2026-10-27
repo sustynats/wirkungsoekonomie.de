@@ -3,6 +3,7 @@ import { IMPACT_VERSION, IMPACT_KEYS, impactAssessmentErrors } from './impact-as
 import { derivePublicationStatus } from './impact-publication.mjs';
 import { hash } from './bridge/contract.mjs';
 import { assessmentBasis } from './migrate-impact-assessments.mjs';
+import { missingEvidenceZeroIssues, projectMissingEvidenceCorrection } from './missing-evidence-zero.mjs';
 export const assessableRecord = r => (r.published || r.status === 'published') && !r.manual_authority && r.format !== 'book_review' && !r.book;
 export const impactSources = r => [...(r.sources || r.source_snapshot || []), ...(r.impact_sources || [])];
 export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts = {} } = {}) {
@@ -12,7 +13,7 @@ export function impactCoverage(records, { publicHtml = [], minimumMaterialCounts
     by_dimension:Object.fromEntries(IMPACT_KEYS.map(k=>[k,{modelled:0,material:0,not_material:0,insufficient_basis:0,magnitudes:Object.fromEntries([0,1,2,3,4,5].map(n=>[n,0]))}])), errors:[] };
   for (const record of records.filter(assessableRecord)) {
     report.active_stories++;
-    const a = record.impact_assessment, errors=[...impactAssessmentErrors(a,impactSources(record),{required:true}), ...modelledPublicationIssues(a)];
+    const a = projectMissingEvidenceCorrection(record, record.impact_assessment), errors=[...impactAssessmentErrors(a,impactSources(record),{required:true}), ...modelledPublicationIssues(a), ...missingEvidenceZeroIssues(record.impact_assessment)];
     if (record.impact_assessment_basis !== assessmentBasis(record)) errors.push('IMPACT_COVERAGE_BASIS_MISMATCH');
     if (a?.publication_status !== 'ready' || record.impact_semantic_review?.status !== 'ready') errors.push('IMPACT_COVERAGE_REVIEW_REQUIRED');
     const valid = !errors.length;

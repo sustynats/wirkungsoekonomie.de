@@ -5,6 +5,7 @@ import {impactAssessmentErrors} from './impact-assessment.mjs';
 import {modelledPublicationIssues} from './impact-scope.mjs';
 import {assessmentBasis} from './migrate-impact-assessments.mjs';
 import {projectReviewedObservationContext} from './observation-context.mjs';
+import {projectMissingEvidenceCorrection} from './missing-evidence-zero.mjs';
 export const IMPACT_RELEASE = JSON.parse(fs.readFileSync(new URL('../../content/news/impact-release.json', import.meta.url), 'utf8'));
 export const PUBLIC_IMPACT_PROFILE_VERSION = IMPACT_RELEASE.public_version;
 export const REVIEWED_IMPACT_PROFILE_VERSION = IMPACT_RELEASE.reviewed_record_version || null;
@@ -22,8 +23,9 @@ export function publicImpactAssessment(record = {}) {
     && modelledPublicationIssues(assessment).length === 0;
   if (!(individuallyReleased || PUBLIC_IMPACT_PROFILE_VERSION && assessment?.version === PUBLIC_IMPACT_PROFILE_VERSION)
     || assessment.review?.status === 'needs_reassessment' || assessment.publication_status !== 'ready') return null;
-  const { review: _review, research_check: _research, ...publicAssessment } = structuredClone(projectReviewedObservationContext(record, assessment));
+  const { review: _review, research_check: _research, ...publicAssessment } = structuredClone(projectMissingEvidenceCorrection(record, projectReviewedObservationContext(record, assessment)));
   publicAssessment.review = {status:assessment.review?.status,at:assessment.review?.at,note:'Wirkpfade, Tragweite, Eintrittsplausibilität und Evidenz erneut geprüft.'};
+  if (publicAssessment.zero_evidence_correction) publicAssessment.review.note = publicAssessment.zero_evidence_correction.note;
   publicAssessment.source_functions = assessment.research_check?.source_functions || [];
   return publicAssessment;
 }
