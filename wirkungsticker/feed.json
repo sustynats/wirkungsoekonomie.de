@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-26T22:41:30.447Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-27T02:10:36.043Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -28,6 +28,37 @@
         "planet": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-selenskyj-will-gipfel-mit-trump-und-putin-und-wartet-auf-patriot-raketen-0f447e/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/ukraine-news-selenskyj-will-gipfel-mit-trump-und-putin-und-wartet-auf-patriot-raketen-0f447e/",
+      "title": "Örtliche Feuerpause in Oleschky laut MDR in Kraft",
+      "summary": "Eine örtliche Feuerpause in Oleschky soll Hilfslieferungen, Minenräumung und einen sicheren Korridor ermöglichen. Ob die Kämpfe tatsächlich ruhen und Bewohner evakuiert werden, ist noch offen.",
+      "date_published": "2026-10-26T21:28:52.000Z",
+      "date_modified": "2026-10-26T21:28:52.000Z",
+      "_woek_released_at": "2026-10-27T02:14:35.937Z",
+      "tags": [
+        "Gesellschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "observed"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "positive",
           "status": "potential"
         },
         "democracy": {
