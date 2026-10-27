@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { gzipSync } from 'node:zlib';
-import { completePotential, renderedPotentialErrors, readExpectedManifest, livePotentialCheck } from '../../scripts/news/live-potential-smoke.mjs';
+import { completePotential, renderedPotentialErrors, correctedPotentialErrors, readExpectedCorrection, readExpectedManifest, livePotentialCheck } from '../../scripts/news/live-potential-smoke.mjs';
 
 function fixture(t) {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), 'ticker-live-smoke-'));
@@ -132,4 +132,32 @@ test('renderedPotentialErrors rejects dashed/open historical profiles and accept
   assert.ok(errors.includes('card:NUMERIC_POTENTIAL_BARS_MISSING'));
   assert.ok(errors.includes('card:HISTORICAL_NULL_PROFILE_RENDERED'));
   assert.ok(errors.includes('card:OPEN_MAGNITUDE_RENDERED'));
+});
+
+const correctedCard = () => ['human','planet','democracy'].map(key =>
+  `<div class="wt-dim wt-dim--${key}" data-path-status="${key==='planet'?'insufficient_basis':'modelled'}"><span data-magnitude="${key==='planet'?'open':2}"></span></div>`).join('');
+const correctedArticle = () => `<main><aside data-impact-zero-evidence-correction>Darstellungskorrektur vom 27.10.2026</aside>${correctedCard()}</main>`;
+
+test('an audited historical readback must match the entire artifact main and card', () => {
+  assert.deepEqual(correctedPotentialErrors(correctedArticle(),correctedArticle(),'article',{article:true}),[]);
+  assert.deepEqual(correctedPotentialErrors(correctedCard(),correctedCard(),'card'),[]);
+  assert.ok(correctedPotentialErrors(correctedArticle().replace('</main>','Changed text</main>'),correctedArticle(),'article',{article:true}).some(e=>e.endsWith('READBACK_MISMATCH')));
+  assert.ok(correctedPotentialErrors(correctedCard().replace('"open"','"0"'),correctedCard(),'card').some(e=>e.endsWith('READBACK_MISMATCH')));
+});
+
+test('a wrong dimension, missing correction notice or old numeric artifact cannot authorize the historical path', () => {
+  for(const bad of [correctedArticle().replace('data-impact-zero-evidence-correction','old-marker'),
+    correctedArticle().replace('wt-dim--planet','wt-dim--human'),
+    correctedArticle().replace('data-magnitude="open"','data-magnitude="0"')]) {
+    assert.ok(correctedPotentialErrors(bad,bad,'article',{article:true}).some(e=>e.endsWith('ARTIFACT_INVALID')));
+  }
+  assert.throws(()=>readExpectedCorrection(record(),{}),/UNBOUND_HISTORICAL_CORRECTION/);
+});
+
+test('a correction marker on an unbound record never weakens the ordinary three-modelled-dimension gate', async () => {
+  const result=await livePotentialCheck(surfaces({html:correctedArticle()}));
+  assert.equal(result.ok,false);
+  assert.equal(result.reviewed_profiles,1);
+  assert.equal(result.historical_corrections,undefined);
+  assert.ok(result.errors.some(e=>e.endsWith('OPEN_MAGNITUDE_RENDERED')));
 });
