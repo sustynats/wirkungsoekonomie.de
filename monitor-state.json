@@ -28,10 +28,6 @@
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-27T13:45:09.495Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-27T14:06:28.471Z",
-      "active": false
     }
   },
   "outbox": [],
@@ -3838,11 +3834,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/kriminalitat-schusse-in-schoneberg-vierte-festnahme-in-darmstadt-79f2bc/": {
         "first_seen_at": "2026-10-27T13:45:09.495Z",
         "source_at": "2026-10-27T12:46:37.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bericht-aus-der-kabinettssitzung-vom-27-oktober-2026-5d1466/": {
+        "first_seen_at": "2026-10-27T14:21:24.886Z",
+        "source_at": "2026-10-27T11:34:05.000Z"
       }
     },
-    "last_new_at": "2026-10-27T13:45:09.495Z",
-    "checked_at": "2026-10-27T14:06:28.471Z",
-    "last_current_new_at": "2026-10-27T13:45:09.495Z"
+    "last_new_at": "2026-10-27T14:21:24.886Z",
+    "checked_at": "2026-10-27T14:21:24.886Z",
+    "last_current_new_at": "2026-10-27T14:21:24.886Z"
   },
   "recovery_attempts": [
     {
