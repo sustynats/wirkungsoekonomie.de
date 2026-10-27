@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-27T12:56:37.236Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-27T13:13:41.917Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -65,6 +65,39 @@
         "democracy": {
           "magnitude": 2,
           "direction": "negative",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/bericht-aus-der-kabinettssitzung-vom-27-oktober-2026-5d1466/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/bericht-aus-der-kabinettssitzung-vom-27-oktober-2026-5d1466/",
+      "title": "Laut Bayerischer Staatsregierung: Bayern berichtet über Pflegeausbau und fordert Pflegereform",
+      "summary": "Bayern berichtet über den Ausbau der Pflegeversorgung und fordert vom Bund ein zukunftsfestes Konzept für eine Pflegereform. Belegt sind Ziele und eine politische Forderung, nicht deren Umsetzung oder Wirkung.",
+      "date_published": "2026-10-27T11:34:05.000Z",
+      "date_modified": "2026-10-27T11:34:05.000Z",
+      "_woek_released_at": "2026-10-27T13:18:03.536Z",
+      "tags": [
+        "Soziales",
+        "Gesundheit",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 3,
+          "direction": "positive",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "positive",
           "status": "potential"
         }
       }
