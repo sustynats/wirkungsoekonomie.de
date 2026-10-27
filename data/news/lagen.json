@@ -1,7 +1,96 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-27T11:00:00.000Z",
+  "updated_at": "2026-10-27T17:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-27-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-27",
+      "window_from": "2026-10-27T11:00:00.000Z",
+      "window_to": "2026-10-27T17:00:00.000Z",
+      "stand": "2026-10-27T17:00:00.000Z",
+      "headline": "Das sind die 9 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 9,
+        "neu": 7,
+        "fortgeschrieben": 2
+      },
+      "entries": [
+        {
+          "story_id": "wt-785e5573f980836a",
+          "slug": "tabaksteuer-bundesfinanzministerium-will-gesetzesfehler-korrigieren-80836a",
+          "title": "Laut Deutschlandfunk: Bundesfinanzministerium will Fehler bei Tabaksteuer korrigieren",
+          "state": "neu",
+          "at": "2026-10-27T16:59:42.867Z",
+          "score": 7.9992
+        },
+        {
+          "story_id": "wt-50e9adee8b37308d",
+          "slug": "mitteldeutschland-sucht-ingenieurinnen-und-ingenieure-37308d",
+          "title": "Laut MDR fehlen Ingenieurfachkräfte in Mitteldeutschland trotz mehr Arbeitslosigkeit",
+          "state": "neu",
+          "at": "2026-10-27T16:01:07.365Z",
+          "score": 5.8365
+        },
+        {
+          "story_id": "wt-0143f42cb17785ba",
+          "slug": "evakuierungen-in-indien-wegen-herannahenden-zyklons-arnab-7785ba",
+          "title": "Laut stern: Indien fordert rund 100.000 Menschen wegen Zyklon „Arnab“ zum Verlassen ihrer Häuser auf",
+          "state": "neu",
+          "at": "2026-10-27T14:33:29.828Z",
+          "score": 9.7135
+        },
+        {
+          "story_id": "wt-f44f29031c3767a0",
+          "slug": "obduktionsergebnis-nach-explosion-in-bochum-opfer-starb-durch-chemikalien-3767a0",
+          "title": "Laut stern starb das Opfer der Explosion in Bochum durch Chemikalien",
+          "state": "neu",
+          "at": "2026-10-27T14:07:03.170Z",
+          "score": 9.5196
+        },
+        {
+          "story_id": "wt-cbf94deeb15d1466",
+          "slug": "bericht-aus-der-kabinettssitzung-vom-27-oktober-2026-5d1466",
+          "title": "Laut Bayerischer Staatsregierung: Bayern berichtet über Pflegeausbau und fordert Pflegereform",
+          "state": "neu",
+          "at": "2026-10-27T13:18:03.536Z",
+          "score": 7.3835
+        },
+        {
+          "story_id": "wt-19479b38bc79f2bc",
+          "slug": "kriminalitat-schusse-in-schoneberg-vierte-festnahme-in-darmstadt-79f2bc",
+          "title": "Laut stern: Vierte Festnahme nach Schüssen in Schöneberg",
+          "state": "neu",
+          "at": "2026-10-27T13:00:48.573Z",
+          "score": 3.3356
+        },
+        {
+          "story_id": "wt-f081b399229e898a",
+          "slug": "chipindustrie-infineon-investiert-1-1-milliarden-in-osterreich-9e898a",
+          "title": "Infineon kündigt 1,1 Milliarden Euro für neue Halbleiterfertigung in Villach an",
+          "state": "fortgeschrieben",
+          "at": "2026-10-27T12:18:08.794Z",
+          "score": 4.9671
+        },
+        {
+          "story_id": "wt-de5c18859f6150cf",
+          "slug": "keine-verletzten-schuss-auf-wohnungstur-einer-familie-im-berliner-suden-6150cf",
+          "title": "Laut Tagesspiegel: Schuss auf Wohnungstür einer Familie in Berlin-Lankwitz",
+          "state": "neu",
+          "at": "2026-10-27T12:17:07.962Z",
+          "score": 5.2143
+        },
+        {
+          "story_id": "wt-2fb8d2cf3286781b",
+          "slug": "selenskyj-fordert-teilnahme-an-putin-xi-trump-treffen-86781b",
+          "title": "Laut Tagesschau: Selenskyj fordert Teilnahme an möglichem Treffen von Putin, Trump und Xi",
+          "state": "fortgeschrieben",
+          "at": "2026-10-27T12:02:26.862Z",
+          "score": 4.9235
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-27-mittagslage",
       "slot": "mittagslage",
