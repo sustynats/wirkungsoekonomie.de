@@ -25,16 +25,21 @@
       "firstSeen": "2026-10-27T18:36:12.268Z",
       "active": true
     },
-    "delivery-deploy.yml": {
-      "firstSeen": "2026-10-27T21:36:10.229Z",
+    "delivery-wirkungsticker.yml": {
+      "firstSeen": "2026-10-27T21:56:04.902Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-27T21:51:25.360Z",
-      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e9e34a7323bddd8cdfde335f",
+      "content": "⚠ WÖk-Betriebsstörung\nNachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-27T21:56:04.902Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "7ba379a3b9c1f25324d8490f",
+      "content": "✓ WÖk-Störung behoben\nWebsite-Auslieferung\nPrüfung: 2026-10-27T21:56:04.902Z"
+    }
+  ],
   "dailyDate": "2026-10-27",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3870,11 +3875,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/huthis-grosste-olraffinerie-und-verteidigungsministerium-in-saudi-arabien-angegriffen-2b8568/": {
         "first_seen_at": "2026-10-27T21:06:10.022Z",
         "source_at": "2026-10-27T16:57:31.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/ukraine-krieg-melania-trump-lokale-feuerpause-bei-oleschky-ausgeweitet-45e3b2/": {
+        "first_seen_at": "2026-10-27T21:56:04.902Z",
+        "source_at": "2026-10-27T20:30:42.000Z"
       }
     },
-    "last_new_at": "2026-10-27T21:06:10.022Z",
-    "checked_at": "2026-10-27T21:51:25.360Z",
-    "last_current_new_at": "2026-10-27T21:06:10.022Z"
+    "last_new_at": "2026-10-27T21:56:04.902Z",
+    "checked_at": "2026-10-27T21:56:04.902Z",
+    "last_current_new_at": "2026-10-27T21:56:04.902Z"
   },
   "recovery_attempts": [
     {
