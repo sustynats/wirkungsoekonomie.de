@@ -133,3 +133,37 @@ test('both new seen-item exemptions reject changed bindings and secret-bearing e
     assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
   }
 });
+
+const thirdSeenKey = 'ed3f30127d2175830133a4f201903278da58dda23618303bf4ed5461e32227da';
+const thirdUrl = 'https://www.stern.de/news/suedkoreas-chip-hersteller-sk-hynix-verbucht-erneuten-umsatz--und-gewinnrekord-38462334.html';
+const thirdSeenState = () => ({seen_items: {[thirdSeenKey]: {source_id: 'stern-schlagzeilen', url: thirdUrl}}});
+
+test('the third public RSS identifier is exempt only in its exact retained seen row', () => {
+  const state = thirdSeenState(), before = structuredClone(state);
+  assert.equal(hasSecretPattern(JSON.stringify(state)), true);
+  assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), false);
+  assert.deepEqual(state, before);
+  assert.equal(hasSecretPattern(newsroomSecretScanText({stories: [{story_id: 'unreviewed', slug: 'unreviewed', sources: [state.seen_items[thirdSeenKey]]}]})), true,
+    'a seen-only identifier does not exempt a new story');
+});
+
+test('the seen-only identifier cannot exempt another key, source, field, URL or credentials', () => {
+  for (const change of [
+    s => { s.seen_items.other = s.seen_items[thirdSeenKey]; delete s.seen_items[thirdSeenKey]; },
+    s => { s.seen_items[thirdSeenKey].source_id = 'untrusted'; },
+    s => { s.seen_items[thirdSeenKey].url += '?token=' + 'sk-' + 'Ab0'.repeat(15); },
+    s => { s.seen_items[thirdSeenKey].url += '#sk-' + 'Ab0'.repeat(15); },
+    s => { s.seen_items[thirdSeenKey].other_field = thirdUrl; },
+    s => { s.other_section = {url: thirdUrl}; },
+  ]) {
+    const state = thirdSeenState(); change(state);
+    assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
+  }
+  for (const value of ['sk-' + 'Ab_0-X'.repeat(8), 'sk-proj-' + 'Ab_0-X'.repeat(8),
+    'sk-svcacct-' + 'Ab_0-X'.repeat(8), '-----BEGIN PRIVATE KEY-----',
+    '-----BEGIN RSA PRIVATE KEY-----', '-----BEGIN EC PRIVATE KEY-----',
+    '-----BEGIN OPENSSH PRIVATE KEY-----', 'AKIA' + 'A1'.repeat(8)]) {
+    const state = thirdSeenState(); state.seen_items[thirdSeenKey].provider_error = value;
+    assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
+  }
+});
