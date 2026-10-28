@@ -36,6 +36,17 @@ const publicIdentifiers = [
   },
 ];
 
+// Run 40651102046 retained this public RSS permalink only in seen_items,
+// without an accepted story. Exempt that exact row, not any story or domain.
+const publicSeenSources = [
+  ...publicIdentifiers.flatMap(identifier => identifier.sources),
+  {
+    source_id: 'stern-schlagzeilen',
+    seen_key: 'ed3f30127d2175830133a4f201903278da58dda23618303bf4ed5461e32227da',
+    url: 'https://www.stern.de/news/suedkoreas-chip-hersteller-sk-hynix-verbucht-erneuten-umsatz--und-gewinnrekord-38462334.html',
+  },
+];
+
 export function newsroomSecretScanText(store) {
   const approvedSources = new WeakMap();
   const approvedStories = new WeakMap();
@@ -58,7 +69,7 @@ export function newsroomSecretScanText(store) {
 // state.seen_items. Keep every URL bound to its exact deduplication record.
 export function stateSecretScanText(state) {
   const approved = new WeakMap();
-  for (const identifier of publicIdentifiers) for (const source of identifier.sources) {
+  for (const source of publicSeenSources) {
     const seen = state?.seen_items?.[source.seen_key];
     if (seen?.source_id === source.source_id && seen.url === source.url) approved.set(seen, source.url);
   }

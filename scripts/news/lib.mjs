@@ -402,6 +402,10 @@ export function extractArticleText(html, maxLength = 7000) {
     // inside that attribute and leaked its remaining configuration as prose.
     .replace(/<\/?[a-z][a-z0-9:-]*(?:\s+(?:[^<>"']|"[^"]*"|'[^']*')*)?\s*\/?>/gi, " ");
   let text = sanitizeFeedText(withoutChrome, maxLength + 3000);
+  // Use the same prose boundary as the other footers below. A toolbar near
+  // the start remains a leading control, even when it has sharing labels.
+  const shareFooter = /Diesen Artikel teilen(?: Facebook| X| WhatsApp| E-Mail)* Link kopieren/.exec(text);
+  if (shareFooter?.index >= 160) text = text.slice(0, shareFooter.index).trim();
   const linkCopyAt = text.slice(0, 2500).lastIndexOf("Link kopieren");
   if (linkCopyAt >= 0) text = text.slice(linkCopyAt + "Link kopieren".length).trim();
   for (const footerMarker of ["Herausgeber Deutscher Bundestag", "Beitrag teilen per E-Mail teilen"]) {
