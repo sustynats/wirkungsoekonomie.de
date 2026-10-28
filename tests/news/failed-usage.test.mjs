@@ -39,6 +39,36 @@ test('already committed usage and a report from a different runner cannot be cha
   assert.throws(() => recoverUsageReport({runs:[]},report,{...workflow,conclusion:'success'},'now'),/BINDING_INVALID/);
 });
 
+test('a complete paid report survives terminal cancellation without claiming delivery', () => {
+  const usage = {runs: []};
+  const cancelled = {...workflow, conclusion: 'cancelled'};
+  assert.equal(recoverUsageReport(usage, report, cancelled, '2026-09-06T18:00:00Z'), true);
+  assert.equal(usage.runs[0].ai.requests, 4);
+  assert.equal(usage.runs[0].ai.estimated_cost_usd, 0.03473);
+  assert.equal(usage.runs[0].counts.published_stories, 0);
+  assert.equal(usage.runs[0].recovery.report_published_stories, 1);
+  assert.equal(usage.runs[0].recovery.publication_committed, false);
+  assert.equal(recoverUsageReport(usage, report, cancelled, '2026-09-06T19:00:00Z'), false);
+  assert.equal(usage.runs.length, 1);
+});
+
+test('cancellation does not establish an incomplete, mistimed or unknown paid outcome', () => {
+  const cancelled = {...workflow, conclusion: 'cancelled'};
+  for (const change of [{completed_at: undefined}, {completed_at: '2026-09-06T17:21:00Z'},
+    {completed_at: '2026-09-06T17:25:00Z'}, {started_at: 'invalid'}]) {
+    const usage = {runs: []};
+    assert.throws(() => recoverUsageReport(usage, {...report, ...change}, cancelled, '2026-09-06T18:00:00Z'), /BINDING_INVALID/);
+    assert.deepEqual(usage, {runs: []});
+  }
+  assert.throws(() => recoverUsageReport({runs: []}, report, cancelled, '2026-09-06T17:23:00Z'), /BINDING_INVALID/);
+  assert.throws(() => recoverUsageReport({runs: []}, report, {...workflow, conclusion: null}, '2026-09-06T18:00:00Z'), /BINDING_INVALID/);
+  for (const change of [{ai_calls: undefined}, {input_tokens: -1}, {output_tokens: NaN}, {estimated_cost_usd: Infinity}]) {
+    const usage = {runs: []};
+    assert.throws(() => recoverUsageReport(usage, {...report, ...change}, cancelled, '2026-09-06T18:00:00Z'), /USAGE_INVALID/);
+    assert.deepEqual(usage, {runs: []});
+  }
+});
+
 // Natalie am 17.09.2026: „wir hatten gesagt, dass es Prozess ist, nur 1x die
 // API bis hin zur Veröffentlichung hin zu benutzen." Gemessen waren es 263
 // Aufrufe auf 171 Meldungen (1,54 je Meldung) - aber die Nutzungsakte hielt nur
