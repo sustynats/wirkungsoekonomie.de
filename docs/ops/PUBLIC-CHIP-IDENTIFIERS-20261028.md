@@ -1,4 +1,4 @@
-# Public article identifiers in the secret scan - 28 October 2026
+# Public identifiers and retained paid work - 28 October 2026
 
 The ordinary serial news run `40618944489` stopped before its atomic commit
 with `SECRET_PATTERN_FOUND:data/news/stories.json`. The retained recovery ZIP
@@ -25,37 +25,61 @@ Both projections also pass against the complete verified recovery data, with
 identical before/after hashes of the original decoded story store and state.
 There were zero provider calls and zero production data writes in this check.
 
-The next ordinary run `40620363616` failed at the same scan. Its recovery ZIP
-`12787612274` and encrypted raw-output ZIP `12786629957` are retained unchanged.
-The complete second snapshot also passes both corrected scans. It contains one
-new V1 for `wt-4c85309b0533c98a` that never reached the atomic commit. Although
-the existing offline recovery and deterministic gates accept that snapshot,
-the full-text review found an ecological intensity factor of zero justified
-by missing information. This is not evidence of zero intensity. The answer
-therefore stays in its immutable private archive pending independent review;
-it is not restored as a public article or silently rescored.
+## Paid answers remain held, not regenerated
+
+Subsequent old-commit runs completed four paid calls before failing at the
+same unrelated scan. Every recovery ZIP and encrypted raw-output ZIP is
+retained unchanged, with verified bytes, SHA-256 and ZIP integrity.
+
+For `wt-4c85309b0533c98a`, three retained answers share the original title,
+source-review fingerprints and evidence-excerpt hash. A full-text check found
+an ecological intensity factor of zero justified by absent information.
+The originals remain private pending independent review. No answer is selected
+for publication or silently rescored. The first retained analysis hash is
+`362b8a04988e5c5ff6947290b3736be8636516b1e5a4bd3628df9beacd788b92`.
 
 The native `pendingRecord` path creates the source-bound paid-attempt receipt
-for the unchanged candidate. Only its normal quality/attempt hold fields and
-explicit recovery provenance enter the canonical store. Its original source
-review fingerprints and title match the retained paid packet. The existing
+for the unchanged candidate; it records the three completed attempts and their
+immutable provenance. Only normal hold fields and provenance enter the store.
+Its original source-review fingerprints and title match the paid packet. The existing
 `paidAttemptReceiptStatus` returns `same_paid_input` for both identical evidence
 and a feed-clock-only change, preventing a replacement generation. Genuine
-changed source evidence remains distinguishable. All unrelated stories and
-the entire state file remain equal to the baseline; this record stays pending.
-No unpublished answer or new human approval is imported into the final tree.
+changed source evidence remains distinguishable. This record stays pending.
 
-The existing `recoverUsageReport` path accounts once for that failed run's
-19,578 input and 6,451 output tokens, costing USD 0.011657. Historical delivery
-counts stay zero because the failed run did not deliver a publication. This is
-accounting for actual paid work, not a change to a budget or hourly allowance.
-The unchanged retained analysis has SHA-256
-`362b8a04988e5c5ff6947290b3736be8636516b1e5a4bd3628df9beacd788b92`.
-The prepared repair still requires the ordinary worker and release. The held
-answer is not a delivery result, and a green workflow must not claim otherwise.
+For `wt-0cf9b31cfbe74eb0`, the existing gate already returned
+`IMPACT_ZERO_FROM_MISSING_EVIDENCE:planet`. Its native unpublished pending
+record, error and one-attempt receipt are preserved from the verified runner;
+no answer text or score enters the repository. Only its exact pending ID and
+source-bound seen-item record are added to state. Every prior state/dedup entry,
+unrelated story and pre-existing usage row is unchanged. No unpublished answer,
+personal manuscript, human approval or general historical projection changes.
+
+The existing `recoverUsageReport` path accounts for each completed run once:
+
+| Failed run | Input tokens | Output tokens | Actual USD |
+| --- | ---: | ---: | ---: |
+| 40620363616 | 19,578 | 6,451 | 0.011657 |
+| 40621851691 | 19,575 | 5,854 | 0.009180 |
+| 40623305684 | 19,575 | 5,997 | 0.011111 |
+| 40624975084 | 17,738 | 5,449 | 0.010086 |
+
+Total actual spending: USD 0.042034. Historical delivery counts stay zero:
+the failed runs did not deliver publications. No budget or allowance changes.
+
+## Validation and normal resumption
+
+The final data bundle must pass local integration and every exact-head CI gate.
+Technical checks are not a human editorial review or a new publication.
+Two jobless pending runs were cancelled before any job started. The existing
+monitor independently dispatched another old-commit run; it was left untouched
+and its completed work is included above. To prevent further starts during CI,
+workflow `348864401` (`wirkungsticker.yml`) is temporarily `disabled_manually`.
+Existing requests, locks, serialization, editorial worker, monitor and clock
+definitions remain unchanged.
 
 Before merge, verify every CI gate on the exact current PR head and inspect
-new main/bot changes. After merge, use the normal serial worker and ordinary
-Pages release to prove processing and actual delivery. A passing local scan
-does not constitute deployment or new publication. No Oracle reinstallation,
+new main/bot changes. After merge, **enable workflow 348864401**, confirm
+`active`, then use its normal serial clock/cron run and ordinary Pages release.
+Prove actual scan passage, preserved holds/paid guards and live delivery
+separately. A green run is not a new article or substantive result. No Oracle reinstallation,
 manual dispatch, quota/model/budget change or Vercel build is required.
