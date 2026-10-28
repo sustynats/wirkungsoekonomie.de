@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-28T21:29:20.865Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-28T22:46:18.189Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -92,6 +92,38 @@
         "planet": {
           "magnitude": 2,
           "direction": "positive",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/us-zentralbank-fed-lasst-leitzins-unverandert-67cce8/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/us-zentralbank-fed-lasst-leitzins-unverandert-67cce8/",
+      "title": "US-Zentralbank Fed lässt Leitzins unverändert",
+      "summary": "Die Fed hält den Leitzins unverändert; zwei Mitglieder stimmten wegen gestiegener Verbraucherpreise für eine Erhöhung. Das kann Kreditkosten, Inflationserwartungen und die Kommunikation der Geldpolitik beeinflussen, konkrete Folgen sind aber noch offen.",
+      "date_published": "2026-10-28T18:42:59.000Z",
+      "date_modified": "2026-10-28T18:42:59.000Z",
+      "_woek_released_at": "2026-10-28T22:49:58.297Z",
+      "tags": [
+        "Finanzen",
+        "Wirtschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "mixed",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
           "status": "potential"
         },
         "democracy": {
