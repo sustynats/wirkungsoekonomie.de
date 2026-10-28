@@ -1,7 +1,85 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-27T17:00:00.000Z",
+  "updated_at": "2026-10-28T05:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-28-morgenlage",
+      "slot": "morgenlage",
+      "label": "Morgenlage",
+      "date": "2026-10-28",
+      "window_from": "2026-10-27T17:00:00.000Z",
+      "window_to": "2026-10-28T05:00:00.000Z",
+      "stand": "2026-10-28T05:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 7,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-a5c2d3ecb8ae5d4c",
+          "slug": "bei-volkswagen-in-zwickau-werden-nun-auch-autos-auseinandergebaut-ae5d4c",
+          "title": "Laut MDR startet VW in Zwickau Recycling von Altfahrzeugen",
+          "state": "neu",
+          "at": "2026-10-28T04:31:46.589Z",
+          "score": 5.9608
+        },
+        {
+          "story_id": "wt-2525dcac2ed29a3a",
+          "slug": "migration-eu-will-frontex-neu-ausrichten-grossere-rolle-bei-abschiebungen-d29a3a",
+          "title": "Laut Deutschlandfunk will EU-Kommission Frontex neu ausrichten",
+          "state": "neu",
+          "at": "2026-10-27T23:00:28.471Z",
+          "score": 7.5007
+        },
+        {
+          "story_id": "wt-b5e7b898dcc47490",
+          "slug": "kriminalitat-mann-in-lichtenrade-angeschossen-tater-unbekannt-c47490",
+          "title": "Mann in Lichtenrade angeschossen, Täter unbekannt",
+          "state": "neu",
+          "at": "2026-10-27T21:46:12.079Z",
+          "score": 9.3975
+        },
+        {
+          "story_id": "wt-6c3d609bf245e3b2",
+          "slug": "ukraine-krieg-melania-trump-lokale-feuerpause-bei-oleschky-ausgeweitet-45e3b2",
+          "title": "Nach Angaben der USA wurde die Feuerpause bei Oleschky ausgeweitet",
+          "state": "neu",
+          "at": "2026-10-27T21:00:26.722Z",
+          "score": 5.334
+        },
+        {
+          "story_id": "wt-67106f05bd2b8568",
+          "slug": "huthis-grosste-olraffinerie-und-verteidigungsministerium-in-saudi-arabien-angegriffen-2b8568",
+          "title": "Nach Angaben der Huthi: Angriffe auf Ölraffinerie und Verteidigungsministerium in Saudi-Arabien",
+          "state": "neu",
+          "at": "2026-10-27T19:53:49.504Z",
+          "score": 3.2414
+        },
+        {
+          "story_id": "wt-7025d022022cb528",
+          "slug": "vorfall-in-nachtclub-nach-angriff-auf-wasen-wirt-tatverdachtiger-festgenommen-2cb528",
+          "title": "Laut stern: Tatverdächtiger stellt sich nach Streit in Freiburger Nachtclub",
+          "state": "neu",
+          "at": "2026-10-27T19:53:00.869Z",
+          "score": 3.2403
+        },
+        {
+          "story_id": "wt-634b38676f651a96",
+          "slug": "ukraine-krieg-lokale-feuerpause-bei-oleschky-angriffe-gehen-weiter-651a96",
+          "title": "Laut Deutschlandfunk: Angriffe trotz lokaler Feuerpause fortgesetzt",
+          "state": "neu",
+          "at": "2026-10-27T18:22:10.619Z",
+          "score": 9.1141
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-28T05:14:26.564Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-27-abendlage",
       "slot": "abendlage",
@@ -5753,71 +5831,6 @@
           "state": "fortgeschrieben",
           "at": "2026-09-28T05:12:27.729Z",
           "score": 4.9513
-        }
-      ]
-    },
-    {
-      "lage_id": "2026-09-28-morgenlage",
-      "slot": "morgenlage",
-      "label": "Morgenlage",
-      "date": "2026-09-28",
-      "window_from": "2026-09-27T16:00:00.000Z",
-      "window_to": "2026-09-28T04:00:00.000Z",
-      "stand": "2026-09-28T04:00:00.000Z",
-      "headline": "Das sind die 6 Entwicklungen, die seit gestern Abend wirkungsrelevant geworden sind.",
-      "counts": {
-        "total": 6,
-        "neu": 2,
-        "fortgeschrieben": 4
-      },
-      "entries": [
-        {
-          "story_id": "wt-e4f43c1731c0d920",
-          "slug": "vierte-festnahme-nach-todlichen-schussen-in-dietzenbach-c0d920",
-          "title": "Laut Staatsanwaltschaft: Vierter Verdächtiger nach tödlichen Schüssen in Dietzenbach festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-27T20:40:54.565Z",
-          "score": 9.1402
-        },
-        {
-          "story_id": "wt-63f14f261e4520a6",
-          "slug": "angriff-mit-schusswaffe-totungsdelikt-in-dietzenbach-vierter-verdachtiger-gefasst-4520a6",
-          "title": "Laut Polizei: Vierter Verdächtiger nach tödlichen Schüssen in Dietzenbach vorläufig festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-27T20:12:51.011Z",
-          "score": 5.1012
-        },
-        {
-          "story_id": "wt-41752b4534670435",
-          "slug": "verdacht-der-brandstiftung-feuer-in-mehrfamilienhaus-21-menschen-evakuiert-670435",
-          "title": "Feuer in Mehrfamilienhaus in Hamburg-Wilstorf: 21 Menschen evakuiert",
-          "state": "neu",
-          "at": "2026-09-27T19:31:24.104Z",
-          "score": 3.2936
-        },
-        {
-          "story_id": "wt-8586cf0c180d9171",
-          "slug": "fairford-britische-polizei-nimmt-mehrere-personen-fest-sprengstoffkommando-im-einsatz-0d9171",
-          "title": "Laut DER SPIEGEL: Britische Polizei nimmt in Fairford mehrere Personen fest – Sprengstoffkommando im Einsatz",
-          "state": "neu",
-          "at": "2026-09-27T19:04:08.021Z",
-          "score": 3.2557
-        },
-        {
-          "story_id": "wt-5afe31b3b84cebe1",
-          "slug": "grossbritannien-ernster-vorfall-nahe-luftwaffenbasis-mehrere-festnahmen-4cebe1",
-          "title": "Laut Polizei: Fünf Männer nahe der Basis Fairford wegen Verdachts auf Vorbereitung einer „Terrortat“ festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-27T18:25:46.458Z",
-          "score": 4.9525
-        },
-        {
-          "story_id": "wt-90be31c27644288a",
-          "slug": "polizei-nimmt-funf-manner-bei-militarstutzpunkt-fest-44288a",
-          "title": "Laut tagesschau: Fünf Männer bei Militärstützpunkt Fairford festgenommen",
-          "state": "fortgeschrieben",
-          "at": "2026-09-27T17:55:29.479Z",
-          "score": 4.9104
         }
       ]
     }
