@@ -51,6 +51,7 @@ import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './cons
 import { consolidateMannheimSwrDuplicates, retainedMannheimSwrPaidInput } from './consolidate-mannheim-swr-duplicates.mjs';
 import { consolidateMannheimSternDuplicates, retainedMannheimSternPaidInput } from './consolidate-mannheim-stern-duplicates.mjs';
 import { documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage } from './retained-failed-paid-work.mjs';
+import { recoverRetainedDiscovery } from './retained-discovery-inputs.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { applyDocumentedKatzDenialClarification } from './clarify-katz-denial.mjs';
 import { applyDocumentedGassiTopicClarification } from './clarify-gassi-topic.mjs';
@@ -1160,6 +1161,8 @@ export async function runWirkungsticker(options = {}) {
   state.cost_monitoring_started_at ||= now;
   const storyStore = structuredClone(options.storyStore || readJson(files.stories));
   const usage = structuredClone(options.usage || readJson(files.usage));
+  const retainedDiscovery = options.storyStore || options.state ? null
+    : recoverRetainedDiscovery({store: storyStore, state, registry, now});
   const documentedPaidRecovery = options.usage ? null : recoverDocumentedFailedPaidUsage(usage, now);
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
   const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
@@ -1184,6 +1187,7 @@ export async function runWirkungsticker(options = {}) {
       checked_at: usage.failed_run_recovery.checked_at,
       unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
     documented_failed_paid_usage: documentedPaidRecovery,
+    retained_unpaid_discovery: retainedDiscovery,
     status: "running",
     started_at: now,
     berlin_slot: runSchedule.slot || (isAutomatedRun ? `Automatischer Lauf ${String(runSchedule.hourNumber).padStart(2, "0")}:00` : "manueller Lauf"),
