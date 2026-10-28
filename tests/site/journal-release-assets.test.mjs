@@ -55,6 +55,7 @@ test('actual artifact rewrite maps only opted-in images, retaining suffixes and 
 test('the real image release registry matches the complete unchanged local originals', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(repo, 'assets/data/public-release-assets.json')));
   const optedIn = [
+    'assets/img/blog/2026-08-03-wohlstandsverlust-preise-klimakrise.png',
     'assets/img/blog/2026-08-20-deutschlands-nachhaltigkeitsarchitektur-wirkungssteuerung.png',
     'assets/img/blog/2026-08-21-enap-woek-benchmark-fuenf-bundesvorhaben.png',
     'assets/img/blog/2026-08-05-das-bessere-spiel.png',
