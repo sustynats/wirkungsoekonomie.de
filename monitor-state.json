@@ -21,16 +21,21 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-28T04:40:43.332Z",
-      "active": true
-    },
     "delivery-wirkungsticker.yml": {
       "firstSeen": "2026-10-28T08:00:58.241Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-28T08:20:59.924Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5d420a70699919d6a82a0495",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-28T08:20:59.924Z"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3890,11 +3895,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/wahl-in-israel-netanjahu-rivale-eisenkot-will-rasch-neue-regierung-bilden-eeda9d/": {
         "first_seen_at": "2026-10-28T07:21:05.742Z",
         "source_at": "2026-10-28T00:27:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/mehr-zuversicht-fur-konjunktur-ifo-unternehmen-wollen-etwas-weniger-stellen-abbauen-0b818c/": {
+        "first_seen_at": "2026-10-28T08:20:59.924Z",
+        "source_at": "2026-10-28T07:09:50.000Z"
       }
     },
-    "last_new_at": "2026-10-28T07:21:05.742Z",
-    "checked_at": "2026-10-28T08:14:09.087Z",
-    "last_current_new_at": "2026-10-28T06:21:40.944Z"
+    "last_new_at": "2026-10-28T08:20:59.924Z",
+    "checked_at": "2026-10-28T08:20:59.924Z",
+    "last_current_new_at": "2026-10-28T08:20:59.924Z"
   },
   "recovery_attempts": [
     {
