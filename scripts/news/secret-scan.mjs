@@ -13,30 +13,57 @@ const publicIdentifier = Object.freeze({
   url: 'https://www.manager-magazin.de/unternehmen/tech/sk-hynix-chipriese-sagt-boersengang-seiner-chip-sparte-in-den-usa-ab-a-657a2c87-be9b-4612-9171-b2d1b7a74b2f',
 });
 
+// Run 40618944489 found one further public company headline in its exact
+// story and two retained RSS sources. These are complete identifiers, never
+// a company-prefix/domain exception. Keep both deduplication records scoped.
+const publicIdentifiers = [
+  {...publicIdentifier, sources: [publicIdentifier]},
+  {
+    story_id: 'wt-22212d0a64c1c7eb',
+    slug: 'ki-boom-sudkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-c1c7eb',
+    sources: [
+      {
+        source_id: 'stern-schlagzeilen',
+        seen_key: 'd4eca2891eb94ae8bc3a0920b8bd1ba877d1c69060513f851711c839e5174247',
+        url: 'https://www.stern.de/wirtschaft/news/ki-boom--suedkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-38461416.html',
+      },
+      {
+        source_id: 'tagesspiegel-home',
+        seen_key: 'aa83375b04fa5886e289f99fbb747d67316f68fd4c16ff576273621c445e82f1',
+        url: 'https://www.tagesspiegel.de/wirtschaft/dpa-ki-boom-sudkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-16208091.html',
+      },
+    ],
+  },
+];
+
 export function newsroomSecretScanText(store) {
-  const approvedSources = new WeakSet();
-  const approvedStories = new WeakSet();
+  const approvedSources = new WeakMap();
+  const approvedStories = new WeakMap();
   for (const story of store?.stories || []) {
-    if (story?.story_id !== publicIdentifier.story_id || story.slug !== publicIdentifier.slug) continue;
-    const sources = (story.sources || []).filter(source => source?.source_id === publicIdentifier.source_id && source.url === publicIdentifier.url);
+    const identifier = publicIdentifiers.find(item => story?.story_id === item.story_id && story.slug === item.slug);
+    if (!identifier) continue;
+    const sources = (story.sources || []).filter(source => identifier.sources.some(item => source?.source_id === item.source_id && source.url === item.url));
     if (!sources.length) continue;
-    approvedStories.add(story);
-    for (const source of sources) approvedSources.add(source);
+    approvedStories.set(story, identifier.slug);
+    for (const source of sources) approvedSources.set(source, source.url);
   }
   return JSON.stringify(store, function (key, value) {
-    if (key === 'slug' && approvedStories.has(this) && value === publicIdentifier.slug) return '[reviewed public article slug]';
-    if (key === 'url' && approvedSources.has(this) && value === publicIdentifier.url) return '[reviewed public source URL]';
+    if (key === 'slug' && approvedStories.has(this) && value === approvedStories.get(this)) return '[reviewed public article slug]';
+    if (key === 'url' && approvedSources.has(this) && value === approvedSources.get(this)) return '[reviewed public source URL]';
     return value;
   });
 }
 
 // Run 39948979901 passed the story scan, then found the very same URL in
-// state.seen_items. Scope this projection to that exact deduplication record.
+// state.seen_items. Keep every URL bound to its exact deduplication record.
 export function stateSecretScanText(state) {
-  const seen = state?.seen_items?.[publicIdentifier.seen_key];
-  const approved = seen?.source_id === publicIdentifier.source_id && seen.url === publicIdentifier.url ? seen : null;
+  const approved = new WeakMap();
+  for (const identifier of publicIdentifiers) for (const source of identifier.sources) {
+    const seen = state?.seen_items?.[source.seen_key];
+    if (seen?.source_id === source.source_id && seen.url === source.url) approved.set(seen, source.url);
+  }
   return JSON.stringify(state, function (key, value) {
-    if (key === 'url' && this === approved && value === publicIdentifier.url) return '[reviewed public source URL]';
+    if (key === 'url' && approved.has(this) && value === approved.get(this)) return '[reviewed public source URL]';
     return value;
   });
 }

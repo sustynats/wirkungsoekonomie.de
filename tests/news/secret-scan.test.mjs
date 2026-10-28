@@ -68,3 +68,68 @@ test('the state exception is bound to the seen key, source, field and entire URL
     assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
   }
 });
+
+const earningsSlug = 'ki-boom-sudkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-c1c7eb';
+const earningsSources = [
+  {source_id: 'stern-schlagzeilen', seen_key: 'd4eca2891eb94ae8bc3a0920b8bd1ba877d1c69060513f851711c839e5174247',
+    url: 'https://www.stern.de/wirtschaft/news/ki-boom--suedkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-38461416.html'},
+  {source_id: 'tagesspiegel-home', seen_key: 'aa83375b04fa5886e289f99fbb747d67316f68fd4c16ff576273621c445e82f1',
+    url: 'https://www.tagesspiegel.de/wirtschaft/dpa-ki-boom-sudkoreas-chipproduzent-sk-hynix-erzielt-erneut-rekordgewinn-16208091.html'},
+];
+const earningsFixture = () => ({stories: [{story_id: 'wt-22212d0a64c1c7eb', slug: earningsSlug,
+  sources: earningsSources.map(({source_id, url}) => ({source_id, url}))}]});
+const earningsState = () => ({seen_items: Object.fromEntries(earningsSources.map(({seen_key, ...source}) => [seen_key, source]))});
+
+test('the exact second SK Hynix story and both seen-item records pass without mutating data', () => {
+  const store = earningsFixture(), state = earningsState();
+  const before = structuredClone({store, state});
+  assert.equal(hasSecretPattern(JSON.stringify(store)), true);
+  assert.equal(hasSecretPattern(JSON.stringify(state)), true);
+  assert.equal(hasSecretPattern(newsroomSecretScanText(store)), false);
+  assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), false);
+  assert.deepEqual({store, state}, before);
+});
+
+test('the second story exemption remains bound to its story, slug, source, field and complete URL', () => {
+  for (const change of [
+    s => { s.stories[0].story_id = 'wt-4d25b6e225eeafc4'; },
+    s => { s.stories[0].slug += '-changed'; },
+    s => { s.stories[0].slug = slug; },
+    s => { s.stories[0].sources = []; },
+    s => { s.stories[0].sources[0].source_id = 'tagesspiegel-home'; },
+    s => { s.stories[0].sources[0].url += '?token=' + 'sk-' + 'Ab0'.repeat(15); },
+    s => { s.stories[0].sources[1].url += '#sk-' + 'Ab0'.repeat(15); },
+    s => { s.stories[0].source_summary = earningsSlug; },
+    s => { s.stories[0].sources[0].other_field = earningsSources[0].url; },
+    s => { s.stories.push({...s.stories[0], story_id: 'wt-0000000000000000'}); },
+  ]) {
+    const store = earningsFixture(); change(store);
+    assert.equal(hasSecretPattern(newsroomSecretScanText(store)), true);
+  }
+});
+
+test('both new seen-item exemptions reject changed bindings and secret-bearing extra fields', () => {
+  for (const {seen_key, url} of earningsSources) {
+    for (const change of [
+      s => { s.seen_items.other = s.seen_items[seen_key]; delete s.seen_items[seen_key]; },
+      s => { s.seen_items[seen_key].source_id = 'untrusted'; },
+      s => { s.seen_items[seen_key].url += '?token=' + 'sk-' + 'Ab0'.repeat(15); },
+      s => { s.seen_items[seen_key].url += '#sk-' + 'Ab0'.repeat(15); },
+      s => { s.seen_items[seen_key].other_field = url; },
+      s => { s.other_section = {url}; },
+    ]) {
+      const state = earningsState(); change(state);
+      assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
+    }
+  }
+  for (const value of ['sk-' + 'Ab_0-X'.repeat(8), 'sk-proj-' + 'Ab_0-X'.repeat(8),
+    'sk-svcacct-' + 'Ab_0-X'.repeat(8), '-----BEGIN PRIVATE KEY-----',
+    '-----BEGIN RSA PRIVATE KEY-----', '-----BEGIN EC PRIVATE KEY-----',
+    '-----BEGIN OPENSSH PRIVATE KEY-----', 'AKIA' + 'A1'.repeat(8)]) {
+    const store = earningsFixture(), state = earningsState();
+    store.stories[0].sources[0].provider_error = value;
+    state.seen_items[earningsSources[0].seen_key].provider_error = value;
+    assert.equal(hasSecretPattern(newsroomSecretScanText(store)), true);
+    assert.equal(hasSecretPattern(secretScan.stateSecretScanText(state)), true);
+  }
+});
