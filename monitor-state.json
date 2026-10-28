@@ -21,16 +21,25 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "editorial-coverage": {
-      "firstSeen": "2026-10-28T16:51:18.889Z",
+    "run": {
+      "firstSeen": "2026-10-28T18:51:20.706Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-28T18:21:19.158Z",
+    "publication": {
+      "firstSeen": "2026-10-28T18:51:20.706Z",
       "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e08e61f88e6c191120ae8938",
+      "content": "⚠ WÖk-Betriebsstörung\nAutomatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\nSeit: 2026-10-28T18:51:20.706Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    },
+    {
+      "id": "62728551af9c855bb83c71ed",
+      "content": "✓ WÖk-Störung behoben\nRedaktionelle Themenabdeckung\nPrüfung: 2026-10-28T18:51:20.706Z"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3934,11 +3943,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-4c5d1b/": {
         "first_seen_at": "2026-10-28T17:36:17.632Z",
         "source_at": "2026-10-28T16:18:07.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-erschuttert-regensburg-5a4fa9/": {
+        "first_seen_at": "2026-10-28T18:51:20.706Z",
+        "source_at": "2026-10-28T17:25:00.000Z"
       }
     },
-    "last_new_at": "2026-10-28T17:36:17.632Z",
-    "checked_at": "2026-10-28T18:21:19.158Z",
-    "last_current_new_at": "2026-10-28T17:36:17.632Z"
+    "last_new_at": "2026-10-28T18:51:20.706Z",
+    "checked_at": "2026-10-28T18:51:20.706Z",
+    "last_current_new_at": "2026-10-28T18:51:20.706Z"
   },
   "recovery_attempts": [
     {
