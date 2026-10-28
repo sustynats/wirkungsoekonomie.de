@@ -30,3 +30,20 @@ Prüfung: `node --test tests/news/retained-discovery-inputs.test.mjs` und die
 bestehenden Nachrichten-/Betriebs- und Release-Gates. Nach Merge erst im normalen
 Folgelauf Rückführung, anschließende Gate-Entscheidung und gegebenenfalls reale
 Auslieferung nachweisen. Eine wiederhergestellte Pending-Akte ist keine Lieferung.
+
+Der vollständige PR-Build auf `da63e0bc` erreichte am 28. Oktober 950,1 MiB
+und scheiterte deshalb am unveränderten 950-MiB-Größengate. Ein bereits
+veröffentlichtes, unverändertes Blogbild wird über die vorhandene explizite
+Bild-Release-Zuordnung ausgeliefert: `2026-08-03-wohlstandsverlust-preise-klimakrise.png`,
+2.423.940 Bytes, SHA-256
+`bd8a884519ac6141f1bfaa8b5d7412d60a0ff7f86246a04c13052c9409bb8c7e`.
+Git-Original, gesicherte Kopie, bisherige Live-Datei und neu gelesene Release-Datei
+sind bytegleich. Die unveränderliche Datei liegt im bestehenden Release
+`woek-public-images-v1` (Asset 684060702); keine Datei wurde überschrieben.
+Die bestehende Artefakt-Erzeugung ersetzt die Bildverweise und lässt allein
+diese ausgelagerte Bildkopie aus dem Pages-Artefakt weg. Lesertext, Bildinhalt,
+Metadaten und Git-Original bleiben erhalten. Das bestehende SHA-Gate prüft
+auch dieses explizit ergänzte Bild. Rückfall: Zuordnung zurücknehmen und das
+Artefakt regulär aus dem erhaltenen Original neu bauen. Die rund 2,3 MiB sind
+begrenzter Platzgewinn, keine dauerhafte Wachstumskapazität. Größenlimit,
+Quoten, historische Inhaltsgates und übrige Veröffentlichungen bleiben erhalten.
