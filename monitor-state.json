@@ -28,6 +28,10 @@
     "run": {
       "firstSeen": "2026-10-28T02:36:00.733Z",
       "active": true
+    },
+    "editorial-status": {
+      "firstSeen": "2026-10-28T02:37:17.017Z",
+      "active": false
     }
   },
   "outbox": [],
@@ -3881,7 +3885,7 @@
       }
     },
     "last_new_at": "2026-10-28T00:06:19.147Z",
-    "checked_at": "2026-10-28T02:36:00.733Z",
+    "checked_at": "2026-10-28T02:37:17.017Z",
     "last_current_new_at": "2026-10-28T00:06:19.147Z"
   },
   "recovery_attempts": [
