@@ -29,6 +29,7 @@ const STOPWORDS = new Set([
   "aber", "alle", "als", "auch", "auf", "aus", "bei", "bis", "das", "dass", "dem", "den", "der", "des", "die", "ein", "eine", "einer", "eines", "fuer", "für", "hat", "im", "in", "ist", "mit", "nach", "nicht", "oder", "sich", "sind", "und", "vom", "von", "vor", "werden", "wird", "zur", "zum",
   "about", "after", "and", "are", "for", "from", "into", "new", "the", "with",
 ]);
+const REPEATED_LEADING_DOCUMENT_EVENT = /\b(?:Rückblick|Rueckblick|Jahrestag|Prozess|Urteil|Vorjahr|damals)\b|\b(?:weiterer|weiteres|zweiter|zweite|zweites|erneuter|erneute|erneutes|neuer|neue|neues)\s+(?:Vorfall|Verdachtsfall|Einsatz|Sprengstofffund|Explosion|Anschlag|Angriff)\b/i;
 
 const TOPIC_RULES = [
   ["Technologie", /\b(?:technolog|smartphone|[a-z]*phone|computer|prozessor|halbleiter|chiparchitektur|software|robotik|quantencomputer|batterietechn|raumfahrt|satellit)\w*/i],
@@ -528,7 +529,23 @@ export function anchoredSources(story) {
     })));
 }
 
+function sourceDocumentUpdateMatch(item, leading) {
+  if (!leading || !item.source_id || item.source_id !== leading.source_id || item.title !== leading.title
+    || !documentKey(item.url) || documentKey(item.url) !== documentKey(leading.url)) return false;
+  const documentGap = Math.abs(Date.parse(item.published_at) - Date.parse(leading.published_at));
+  return Number.isFinite(documentGap) && documentGap <= 6 * 3600000
+    && !REPEATED_LEADING_DOCUMENT_EVENT.test(`${item.title} ${item.summary} ${leading.title} ${leading.summary}`)
+    && livingFileMatch(item, { title: leading.title, sources: [leading], last_updated: leading.published_at }).score === 1;
+}
+
 export function existingStoryMatch(item, entry, now) {
+  // A generated headline can contain an inflected place ("Regensburger")
+  // while the unchanged publisher article still names "Regensburg". Resolve
+  // that leading document against its own source, never a contextual link.
+  // Only a short, same-publisher update with the same source headline may
+  // precede the generated-headline guard; reused URLs keep their safeguards.
+  const leading = entry.story.sources?.[0];
+  if (sourceDocumentUpdateMatch(item, leading)) return 1;
   // An explicitly consolidated article keeps its old source documents as
   // routing aliases. Check those documents against their own original source
   // before the canonical headline/place guard: a regional headline can be a
@@ -536,6 +553,12 @@ export function existingStoryMatch(item, entry, now) {
   const aliases = entry.story.routing_original
     ? (entry.story.sources || []).slice(entry.story.routing_original.sources?.length || 0) : [];
   for (const alias of aliases) {
+    // A retained update of the leading article keeps the same strict window
+    // and publisher/headline guards; the alias must not bypass them.
+    if (documentKey(alias.url) && documentKey(alias.url) === documentKey(leading?.url)) {
+      if (sourceDocumentUpdateMatch(item, alias)) return 1;
+      continue;
+    }
     if (documentKey(item.url) && documentKey(item.url) === documentKey(alias.url)
       && livingFileMatch(item, { title: alias.title, sources: [alias], last_updated: alias.published_at }).score === 1) return 1;
   }

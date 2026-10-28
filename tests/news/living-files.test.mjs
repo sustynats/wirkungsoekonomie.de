@@ -11,6 +11,67 @@ const source = (title, url = "https://example.org/a", more = {}) => ({ title, ur
 const story = (id, title, more = {}) => ({ story_id: id, slug: id, title, source_summary: "", published: true, listed: true, published_at: now, last_updated: now, first_seen: now, sources: [source(title, `https://example.org/${id}`)], claims: [], analysis: { summary: title }, versions: [{ version: 1, analyzed_at: now }], current_version: 1, ...more });
 const dormagen = story("dormagen", "Mutmaßlich Sabotage-Versuch an Umspannwerk in Dormagen");
 
+test('a leading publisher article survives an inflected generated place in its headline', () => {
+  const original = source('Explosion in Mehrfamilienhaus in Regensburg', 'https://example.org/regensburg', {
+    summary: 'Fünf Menschen wurden bei einer Explosion in Regensburg verletzt.',
+  });
+  const previous = story('regensburg', 'Explosion in Regensburger Mehrfamilienhaus', {
+    sources: [original], source_summary: original.summary,
+  });
+  const incoming = { ...original, summary: 'Zwei Menschen wurden in Regensburg noch vermisst.', published_at: '2026-09-04T10:48:45Z' };
+  const before = structuredClone(previous);
+  assert.equal(subjectConflict(incoming, previous), true, 'the generated adjective is not the source document identity');
+  const [cluster] = clusterItems([incoming], [previous], incoming.published_at);
+  assert.equal(cluster.story_id, previous.story_id);
+  assert.equal(cluster.existing_story, previous);
+  assert.deepEqual(previous, before, 'matching must not rewrite the paid article');
+});
+
+test('the leading-document shortcut rejects changed places, publishers, reused events and distant dates', () => {
+  const original = source('Explosion in Mehrfamilienhaus in Regensburg', 'https://example.org/regensburg', {
+    summary: 'Eine Explosion in Regensburg beschädigte ein Wohnhaus.',
+  });
+  const previous = story('regensburg', 'Explosion in Regensburger Mehrfamilienhaus', { sources: [original], source_summary: original.summary });
+  for (const incoming of [
+    { ...original, title: 'Explosion in Mehrfamilienhaus in München', summary: 'Eine Explosion in München beschädigte ein Wohnhaus.' },
+    { ...original, source_id: 'other-publisher' },
+    { ...original, title: 'Zweite Explosion in Mehrfamilienhaus in Regensburg' },
+    { ...original, title: 'Rückblick: Explosion in Mehrfamilienhaus in Regensburg' },
+    { ...original, published_at: '2026-09-04T12:00:00.001Z' },
+    { ...original, published_at: null },
+  ]) {
+    assert.equal(clusterItems([incoming], [previous], now)[0].existing_story, null, incoming.title);
+  }
+});
+
+test('a contextual article cannot use the leading-document shortcut', () => {
+  const original = source('Explosion in Mehrfamilienhaus in Regensburg', 'https://example.org/regensburg');
+  const previous = story('other', 'Wahl in München', {
+    sources: [source('Wahl in München', 'https://example.org/munich'), original], source_summary: 'Die Wahl findet in München statt.',
+  });
+  assert.equal(clusterItems([original], [previous], now)[0].existing_story, null);
+});
+
+test('a retained update of the leading article keeps its publisher, headline and time guards', () => {
+  const original = source('Explosion in Mehrfamilienhaus in Regensburg', 'https://example.org/regensburg', {
+    summary: 'Eine Explosion in Regensburg beschädigte ein Wohnhaus.',
+  });
+  const updated = {...original,published_at:'2026-09-04T10:48:45Z',summary:'Zwei Menschen wurden in Regensburg noch vermisst.'};
+  const canonical = story('regensburg', 'Explosion in Regensburger Mehrfamilienhaus', {
+    sources:[original],source_summary:original.summary,living_file:{merged_story_ids:['later']},
+  });
+  const later=story('later','Synthetic later edition',{sources:[updated],listed:false,
+    retirement:{reason_code:'MERGED_INTO_LIVING_FILE',canonical_story_ids:['regensburg']}});
+  const incoming={...updated,published_at:'2026-09-04T14:00:00Z'};
+  assert.equal(clusterItems([incoming],[canonical,later],incoming.published_at)[0].story_id,'regensburg');
+  for(const changed of [
+    {...incoming,title:'Explosion in Mehrfamilienhaus in München',summary:'Eine Explosion in München beschädigte ein Wohnhaus.'},
+    {...incoming,source_id:'other-publisher'},
+    {...incoming,title:'Zweite Explosion in Mehrfamilienhaus in Regensburg'},
+    {...incoming,published_at:'2026-09-04T17:00:00Z'},
+  ]) assert.equal(clusterItems([changed],[canonical,later],changed.published_at)[0].existing_story,null);
+});
+
 test('an administrative district suffix is not a different incident place', () => {
   const title = 'Schüsse mit Schreckschusspistole lösen SEK-Einsatz aus';
   const url = 'https://www.stern.de/gesellschaft/regional/baden-wuerttemberg/kreis-schwaebisch-hall--schuesse-mit-schreckschusspistole-loesen-sek-einsatz-aus-38421916.html';
