@@ -1,7 +1,80 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-28T05:00:00.000Z",
+  "updated_at": "2026-10-28T11:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-28-mittagslage",
+      "slot": "mittagslage",
+      "label": "Mittagslage",
+      "date": "2026-10-28",
+      "window_from": "2026-10-28T05:00:00.000Z",
+      "window_to": "2026-10-28T11:00:00.000Z",
+      "stand": "2026-10-28T11:00:00.000Z",
+      "headline": "Das sind die 7 Entwicklungen, die seit 6 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 7,
+        "neu": 7,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-962ad55dd3a3b08f",
+          "slug": "einsatz-zur-stabilisierung-libyens-wird-fortgesetzt-a3b08f",
+          "title": "Laut Bundesregierung: Bundeswehr-Einsatz für Libyen soll bis 30. November 2027 fortgesetzt werden",
+          "state": "neu",
+          "at": "2026-10-28T10:52:23.170Z",
+          "score": 5.9789
+        },
+        {
+          "story_id": "wt-401efa7161db1adf",
+          "slug": "200-strafrechtler-in-sorge-um-den-rechtsstaat-die-delegitimierung-von-gerichten-ist-gefa-db1adf",
+          "title": "Laut LTO warnen 200 Strafrechtsprofessoren vor der Delegitimierung von Gerichten",
+          "state": "neu",
+          "at": "2026-10-28T09:51:16.571Z",
+          "score": 9.8091
+        },
+        {
+          "story_id": "wt-1ef74258e6ba0c12",
+          "slug": "kann-ein-umstieg-auf-grunen-stahl-international-gelingen-ba0c12",
+          "title": "Laut Klimareporter: Abgabe soll Umstieg auf grünen Stahl anschieben",
+          "state": "neu",
+          "at": "2026-10-28T08:49:38.781Z",
+          "score": 9.6379
+        },
+        {
+          "story_id": "wt-7f5091c9175b1bf3",
+          "slug": "kriminalitat-schusse-auch-in-spandau-vier-festnahmen-5b1bf3",
+          "title": "Laut Polizei: Schüsse in Spandau, vier Männer festgenommen",
+          "state": "neu",
+          "at": "2026-10-28T08:30:42.522Z",
+          "score": 3.5853
+        },
+        {
+          "story_id": "wt-ad17ff3da70b818c",
+          "slug": "mehr-zuversicht-fur-konjunktur-ifo-unternehmen-wollen-etwas-weniger-stellen-abbauen-0b818c",
+          "title": "Konjunkturzuversicht wächst, Beschäftigungspläne bleiben uneinheitlich",
+          "state": "neu",
+          "at": "2026-10-28T07:39:05.293Z",
+          "score": 5.4419
+        },
+        {
+          "story_id": "wt-ca26b29c35eeda9d",
+          "slug": "wahl-in-israel-netanjahu-rivale-eisenkot-will-rasch-neue-regierung-bilden-eeda9d",
+          "title": "Israels Wahl: Laut Prognosen beanspruchen Netanjahu und Eisenkot die Regierungsbildung",
+          "state": "neu",
+          "at": "2026-10-28T06:31:50.120Z",
+          "score": 5.7551
+        },
+        {
+          "story_id": "wt-6e1ce731533f5ffe",
+          "slug": "stromausfall-wuppertaler-schwebebahn-bleibt-stecken-3f5ffe",
+          "title": "Laut WDR: Stromausfall stoppt Schwebebahn in Wuppertal",
+          "state": "neu",
+          "at": "2026-10-28T05:30:56.743Z",
+          "score": 3.086
+        }
+      ]
+    },
     {
       "lage_id": "2026-10-28-morgenlage",
       "slot": "morgenlage",
@@ -73,12 +146,7 @@
           "at": "2026-10-27T18:22:10.619Z",
           "score": 9.1141
         }
-      ],
-      "processing_status": {
-        "state": "processing_limited",
-        "checked_at": "2026-10-28T10:14:02.391Z",
-        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
-      }
+      ]
     },
     {
       "lage_id": "2026-10-27-abendlage",
