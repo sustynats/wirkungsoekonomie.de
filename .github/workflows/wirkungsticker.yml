@@ -102,6 +102,11 @@ jobs:
       - name: Validate the existing archive encryption key before paid work
         if: steps.slot.outputs.should_run == 'true'
         run: node scripts/news/sealed-raw-output.mjs --check-key
+      - name: Verify interrupted paid work before another provider request
+        if: steps.slot.outputs.should_run == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/news/retained-failed-paid-work.mjs --preflight
       - name: Import, analyze (one call per story) and build
         if: steps.slot.outputs.should_run == 'true'
         env:

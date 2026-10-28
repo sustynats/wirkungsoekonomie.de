@@ -18,7 +18,7 @@ import path from 'node:path';
 // Diese Gründe heißen: nicht analysiert, kein bezahlter Aufruf verbraucht. Der
 // Auftrag bleibt in der Warteschlange und kommt im nächsten Lauf wieder dran.
 export const WIEDERHOLBAR = new Set(['AI_BUDGET_BLOCKED', 'AI_RUN_TIME_LIMIT', 'AI_DISABLED', 'AI_HOURLY_CALL_LIMIT',
-  'AI_PROVIDER_UNAVAILABLE', 'AI_BUDGET_OR_BATCH_LIMIT', 'AUFTRAG_NICHT_BEARBEITET']);
+  'AI_PROVIDER_UNAVAILABLE', 'AI_BUDGET_OR_BATCH_LIMIT', 'AUFTRAG_NICHT_BEARBEITET', 'PAID_RECOVERY_PENDING']);
 
 const kennung = (wert) => (/^[A-Z][A-Z_0-9:]{2,79}$/.test(String(wert || '')) ? String(wert) : 'UNBEKANNT');
 
