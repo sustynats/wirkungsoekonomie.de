@@ -25,16 +25,17 @@
       "firstSeen": "2026-10-28T08:39:53.426Z",
       "active": true
     },
-    "editorial-status": {
-      "firstSeen": "2026-10-28T12:50:54.863Z",
-      "active": false
-    },
-    "publication": {
-      "firstSeen": "2026-10-28T12:50:54.863Z",
-      "active": false
+    "delivery-deploy.yml": {
+      "firstSeen": "2026-10-28T13:32:33.437Z",
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "746ded74ffed462225a4ba18",
+      "content": "⚠ WÖk-Betriebsstörung\nWebsite-Auslieferung: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\nSeit: 2026-10-28T13:32:33.437Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3918,11 +3919,23 @@
       "https://wirkungsoekonomie.de/wirkungsticker/merz-deutschland-wird-rustungskooperation-mit-japan-verstarken-kampfjetbau-ausloten-8ff87b/": {
         "first_seen_at": "2026-10-28T11:51:26.519Z",
         "source_at": "2026-10-28T10:56:58.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/polizeieinsatz-spielzeugwaffe-lost-polizeieinsatz-in-hagen-aus-f3718a/": {
+        "first_seen_at": "2026-10-28T13:32:33.437Z",
+        "source_at": "2026-10-28T12:04:48.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/vier-verletzte-bewohner-zwei-vermisste-nach-explosion-noch-im-haus-vermutet-51a73e/": {
+        "first_seen_at": "2026-10-28T13:32:33.437Z",
+        "source_at": "2026-10-28T11:33:16.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-467296/": {
+        "first_seen_at": "2026-10-28T13:32:33.437Z",
+        "source_at": "2026-10-28T11:29:22.000Z"
       }
     },
-    "last_new_at": "2026-10-28T11:51:26.519Z",
-    "checked_at": "2026-10-28T12:50:54.863Z",
-    "last_current_new_at": "2026-10-28T11:51:26.519Z"
+    "last_new_at": "2026-10-28T13:32:33.437Z",
+    "checked_at": "2026-10-28T13:32:33.437Z",
+    "last_current_new_at": "2026-10-28T13:32:33.437Z"
   },
   "recovery_attempts": [
     {
