@@ -62,6 +62,8 @@ test('the real image release registry matches the complete unchanged local origi
     'assets/img/blog/2026-05-21-wirkung-ist-nicht-wirkungsmanagement.png',
     'assets/img/blog/2026-08-03-atomkraft-wetterabhaengigkeit-hinter-beton.png',
     'assets/img/blog/kostenwahrheit-eu-vorschriften-wirkungsoekonomie.png',
+    'assets/img/blog/2026-08-15-wie-wirksam-ist-das-sondervermoegen-wirklich.png',
+    'assets/img/blog/2026-06-02-sprache-spaltet-oder-verbindet.png',
   ];
   assert.deepEqual(Object.keys(manifest.assets).filter(key => key.startsWith('assets/img/')).sort(), optedIn.sort());
   assert.equal(verifyPublicReleaseImages(repo, new Map(Object.entries(manifest.assets))), optedIn.length);
