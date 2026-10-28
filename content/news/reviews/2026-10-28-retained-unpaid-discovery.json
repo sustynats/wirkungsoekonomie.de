@@ -1,0 +1,935 @@
+{
+  "schema_version": 1,
+  "kind": "retained_unpaid_pending_discovery",
+  "run_id": 40624975084,
+  "completed_at": "2026-10-28T03:18:16.926Z",
+  "artifact_id": 12789018818,
+  "artifact_sha256": "ee3eb4318b1215bf6a742717111b422a82026805da79ece307c6394db3f172c3",
+  "payload_sha256": "802dd9d21caf88f2e6146e1df3179142d14f202bfa7ad1a7ab21bafa8a9b8b54",
+  "records": [
+    {
+      "story": {
+        "story_id": "wt-8859e50886747733",
+        "slug": "auto-erste-verfahren-in-hamburg-wegen-12-uhr-regel-eingeleitet-747733",
+        "title": "Auto: Erste Verfahren in Hamburg wegen 12-Uhr-Regel eingeleitet",
+        "first_seen": "2026-10-28T03:00:50.000Z",
+        "last_updated": "2026-10-28T03:00:50.000Z",
+        "topic": [
+          "Geopolitik",
+          "Wirtschaft"
+        ],
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/auto--erste-verfahren-in-hamburg-wegen-12-uhr-regel-eingeleitet-38461516.html",
+            "title": "Auto: Erste Verfahren in Hamburg wegen 12-Uhr-Regel eingeleitet",
+            "summary": "Die Tankpreise sind seit Beginn des Iran-Kriegs hoch. Tankstellenbetreiber dürfen die Preise nur einmal täglich erhöhen. An die Vorgabe halten sich die Unternehmen allerdings nicht immer.",
+            "source_type": "media_rss",
+            "published_at": "2026-10-28T03:00:50.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "15f2c28f1c17e5a0ac0c1bc29af71a770dfce4558f075cc9becbac4b927957f2",
+            "source_item_id": "3eae1cc206abcf80111c85549fde8b3b9016282fe0a3ede352320fe632bd24a1",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-10-28T03:00:50.000Z",
+            "ingested_at": "2026-10-28T03:13:22.309Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "wt-8859e50886747733-claim-01",
+            "story_id": "wt-8859e50886747733",
+            "claim": "Auto: Erste Verfahren in Hamburg wegen 12-Uhr-Regel eingeleitet: Die Tankpreise sind seit Beginn des Iran-Kriegs hoch. Tankstellenbetreiber dürfen die Preise nur einmal täglich erhöhen. An die Vorgabe halten sich die Unternehmen allerdings nicht immer.",
+            "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+            "source_id": "stern-schlagzeilen",
+            "source_function": "journalistic_report",
+            "status": "single_source_claim",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "evidence_level": "Sekundärquelle",
+            "data_status": "Feed-Kurztext vorhanden",
+            "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+            "reference_framework": [],
+            "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          }
+        ],
+        "content_hash": "d8ca8ba21eff2b1c76eb143a921a2ccd6ae9849fcb809f7af72656e0fd23f467",
+        "published": false,
+        "analysis_status": "automatische Veröffentlichung zurückgestellt",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "versions": [],
+        "updated_at": "2026-10-28T03:13:22.309Z",
+        "event_first_seen_at": "2026-10-28T03:13:22.309Z",
+        "event_detected_at": "2026-10-28T03:13:22.309Z",
+        "event_id": "event-8112fe64d745ca6e6f6a",
+        "preanalysis": {
+          "filter_version": "2026-10-02.1",
+          "discovery_review": {
+            "version": "2026-09-14.1",
+            "review": false,
+            "reason": "no_additional_metadata_basis",
+            "categories": [
+              "economy",
+              "international"
+            ],
+            "score_scope": "discovery_only"
+          },
+          "material_development_review": {
+            "required": false,
+            "time_sensitive": false,
+            "findings": []
+          },
+          "internal_relevance_score": 32,
+          "public_relevance": "mittel",
+          "event_score": {
+            "version": "2026-10-02.1",
+            "signals": [],
+            "category": "economy",
+            "categories": [
+              "economy",
+              "international"
+            ],
+            "region": "not_established",
+            "independent_source_count": 1,
+            "independence_verified": false,
+            "primary_sources": [],
+            "impact_score": 32,
+            "breaking_score": 0,
+            "source_diversity_score": 0,
+            "institutional_score": 10,
+            "national_relevance_score": 0,
+            "economic_relevance_score": 0,
+            "political_relevance_score": 0,
+            "novelty_score": 0,
+            "confidence_score": 25,
+            "velocity_score": 0,
+            "woek_impact_score": 0,
+            "total_relevance_score": 32,
+            "priority": "NORMAL",
+            "breaking_status": "standard",
+            "reasons": [],
+            "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          },
+          "topics": [
+            "Geopolitik",
+            "Wirtschaft"
+          ],
+          "dimensions": [],
+          "status": "laufende Entwicklung",
+          "analysis_type": "ex_ante",
+          "news_value_signals": [],
+          "context_formats": [],
+          "context_only": false,
+          "mechanism_hints": [
+            "Veränderung finanzieller Anreize und Kapitalflüsse"
+          ],
+          "materiality_factors": [
+            "Zahl und Art möglicher Wirkungsempfänger",
+            "Intensität, Dauer und Reversibilität",
+            "Systemrelevanz und mögliche Kaskaden",
+            "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+          ]
+        },
+        "freshness": {
+          "source_age_minutes": 12.538483333333334,
+          "detection_delay_minutes": 12.538483333333334,
+          "verification_delay_minutes": null,
+          "publication_delay_minutes": null,
+          "queue_age_minutes": 0,
+          "target_publication_minutes": 120,
+          "news_freshness_score": 97,
+          "freshness_warning": null
+        },
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.2",
+          "checked_at": "2026-10-28T03:13:22.309Z",
+          "fingerprint": "1c9787be6a5ca37f99000198517edaeef1fc51a2f7b5a91ea6450e6899104866",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "seen_items": [
+        {
+          "key": "3eae1cc206abcf80111c85549fde8b3b9016282fe0a3ede352320fe632bd24a1",
+          "record": {
+            "source_id": "stern-schlagzeilen",
+            "url": "https://www.stern.de/gesellschaft/regional/hamburg-schleswig-holstein/auto--erste-verfahren-in-hamburg-wegen-12-uhr-regel-eingeleitet-38461516.html",
+            "content_hash": "15f2c28f1c17e5a0ac0c1bc29af71a770dfce4558f075cc9becbac4b927957f2",
+            "published_at": "2026-10-28T03:00:50.000Z",
+            "last_seen": "2026-10-28T03:13:22.309Z"
+          }
+        }
+      ]
+    },
+    {
+      "story": {
+        "story_id": "wt-700329a2ddcde365",
+        "slug": "baumangel-arbeiten-an-evakuiertem-hochhaus-vor-abschluss-cde365",
+        "title": "Baumängel: Arbeiten an evakuiertem Hochhaus vor Abschluss",
+        "first_seen": "2026-10-28T03:00:43.000Z",
+        "last_updated": "2026-10-28T03:00:43.000Z",
+        "topic": [
+          "Arbeit",
+          "Geopolitik"
+        ],
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/hessen/baumaengel--arbeiten-an-evakuiertem-hochhaus-vor-abschluss-38461528.html",
+            "title": "Baumängel: Arbeiten an evakuiertem Hochhaus vor Abschluss",
+            "summary": "Seit Monaten steht ein wegen Sicherheitsmängeln evakuiertes Hochhaus leer. Jetzt gibt es Licht am Horizont.",
+            "source_type": "media_rss",
+            "published_at": "2026-10-28T03:00:43.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "810fd3487013cd6165dbacd468ce3e1f3b97a842a92b66cb41be6464f57bc059",
+            "source_item_id": "8f37618e3209a3110e8ece3b50ce33499a7824065f31ed0e32a6f068561e25f0",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-10-28T03:00:43.000Z",
+            "ingested_at": "2026-10-28T03:13:22.309Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "wt-700329a2ddcde365-claim-01",
+            "story_id": "wt-700329a2ddcde365",
+            "claim": "Baumängel: Arbeiten an evakuiertem Hochhaus vor Abschluss: Seit Monaten steht ein wegen Sicherheitsmängeln evakuiertes Hochhaus leer. Jetzt gibt es Licht am Horizont.",
+            "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+            "source_id": "stern-schlagzeilen",
+            "source_function": "journalistic_report",
+            "status": "single_source_claim",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "evidence_level": "Sekundärquelle",
+            "data_status": "Feed-Kurztext vorhanden",
+            "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+            "reference_framework": [],
+            "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          }
+        ],
+        "content_hash": "30a22f0334a8db2cb7c2dd7559f03c777ec12ed8d568ec332cab22c049064b4c",
+        "published": false,
+        "analysis_status": "automatische Veröffentlichung zurückgestellt",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "versions": [],
+        "updated_at": "2026-10-28T03:13:22.309Z",
+        "event_first_seen_at": "2026-10-28T03:13:22.309Z",
+        "event_detected_at": "2026-10-28T03:13:22.309Z",
+        "event_id": "event-2fc74ac9f9636387a319",
+        "preanalysis": {
+          "filter_version": "2026-10-02.1",
+          "discovery_review": {
+            "version": "2026-09-14.1",
+            "review": false,
+            "reason": "no_additional_metadata_basis",
+            "categories": [
+              "security"
+            ],
+            "score_scope": "discovery_only"
+          },
+          "material_development_review": {
+            "required": false,
+            "time_sensitive": false,
+            "findings": []
+          },
+          "internal_relevance_score": 60,
+          "public_relevance": "hoch",
+          "event_score": {
+            "version": "2026-10-02.1",
+            "signals": [
+              "acute_safety"
+            ],
+            "category": "security",
+            "categories": [
+              "security"
+            ],
+            "region": "not_established",
+            "independent_source_count": 1,
+            "independence_verified": false,
+            "primary_sources": [],
+            "impact_score": 72,
+            "breaking_score": 90,
+            "source_diversity_score": 0,
+            "institutional_score": 10,
+            "national_relevance_score": 0,
+            "economic_relevance_score": 0,
+            "political_relevance_score": 0,
+            "novelty_score": 75,
+            "confidence_score": 25,
+            "velocity_score": 0,
+            "woek_impact_score": 65,
+            "total_relevance_score": 60,
+            "priority": "HIGH",
+            "breaking_status": "breaking",
+            "reasons": [
+              "acute_safety"
+            ],
+            "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          },
+          "topics": [
+            "Arbeit",
+            "Geopolitik"
+          ],
+          "dimensions": [
+            "Mensch"
+          ],
+          "status": "laufende Entwicklung",
+          "analysis_type": "ex_ante",
+          "news_value_signals": [
+            "acute_safety"
+          ],
+          "context_formats": [],
+          "context_only": false,
+          "mechanism_hints": [
+            "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          ],
+          "materiality_factors": [
+            "Zahl und Art möglicher Wirkungsempfänger",
+            "Intensität, Dauer und Reversibilität",
+            "Systemrelevanz und mögliche Kaskaden",
+            "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+          ]
+        },
+        "freshness": {
+          "source_age_minutes": 12.65515,
+          "detection_delay_minutes": 12.65515,
+          "verification_delay_minutes": null,
+          "publication_delay_minutes": null,
+          "queue_age_minutes": 0,
+          "target_publication_minutes": 60,
+          "news_freshness_score": 95,
+          "freshness_warning": null
+        },
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.2",
+          "checked_at": "2026-10-28T03:13:22.309Z",
+          "fingerprint": "7f3d539d8abcd62660f574b6b5f7833b4bb29f5d4af5d84ab5191ff7a5d8b8cc",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "seen_items": [
+        {
+          "key": "8f37618e3209a3110e8ece3b50ce33499a7824065f31ed0e32a6f068561e25f0",
+          "record": {
+            "source_id": "stern-schlagzeilen",
+            "url": "https://www.stern.de/gesellschaft/regional/hessen/baumaengel--arbeiten-an-evakuiertem-hochhaus-vor-abschluss-38461528.html",
+            "content_hash": "810fd3487013cd6165dbacd468ce3e1f3b97a842a92b66cb41be6464f57bc059",
+            "published_at": "2026-10-28T03:00:43.000Z",
+            "last_seen": "2026-10-28T03:13:22.309Z"
+          }
+        }
+      ]
+    },
+    {
+      "story": {
+        "story_id": "wt-31faccc236ac7551",
+        "slug": "geheimes-waffenarsenal-70-maschinenpistolen-gehandelt-urteil-in-wuppertal-erwartet-ac7551",
+        "title": "Geheimes Waffenarsenal: 70 Maschinenpistolen gehandelt: Urteil in Wuppertal erwartet",
+        "first_seen": "2026-10-28T03:00:06.000Z",
+        "last_updated": "2026-10-28T03:00:06.000Z",
+        "topic": [
+          "Geopolitik"
+        ],
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/geheimes-waffenarsenal--70-maschinenpistolen-gehandelt--urteil-in-wuppertal-erwartet-38461512.html",
+            "title": "Geheimes Waffenarsenal: 70 Maschinenpistolen gehandelt: Urteil in Wuppertal erwartet",
+            "summary": "Geheimtüren, verborgene Räume, unzählige Schusswaffen und fast 100.000 Schuss Munition: Der Prozess um einen der größten Kriegswaffenfunde der vergangenen Jahrzehnte in Deutschland geht zu Ende.",
+            "source_type": "media_rss",
+            "published_at": "2026-10-28T03:00:06.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "31e18e72f7ecde56f4dcfd0760010d40d8b73d71542f7f3940cf51136ef4e18e",
+            "source_item_id": "b9629566b232dd1098bf2fc503aa2c5d684c1e6895060b11ab3780827bfe36e2",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-10-28T03:00:06.000Z",
+            "ingested_at": "2026-10-28T03:13:22.309Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "wt-31faccc236ac7551-claim-01",
+            "story_id": "wt-31faccc236ac7551",
+            "claim": "Geheimes Waffenarsenal: 70 Maschinenpistolen gehandelt: Urteil in Wuppertal erwartet: Geheimtüren, verborgene Räume, unzählige Schusswaffen und fast 100.000 Schuss Munition: Der Prozess um einen der größten Kriegswaffenfunde der vergangenen Jahrzehnte in Deutschland geht zu Ende.",
+            "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+            "source_id": "stern-schlagzeilen",
+            "source_function": "journalistic_report",
+            "status": "single_source_claim",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "evidence_level": "Sekundärquelle",
+            "data_status": "Feed-Kurztext vorhanden",
+            "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+            "reference_framework": [],
+            "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          }
+        ],
+        "content_hash": "5b5727c44fbb4aca202c6cc1872a3b737a9cc3fdcf745cf0c629dc219a1f9156",
+        "published": false,
+        "analysis_status": "automatische Veröffentlichung zurückgestellt",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "pending_reason": "AI_BUDGET_OR_BATCH_LIMIT",
+        "versions": [],
+        "updated_at": "2026-10-28T03:13:22.309Z",
+        "event_first_seen_at": "2026-10-28T03:13:22.309Z",
+        "event_detected_at": "2026-10-28T03:13:22.309Z",
+        "event_id": "event-bb5de65fdc569c9c8820",
+        "preanalysis": {
+          "filter_version": "2026-10-02.1",
+          "discovery_review": {
+            "version": "2026-09-14.1",
+            "review": false,
+            "reason": "no_additional_metadata_basis",
+            "categories": [],
+            "score_scope": "discovery_only"
+          },
+          "material_development_review": {
+            "required": false,
+            "time_sensitive": false,
+            "findings": []
+          },
+          "internal_relevance_score": 48,
+          "public_relevance": "hoch",
+          "event_score": {
+            "version": "2026-10-02.1",
+            "signals": [],
+            "category": "other",
+            "categories": [],
+            "region": "DE",
+            "independent_source_count": 1,
+            "independence_verified": false,
+            "primary_sources": [],
+            "impact_score": 48,
+            "breaking_score": 0,
+            "source_diversity_score": 0,
+            "institutional_score": 10,
+            "national_relevance_score": 85,
+            "economic_relevance_score": 0,
+            "political_relevance_score": 0,
+            "novelty_score": 0,
+            "confidence_score": 25,
+            "velocity_score": 0,
+            "woek_impact_score": 0,
+            "total_relevance_score": 48,
+            "priority": "NORMAL",
+            "breaking_status": "background",
+            "reasons": [],
+            "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          },
+          "topics": [
+            "Geopolitik"
+          ],
+          "dimensions": [],
+          "status": "laufende Entwicklung",
+          "analysis_type": "ex_ante",
+          "news_value_signals": [
+            "binding_decision"
+          ],
+          "context_formats": [],
+          "context_only": false,
+          "mechanism_hints": [
+            "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          ],
+          "materiality_factors": [
+            "Zahl und Art möglicher Wirkungsempfänger",
+            "Intensität, Dauer und Reversibilität",
+            "Systemrelevanz und mögliche Kaskaden",
+            "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+          ]
+        },
+        "freshness": {
+          "source_age_minutes": 13.271816666666666,
+          "detection_delay_minutes": 13.271816666666666,
+          "verification_delay_minutes": null,
+          "publication_delay_minutes": null,
+          "queue_age_minutes": 0,
+          "target_publication_minutes": 60,
+          "news_freshness_score": 94,
+          "freshness_warning": null
+        },
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.2",
+          "checked_at": "2026-10-28T03:13:22.309Z",
+          "fingerprint": "368a08d4d9f1c9b028f94e90ee2ff609deaac97bbb56840dc4a2ed15f0b74de7",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "seen_items": [
+        {
+          "key": "b9629566b232dd1098bf2fc503aa2c5d684c1e6895060b11ab3780827bfe36e2",
+          "record": {
+            "source_id": "stern-schlagzeilen",
+            "url": "https://www.stern.de/gesellschaft/regional/nordrhein-westfalen/geheimes-waffenarsenal--70-maschinenpistolen-gehandelt--urteil-in-wuppertal-erwartet-38461512.html",
+            "content_hash": "31e18e72f7ecde56f4dcfd0760010d40d8b73d71542f7f3940cf51136ef4e18e",
+            "published_at": "2026-10-28T03:00:06.000Z",
+            "last_seen": "2026-10-28T03:13:22.309Z"
+          }
+        }
+      ]
+    },
+    {
+      "story": {
+        "story_id": "wt-713f92a939887fc7",
+        "slug": "kriminalitat-prozess-nach-mutmasslichem-uberfall-auf-reisebus-887fc7",
+        "title": "Kriminalität: Prozess nach mutmaßlichem Überfall auf Reisebus",
+        "first_seen": "2026-10-28T02:30:11.000Z",
+        "last_updated": "2026-10-28T02:30:11.000Z",
+        "topic": [
+          "Gesellschaft"
+        ],
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/bayern/kriminalitaet--prozess-nach-mutmasslichem-ueberfall-auf-reisebus-38461484.html",
+            "title": "Kriminalität: Prozess nach mutmaßlichem Überfall auf Reisebus",
+            "summary": "Mit einer fingierten Polizeikontrolle lockten vier Männer vor einem Jahr einen Reisebus von der Autobahn 93 und überfielen das Fahrzeug. Nun beginnt der Prozess gegen einen der Tatverdächtigen.",
+            "source_type": "media_rss",
+            "published_at": "2026-10-28T02:30:11.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "cd7217cb52d962704ebbac600e1b764bae88309ea59337cda7ccd6afd90be2de",
+            "source_item_id": "244c21d170f3b60d589276c13d9118e90938b824f1a404edc24daa878b422582",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-10-28T02:30:11.000Z",
+            "ingested_at": "2026-10-28T03:13:22.309Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "wt-713f92a939887fc7-claim-01",
+            "story_id": "wt-713f92a939887fc7",
+            "claim": "Kriminalität: Prozess nach mutmaßlichem Überfall auf Reisebus: Mit einer fingierten Polizeikontrolle lockten vier Männer vor einem Jahr einen Reisebus von der Autobahn 93 und überfielen das Fahrzeug. Nun beginnt der Prozess gegen einen der Tatverdächtigen.",
+            "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+            "source_id": "stern-schlagzeilen",
+            "source_function": "journalistic_report",
+            "status": "single_source_claim",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "evidence_level": "Sekundärquelle",
+            "data_status": "Feed-Kurztext vorhanden",
+            "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+            "reference_framework": [],
+            "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          }
+        ],
+        "content_hash": "e7f41d02fe43de28dbddd503316c88c893608e8def0c4e632c3d96524b0edc07",
+        "published": false,
+        "analysis_status": "automatische Veröffentlichung zurückgestellt",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "pending_reason": "EDITORIAL_RELEVANCE_BELOW_THRESHOLD",
+        "versions": [],
+        "updated_at": "2026-10-28T03:13:22.309Z",
+        "event_first_seen_at": "2026-10-28T03:13:22.309Z",
+        "event_detected_at": "2026-10-28T03:13:22.309Z",
+        "event_id": "event-16065e0fab34cb2f8bec",
+        "preanalysis": {
+          "filter_version": "2026-10-02.1",
+          "discovery_review": {
+            "version": "2026-09-14.1",
+            "review": true,
+            "reason": "state_change_in_relevant_domain",
+            "categories": [
+              "security"
+            ],
+            "basis": [
+              "title",
+              "description",
+              "section"
+            ],
+            "score_scope": "discovery_only"
+          },
+          "material_development_review": {
+            "required": false,
+            "time_sensitive": false,
+            "findings": []
+          },
+          "internal_relevance_score": 10,
+          "public_relevance": "gering",
+          "event_score": {
+            "version": "2026-10-02.1",
+            "signals": [],
+            "category": "security",
+            "categories": [
+              "security"
+            ],
+            "region": "not_established",
+            "independent_source_count": 1,
+            "independence_verified": false,
+            "primary_sources": [],
+            "impact_score": 10,
+            "breaking_score": 0,
+            "source_diversity_score": 0,
+            "institutional_score": 80,
+            "national_relevance_score": 0,
+            "economic_relevance_score": 0,
+            "political_relevance_score": 0,
+            "novelty_score": 0,
+            "confidence_score": 25,
+            "velocity_score": 0,
+            "woek_impact_score": 0,
+            "total_relevance_score": 10,
+            "priority": "LOW",
+            "breaking_status": "standard",
+            "reasons": [],
+            "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          },
+          "topics": [
+            "Gesellschaft"
+          ],
+          "dimensions": [],
+          "status": "laufende Entwicklung",
+          "analysis_type": "ex_ante",
+          "news_value_signals": [],
+          "context_formats": [],
+          "context_only": false,
+          "mechanism_hints": [
+            "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          ],
+          "materiality_factors": [
+            "Zahl und Art möglicher Wirkungsempfänger",
+            "Intensität, Dauer und Reversibilität",
+            "Systemrelevanz und mögliche Kaskaden",
+            "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+          ]
+        },
+        "freshness": {
+          "source_age_minutes": 43.18848333333333,
+          "detection_delay_minutes": 43.18848333333333,
+          "verification_delay_minutes": null,
+          "publication_delay_minutes": null,
+          "queue_age_minutes": 0,
+          "target_publication_minutes": 120,
+          "news_freshness_score": 91,
+          "freshness_warning": null
+        },
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.2",
+          "checked_at": "2026-10-28T03:13:22.309Z",
+          "fingerprint": "774770524b49e641047b8851e3e21b0d055b4d421f1c821b9ca468ca87293839",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "seen_items": [
+        {
+          "key": "244c21d170f3b60d589276c13d9118e90938b824f1a404edc24daa878b422582",
+          "record": {
+            "source_id": "stern-schlagzeilen",
+            "url": "https://www.stern.de/gesellschaft/regional/bayern/kriminalitaet--prozess-nach-mutmasslichem-ueberfall-auf-reisebus-38461484.html",
+            "content_hash": "cd7217cb52d962704ebbac600e1b764bae88309ea59337cda7ccd6afd90be2de",
+            "published_at": "2026-10-28T02:30:11.000Z",
+            "last_seen": "2026-10-28T03:13:22.309Z"
+          }
+        }
+      ]
+    },
+    {
+      "story": {
+        "story_id": "wt-3c477adb6ca06dd5",
+        "slug": "landtag-warmewende-und-sonderurlaub-landtag-kommt-zusammen-a06dd5",
+        "title": "Landtag: Wärmewende und Sonderurlaub – Landtag kommt zusammen",
+        "first_seen": "2026-10-28T02:30:10.000Z",
+        "last_updated": "2026-10-28T02:30:10.000Z",
+        "topic": [
+          "Energie"
+        ],
+        "sources": [
+          {
+            "source_id": "stern-schlagzeilen",
+            "publisher": "stern",
+            "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/landtag--waermewende-und-sonderurlaub---landtag-kommt-zusammen-38461438.html",
+            "title": "Landtag: Wärmewende und Sonderurlaub – Landtag kommt zusammen",
+            "summary": "Das Plenum wird auch über illegales Glücksspiel und Befugnisse für die Polizei debattieren. Es ist der Auftakt einer zweitägigen Sitzungswoche.",
+            "source_type": "media_rss",
+            "published_at": "2026-10-28T02:30:10.000Z",
+            "primary_source": false,
+            "source_priority": 0,
+            "source_topic": "Gesellschaft",
+            "content_hash": "495e00fe455b96d7db019d37eeab82f1a33e0a41b334c27ce369a7506b6147f2",
+            "source_item_id": "a043a5ab20e0bb872a052187b654838e1e8fc5925d2d0137da17adc58b416ed0",
+            "publisher_id": "stern",
+            "publisher_kind": "journalism",
+            "source_role": "journalistic_report",
+            "language": "de",
+            "geography": [
+              "DE",
+              "international"
+            ],
+            "research_lane": "media",
+            "requires_corroboration": false,
+            "source_published_at": "2026-10-28T02:30:10.000Z",
+            "ingested_at": "2026-10-28T03:13:22.309Z",
+            "agency_origin": "unknown",
+            "agency_origin_confidence": "unknown",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            }
+          }
+        ],
+        "claims": [
+          {
+            "claim_id": "wt-3c477adb6ca06dd5-claim-01",
+            "story_id": "wt-3c477adb6ca06dd5",
+            "claim": "Landtag: Wärmewende und Sonderurlaub – Landtag kommt zusammen: Das Plenum wird auch über illegales Glücksspiel und Befugnisse für die Polizei debattieren. Es ist der Auftakt einer zweitägigen Sitzungswoche.",
+            "claim_type": "Zurechenbare Quellenaussage; noch keine unabhängige Bestätigung",
+            "source_id": "stern-schlagzeilen",
+            "source_function": "journalistic_report",
+            "status": "single_source_claim",
+            "provenance": {
+              "origin": "publisher:stern",
+              "basis": "publisher_only_origin_unverified",
+              "independence_established": false
+            },
+            "evidence_level": "Sekundärquelle",
+            "data_status": "Feed-Kurztext vorhanden",
+            "attribution": "Aussage der verlinkten Quelle; keine unabhängige Kausalitätsprüfung",
+            "reference_framework": [],
+            "uncertainty": "Vollständiger Kontext ist in der Originalquelle zu prüfen.",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          }
+        ],
+        "content_hash": "d04a4073db79d80149de0f3cefd832d9c9e78ea76f120b91e9ac0321f7224c34",
+        "published": false,
+        "analysis_status": "automatische Veröffentlichung zurückgestellt",
+        "quality_errors": [],
+        "quality_retry_count": 0,
+        "quality_retry_after": null,
+        "reassessment": false,
+        "fresh": true,
+        "pending_reason": "EDITORIAL_RELEVANCE_BELOW_THRESHOLD",
+        "versions": [],
+        "updated_at": "2026-10-28T03:13:22.309Z",
+        "event_first_seen_at": "2026-10-28T03:13:22.309Z",
+        "event_detected_at": "2026-10-28T03:13:22.309Z",
+        "event_id": "event-7bd0182689efd4c3c648",
+        "preanalysis": {
+          "filter_version": "2026-10-02.1",
+          "discovery_review": {
+            "version": "2026-09-14.1",
+            "review": true,
+            "reason": "state_change_in_relevant_domain",
+            "categories": [
+              "politics_de",
+              "security"
+            ],
+            "basis": [
+              "title",
+              "description",
+              "section"
+            ],
+            "score_scope": "discovery_only"
+          },
+          "material_development_review": {
+            "required": false,
+            "time_sensitive": false,
+            "findings": []
+          },
+          "internal_relevance_score": 10,
+          "public_relevance": "gering",
+          "event_score": {
+            "version": "2026-10-02.1",
+            "signals": [],
+            "category": "politics_de",
+            "categories": [
+              "politics_de",
+              "security"
+            ],
+            "region": "not_established",
+            "independent_source_count": 1,
+            "independence_verified": false,
+            "primary_sources": [],
+            "impact_score": 10,
+            "breaking_score": 0,
+            "source_diversity_score": 0,
+            "institutional_score": 80,
+            "national_relevance_score": 0,
+            "economic_relevance_score": 0,
+            "political_relevance_score": 0,
+            "novelty_score": 0,
+            "confidence_score": 25,
+            "velocity_score": 0,
+            "woek_impact_score": 0,
+            "total_relevance_score": 10,
+            "priority": "LOW",
+            "breaking_status": "standard",
+            "reasons": [],
+            "score_scope": "editorial_review_priority_not_truth_or_MPD_direction",
+            "checked_at": "2026-10-28T03:13:22.309Z"
+          },
+          "topics": [
+            "Energie"
+          ],
+          "dimensions": [],
+          "status": "laufende Entwicklung",
+          "analysis_type": "ex_ante",
+          "news_value_signals": [],
+          "context_formats": [],
+          "context_only": false,
+          "mechanism_hints": [
+            "Wirkmechanismus anhand der Primärquelle noch zu konkretisieren"
+          ],
+          "materiality_factors": [
+            "Zahl und Art möglicher Wirkungsempfänger",
+            "Intensität, Dauer und Reversibilität",
+            "Systemrelevanz und mögliche Kaskaden",
+            "Verteilung, Resilienz und demokratische Korrekturfähigkeit"
+          ]
+        },
+        "freshness": {
+          "source_age_minutes": 43.20515,
+          "detection_delay_minutes": 43.20515,
+          "verification_delay_minutes": null,
+          "publication_delay_minutes": null,
+          "queue_age_minutes": 0,
+          "target_publication_minutes": 120,
+          "news_freshness_score": 91,
+          "freshness_warning": null
+        },
+        "source_integrity": {
+          "status": "verified",
+          "publication_status": "eligible",
+          "version": "1.2",
+          "checked_at": "2026-10-28T03:13:22.309Z",
+          "fingerprint": "9da179ecca6fe83285ba0297f65835dcb6c73b5f3e1b0c07536e5cdd92f744a3",
+          "issue_codes": [],
+          "warning_codes": []
+        }
+      },
+      "seen_items": [
+        {
+          "key": "a043a5ab20e0bb872a052187b654838e1e8fc5925d2d0137da17adc58b416ed0",
+          "record": {
+            "source_id": "stern-schlagzeilen",
+            "url": "https://www.stern.de/gesellschaft/regional/rheinland-pfalz-saarland/landtag--waermewende-und-sonderurlaub---landtag-kommt-zusammen-38461438.html",
+            "content_hash": "495e00fe455b96d7db019d37eeab82f1a33e0a41b334c27ce369a7506b6147f2",
+            "published_at": "2026-10-28T02:30:10.000Z",
+            "last_seen": "2026-10-28T03:13:22.309Z"
+          }
+        }
+      ]
+    }
+  ]
+}
