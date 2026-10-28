@@ -7,6 +7,9 @@ const list = value => Array.isArray(value) ? value : [];
 // A conservative contradiction check, not a judgement based on a topic or on
 // low evidence alone. A source's silence cannot establish a zero change.
 const missing = value => /(?:\bkein\w*\b|\bnicht\b|\bfehl\w*\b|\bmangels\b).{0,140}(?:belegt|beschrieben|benannt|genannt|ausgewiesen|bestimmbar|bewertbar|quantifizierbar|ableitbar|erkennbar|quellengebunden plausibel|angaben|daten|informationen)/u.test(normalize(value));
+// Topic omission in the source is also silence, not a bounded change. This
+// applies only with all six zero factors and at least four absence reasons.
+const sourceSilence = value => /\b(?:quelle\w*|textauswahl|material|beleg\w*)\b.{0,100}\bkein\w*\b.{0,80}\b(?:umweltbezug|mechanismus|wirkpfad)\b/u.test(normalize(value));
 const bounded = value => /(?:unverandert|identisch|gleichbleibend).{0,60}(?:raume|flache|wege|betrieb|material|energie|volumen|termine|verfahren)|(?:raume|flache|wege|betrieb|material|energie|volumen|termine|verfahren).{0,60}(?:unverandert|identisch|gleichbleibend)|keine? zusatzlichen? (?:wege|reisen|material|energie|flachen|stoffstrome)/u.test(normalize(value));
 
 export function missingEvidenceZeroIssues(assessment = {}) {
@@ -21,7 +24,7 @@ export function missingEvidenceZeroIssues(assessment = {}) {
       // The contradiction is structural: all factors are zero, most are
       // justified by absent evidence, and the zero rationale also cites that
       // absence. It does not depend on a connector such as "deshalb".
-      if (absentFactors >= 4 && missing(path.negligibility_rationale)) {
+      if (absentFactors >= 4 && (missing(path.negligibility_rationale) || sourceSilence(path.negligibility_rationale))) {
         issues.push('IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key);
         break;
       }
@@ -75,6 +78,15 @@ const REVIEWED = Object.freeze([Object.freeze({
   dimension_sha256: 'b4a8cda5a76ce255e24ccdadea30bf72e18c499915f0ca65d31ee7881ff3324f',
   at: '2026-10-27T17:04:00.000Z',
   note: 'Die zuvor für Planet angezeigte Stufe 0 wurde mit fehlenden Umweltbelegen begründet. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die Planet-Tragweite bleibt deshalb offen und muss fachlich nachgeprüft werden. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
+}), Object.freeze({
+  story_id: 'wt-401efa7161db1adf', published_at: '2026-10-28T09:51:16.571Z',
+  updated_at: '2026-10-28T09:51:16.571Z', version: 1,
+  content_hash: 'cbc7b5fefeaf96a2a3b9df0dfb4131767bd9618fe85d898a86df7947008da249',
+  target_label: 'öffentliche Erklärung zu institutioneller Unabhängigkeit', dimension: 'planet',
+  profile_sha256: 'f5fc6c475792ac1dea917aa539ad485a0a04bf5d3b6185f55a7ecb448fc810b6',
+  dimension_sha256: '9caa1b6f82ec43249fe67b73ef32f6f2c46e01a7567c1ed60d10573860068b58',
+  at: '2026-10-28T11:17:56.000Z',
+  note: 'Die Angabe 0/5 für Planet beruhte auf fehlenden Umweltangaben in der Quelle. Die Belege tragen bisher keine begründete Einschätzung der ökologischen Tragweite. Der Wert bleibt zur fachlichen Nachprüfung offen.',
 })]);
 
 // Audited, already published editions. Paid originals, stored versions and

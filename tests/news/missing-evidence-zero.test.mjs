@@ -89,6 +89,24 @@ test('an unrecognized change in the supplied sources does not establish zero', (
   assert.deepEqual(missingEvidenceZeroIssues(assessment), [], 'a positive bounded basis remains admissible');
 });
 
+for (const key of ['human','planet','democracy']) test('a source topic omission does not establish a zero change: ' + key, () => {
+  const {record,assessment} = fixture(key), path = assessment.dimensions[key].primary_paths[0];
+  for (const reason of [
+    'Die Quelle enthält keinen Umweltbezug und keinen Mechanismus, der innerhalb des betrachteten Gegenstands ökologische Systeme verändert.',
+    'Die Quellen enthalten keinen materiellen Wirkpfad für diese Dimension.',
+    'In der vorgelegten Textauswahl gibt es keinen Umweltbezug.',
+  ]) {
+    path.negligibility_rationale = reason;
+    const before = structuredClone(record);
+    assert.deepEqual(missingEvidenceZeroIssues(assessment), ['IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key]);
+    assert.ok(deterministicGateIssues(record).includes('IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key));
+    assert.equal(releaseDeterministicImpact(record).released, false);
+    assert.deepEqual(record,before, 'the paid record and its original profile remain unchanged');
+  }
+  path.negligibility_rationale = 'Die Quelle enthält keinen Umweltbezug. Identische Räume und unveränderte Wege begrenzen die Änderung; keine zusätzlichen Reisen.';
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), [], 'an explicit bounded basis is preserved despite source silence');
+});
+
 test('an audited correction list selects only the matching edition and semantic profile', () => {
   const first = fixture(), second = fixture();
   second.record.story_id = second.reviewed.story_id = 'wt-second-audited-zero';
