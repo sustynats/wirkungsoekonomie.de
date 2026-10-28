@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-28T05:26:15.433Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-28T06:26:17.066Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -65,6 +65,38 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/wahl-in-israel-netanjahu-rivale-eisenkot-will-rasch-neue-regierung-bilden-eeda9d/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/wahl-in-israel-netanjahu-rivale-eisenkot-will-rasch-neue-regierung-bilden-eeda9d/",
+      "title": "Israels Wahl: Laut Prognosen beanspruchen Netanjahu und Eisenkot die Regierungsbildung",
+      "summary": "Nach Prognosen gibt es in Israel keinen klaren Wahlsieger. Netanjahu und Eisenkot beanspruchen die Regierungsbildung, doch eine tragfähige Mehrheit ist offen.",
+      "date_published": "2026-10-28T00:27:00.000Z",
+      "date_modified": "2026-10-28T00:27:00.000Z",
+      "_woek_released_at": "2026-10-28T06:31:50.120Z",
+      "tags": [
+        "Demokratie",
+        "Politik"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 2,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 1,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 2,
+          "direction": "mixed",
           "status": "potential"
         }
       }
