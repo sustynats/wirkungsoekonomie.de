@@ -1,7 +1,11 @@
 // Completed paid outputs from the failed/cancelled runners remain encrypted in
 // its immutable artifacts. Recover only spending/attempt receipts here; neither
 // an unpublished answer nor a new publication/review decision enters Git.
-import {recoverUsageReport} from './recover-failed-usage.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {repositoryJson} from './newsroom-store.mjs';
+import {recoverUsageReport, verifyInterruptedPaidRuns} from './recover-failed-usage.mjs';
 
 const run = Object.freeze({id: 40321851363, conclusion: 'failure',
   created_at: '2026-10-26T12:21:01Z', updated_at: '2026-10-26T12:44:53Z',
@@ -34,18 +38,19 @@ const cancelledReport = Object.freeze({started_at: '2026-10-28T20:26:07.083Z', c
   ai_calls: 2, ai_stories: 2, input_tokens: 37954, output_tokens: 14728,
   estimated_cost_usd: 0.025264, token_source: 'provider_reported_usage', published_stories: 2, updated_stories: 0});
 const cancelledFingerprints = Object.freeze({
-  'wt-715a06a921b3b78c': ['870f8f40ece586ac674767805fcb39b46217967642f2e8c4d1d4af41fd94da08', '06f142b17013d7a956808cd4e4b64186e571e123c93d9977e22e0564410dc6ff'],
-  'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71'],
+  'wt-715a06a921b3b78c': ['870f8f40ece586ac674767805fcb39b46217967642f2e8c4d1d4af41fd94da08', '06f142b17013d7a956808cd4e4b64186e571e123c93d9977e22e0564410dc6ff', '599c271b7dfab84d69fc7b084127fd1f3f5bfb1d1c44fef85565e167c0d2de87'],
+  'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71', 'a66a43ab038fbfc167b6ddb011b642cce63de32282bb65d007273035c8071ac6'],
 });
 
 export function documentedFailedPaidAttempts(storyId) {
   if (Object.hasOwn(cancelledFingerprints, storyId)) {
-    const [fingerprint, evidence_fingerprint] = cancelledFingerprints[storyId];
+    const [fingerprint, evidence_fingerprint, retained_visual_source_sha256] = cancelledFingerprints[storyId];
     return [{version: cancelledReport.processing_version, fingerprint,
       evidence_fingerprint_version: 'paid-input-evidence-1', evidence_fingerprint,
       first_failed_at: cancelledReport.started_at, failed_at: cancelledReport.completed_at,
       retry_after: cancelledRun.updated_at, retry_count: 1,
-      recovery: {...cancelledEvidence, provider_outcome: 'completed_uncommitted', publication_committed: false}}];
+      recovery: {...cancelledEvidence, retained_visual_source_sha256,
+        provider_outcome: 'completed_uncommitted', publication_committed: false}}];
   }
   if (!Object.hasOwn(fingerprints, storyId)) return [];
   const [fingerprint, evidence_fingerprint, retry_count] = fingerprints[storyId];
@@ -67,4 +72,21 @@ export function recoverDocumentedFailedPaidUsage(usage, now) {
     recoveries.push({recovered: recoverUsageReport(usage, cancelledReport, cancelledRun, now), ...cancelledEvidence});
   }
   return {recovered: recoveries.some(row => row.recovered), recoveries, provider_called: false};
+}
+
+export function runInterruptedPaidPreflight({root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..'),
+  now = new Date().toISOString(), env = process.env, gh, write = true} = {}) {
+  const file = path.join(root, 'data/news/usage.json');
+  const usage = JSON.parse(fs.readFileSync(file, 'utf8'));
+  const guard = verifyInterruptedPaidRuns({usage, now, runId:env.GITHUB_RUN_ID,
+    runAttempt:env.GITHUB_RUN_ATTEMPT, gh, documentedAttempts:documentedFailedPaidAttempts});
+  if (write) fs.writeFileSync(file, repositoryJson(usage));
+  return {version:guard.version,status:guard.status,checked_at:guard.checked_at,
+    unresolved_run_ids:guard.unresolved_run_ids,unresolved_reasons:guard.unresolved_reasons,verification_error:guard.verification_error,
+    recovered_runs:guard.recovered_runs,provider_called:false};
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  if (!process.argv.includes('--preflight')) throw Error('PAID_PREFLIGHT_MODE_REQUIRED');
+  console.log(JSON.stringify(runInterruptedPaidPreflight({write:!process.argv.includes('--dry-run')})));
 }

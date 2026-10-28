@@ -52,6 +52,7 @@ import { consolidateMannheimSwrDuplicates, retainedMannheimSwrPaidInput } from '
 import { consolidateMannheimSternDuplicates, retainedMannheimSternPaidInput } from './consolidate-mannheim-stern-duplicates.mjs';
 import { consolidateRegensburgDuplicates, retainedRegensburgPaidInput } from './consolidate-regensburg-duplicates.mjs';
 import { documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage } from './retained-failed-paid-work.mjs';
+import {interruptedPaidWorkBlocked} from './recover-failed-usage.mjs';
 import { recoverRetainedDiscovery } from './retained-discovery-inputs.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
 import { applyDocumentedKatzDenialClarification } from './clarify-katz-denial.mjs';
@@ -91,7 +92,7 @@ export const AI_PROCESSING_VERSION = "2026-09-15-direct-3";
 const OUTPUT_FORMAT_ERRORS = new Set(["AI_MALFORMED_JSON", "AI_SCHEMA_ANALYSES_REQUIRED", "AI_RESPONSE_TOO_LARGE", "AI_PROVIDER_OUTPUT_INVALID"]);
 const PROVIDER_BILLING_ERRORS = new Set(["AI_PROVIDER_CREDIT_BALANCE_EXHAUSTED", "AI_PROVIDER_SPEND_LIMIT_REACHED", "AI_PROVIDER_QUOTA_EXHAUSTED"]);
 const CAPACITY_HOLD_REASONS = new Set(["BRIDGE_PENDING", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_BUDGET_BLOCKED", "AI_RUN_TIME_LIMIT", "AI_DISABLED"]);
-const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE"]);
+const TECHNICAL_HOLD_REASONS = new Set(["AI_PROVIDER_UNAVAILABLE", "AI_OUTPUT_INVALID", "AI_INPUT_TOO_LARGE", "PAID_RECOVERY_PENDING"]);
 const RETRYABLE_QUALITY_ERRORS = [
   /^AI_ANALYSIS_MISSING$/,
   /^AI_REQUIRED_STRING:/,
@@ -1165,6 +1166,9 @@ export async function runWirkungsticker(options = {}) {
   const retainedDiscovery = options.storyStore || options.state ? null
     : recoverRetainedDiscovery({store: storyStore, state, registry, now});
   const documentedPaidRecovery = options.usage ? null : recoverDocumentedFailedPaidUsage(usage, now);
+  const paidRecoveryGuard = usage.failed_run_recovery?.interrupted_guard || null;
+  const paidRecoveryHold = mode === 'api' && interruptedPaidWorkBlocked(paidRecoveryGuard, {
+    requireCurrentRun: !options.usage, runId:process.env.GITHUB_RUN_ID, runAttempt:process.env.GITHUB_RUN_ATTEMPT});
   const newsroom = options.newsroom || (fs.existsSync(files.newsroom) ? readJson(files.newsroom) : { schema_version: "1.0", source_items: {}, events: {}, event_sources: [], discovery_candidates: [] });
   const enabledSources = registry.sources.filter((source) => source.enabled && sourceAccess(source).allowed);
   const enabledSourceIds = new Set(enabledSources.map(source => source.source_id));
@@ -1188,6 +1192,8 @@ export async function runWirkungsticker(options = {}) {
       checked_at: usage.failed_run_recovery.checked_at,
       unresolved_run_ids: usage.failed_run_recovery.unresolved_run_ids || [] } : null,
     documented_failed_paid_usage: documentedPaidRecovery,
+    paid_recovery_guard: paidRecoveryGuard,
+    paid_recovery_hold: paidRecoveryHold,
     retained_unpaid_discovery: retainedDiscovery,
     status: "running",
     started_at: now,
@@ -1510,7 +1516,7 @@ export async function runWirkungsticker(options = {}) {
     ));
   await discoveryCheckpoint('events_clustered', { changed_items: changedItems.length, clusters: freshCandidates.length });
   const freshIds = new Set(freshCandidates.map((candidate) => candidate.story_id));
-  const retryableReasons = new Set(["BRIDGE_PENDING", "IMPACT_REASSESSMENT_REQUESTED", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "EDITORIAL_RELEVANCE_BELOW_THRESHOLD", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN"]);
+  const retryableReasons = new Set(["BRIDGE_PENDING", "IMPACT_REASSESSMENT_REQUESTED", "AI_BUDGET_OR_BATCH_LIMIT", "AI_HOURLY_CALL_LIMIT", "AI_PROVIDER_UNAVAILABLE", "AI_DISABLED", "AI_BUDGET_BLOCKED", "EDITORIAL_RELEVANCE_BELOW_THRESHOLD", "AI_RUN_TIME_LIMIT", "AI_INPUT_TOO_LARGE", "SOURCE_INTEGRITY_OPEN", "PAID_RECOVERY_PENDING"]);
   const retryCandidates = (storyStore.stories || [])
     .filter((story) => !isMerged(story))
     .filter((story) => (!story.published || story.pending_update || dueFollowupIds.has(story.story_id) || dueDeepeningIds.has(story.story_id)) && !freshIds.has(story.story_id))
@@ -1801,7 +1807,7 @@ export async function runWirkungsticker(options = {}) {
   const hourlyRoom = independentHourlyRoom({ configured: configuredStoriesPerHour, used: aiStoriesInLastHour });
   const maxAiCallsPerHour = pacing.paused ? 0 : hourlyRoom;
   const remainingAiCallsThisHour = maxAiCallsPerHour;
-  const maxAiStories = Math.min(configuredMaxAiStories, maxAiCallsPerHour);
+  const maxAiStories = paidRecoveryHold ? 0 : Math.min(configuredMaxAiStories, maxAiCallsPerHour);
   report.ai_hourly_limit = maxAiCallsPerHour;
   report.ai_hourly_limit_configured = configuredStoriesPerHour;
   report.ai_stories_in_last_hour = aiStoriesInLastHour;
@@ -1810,7 +1816,7 @@ export async function runWirkungsticker(options = {}) {
   report.shared_hourly_room = hourlyRoom;
   report.ai_budget_pacing = { ...pacing, calls_this_month: monthlyAiCalls(usage, month) };
   report.ai_calls_in_last_hour = aiCallsInLastHour;
-  report.ai_calls_available_this_run = remainingAiCallsThisHour;
+  report.ai_calls_available_this_run = paidRecoveryHold ? 0 : remainingAiCallsThisHour;
   const catchUp = catchUpQueueStage(stage, ready, usage, now, budget, spendBefore);
   report.catchup_control = catchUp.control;
   if (catchUp.control.enabled) report.budget_throttle = { ...report.budget_throttle,
@@ -1820,6 +1826,10 @@ export async function runWirkungsticker(options = {}) {
   // landen nie im oeffentlichen Bestand, sondern in ihrer Freigabeliste.
   const meldungsauftraege = mode === 'api' ? ladeAuftraege(options.orderFile ?? process.env.WOEK_NEWS_ORDER_FILE) : [];
   ({ selected, deferred } = auftraegeVorziehen(selected, deferred, meldungsauftraege));
+  if (paidRecoveryHold) {
+    deferred = [...selected, ...deferred];
+    selected = [];
+  }
   const vorAuftraegen = new Map(meldungsauftraege.filter((auftrag) => byId.has(auftrag.story_id)).map((auftrag) => [auftrag.story_id, byId.get(auftrag.story_id)]));
   const entscheidungenVorAuftraegen = newsroom.decisions?.length ?? 0;
   const bridgeImages = new Map();
@@ -1909,14 +1919,15 @@ export async function runWirkungsticker(options = {}) {
   report.ai_batches_planned = Math.ceil(selected.length / aiBatchSize);
 
   for (const candidate of deferred) {
-    const deferredReason = aiDeferralReason(candidate, stage, remainingAiCallsThisHour);
+    const deferredReason = paidRecoveryHold ? 'PAID_RECOVERY_PENDING' : aiDeferralReason(candidate, stage, remainingAiCallsThisHour);
     if (deferredReason === "AI_BUDGET_BLOCKED") report.budget_deferred = Number(report.budget_deferred || 0) + 1;
     if (deferredReason !== "EDITORIAL_RELEVANCE_BELOW_THRESHOLD") bumpCandidateFunnel(sourceFunnel, candidate, "capacity_deferred");
     byId.set(candidate.story_id, pendingRecord(candidate, deferredReason, now));
     report.quality_holds.push({ story_id: candidate.story_id, reason: deferredReason });
   }
 
-  const aiEnabled = mode === 'api' && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
+  const aiEnabled = mode === 'api' && (!options.dryRun || typeof options.callAiImpl === 'function')
+    && String(process.env.WOEK_NEWS_AI_ENABLED ?? "true").toLowerCase() !== "false";
   importCheckpoint('verification_selected', {selected:selected.length, ai_enabled:aiEnabled});
   if (selected.length && aiEnabled) {
     assertAutomaticImpactTransport(typeof options.callAiImpl === 'function');
@@ -2250,7 +2261,7 @@ export async function runWirkungsticker(options = {}) {
   // validated article. Drain a bounded image queue without redoing news AI.
   report.title_images = [];
   report.title_images_changed = 0;
-  if (!options.dryRun) {
+  if (!options.dryRun && !paidRecoveryHold) {
     const prepareImage = options.prepareTitleImage || createTitleImagePipeline();
     const pendingImages = mode === 'api'
       ? pendingTitleImageQueue([...byId.values()], { now, changed: changedStoryIds, limit: IMAGE_CONFIG.max_generations_per_run })
@@ -2323,7 +2334,7 @@ export async function runWirkungsticker(options = {}) {
   // Laufausfall, eine einzelne bleibt ein sichtbares Quellenproblem.
   const healthDegraded = !(mode === 'dropbox_chatgpt_bridge' && bridgePhase === 'import')
     && sourceHealthDegraded(report);
-  report.operational_status = report.ai_provider_degraded || sourceCoverageDegraded(report) || healthDegraded ? "degraded" : "ok";
+  report.operational_status = paidRecoveryHold || report.ai_provider_degraded || sourceCoverageDegraded(report) || healthDegraded ? "degraded" : "ok";
   report.editorial_status = report.queue.editorial || report.source_integrity_holds.length ? "holds" : "clear";
   report.status = report.operational_status;
   if (report.status === "ok") state.last_successful_run = now;
