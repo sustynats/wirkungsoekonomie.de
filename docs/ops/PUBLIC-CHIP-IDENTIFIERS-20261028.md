@@ -25,6 +25,27 @@ Both projections also pass against the complete verified recovery data, with
 identical before/after hashes of the original decoded story store and state.
 There were zero provider calls and zero production data writes in this check.
 
+The next ordinary run `40620363616` failed at the same scan. Its recovery ZIP
+`12787612274` and encrypted raw-output ZIP `12786629957` are retained unchanged.
+The complete second snapshot also passes both corrected scans. It contains one
+new, technically eligible V1 for `wt-4c85309b0533c98a` that never reached the
+atomic commit. The existing offline `recoverApprovedSnapshots` path accepts
+only that record against unchanged baseline `28bcb1cb1fd2b666d4973e0dd135ac1c3a3d2963`.
+Persisted content, impact and source-integrity gates pass again. Every original
+field of the retained record remains identical; only recovery provenance is
+added. Every unrelated story and state field remains unchanged, and only this
+record is removed from the pending list. Repeating the recovery accepts zero
+records. This technical recovery does not assert a human editorial review.
+
+The existing `recoverUsageReport` path accounts once for that failed run's
+19,578 input and 6,451 output tokens, costing USD 0.011657. Historical delivery
+counts stay zero because the failed run did not deliver a publication. This is
+accounting for actual paid work, not a change to a budget or hourly allowance.
+The unchanged retained analysis has SHA-256
+`362b8a04988e5c5ff6947290b3736be8636516b1e5a4bd3628df9beacd788b92`.
+The prepared canonical recovery still requires the ordinary worker, release
+and whole-document live readback; it is not yet a delivery result.
+
 Before merge, verify every CI gate on the exact current PR head and inspect
 new main/bot changes. After merge, use the normal serial worker and ordinary
 Pages release to prove processing and actual delivery. A passing local scan
