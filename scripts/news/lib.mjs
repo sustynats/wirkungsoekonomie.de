@@ -532,6 +532,9 @@ export function anchoredSources(story) {
 function sourceDocumentUpdateMatch(item, leading) {
   if (!leading || !item.source_id || item.source_id !== leading.source_id || item.title !== leading.title
     || !documentKey(item.url) || documentKey(item.url) !== documentKey(leading.url)) return false;
+  // An unchanged headline must not hide an explicitly different place or
+  // object in the new lead. This is an additional conflict check, not identity.
+  if (subjectConflict({ title: '', summary: item.summary, url: item.url }, leading)) return false;
   const documentGap = Math.abs(Date.parse(item.published_at) - Date.parse(leading.published_at));
   return Number.isFinite(documentGap) && documentGap <= 6 * 3600000
     && !REPEATED_LEADING_DOCUMENT_EVENT.test(`${item.title} ${item.summary} ${leading.title} ${leading.summary}`)

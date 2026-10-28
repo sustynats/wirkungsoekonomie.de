@@ -34,6 +34,7 @@ test('the leading-document shortcut rejects changed places, publishers, reused e
   const previous = story('regensburg', 'Explosion in Regensburger Mehrfamilienhaus', { sources: [original], source_summary: original.summary });
   for (const incoming of [
     { ...original, title: 'Explosion in Mehrfamilienhaus in München', summary: 'Eine Explosion in München beschädigte ein Wohnhaus.' },
+    { ...original, summary: 'Eine Explosion in München beschädigte ein Wohnhaus.' },
     { ...original, source_id: 'other-publisher' },
     { ...original, title: 'Zweite Explosion in Mehrfamilienhaus in Regensburg' },
     { ...original, title: 'Rückblick: Explosion in Mehrfamilienhaus in Regensburg' },
