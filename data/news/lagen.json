@@ -1,7 +1,69 @@
 {
   "schema_version": "1.0",
-  "updated_at": "2026-10-28T11:00:00.000Z",
+  "updated_at": "2026-10-28T17:00:00.000Z",
   "lagen": [
+    {
+      "lage_id": "2026-10-28-abendlage",
+      "slot": "abendlage",
+      "label": "Abendlage",
+      "date": "2026-10-28",
+      "window_from": "2026-10-28T11:00:00.000Z",
+      "window_to": "2026-10-28T17:00:00.000Z",
+      "stand": "2026-10-28T17:00:00.000Z",
+      "headline": "Das sind die 5 Entwicklungen, die seit 12 Uhr wirkungsrelevant geworden sind.",
+      "counts": {
+        "total": 5,
+        "neu": 5,
+        "fortgeschrieben": 0
+      },
+      "entries": [
+        {
+          "story_id": "wt-7b52544e5d4c5d1b",
+          "slug": "explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-4c5d1b",
+          "title": "Laut Polizei: Explosion in Regensburger Wohnhaus mit fünf Verletzten und zwei Vermissten",
+          "state": "neu",
+          "at": "2026-10-28T16:32:43.456Z",
+          "score": 9.9242
+        },
+        {
+          "story_id": "wt-3363b694c6e33f96",
+          "slug": "militar-grossubung-vorermittlungen-zu-schussen-bei-bundeswehrubung-eingestellt-e33f96",
+          "title": "Laut stern: Vorermittlungen zu Schüssen bei Bundeswehrübung eingestellt",
+          "state": "neu",
+          "at": "2026-10-28T13:11:18.683Z",
+          "score": 5.3648
+        },
+        {
+          "story_id": "wt-89a9f48cfaf3718a",
+          "slug": "polizeieinsatz-spielzeugwaffe-lost-polizeieinsatz-in-hagen-aus-f3718a",
+          "title": "Laut stern löst Spielzeugwaffe Polizeieinsatz in Hagen aus",
+          "state": "neu",
+          "at": "2026-10-28T12:24:06.202Z",
+          "score": 3.2336
+        },
+        {
+          "story_id": "wt-41df57c52e467296",
+          "slug": "explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-467296",
+          "title": "Explosion in Regensburger Mehrfamilienhaus: Verletzte und Vermisste",
+          "state": "neu",
+          "at": "2026-10-28T12:05:34.775Z",
+          "score": 9.1822
+        },
+        {
+          "story_id": "wt-658dded9668ff87b",
+          "slug": "merz-deutschland-wird-rustungskooperation-mit-japan-verstarken-kampfjetbau-ausloten-8ff87b",
+          "title": "Laut stern: Merz will Rüstungskooperation mit Japan verstärken",
+          "state": "neu",
+          "at": "2026-10-28T11:09:13.194Z",
+          "score": 5.0256
+        }
+      ],
+      "processing_status": {
+        "state": "processing_limited",
+        "checked_at": "2026-10-28T17:09:01.574Z",
+        "note": "Die Nachrichtenverarbeitung ist derzeit verzögert. Eingegangene Meldungen sind noch nicht vollständig geprüft oder veröffentlicht. Dies ist keine Feststellung, dass es keine relevanten Nachrichten gibt."
+      }
+    },
     {
       "lage_id": "2026-10-28-mittagslage",
       "slot": "mittagslage",
