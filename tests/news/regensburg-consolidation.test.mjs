@@ -50,6 +50,86 @@ function fixture() {
   }));
 }
 
+const laterId = 'wt-7b52544e5d4c5d1b', laterAt = '2026-10-28T17:00:00.000Z';
+function withLaterEdition() {
+  const pair = fixture(); consolidate(pair, at);
+  const later = structuredClone(fixture()[0]);
+  Object.assign(later, {
+    story_id: laterId, event_id: 'event-bc739430e4b90f981494',
+    slug: 'explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-4c5d1b',
+    title: 'Synthetic later paid edition', published_at: '2026-10-28T16:32:43.456Z',
+    updated_at: '2026-10-28T16:32:43.456Z',
+    content_hash: '935ce71b85b0e0f1ab0b674273faa620e3b18131a9431efc841cf3ad3e6c338a',
+  });
+  later.sources[0].content_hash = 'd962450d3e11c10dfb9f3dfe89c703fe2b3898efe21cc0e13359361dc85bde50';
+  later.sources[0].summary = 'Synthetic later source excerpt, already paid.';
+  return [...pair, later];
+}
+
+test('a later exact source edition joins the existing route without changing any paid field or old archive metadata', () => {
+  for (const reverse of [false, true]) {
+    const rows = withLaterEdition(); rows[0].pending_update = capacityReview(rows[0], laterAt);
+    const before = structuredClone(rows);
+    const result = consolidate(reverse ? [...rows].reverse() : rows, laterAt);
+    assert.equal(result.status, 'applied'); assert.equal(result.changes.length, 1);
+    assert.equal(result.changes[0].story_id, laterId);
+    assert.deepEqual(rows[0].living_file.merged_story_ids, [duplicateId, laterId]);
+    assert.deepEqual(rows[0].living_file.consolidations[0], before[0].living_file.consolidations[0]);
+    assert.deepEqual(rows[1], before[1], 'the first archived edition must remain completely unchanged');
+    for (const i of [0, 2]) for (const key of Object.keys(before[i])) {
+      if (!['listed', 'living_file'].includes(key)) assert.deepEqual(rows[i][key], before[i][key], key);
+    }
+    assert.equal(rows[2].retirement.preserve_full_publication, true);
+    assert.deepEqual(rows[2].retirement.canonical_story_ids, [canonicalId]);
+    const once = structuredClone(rows);
+    assert.equal(consolidate(rows, '2026-10-28T18:00:00Z').status, 'already_applied');
+    assert.deepEqual(rows, once);
+  }
+});
+
+test('the later mapping fails atomically on changed editions, unknown holds or conflicting routing', () => {
+  for (const change of [
+    rows => rows[2].current_version++, rows => {rows[2].sources[0].content_hash = 'changed';},
+    rows => {rows[2].content_hash = 'changed';}, rows => {rows[2].event_id = 'other';},
+    rows => {rows[2].updated_at = laterAt;}, rows => {rows[2].sources[0].source_id = 'other';},
+    rows => {rows[2].provider_request_hold = {};}, rows => {rows[2].review_checkpoint = {};},
+    rows => {rows[2].source_integrity.issue_codes.push('OPEN');},
+    rows => {rows[0].pending_update = {reason:'AI_HOURLY_CALL_LIMIT'};},
+    rows => {rows[0].living_file.merged_story_ids.push('unknown');},
+    rows => {rows[1].retirement.canonical_story_ids = ['unknown'];},
+    rows => {delete rows[0].living_file;},
+  ]) {
+    const rows = withLaterEdition(); change(rows); const before = structuredClone(rows);
+    assert.equal(consolidate(rows, laterAt).status, 'held'); assert.deepEqual(rows, before);
+  }
+  const ambiguous = withLaterEdition(); ambiguous.push(structuredClone(ambiguous[2]));
+  assert.equal(consolidate(ambiguous, laterAt).reason, 'STORY_ID_AMBIGUOUS');
+});
+
+test('all three paid source packets can be retained while a genuinely new input keeps its review gates', () => {
+  const rows = withLaterEdition(); consolidate(rows, laterAt);
+  const candidate = {story_id:canonicalId,existing_story:rows[0],sources:structuredClone(rows.flatMap(row=>row.sources))};
+  assert.equal(retained(candidate, rows, laterAt), true);
+  candidate.sources.forEach(source=>{source.published_at=laterAt;source.ingested_at=laterAt;});
+  assert.equal(retained(candidate, rows, laterAt), true);
+  for (const change of [
+    item=>{item.sources[2].summary='Genuinely new evidence';},item=>{item.sources[2].content_hash='new';},
+    item=>{item.followup_due=true;},item=>{item.deepening_due=true;},item=>{item.reassessment=true;},
+    item=>{item.existing_story.provider_request_hold={};},
+  ]) {const changed=structuredClone(candidate);change(changed);assert.equal(retained(changed,rows,laterAt),false);}
+});
+
+test('a serial normal runner routes the later edition once with no replacement answer', async () => {
+  let captured, calls=0;
+  const options={dryRun:true,now:laterAt,registry:{schema_version:'1.0',sources:[],policy:{}},
+    state:{source_status:{},seen_items:{},pending_story_ids:[],relevance_filter_version:'4.0'},storyStore:{stories:withLaterEdition()},usage:{runs:[]},
+    newsroom:{source_items:{},events:{},event_sources:[],discovery_candidates:[]},budgetFx:{rate_date:'2026-10-23',rate_usd_per_eur:1.1193},
+    callAiImpl:async()=>{calls++;throw Error('No replacement answer');},fetchArticleImpl:async()=>{throw Error('No network');},captureState:value=>{captured=value;}};
+  const first=await runWirkungsticker(options);assert.equal(first.regensburg_duplicate_consolidation.status,'applied');assert.equal(first.retired_stories,1);
+  const second=await runWirkungsticker({...options,state:captured.state,storyStore:captured.storyStore});
+  assert.equal(second.regensburg_duplicate_consolidation.status,'already_applied');assert.equal(second.retired_stories,0);assert.equal(calls,0);
+});
+
 test('the exact Regensburg RSS pair consolidates in either order, preserving every paid field and its dates', () => {
   for (const reverse of [false, true]) {
     const pair = fixture(), before = structuredClone(pair);
