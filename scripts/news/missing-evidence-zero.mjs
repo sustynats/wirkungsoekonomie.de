@@ -6,7 +6,7 @@ const normalize = value => String(value || '').normalize('NFKD').replace(/\p{M}/
 const list = value => Array.isArray(value) ? value : [];
 // A conservative contradiction check, not a judgement based on a topic or on
 // low evidence alone. A source's silence cannot establish a zero change.
-const missing = value => /(?:\bkein\w*\b|\bnicht\b|\bfehl\w*\b|\bmangels\b).{0,140}(?:belegt|beschrieben|benannt|genannt|ausgewiesen|bestimmbar|bewertbar|quantifizierbar|ableitbar|erkennbar|quellengebunden plausibel|angaben|daten|informationen)/u.test(normalize(value));
+const missing = value => /(?:\bkein\w*\b|\bnicht\b|\bfehl\w*\b|\bmangels\b).{0,140}(?:belegt|nachweisbar|nachgewiesen|beschrieben|benannt|genannt|ausgewiesen|bestimmbar|bewertbar|quantifizierbar|ableitbar|erkennbar|quellengebunden plausibel|angaben|daten|informationen)/u.test(normalize(value));
 // Topic omission in the source is also silence, not a bounded change. This
 // applies only with all six zero factors and at least four absence reasons.
 const sourceSilence = value => /\b(?:quelle\w*|textauswahl|material|beleg\w*)\b.{0,100}\bkein\w*\b.{0,80}\b(?:umweltbezug|mechanismus|wirkpfad)\b/u.test(normalize(value));
@@ -87,6 +87,16 @@ const REVIEWED = Object.freeze([Object.freeze({
   dimension_sha256: '9caa1b6f82ec43249fe67b73ef32f6f2c46e01a7567c1ed60d10573860068b58',
   at: '2026-10-28T11:17:56.000Z',
   note: 'Die Angabe 0/5 für Planet beruhte auf fehlenden Umweltangaben in der Quelle. Die Belege tragen bisher keine begründete Einschätzung der ökologischen Tragweite. Der Wert bleibt zur fachlichen Nachprüfung offen.',
+}), Object.freeze({
+  story_id: 'wt-7b52544e5d4c5d1b', published_at: '2026-10-28T16:32:43.456Z',
+  updated_at: '2026-10-28T19:16:29.321Z', version: 2,
+  content_hash: '935ce71b85b0e0f1ab0b674273faa620e3b18131a9431efc841cf3ad3e6c338a',
+  target_label: 'akute Gebäudeschädigung und Rettungslage', dimension: 'democracy',
+  profile_sha256: 'cdf8a8049aa0244ba6e08327c0d209feb7db7bac6aa5f8bc4ce1eea9d879ae5e',
+  dimension_sha256: '533935fd244c3c6300b162c51a222f8cbcce363f4564919a2a153c52c407dcfe',
+  at: '2026-10-28T19:40:32.000Z',
+  withhold_title_image: true,
+  note: 'Die Angabe 0/5 für Demokratie beruhte auf fehlenden Belegen für eine demokratische Zustandsänderung. Fehlende Daten belegen keine vernachlässigbare Veränderung. Die demokratische Tragweite bleibt zur fachlichen Nachprüfung offen. Die Wirkungskarte mit der früheren Nullbewertung wird bis zur Nachprüfung nicht angezeigt. Die übrigen Dimensionen und der berichtete Sachverhalt bleiben unverändert.',
 })]);
 
 // Audited, already published editions. Paid originals, stored versions and
@@ -112,18 +122,20 @@ export function projectMissingEvidenceCorrection(input = {}, assessment = {}, re
     || hash(assessment.dimensions?.[reviewed.dimension]) !== reviewed.dimension_sha256
     || !missingEvidenceZeroIssues(assessment).includes('IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + reviewed.dimension)) return assessment;
   const projected = structuredClone(assessment), original = assessment.dimensions[reviewed.dimension];
+  const subject = {human: 'menschlich', planet: 'ökologisch', democracy: 'demokratisch'}[reviewed.dimension];
   projected.dimensions[reviewed.dimension] = {
     path_status: 'insufficient_basis', direction: 'open', dominance: 'none', magnitude: null,
     evidence: 'not_assessable', likelihood: 'unknown', data_status: 'missing', temporal_status: 'ex_ante',
     primary_paths: [], secondary_paths: [], balance: null,
-    rationale: 'Die verfügbaren Angaben tragen derzeit keine belastbare Einschätzung der ökologischen Tragweite. Offen bedeutet keine Bewertung mit null Punkten.',
+    rationale: `Die verfügbaren Angaben tragen derzeit keine belastbare Einschätzung der ${subject}en Tragweite. Offen bedeutet keine Bewertung mit null Punkten.`,
     research_pass: 'second_pass',
-    research_result: 'Die bisherigen Quellen nennen keine Grundlage für eine begründet vernachlässigbare ökologische Veränderung. Die ursprüngliche Nullbewertung ersetzt die noch offene fachliche Prüfung nicht.',
+    research_result: `Die bisherigen Quellen nennen keine Grundlage für eine begründet vernachlässigbare ${subject}e Veränderung. Die ursprüngliche Nullbewertung ersetzt die noch offene fachliche Prüfung nicht.`,
     reviewed_source_ids: [...(original.reviewed_source_ids || [])],
   };
   projected.zero_evidence_correction = {
     at: reviewed.at, note: reviewed.note, dimension: reviewed.dimension, previous_magnitude: 0,
     original_profile_sha256: reviewed.profile_sha256, original_dimension_sha256: reviewed.dimension_sha256,
+    ...(reviewed.withhold_title_image === true ? {withhold_title_image: true} : {}),
   };
   return projected;
 }
