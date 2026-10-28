@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import { runWirkungsticker } from '../../scripts/news/run.mjs';
+import {evaluateRunHealth,reportOperationallyHealthy} from '../../scripts/news/check-run-health.mjs';
 import { ladeAuftraege, auftraegeVorziehen, auftragsErgebnisse } from '../../scripts/news/meldungsauftraege-lauf.mjs';
 import { holen, abgeben, wartendeMeldungsauftraege, freigabeVorschau, MAX_VERSUCHE } from '../../scripts/news/meldungsauftraege.mjs';
 
@@ -66,6 +67,27 @@ test('ohne Auftragsdatei aendert sich am Lauf nichts', async () => {
   assert.deepEqual(reihenfolge, ['wt-test']);
   assert.equal(report.meldungsauftraege, undefined);
   assert.equal(fs.existsSync(path.join(dir, 'ergebnisse.json')), false);
+});
+
+test('ungeklaerte unterbrochene Aufrufe halten auch private Auftraege ohne bezahlten Versuch oder oeffentlichen Text an', async () => {
+  const dir=verzeichnis();auftragsDatei(dir);let gespeichert,calls=0;
+  const usage={runs:[],failed_run_recovery:{interrupted_guard:{version:'interrupted-paid-1',status:'open',unresolved_run_ids:[123]}}};
+  const report=await runWirkungsticker(options(dir,{usage,captureState:value=>{gespeichert=value;},callAiImpl:async()=>{calls++;throw Error('provider must not be called');}}));
+  assert.equal(calls,0);assert.equal(report.ai_calls,0);assert.equal(report.ai_calls_available_this_run,0);
+  assert.ok(report.ai_hourly_limit_configured>0,'the configured quota is preserved');
+  assert.equal(report.paid_recovery_hold,true);assert.equal(report.operational_status,'degraded');
+  assert.equal(reportOperationallyHealthy({...report,operational_status:'ok'}),false);
+  assert.ok(evaluateRunHealth(report,{now}).errors.includes('PAID_RECOVERY_PENDING'));
+  const result=JSON.parse(fs.readFileSync(path.join(dir,'ergebnisse.json'))).ergebnisse[0];
+  assert.equal(result.status,'offen');assert.equal(result.grund,'PAID_RECOVERY_PENDING');
+  assert.equal(gespeichert.storyStore.stories.some(s=>s.story_id==='wt-auftrag'),false);
+  assert.equal(gespeichert.newsroom.decisions.some(s=>s.story_id==='wt-auftrag'),false);
+  assert.deepEqual(gespeichert.storyStore.stories.find(s=>s.story_id==='wt-test').versions,storedStory().versions);
+  const resumed=[];
+  await runWirkungsticker(options(dir,{state:gespeichert.state,storyStore:gespeichert.storyStore,
+    usage:{...gespeichert.usage,failed_run_recovery:{interrupted_guard:{version:'interrupted-paid-1',status:'checked'}}},
+    callAiImpl:async stories=>{resumed.push(...stories.map(s=>s.story_id));return ablehnung(stories);}}));
+  assert.equal(resumed[0],'wt-auftrag','an untouched order resumes through the same ordinary pipeline');
 });
 
 test('Vorziehen haelt die Zahl der Plaetze und verdraengt dasselbe Ereignis', () => {
