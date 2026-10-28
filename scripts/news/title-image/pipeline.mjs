@@ -8,6 +8,7 @@ import { renderTitleImageFromStory, storyToTitleInput, SIZES } from "./index.mjs
 import { rasterize } from "./rasterize.mjs";
 import { assertHiggsfieldProcessing, visualGenerationProvider } from "../processing-mode.mjs";
 import { withRequestDeadline } from "../request-deadline.mjs";
+import { projectMissingEvidenceCorrection } from "../missing-evidence-zero.mjs";
 
 const exec = promisify(execFile);
 const REPO = "sustynats/wirkungsoekonomie.de";
@@ -19,8 +20,12 @@ function retryFields(reason, now) {
   if (!reason || TERMINAL.has(reason)) return {};
   return { retry_after: new Date(Date.parse(now()) + (reason === "HIGGSFIELD_CREDIT_LIMIT" ? 360 : 15) * 60000).toISOString() };
 }
-export function publicTitleImage(value) {
+export function publicTitleImage(value, story = null) {
   if (!value) return null;
+  // A bound correction can withhold a card that still depicts the unsupported
+  // rating. Keep its paid original and stored image metadata unchanged.
+  if (story && projectMissingEvidenceCorrection(story, story.impact_assessment || {})
+    .zero_evidence_correction?.withhold_title_image === true) return null;
   const result = { mode: value.mode, label: value.mode === "editorial" ? "Symbolbild" : "Wirkungskarte · WÖk-Einordnung" };
   for (const key of ["og", "wide", "square"]) {
     const file = value[key];
