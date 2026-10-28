@@ -1,4 +1,4 @@
-// Account for paid work in a failed runner whose atomic publish never reached
+// Account for paid work in a failed/cancelled runner whose atomic publish never reached
 // main. Recover only the machine report, never accept unpublished article text.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -27,8 +27,16 @@ export function recoverUsageReport(usage, report, workflow, now) {
   const runId = `news-run-${createHash('sha256').update(report.started_at).digest('hex').slice(0,12)}`;
   if ((usage.runs || []).some(run => run.run_id === runId || run.started_at === report.started_at)) return false;
   const started = Date.parse(report.started_at);
-  if (workflow.conclusion !== 'failure' || started < Date.parse(workflow.created_at)
-      || started > Date.parse(workflow.updated_at)) throw Error('RECOVERY_RUN_BINDING_INVALID');
+  const completed = Date.parse(report.completed_at), created = Date.parse(workflow.created_at);
+  const updated = Date.parse(workflow.updated_at), recovered = Date.parse(now);
+  if (!['failure', 'cancelled'].includes(workflow.conclusion)
+      || ![started, completed, created, updated, recovered].every(Number.isFinite)
+      || started < created || completed < started || completed > updated || updated > recovered) {
+    throw Error('RECOVERY_RUN_BINDING_INVALID');
+  }
+  for (const key of ['ai_calls', 'input_tokens', 'output_tokens', 'estimated_cost_usd']) {
+    if (!Number.isFinite(report[key]) || report[key] < 0) throw Error(`RECOVERY_USAGE_INVALID:${key}`);
+  }
   (usage.runs ||= []).push({
     run_id: runId, started_at: report.started_at, completed_at: report.completed_at,
     berlin_slot: report.berlin_slot,
