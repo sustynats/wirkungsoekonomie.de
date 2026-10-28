@@ -58,6 +58,7 @@ export function sourceHealthDegraded(report = {}) {
 }
 
 export function reportOperationallyHealthy(report = {}) {
+  if (report.paid_recovery_hold || report.paid_recovery_guard?.status === 'open') return false;
   if (report.ai_error || sourceCoverageDegraded(report)) return false;
   if (report.operational_status) return report.operational_status === "ok";
   if (!report.status || report.status === "ok") return true;
@@ -79,6 +80,7 @@ export function evaluateRunHealth(report, options = {}) {
   if (expectedAfter !== null && (!Number.isFinite(expectedAfter) || !Number.isFinite(startedAt) || startedAt < expectedAfter)) errors.push("RUN_REPORT_STALE");
   if (!options.expectedAfter && Number.isFinite(startedAt) && nowMs - startedAt > maxAgeMinutes * 60 * 1000) errors.push("RUN_REPORT_STALE");
   if (report?.ai_error) errors.push(report.ai_error === 'AI_BUDGET_EXHAUSTED' ? 'AI_BUDGET_EXHAUSTED' : report.ai_error === "AI_INPUT_TOO_LARGE" ? "AI_INPUT_BLOCKED" : "AI_PROVIDER_DEGRADED");
+  if (report?.paid_recovery_hold || report?.paid_recovery_guard?.status === 'open') errors.push('PAID_RECOVERY_PENDING');
   if (report?.processing_mode === 'dropbox_chatgpt_bridge') {
     if (!report.bridge_monitor?.dropbox_reachable) errors.push('BRIDGE_UNAVAILABLE');
     // Per-job queues/review holds remain observable without declaring an
