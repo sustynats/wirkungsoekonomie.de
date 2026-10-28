@@ -24,13 +24,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-28T16:51:18.889Z",
       "active": true
-    },
-    "delivery-wirkungsticker.yml": {
-      "firstSeen": "2026-10-28T16:58:46.217Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "0693096cfc189499606c9a79",
+      "content": "✓ WÖk-Störung behoben\nNachrichtenimport\nPrüfung: 2026-10-28T17:36:17.632Z"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3930,11 +3931,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/militar-grossubung-vorermittlungen-zu-schussen-bei-bundeswehrubung-eingestellt-e33f96/": {
         "first_seen_at": "2026-10-28T14:06:38.002Z",
         "source_at": "2026-10-28T11:09:46.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/explosion-in-mehrfamilienhaus-in-regensburg-mehrere-vermisste-und-verletzte-4c5d1b/": {
+        "first_seen_at": "2026-10-28T17:36:17.632Z",
+        "source_at": "2026-10-28T16:18:07.000Z"
       }
     },
-    "last_new_at": "2026-10-28T14:06:38.002Z",
-    "checked_at": "2026-10-28T17:06:31.846Z",
-    "last_current_new_at": "2026-10-28T14:06:38.002Z"
+    "last_new_at": "2026-10-28T17:36:17.632Z",
+    "checked_at": "2026-10-28T17:36:17.632Z",
+    "last_current_new_at": "2026-10-28T17:36:17.632Z"
   },
   "recovery_attempts": [
     {
