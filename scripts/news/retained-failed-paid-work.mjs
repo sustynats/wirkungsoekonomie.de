@@ -1,4 +1,4 @@
-// Completed paid outputs from the failed 26 October runner remain encrypted in
+// Completed paid outputs from the failed/cancelled runners remain encrypted in
 // its immutable artifacts. Recover only spending/attempt receipts here; neither
 // an unpublished answer nor a new publication/review decision enters Git.
 import {recoverUsageReport} from './recover-failed-usage.mjs';
@@ -19,7 +19,34 @@ const fingerprints = Object.freeze({
   'wt-2c796868270ba89b': ['1387768cee6abb9462b6af642ed474b1517c78697035960f76a6e3259585a701', '3a69a3786d91d8b22b62949b3b5c112c5c77623d96690a4b034799ee9839a5aa', 1],
 });
 
+// The 28 October runner completed two paid answers before cancellation during
+// atomic publication. Its complete recovery bundle and sealed originals were
+// verified before binding these receipts. Feed-clock changes are not new input.
+const cancelledRun = Object.freeze({id: 40760217932, conclusion: 'cancelled',
+  created_at: '2026-10-28T20:06:01Z', updated_at: '2026-10-28T21:00:59Z',
+  html_url: 'https://github.com/sustynats/wirkungsoekonomie.de/actions/runs/40760217932'});
+const cancelledEvidence = Object.freeze({run_id: cancelledRun.id, recovery_artifact_id: 12851371088,
+  recovery_sha256: 'cca3a42317447e9257d922685ade12a3bdbaf6bedf3dbf06f4af6d3f3cfe3923',
+  raw_artifact_id: 12849864754,
+  raw_sha256: '830c0f36491b93cf076546f24e390c7f5e91cd6f2e71cca7b74b33139c1dbbd8'});
+const cancelledReport = Object.freeze({started_at: '2026-10-28T20:26:07.083Z', completed_at: '2026-10-28T20:33:53.995Z',
+  berlin_slot: 'Automatischer Lauf 21:00', processing_version: '2026-09-15-direct-3',
+  ai_calls: 2, ai_stories: 2, input_tokens: 37954, output_tokens: 14728,
+  estimated_cost_usd: 0.025264, token_source: 'provider_reported_usage', published_stories: 2, updated_stories: 0});
+const cancelledFingerprints = Object.freeze({
+  'wt-715a06a921b3b78c': ['870f8f40ece586ac674767805fcb39b46217967642f2e8c4d1d4af41fd94da08', '06f142b17013d7a956808cd4e4b64186e571e123c93d9977e22e0564410dc6ff'],
+  'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71'],
+});
+
 export function documentedFailedPaidAttempts(storyId) {
+  if (Object.hasOwn(cancelledFingerprints, storyId)) {
+    const [fingerprint, evidence_fingerprint] = cancelledFingerprints[storyId];
+    return [{version: cancelledReport.processing_version, fingerprint,
+      evidence_fingerprint_version: 'paid-input-evidence-1', evidence_fingerprint,
+      first_failed_at: cancelledReport.started_at, failed_at: cancelledReport.completed_at,
+      retry_after: cancelledRun.updated_at, retry_count: 1,
+      recovery: {...cancelledEvidence, provider_outcome: 'completed_uncommitted', publication_committed: false}}];
+  }
   if (!Object.hasOwn(fingerprints, storyId)) return [];
   const [fingerprint, evidence_fingerprint, retry_count] = fingerprints[storyId];
   const repeated = retry_count === 2;
@@ -35,6 +62,9 @@ export function documentedFailedPaidAttempts(storyId) {
 export function recoverDocumentedFailedPaidUsage(usage, now) {
   if (!Number.isFinite(Date.parse(now))) throw Error('PAID_RECOVERY_TIME_INVALID');
   if (Date.parse(now) < Date.parse(run.updated_at)) return {recovered: false, reason: 'before_completed_run'};
-  const recovered = recoverUsageReport(usage, report, run, now);
-  return {recovered, ...evidence, provider_called: false};
+  const recoveries = [{recovered: recoverUsageReport(usage, report, run, now), ...evidence}];
+  if (Date.parse(now) >= Date.parse(cancelledRun.updated_at)) {
+    recoveries.push({recovered: recoverUsageReport(usage, cancelledReport, cancelledRun, now), ...cancelledEvidence});
+  }
+  return {recovered: recoveries.some(row => row.recovered), recoveries, provider_called: false};
 }
