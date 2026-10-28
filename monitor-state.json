@@ -21,16 +21,21 @@
       "firstSeen": "2026-10-26T18:06:05.846Z",
       "active": false
     },
-    "run": {
-      "firstSeen": "2026-10-28T18:51:20.706Z",
-      "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-28T18:51:20.706Z",
-      "active": true
+    "editorial-coverage": {
+      "firstSeen": "2026-10-28T19:36:18.819Z",
+      "active": false
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "5d517b09b64a9b5248c16626",
+      "content": "✓ WÖk-Störung behoben\nAutomatische Nachrichtenläufe\nPrüfung: 2026-10-28T19:36:18.819Z"
+    },
+    {
+      "id": "48b7a6c9090790440a8128f7",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-28T19:36:18.819Z"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3938,11 +3943,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/explosion-erschuttert-regensburg-5a4fa9/": {
         "first_seen_at": "2026-10-28T18:51:20.706Z",
         "source_at": "2026-10-28T17:25:00.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/verhandlungsversuche-fur-ukraine-frieden-die-hoffnung-auf-einen-waffenstillstand-wachst-28eecf/": {
+        "first_seen_at": "2026-10-28T19:36:18.819Z",
+        "source_at": "2026-10-28T16:57:00.000Z"
       }
     },
-    "last_new_at": "2026-10-28T18:51:20.706Z",
-    "checked_at": "2026-10-28T19:21:11.227Z",
-    "last_current_new_at": "2026-10-28T18:51:20.706Z"
+    "last_new_at": "2026-10-28T19:36:18.819Z",
+    "checked_at": "2026-10-28T19:36:18.819Z",
+    "last_current_new_at": "2026-10-28T19:36:18.819Z"
   },
   "recovery_attempts": [
     {
