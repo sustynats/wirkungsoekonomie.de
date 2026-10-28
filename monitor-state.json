@@ -27,14 +27,15 @@
     },
     "editorial-status": {
       "firstSeen": "2026-10-28T05:06:03.374Z",
-      "active": false
-    },
-    "lage": {
-      "firstSeen": "2026-10-28T05:06:03.374Z",
-      "active": false
+      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "6581b40561f4a82046d751e5",
+      "content": "⚠ WÖk-Betriebsstörung\nPrivate Redaktionsverarbeitung: Redaktionsjournal nicht pruefbar (BRIDGE_RUN_LOCKED). Fehlende Entwuerfe und Publikationsquittungen duerfen nicht als erledigt gelten.\nSeit: 2026-10-28T05:06:03.374Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
+    }
+  ],
   "dailyDate": "2026-10-27",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3882,11 +3883,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/migration-eu-will-frontex-neu-ausrichten-grossere-rolle-bei-abschiebungen-d29a3a/": {
         "first_seen_at": "2026-10-28T00:06:19.147Z",
         "source_at": "2026-10-27T22:16:16.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/bei-volkswagen-in-zwickau-werden-nun-auch-autos-auseinandergebaut-ae5d4c/": {
+        "first_seen_at": "2026-10-28T05:21:36.841Z",
+        "source_at": "2026-10-28T04:00:01.000Z"
       }
     },
-    "last_new_at": "2026-10-28T00:06:19.147Z",
-    "checked_at": "2026-10-28T05:06:03.374Z",
-    "last_current_new_at": "2026-10-28T00:06:19.147Z"
+    "last_new_at": "2026-10-28T05:21:36.841Z",
+    "checked_at": "2026-10-28T05:21:36.841Z",
+    "last_current_new_at": "2026-10-28T05:21:36.841Z"
   },
   "recovery_attempts": [
     {
