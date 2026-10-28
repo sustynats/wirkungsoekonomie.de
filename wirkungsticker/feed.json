@@ -1,5 +1,5 @@
 {
-  "_woek_revision": "20260912-news-freshness:2026-10-28T17:41:42.589Z",
+  "_woek_revision": "20260912-news-freshness:2026-10-28T17:57:40.140Z",
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Wirkungsticker",
   "home_page_url": "https://wirkungsoekonomie.de/wirkungsticker/",
@@ -33,6 +33,37 @@
         "democracy": {
           "magnitude": 1,
           "direction": "open",
+          "status": "potential"
+        }
+      }
+    },
+    {
+      "id": "https://wirkungsoekonomie.de/wirkungsticker/verhandlungsversuche-fur-ukraine-frieden-die-hoffnung-auf-einen-waffenstillstand-wachst-28eecf/",
+      "url": "https://wirkungsoekonomie.de/wirkungsticker/verhandlungsversuche-fur-ukraine-frieden-die-hoffnung-auf-einen-waffenstillstand-wachst-28eecf/",
+      "title": "Laut taz verdichten sich Hinweise auf mögliches Treffen zu Ukraine-Waffenstillstand",
+      "summary": "Die taz berichtet von verdichteten Hinweisen auf ein mögliches Treffen von Selenskyj und Putin Anfang November. Ob daraus ein Waffenstillstand oder konkrete Ergebnisse entstehen, bleibt offen.",
+      "date_published": "2026-10-28T16:57:00.000Z",
+      "date_modified": "2026-10-28T16:57:00.000Z",
+      "_woek_released_at": "2026-10-28T18:03:00.665Z",
+      "tags": [
+        "Wirtschaft"
+      ],
+      "_woek_type": "Wirkungsakte",
+      "_woek_late_delivery": true,
+      "_woek_impact_profile": {
+        "human": {
+          "magnitude": 4,
+          "direction": "negative",
+          "status": "potential"
+        },
+        "planet": {
+          "magnitude": 2,
+          "direction": "open",
+          "status": "potential"
+        },
+        "democracy": {
+          "magnitude": 4,
+          "direction": "negative",
           "status": "potential"
         }
       }
