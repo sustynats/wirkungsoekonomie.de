@@ -686,7 +686,7 @@ function mergedPublicationNotice(story) {
 
 export function storyPage(story, { newerStory = null, nextStory = null, allStories = [], caseFile = null, editorialAnalysis = null, editorialAnalyses = null, publicStorySlugs = new Set(), privateImpactPreview = false } = {}) {
   const historicalArchive = preservesMergedPublication(story);
-  const titleImage = publicTitleImage(story.title_image);
+  const titleImage = publicTitleImage(story.title_image, story);
   const a = story.analysis;
   const detailSummary = expandedDetailSummary(a);
   const factStatement = String(story.source_summary || detailSummary || a.summary || "").match(/^.*?[.!?](?:\s|$)/)?.[0]?.trim() || a.summary;
@@ -928,7 +928,7 @@ function legacyRedirect(target, title = "Wirkungsticker") {
 export function publicStory(story, editorialAnalysis = null) {
   return {
     story_id: story.story_id,
-    title_image: publicTitleImage(story.title_image),
+    title_image: publicTitleImage(story.title_image, story),
     slug: story.slug,
     title: story.title,
     source_summary: story.source_summary,

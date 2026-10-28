@@ -9,6 +9,7 @@ import {observationContextFingerprint} from '../../scripts/news/observation-cont
 import {renderDimensionMeters} from '../../scripts/news/visuals.mjs';
 import {impactCoverage} from '../../scripts/news/impact-coverage.mjs';
 import {auditImpactProfiles} from '../../scripts/news/audit-impact-profiles.mjs';
+import {publicTitleImage} from '../../scripts/news/title-image/pipeline.mjs';
 import {syntheticPotentialAssessment, syntheticPotentialPath} from './fixtures/impact21.mjs';
 
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
@@ -76,6 +77,42 @@ test('zero factors justified by absent evidence are held without a causal connec
   }
 });
 
+test('not demonstrable and not proven cannot bypass the same missing-evidence zero gate', () => {
+  for (const key of ['human', 'planet', 'democracy']) for (const reason of [
+    'Für den geprüften Zeitraum und Quellenbestand ist keine belastbare Zustandsänderung nachweisbar.',
+    'Eine Veränderung ist im vorliegenden Material nicht nachgewiesen.',
+  ]) {
+    const {record, assessment} = fixture(key);
+    assessment.dimensions[key].primary_paths[0].negligibility_rationale = reason;
+    const original = structuredClone(record);
+    assert.deepEqual(missingEvidenceZeroIssues(assessment), ['IMPACT_ZERO_FROM_MISSING_EVIDENCE:' + key]);
+    assert.equal(releaseDeterministicImpact(record).released, false);
+    assert.deepEqual(record, original, 'no provider retry, restamping or rewriting the supplied profile');
+  }
+});
+
+test('a positive bound remains admissible beside missing-proof wording', () => {
+  const {assessment} = fixture();
+  assessment.dimensions.planet.primary_paths[0].negligibility_rationale =
+    'Messwerte sind nicht nachweisbar. Identische Räume und unveränderte Wege begrenzen die Änderung; keine zusätzlichen Reisen.';
+  assert.deepEqual(missingEvidenceZeroIssues(assessment), []);
+});
+
+test('an audited open projection names its own dimension and preserves every paid field', () => {
+  for (const [key, subject] of [['human', 'menschlich'], ['planet', 'ökologisch'], ['democracy', 'demokratisch']]) {
+    const {record, assessment, reviewed} = fixture(key), before = structuredClone(record);
+    const projected = project(record, assessment, reviewed);
+    assert.equal(projected.dimensions[key].magnitude, null);
+    assert.ok(isGroundedOpenDimension(projected.dimensions[key], new Set(['official'])));
+    assert.ok(projected.dimensions[key].rationale.includes(subject + 'en Tragweite'));
+    assert.ok(projected.dimensions[key].research_result.includes(subject + 'e Veränderung'));
+    for (const other of ['human', 'planet', 'democracy'].filter(value => value !== key))
+      assert.deepEqual(projected.dimensions[other], assessment.dimensions[other]);
+    assert.deepEqual(projected.observed_effects, assessment.observed_effects);
+    assert.deepEqual(record, before);
+  }
+});
+
 test('an unrecognized change in the supplied sources does not establish zero', () => {
   const {assessment} = fixture(), path = assessment.dimensions.planet.primary_paths[0];
   for (const reason of [
@@ -87,6 +124,22 @@ test('an unrecognized change in the supplied sources does not establish zero', (
   }
   path.negligibility_rationale = 'Identische Räume und unveränderte Wege begrenzen den Vorgang; keine zusätzlichen Reisen.';
   assert.deepEqual(missingEvidenceZeroIssues(assessment), [], 'a positive bounded basis remains admissible');
+});
+
+test('only an explicitly audited correction withholds a stale rating image without regenerating it', () => {
+  const {record, assessment, reviewed} = fixture('democracy');
+  record.title_image = {mode:'impact_card', wide:{
+    url:'https://github.com/sustynats/wirkungsoekonomie.de/releases/download/wirkungsticker-media-2026-10/wt-0000000000000000-0000000000000000-wide.png',
+  }};
+  const original = structuredClone(record), legacy = publicTitleImage(record.title_image);
+  assert.ok(legacy?.wide, 'the retained immutable image remains a valid legacy DTO');
+  const withoutFlag = project(record, assessment, reviewed);
+  assert.deepEqual(publicTitleImage(record.title_image, {...record, impact_assessment:withoutFlag}), legacy);
+  const projected = project(record, assessment, {...reviewed, withhold_title_image:true});
+  assert.equal(projected.zero_evidence_correction.withhold_title_image, true);
+  assert.equal(publicTitleImage(record.title_image, {...record, impact_assessment:projected}), null);
+  assert.deepEqual(publicTitleImage(record.title_image), legacy, 'an unbound call does not hide unrelated cards');
+  assert.deepEqual(record, original, 'no image request, raw profile or stored metadata mutation');
 });
 
 for (const key of ['human','planet','democracy']) test('a source topic omission does not establish a zero change: ' + key, () => {
