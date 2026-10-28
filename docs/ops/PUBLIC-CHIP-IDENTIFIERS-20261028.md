@@ -28,14 +28,22 @@ There were zero provider calls and zero production data writes in this check.
 The next ordinary run `40620363616` failed at the same scan. Its recovery ZIP
 `12787612274` and encrypted raw-output ZIP `12786629957` are retained unchanged.
 The complete second snapshot also passes both corrected scans. It contains one
-new, technically eligible V1 for `wt-4c85309b0533c98a` that never reached the
-atomic commit. The existing offline `recoverApprovedSnapshots` path accepts
-only that record against unchanged baseline `28bcb1cb1fd2b666d4973e0dd135ac1c3a3d2963`.
-Persisted content, impact and source-integrity gates pass again. Every original
-field of the retained record remains identical; only recovery provenance is
-added. Every unrelated story and state field remains unchanged, and only this
-record is removed from the pending list. Repeating the recovery accepts zero
-records. This technical recovery does not assert a human editorial review.
+new V1 for `wt-4c85309b0533c98a` that never reached the atomic commit. Although
+the existing offline recovery and deterministic gates accept that snapshot,
+the full-text review found an ecological intensity factor of zero justified
+by missing information. This is not evidence of zero intensity. The answer
+therefore stays in its immutable private archive pending independent review;
+it is not restored as a public article or silently rescored.
+
+The native `pendingRecord` path creates the source-bound paid-attempt receipt
+for the unchanged candidate. Only its normal quality/attempt hold fields and
+explicit recovery provenance enter the canonical store. Its original source
+review fingerprints and title match the retained paid packet. The existing
+`paidAttemptReceiptStatus` returns `same_paid_input` for both identical evidence
+and a feed-clock-only change, preventing a replacement generation. Genuine
+changed source evidence remains distinguishable. All unrelated stories and
+the entire state file remain equal to the baseline; this record stays pending.
+No unpublished answer or new human approval is imported into the final tree.
 
 The existing `recoverUsageReport` path accounts once for that failed run's
 19,578 input and 6,451 output tokens, costing USD 0.011657. Historical delivery
@@ -43,8 +51,8 @@ counts stay zero because the failed run did not deliver a publication. This is
 accounting for actual paid work, not a change to a budget or hourly allowance.
 The unchanged retained analysis has SHA-256
 `362b8a04988e5c5ff6947290b3736be8636516b1e5a4bd3628df9beacd788b92`.
-The prepared canonical recovery still requires the ordinary worker, release
-and whole-document live readback; it is not yet a delivery result.
+The prepared repair still requires the ordinary worker and release. The held
+answer is not a delivery result, and a green workflow must not claim otherwise.
 
 Before merge, verify every CI gate on the exact current PR head and inspect
 new main/bot changes. After merge, use the normal serial worker and ordinary
