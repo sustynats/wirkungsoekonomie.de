@@ -50,6 +50,7 @@ import { consolidateTabaksteuerDuplicates, retainedTabaksteuerPaidInput } from '
 import { consolidateOleschkyDuplicates, retainedOleschkyPaidInput } from './consolidate-oleschky-duplicates.mjs';
 import { consolidateMannheimSwrDuplicates, retainedMannheimSwrPaidInput } from './consolidate-mannheim-swr-duplicates.mjs';
 import { consolidateMannheimSternDuplicates, retainedMannheimSternPaidInput } from './consolidate-mannheim-stern-duplicates.mjs';
+import { consolidateRegensburgDuplicates, retainedRegensburgPaidInput } from './consolidate-regensburg-duplicates.mjs';
 import { documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage } from './retained-failed-paid-work.mjs';
 import { recoverRetainedDiscovery } from './retained-discovery-inputs.mjs';
 import { applyDocumentedSourceIndependenceClarifications } from './clarify-source-independence.mjs';
@@ -1488,6 +1489,10 @@ export async function runWirkungsticker(options = {}) {
   report.mannheim_stern_duplicate_consolidation = mannheimSternConsolidation;
   report.living_file_merges.push(...mannheimSternConsolidation.changes);
   report.retired_stories += mannheimSternConsolidation.changes.length;
+  const regensburgConsolidation = consolidateRegensburgDuplicates(routableStories, now);
+  report.regensburg_duplicate_consolidation = regensburgConsolidation;
+  report.living_file_merges.push(...regensburgConsolidation.changes);
+  report.retired_stories += regensburgConsolidation.changes.length;
   const automaticMerges = mergeLivingFiles(storyStore.stories || [], duplicateGroups(routableStories), now);
   report.living_file_merges.push(...automaticMerges);
   report.retired_stories += automaticMerges.filter((change) => storyStore.stories.find((story) => story.story_id === change.story_id)?.published).length;
@@ -1685,6 +1690,16 @@ export async function runWirkungsticker(options = {}) {
         archived_story_id: 'wt-fff6aabad12c6e77', reason });
       newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
         decision: 'retained_published_source_input', reason });
+      return false;
+    }
+    if (retainedRegensburgPaidInput(candidate, storyStore.stories, now)) {
+      const reason = 'RETAINED_PAID_SOURCE_INPUTS_NOT_NEW_REVIEW';
+      (report.retained_paid_source_inputs ||= []).push({ story_id: candidate.story_id,
+        archived_story_id: 'wt-5dd3a4504b51a73e', reason,
+        archived_story_ids: [...candidate.existing_story.living_file.merged_story_ids],
+        pending_review_retained: Boolean(candidate.existing_story.pending_update) });
+      newsroom.decisions.push({ at: now, story_id: candidate.story_id, event_id: candidate.event_id,
+        decision: 'retained_paid_source_inputs', reason });
       return false;
     }
     if (retainedTabaksteuerPaidInput(candidate, storyStore.stories, now)) {
