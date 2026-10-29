@@ -24,13 +24,14 @@
     "editorial-coverage": {
       "firstSeen": "2026-10-28T21:36:15.293Z",
       "active": true
-    },
-    "publication": {
-      "firstSeen": "2026-10-29T00:36:10.560Z",
-      "active": true
     }
   },
-  "outbox": [],
+  "outbox": [
+    {
+      "id": "e02f327cd347006375385b1a",
+      "content": "✓ WÖk-Störung behoben\nVeröffentlichung\nPrüfung: 2026-10-29T01:06:08.222Z"
+    }
+  ],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
@@ -3966,11 +3967,15 @@
       "https://wirkungsoekonomie.de/wirkungsticker/us-zentralbank-fed-lasst-leitzins-unverandert-67cce8/": {
         "first_seen_at": "2026-10-28T23:35:58.256Z",
         "source_at": "2026-10-28T18:42:59.000Z"
+      },
+      "https://wirkungsoekonomie.de/wirkungsticker/us-autoriese-ford-sieht-hohere-belastung-durch-rohstoffpreise-618fa8/": {
+        "first_seen_at": "2026-10-29T01:06:08.222Z",
+        "source_at": "2026-10-28T21:38:55.000Z"
       }
     },
-    "last_new_at": "2026-10-28T23:35:58.256Z",
-    "checked_at": "2026-10-29T00:51:06.098Z",
-    "last_current_new_at": "2026-10-28T23:35:58.256Z"
+    "last_new_at": "2026-10-29T01:06:08.222Z",
+    "checked_at": "2026-10-29T01:06:08.222Z",
+    "last_current_new_at": "2026-10-29T01:06:08.222Z"
   },
   "recovery_attempts": [
     {
