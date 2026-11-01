@@ -152,14 +152,33 @@ test("repeated generated conflicts have a hard recovery bound and abort safely",
   assert.equal(pushed, false);
 });
 
-for (const sharded of [false, true]) test(`real git race merges different stories and rebuilds their common publication report (parts=${sharded})`, async t => {
+for (const sharded of [false, true, 'release']) test(`real git race merges different stories and rebuilds their common publication report (parts=${sharded})`, async t => {
   const root = fs.mkdtempSync(path.join(os.tmpdir(), "woek-story-race-"));
   t.after(() => removeTestRepository(root));
   const cmd = (cwd, args) => execFileSync("git", args, { cwd, encoding: "utf8", stdio: ["ignore", "pipe", "pipe"], env: { ...process.env, GIT_EDITOR: "true" } });
   const remote = path.join(root, "remote.git"), worker = path.join(root, "worker"), editor = path.join(root, "editor");
   const write = (dir, file, value) => { fs.mkdirSync(path.dirname(path.join(dir, file)), { recursive: true }); fs.writeFileSync(path.join(dir, file), value); };
   const identity = dir => { cmd(dir, ["config", "user.name", "Test"]); cmd(dir, ["config", "user.email", "test@example.org"]); };
-  const saveStore = (dir, data) => sharded ? writeRepositoryJson(path.join(dir, 'data/news/stories.json'), data) : write(dir, "data/news/stories.json", `${JSON.stringify(data)}\n`);
+  const released = sharded === 'release', releaseBytes = new Map();
+  const {newsroomParts} = await import('../../scripts/news/newsroom-store.mjs');
+  const {encodeReleasePart, partDigest, RELEASE_PART_FORMAT, RELEASE_STORE_FORMAT} = await import('../../scripts/news/release-part.mjs');
+  const saveStore = (dir, data, options) => {
+    if (!sharded) return write(dir, 'data/news/stories.json', `${JSON.stringify(data)}\n`);
+    const file = path.join(dir, 'data/news/stories.json');
+    const manifest = writeRepositoryJson(file, data, options);
+    if (released) {
+      for (const part of newsroomParts(manifest)) {
+        const raw = fs.readFileSync(`${file}.parts/${part.sha256}.json`), compressed = encodeReleasePart(raw, part);
+        releaseBytes.set(part.sha256, raw);
+        part.release = {storage_format: RELEASE_PART_FORMAT, tag: 'wirkungsticker-data-2026-11',
+          asset: `${part.sha256}.json.gz`, bytes: compressed.length, sha256: partDigest(compressed)};
+      }
+      manifest.parts_storage = RELEASE_STORE_FORMAT;
+      fs.writeFileSync(file, `${JSON.stringify(manifest, null, 2)}\n`);
+      write(dir, '.gitignore', 'data/news/stories.json.parts/\n');
+    }
+    return manifest;
+  };
   const save = (dir, data, report) => { saveStore(dir, data); write(dir, "reports/wirkungsticker-source-integrity.json", report); cmd(dir, ["add", "."]); cmd(dir, ["commit", "-m", report.trim()]); };
   const a = { story_id: "a", title: "old A", versions: [1] }, b = { story_id: "b", title: "old B" };
   cmd(root, ["init", "--bare", remote]); cmd(root, ["clone", remote, worker]); identity(worker); cmd(worker, ["checkout", "-b", "main"]);
@@ -168,18 +187,21 @@ for (const sharded of [false, true]) test(`real git race merges different storie
   save(worker, store([a, { ...b, title: "worker B" }], 1), "worker\n");
   const corrected = { ...a, title: "editor A", versions: [1, 2], corrections: ["Explained"] };
   save(editor, store([corrected, b], 2), "editor\n"); cmd(editor, ["push"]);
-  let builds = 0;
+  let builds = 0, persistCalls = 0;
   const result = await publishGitUpdate({
     run: async args => cmd(worker, args), sleep: async () => {},
-    writeStoryStore: data => saveStore(worker, data),
+    writeStoryStore: (data, options) => saveStore(worker, data, options),
+    readReleasePart: part => releaseBytes.get(part.sha256),
+    persistStoryParts: async () => { persistCalls++; assert.equal(released, true); },
     rebuild: async () => { builds++; const data = readRepositoryJson(path.join(worker, "data/news/stories.json")); write(worker, "reports/wirkungsticker-source-integrity.json", data.stories.map(s => s.title).join(" / ")); },
   });
   assert.equal(result.regenerated, true); assert.equal(builds, 1);
-  const published = await readGitStoryStore('origin/main', async args => cmd(worker, args));
+  const published = await readGitStoryStore('origin/main', async args => cmd(worker, args), {readReleasePart: part => releaseBytes.get(part.sha256)});
   assert.deepEqual(published.stories.find(s => s.story_id === "a"), corrected);
   assert.equal(published.stories.find(s => s.story_id === "b").title, "worker B");
   assert.equal(cmd(worker, ["show", "origin/main:reports/wirkungsticker-source-integrity.json"]), "editor A / worker B");
   assert.equal(cmd(worker, ["status", "--porcelain"]).trim(), "");
+  assert.equal(persistCalls, released ? 1 : 0);
 });
 
 test('rebase verification isolates mocked unit-test mode while all real generators retain the bridge cost guard', async () => {
