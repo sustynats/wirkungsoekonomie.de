@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
+import {loadReleaseBackedDocuments} from "./release-backed-documents.mjs";
 
 const ROOT = process.cwd();
 const OUTPUT = path.join(ROOT, "assets/data/library-version-registry.json");
@@ -608,6 +609,7 @@ function loadTrackedFiles() {
 }
 
 const TRACKED_FILES = loadTrackedFiles();
+const RELEASE_DOCUMENTS = loadReleaseBackedDocuments(ROOT, TRACKED_FILES);
 
 function exists(rel) {
   return fs.existsSync(path.join(ROOT, rel));
@@ -889,6 +891,7 @@ function documentFor(relativePath, source) {
   const insight = documentInsight(relativePath);
   const isPortalStart = /\/00[_-]portalstartseite(?:\s\d+)?\.(pdf|docx)$/i.test(relativePath);
   const contentTitle = isPortalStart && !/rang\s+\d+|portalstartseite/i.test(insight.title || "") ? "" : insight.title;
+  const releaseDocument = RELEASE_DOCUMENTS.get(relativePath);
   return {
     id: slugify(`${source}-${relativePath}`),
     title: overrides.title || contentTitle || title,
@@ -900,6 +903,7 @@ function documentFor(relativePath, source) {
     relatedMethods: methods,
     relatedImpactFields: fields,
     formats: [ext],
+    ...(releaseDocument ? {pages: releaseDocument.pages, sizeBytes: releaseDocument.bytes} : {}),
     urls: {
       primary: urlFor(relativePath),
       sourcePath: relativePath
@@ -932,7 +936,9 @@ function mergeDocuments(documents) {
 }
 
 function buildRegistry() {
-  const fileDocuments = collectFiles(DOCUMENT_ROOTS, DOCUMENT_EXTENSIONS).map((file) => documentFor(file, "download-or-document"));
+  const sourcePaths = [...new Set([...collectFiles(DOCUMENT_ROOTS, DOCUMENT_EXTENSIONS), ...RELEASE_DOCUMENTS.keys()])]
+    .sort((a, b) => a.localeCompare(b, "de"));
+  const fileDocuments = sourcePaths.map((file) => documentFor(file, "download-or-document"));
   const onlineDocuments = collectFiles(ONLINE_ROOTS, ONLINE_EXTENSIONS).map((file) => documentFor(file, "online-version"));
   const requiredReferences = [
     "buch.html",
