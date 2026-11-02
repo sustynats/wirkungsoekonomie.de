@@ -42,11 +42,18 @@ function assertPublicRecords(value) {
     if (!object || typeof object !== 'object') return;
     if (object.private === true || object.visibility === 'private'
         || (object.manual_only === true && object.published !== true)
-        || Object.hasOwn(object, 'private_manuscript') || Object.hasOwn(object, 'raw_output'))
+        || Object.hasOwn(object, 'private_manuscript') || Object.hasOwn(object, 'raw_output')
+        || (Object.hasOwn(object, 'raw_response')
+          && !(object.status === 'unknown' && object.raw_response === 'not_confirmed')))
       throw Error('RELEASE_DATA_PRIVATE_CONTENT');
     for (const child of Object.values(object)) if (child && typeof child === 'object') visit(child);
   };
   visit(value);
+}
+
+export function assertPublicReleaseData(value) {
+  assertPublicRecords(value);
+  if (hasSecretPattern(newsroomSecretScanText(value))) throw Error('RELEASE_DATA_SECRET_PATTERN_FOUND');
 }
 
 // Preparation is local only. It keeps every raw source byte and serializes no
@@ -59,9 +66,7 @@ export function prepareReleaseData({root, out, enabledOnly = false} = {}) {
     const manifest = JSON.parse(original);
     if (enabledOnly && manifest.parts_storage !== RELEASE_STORE_FORMAT) continue;
     const value = readNewsroom(file);
-    assertPublicRecords(value);
-    if (relative.endsWith('/stories.json') && hasSecretPattern(newsroomSecretScanText(value)))
-      throw Error('RELEASE_DATA_SECRET_PATTERN_FOUND');
+    assertPublicReleaseData(value);
     for (const part of newsroomParts(manifest)) {
       if (part.release) releasePartUrl(part);
       const raw = fs.readFileSync(`${file}.parts/${part.sha256}.json`);
@@ -162,9 +167,7 @@ export async function publishReleaseData({root, directory, tag, targetCommit,
     if (partDigest(bytes) !== store.sha256 || bytes.length !== store.bytes) throw Error('RELEASE_DATA_SOURCE_CHANGED');
     const manifest = JSON.parse(bytes);
     const value = readNewsroom(path.join(root, store.path));
-    assertPublicRecords(value);
-    if (store.path.endsWith('/stories.json') && hasSecretPattern(newsroomSecretScanText(value)))
-      throw Error('RELEASE_DATA_SECRET_PATTERN_FOUND');
+    assertPublicReleaseData(value);
     for (const part of newsroomParts(manifest)) {
       needed.add(part.sha256);
       if (part.release) knownReferences.set(part.sha256, [...(knownReferences.get(part.sha256) || []), part.release]);

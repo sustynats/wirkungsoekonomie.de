@@ -58,6 +58,12 @@ export function newsroomSecretScanText(store) {
     approvedStories.set(story, identifier.slug);
     for (const source of sources) approvedSources.set(source, source.url);
   }
+  // Newsroom source_items retain the same public RSS identifiers as state.
+  // Exempt only the exact existing key, source and URL, never nearby fields.
+  for (const source of publicSeenSources) {
+    const item = store?.source_items?.[source.seen_key];
+    if (item?.source_id === source.source_id && item.url === source.url) approvedSources.set(item, item.url);
+  }
   return JSON.stringify(store, function (key, value) {
     if (key === 'slug' && approvedStories.has(this) && value === approvedStories.get(this)) return '[reviewed public article slug]';
     if (key === 'url' && approvedSources.has(this) && value === approvedSources.get(this)) return '[reviewed public source URL]';

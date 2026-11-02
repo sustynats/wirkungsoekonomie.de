@@ -67,6 +67,27 @@ test('private pending manuscripts and secrets cannot become public release packa
   assert.throws(() => prepareReleaseData({root: f.root, out: f.out}), /SECRET_PATTERN/);
 });
 
+test('a real raw provider response is blocked, while an unknown-response sentinel is preserved', t => {
+  const f = fixture(t, {stories: [{published: true, provider_request_hold: {
+    status: 'unknown', raw_response: 'not_confirmed',
+  }}]});
+  assert.doesNotThrow(() => prepareReleaseData({root: f.root, out: f.out}));
+  for (const response of [{id: 'private-provider-response'}, 'private response', null]) {
+    writeNewsroom(f.file, {stories: [{published: true, provider_request_hold: {status: 'unknown', raw_response: response}}]});
+    assert.throws(() => prepareReleaseData({root: f.root, out: f.out}), /PRIVATE_CONTENT/);
+  }
+  writeNewsroom(f.file, {stories: [{published: true, provider_request_hold: {status: 'known', raw_response: 'not_confirmed'}}]});
+  assert.throws(() => prepareReleaseData({root: f.root, out: f.out}), /PRIVATE_CONTENT/);
+});
+
+test('secrets in newsroom parts are blocked before publication', t => {
+  const f = fixture(t);
+  writeNewsroom(path.join(f.root, 'data/news/newsroom.json'), {
+    source_items: {a: {text: 'sk-' + 'a'.repeat(30)}}, events: {}, decisions: [],
+  });
+  assert.throws(() => prepareReleaseData({root: f.root, out: f.out}), /SECRET_PATTERN/);
+});
+
 test('upload failure and stale source preserve both original manifests; unused plan objects cannot be published', async t => {
   const f = fixture(t), plan = prepareReleaseData({root: f.root, out: f.out});
   const before = fs.readFileSync(f.file);
