@@ -74,6 +74,19 @@ test('a complete explicit zero-request report is different from a missing or int
   }
 });
 
+test('a separately documented zero can resolve only a completed native step with no provider starts',()=>{
+  const zero=report({ai_calls:0,ai_stories:0,input_tokens:0,output_tokens:0,estimated_cost_usd:0,published_stories:0});
+  delete zero.ai_request_attempts;
+  const allow=()=>true;
+  assert.equal(check({runs:[]},harness({nativeLog:log(zero,[])})).status,'open');
+  assert.equal(check({runs:[]},harness({nativeLog:log(zero,[])}),{documentedZeroAttempt:allow}).status,'checked');
+  assert.equal(check({runs:[]},harness({nativeLog:log(zero,['wt-unknown'])}),{documentedZeroAttempt:allow}).status,'open');
+  const unfinished={total_count:1,jobs:[{conclusion:'cancelled',steps:[{name:nativeName,conclusion:'cancelled'}]}]};
+  assert.equal(check({runs:[]},harness({nativeLog:log(zero,[]),jobResponse:unfinished}),{documentedZeroAttempt:allow}).status,'open');
+  const paid={...zero,ai_calls:1};
+  assert.equal(check({runs:[]},harness({nativeLog:log(paid,[])}),{documentedZeroAttempt:allow}).status,'open');
+});
+
 test('uncommitted image generation needs its own audited retained source, not a zero news-call count',()=>{
   const zero=report({ai_calls:0,ai_request_attempts:0,input_tokens:0,output_tokens:0,estimated_cost_usd:0,
     title_images:[{story_id:'wt-image',status:'generated',higgsfield_called:true,source_reused:false}]});

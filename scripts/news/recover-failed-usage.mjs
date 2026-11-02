@@ -125,7 +125,7 @@ function providerInputIds(log, nativeStep) {
 // replays a claim/finalize operation. The existing atomic usage push is the
 // boundary: an uncommitted answer needs its separately audited input receipt.
 export function verifyInterruptedPaidRuns({usage, now = new Date().toISOString(), runId,
-  runAttempt = 1, documentedAttempts = () => [],
+  runAttempt = 1, documentedAttempts = () => [], documentedZeroAttempt = () => false,
   gh = args => execFileSync('gh', args, {encoding:'utf8', maxBuffer:24*1024*1024, timeout:20000}),
 } = {}) {
   if (!Number.isFinite(Date.parse(now)) || !/^\d+$/.test(String(runId))
@@ -215,7 +215,12 @@ export function verifyInterruptedPaidRuns({usage, now = new Date().toISOString()
           const bound = receipt => receipt.recovery?.run_id === run.id || receipt.recovery?.additional_attempt?.run_id === run.id;
           const documented = inputs.length > 0 && inputs.length === report.ai_calls && inputs.every(id => documentedAttempts(id).some(receipt =>
             bound(receipt) && Number(receipt.retry_count) >= inputs.filter(value => value === id).length));
-          const noAnalysisRequest = report.ai_calls === 0 && report.ai_request_attempts === 0 && inputs.length === 0;
+          // Some completed historical reports omitted the zero-attempt field.
+          // Only a separately audited, exact receipt can establish that zero;
+          // the real native step must also have completed without a start marker.
+          const documentedZero = native[0].conclusion === 'success' && documentedZeroAttempt(run, report);
+          const noAnalysisRequest = report.ai_calls === 0 && inputs.length === 0
+            && (report.ai_request_attempts === 0 || documentedZero);
           if (!durable && !noAnalysisRequest && !documented) throw Error('PAID_PREFLIGHT_INPUT_RECEIPT_MISSING');
           if (inputs.length === 0 && report.ai_calls > 0 && !durable) throw Error('PAID_PREFLIGHT_INPUT_IDS_MISSING');
           if (!durable && (!Array.isArray(report.title_images) || report.title_images.some(image =>
