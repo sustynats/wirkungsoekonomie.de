@@ -9,6 +9,18 @@ export const approvalStates = {
   PUBLISHED: 'Veröffentlicht',
 };
 
+// The private review endpoint supplies the owner's actual decision. A card
+// status alone is not a version-bound approval receipt.
+export function approvalReceipt(review) {
+  if (!['APPROVED_FOR_PUBLICATION', 'PUBLISHING', 'PUBLISHED'].includes(review?.status)) return null;
+  const {approval, preview_hash: previewHash, owner, revision} = review;
+  if (!Number.isSafeInteger(revision) || revision < 1
+      || !/^\d{15,22}$/.test(owner || '') || approval?.by !== owner
+      || !/^[a-f0-9]{64}$/.test(previewHash || '') || approval?.preview_hash !== previewHash
+      || typeof approval?.at !== 'string' || !Number.isFinite(Date.parse(approval.at))) return null;
+  return {revision, owner, at: approval.at, previewHash};
+}
+
 const requestStates = {
   draft: 'Noch nicht abgesendet', intake_prepared: 'Wird vorbereitet', queued: 'Wartet auf Bearbeitung',
   claimed: 'In Bearbeitung', accepted: 'Wird übernommen', acknowledged: 'Abgeschlossen',
