@@ -22,6 +22,20 @@ test('the archived zero-attempt exception cannot cover a different or modified r
     assert.equal(documentedZeroPaidAttempt(run,{...report,...changed}),false);
 });
 
+test('the later zero-attempt exception rejects incomplete, changed or paid reports', () => {
+  const run={id:41436498548,run_attempt:1,status:'completed',conclusion:'failure',
+    created_at:'2026-11-02T11:23:48Z',updated_at:'2026-11-02T11:53:07Z'};
+  const report={run_id:String(run.id),ai_calls:0,input_tokens:0,output_tokens:0,estimated_cost_usd:0,
+    title_images:[],freshness:Array(1254).fill(null),followups_due:Array(706).fill(null)};
+  assert.equal(documentedZeroPaidAttempt(run,report),false, 'a report without the exact nonvolatile fields is rejected');
+  for(const changed of [{run_attempt:2},{status:'in_progress'},{conclusion:'cancelled'},
+    {created_at:'2026-11-02T11:23:49Z'},{updated_at:'2026-11-02T11:53:08Z'}])
+    assert.equal(documentedZeroPaidAttempt({...run,...changed},report),false);
+  for(const changed of [{ai_calls:1},{input_tokens:1},{output_tokens:1},{estimated_cost_usd:0.01},
+    {title_images:[{}]},{ai_request_attempts:0},{freshness:[]},{followups_due:[]}])
+    assert.equal(documentedZeroPaidAttempt(run,{...report,...changed}),false);
+});
+
 test('the two confirmed paid inputs retain spending locks without exposing answers', () => {
   for (const id of ['wt-c637d82374e8e890', 'wt-2c796868270ba89b']) {
     const [attempt] = documentedFailedPaidAttempts(id);
