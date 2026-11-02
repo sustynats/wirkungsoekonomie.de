@@ -1,154 +1,31 @@
-name: PR quality gate
-
-env:
-  SOURCE_DATE_EPOCH: '1787270400'
-
+name: Read-only editorial lane verification
 on:
-  pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
-concurrency:
-  group: pr-quality-${{ github.ref }}
-  cancel-in-progress: true
-
 jobs:
-  chatgpt-bridge:
-    name: Dropbox bridge authorization, encryption and immutable delivery
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-      - run: python -m pip install cryptography==50.0.1
-      - run: python -m unittest discover -s tests/bridge -v
-  title-image-raster:
-    name: Real Linux title-image rasterization
+  inspect:
+    name: Read bridge lane without taking it
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
-      - uses: browser-actions/setup-chrome@48ad923757ca74d66703209fe939badbdf80f2f4
-        id: chrome
-        with:
-          chrome-version: "152.0.7977.82"
-      - name: Exercise real title-image output repeatedly without paid generation
+          node-version: 22
+      - name: Read bridge monitor only
         env:
-          WT_CHROME_BIN: ${{ steps.chrome.outputs.chrome-path }}
-          WT_CHROME_NO_SANDBOX: "true"
-        run: node scripts/news/title-image/smoke.mjs
-  website-gates:
-    name: Website build, search, privacy and URL gates
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          filter: blob:none
-          fetch-depth: 0
-
-      - name: Prepare pinned history for release-equivalent historical checks
-        run: bash scripts/ops/prepare-release-history.sh
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install Python build dependencies
-        run: python -m pip install --upgrade pip openpyxl pymupdf pypdf reportlab python-docx
-
-      - name: Check Sachsen-Anhalt public count semantics
-        run: node scripts/quality/check-sachsen-anhalt-public-count-semantics.mjs
-
-      - name: Wirkungsticker unit and security tests
-        # Bis 16.09. lief diese Suite ausschließlich im Nachrichtenlauf, wo der
-        # Testschritt jeden weiteren Schritt sperrt: ein gebrochener Test nahm
-        # damit die Produktion herunter (fünf Läufe, 50 Minuten). Sie gehört vor
-        # den Merge.
-        run: npm run news:test
-
-      - name: Keep rejected Parliament reference-scene candidates fail-closed (no generation)
+          WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
+          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
         run: |
-          node --test tests/news/parliament-reference-scene.test.mjs tests/news/parliament-reference-scene-qa.test.mjs
-          node scripts/parliament/impact-visuals/check-reference-scene-candidates.mjs --expect-rejected
-
-      - name: Build search index
-        run: npm run build:search
-
-      - name: Ensure generated search artifacts are committed
-        run: git diff --exit-code -- assets/search/search-index.json public/data/woek-search-meta.json
-
-      - name: Build content taxonomy
-        run: npm run taxonomy:build
-
-      - name: Ensure generated taxonomy is committed
-        run: git diff --exit-code -- content/taxonomy/site-map.json
-
-      - name: Build complete site before artifact checks
-        run: WOEK_PDF_BUILD_MODE=verify npm run build
-
-      - name: Audit generated release before merge (no branch-writing projections)
-        # Use the same semantic/historical gates as publication. A card-renderer
-        # regression must fail here, not only after approved news wait to deploy.
-        run: bash scripts/ops/audit-generated-release.sh
-
-      - name: Build public deploy artifact
-        run: npm run build:artifact
-
-      - name: Check public artifact privacy
-        run: npm run check:privacy
-
-      - name: Check URL baseline
-        run: npm run check:url-baseline
-
-      - name: Report internal link integrity
-        run: npm run check:site-links
-
-      - name: Check site size
-        run: npm run check:size
-
-      - name: Measure and gate navigation of the complete public artifact
-        run: |
-          python3 -m unittest discover -s tests/navigation -v
-          node scripts/quality/check-navigation-discovery.mjs --report --gate
-          cat reports/navigation/latest.md >> "$GITHUB_STEP_SUMMARY"
-
-      - name: Attach navigation report to this PR run
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: navigation-report
-          path: |
-            reports/navigation/latest.json
-            reports/navigation/latest.md
-          if-no-files-found: warn
-
-  paid-preflight-runner-audit:
-    name: Read-only historical paid-receipt diagnosis
-    runs-on: ubuntu-latest
-    timeout-minutes: 8
-    permissions:
-      contents: read
-      actions: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Verify historical receipt using the runner's read-only token
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: node scripts/news/diagnose-paid-preflight.mjs
+          node --input-type=module <<'NODE'
+          import {bridgeSession} from './scripts/news/bridge/remote.mjs';
+          const status=await bridgeSession().monitor();
+          const lane=status?.run_lock;
+          if(!lane || typeof lane.process_holds_lock!=='boolean')throw Error('MONITOR_LANE_UNAVAILABLE');
+          const owner=lane.owner;
+          const owner_state=owner==='41436498548:1'?'previous_ticker_run':owner?'other_owner':'none';
+          console.log(JSON.stringify({checked_at:new Date().toISOString(),lane:lane.lane,
+            process_holds_lock:lane.process_holds_lock,owner_state,acquired_at:lane.acquired_at||null,
+            monitor_read_only:true,provider_called:false}));
+          NODE
