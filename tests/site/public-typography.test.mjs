@@ -21,6 +21,32 @@ test('news source protection is bounded to its directory on both path formats',(
   assert.equal(isFrozenPublicationSource('wirkungsticker/data/stories.json'),false);
 });
 
+test('both state projection passes preserve all operational news source roots',()=>{
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-state-news-scope-'));
+  const workflow=fs.readFileSync(path.resolve(import.meta.dirname,'../../.github/workflows/state-sustainability-audit.yml'),'utf8');
+  const commands=workflow.split('\n').map(line=>line.trim())
+    .filter(line=>line.startsWith('node scripts/quality/normalize-publication-typography.mjs . --tracked '));
+  const prefixes=['wirkungsticker/','news/','data/news/','content/news/','reports/'];
+  assert.equal(commands.length,2);
+  for(const command of commands)for(const prefix of prefixes)assert.ok(command.split(/\s+/).includes(`--exclude-source-prefix=${prefix}`));
+  try{
+    execFileSync('git',['init','--quiet',root]);
+    const raw='{"summary":"Gepruefter Zeitraum 2026\u20132028"}\n';
+    const sources=['wirkungsticker/item.json','news/item.json','data/news/item.json','content/news/reviews/item.json','reports/item.json'];
+    for(const rel of [...sources,'begriffe/item.json']){
+      const file=path.join(root,rel);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,raw);
+    }
+    execFileSync('git',['add','.'],{cwd:root});
+    const script=path.resolve(import.meta.dirname,'../../scripts/quality/normalize-publication-typography.mjs');
+    for(const command of commands){
+      const flags=command.split(/\s+/).filter(value=>value.startsWith('--exclude-source-prefix='));
+      execFileSync(process.execPath,[script,root,'--tracked',...flags],{cwd:root});
+      for(const rel of sources)assert.equal(fs.readFileSync(path.join(root,rel),'utf8'),raw,rel);
+    }
+    assert.equal(fs.readFileSync(path.join(root,'begriffe/item.json'),'utf8'),raw.replace('\u2013','-'));
+  }finally{fs.rmSync(root,{recursive:true,force:true});}
+});
+
 test('source normalizers preserve reviewed news bytes and hashes; public projections still normalize',()=>{
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'woek-news-typography-'));
   const script=name=>path.resolve(import.meta.dirname,'../../scripts/quality',name);

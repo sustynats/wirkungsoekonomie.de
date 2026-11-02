@@ -24,6 +24,7 @@
     "updates:build": "node scripts/site/build-site-updates.mjs",
     "updates:check": "node scripts/site/check-site-updates.mjs",
     "news:run": "node scripts/news/run.mjs",
+    "prenews:build": "node scripts/news/release-hydrate.mjs",
     "news:build": "node scripts/news/build.mjs",
     "news:title-images:backfill": "node scripts/news/title-image/backfill.mjs",
     "parliament:impact-visuals:reference": "node scripts/parliament/impact-visuals/generate-reference-scene.mjs",
