@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import {verifyPublicReleaseImages} from "./public-release-images.mjs";
+import {verifyReleasedVideoSources} from "./public-release-video-sources.mjs";
 
 const root = process.cwd();
 const releaseBase = "https://github.com/sustynats/wirkungsoekonomie.de/releases/download/";
@@ -81,6 +82,10 @@ for (const file of localPodcastAudio) {
 const publicReleaseAssets = readPublicReleaseAssets();
 // A corrected image must never silently keep an older release's URL.
 verifyPublicReleaseImages(root, publicReleaseAssets);
+// Local copies of release-only videos may be absent. If regenerated, their
+// bytes must still match the independently verified immutable release.
+const videoSources = JSON.parse(fs.readFileSync(path.join(root, "scripts/assets/public-release-video-sources.json"), "utf8"));
+verifyReleasedVideoSources(root, publicReleaseAssets, videoSources);
 const publicReleaseFiles = publicReleaseAssetRoots.flatMap((assetRoot) => walk(path.join(root, assetRoot)))
   .filter((file) => publicReleaseAssetExtensions.has(path.extname(file).toLowerCase()));
 
