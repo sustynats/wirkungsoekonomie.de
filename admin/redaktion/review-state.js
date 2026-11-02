@@ -24,11 +24,23 @@ export async function approvalReceipt(review) {
     sources:preview.sources,visual:preview.visual||null,format:preview.format,author_notes:preview.author_notes||'',
     source_media:preview.source_media||null,news_record:preview.news_record||null,
     ...(preview.editorial_revision?{editorial_revision:preview.editorial_revision}:{})};
+  let editionHash=null;
   try {
-    const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(content)));
-    if ([...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('')!==previewHash) return null;
+    const digest=async value=>{
+      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value)));
+      return [...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('');
+    };
+    if (await digest(content)!==previewHash) return null;
+    if (['PUBLISHING','PUBLISHED'].includes(review.status) && preview.format!=='news' && !preview.editorial_revision) {
+      const edition=review.publication?.edition;
+      if (edition?.format!=='approved_editorial' || edition.revision!==revision || edition.published_at!==approval.at
+          || !/^[a-f0-9]{64}$/.test(edition.content_hash||'')) return null;
+      const {content_hash,...published}=edition;
+      if (await digest(published)!==content_hash) return null;
+      editionHash=content_hash;
+    }
   } catch { return null; }
-  return {revision, owner, at: approval.at, previewHash};
+  return {revision, owner, at: approval.at, previewHash, editionHash};
 }
 
 const requestStates = {

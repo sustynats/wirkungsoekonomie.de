@@ -227,6 +227,7 @@ async function openReview(id){
   const details=element('details'),summary=element('summary','Freigabe für diese Fassung');
   details.append(summary,element('p',`Fassung ${receipt.revision} · Freigegeben am ${receipt.at}`),
    element('p',`Konto: ${receipt.owner}`),element('p',`Prüfsumme der freigegebenen Vorschau: ${receipt.previewHash}`));mount.append(details);
+  if(receipt.editionHash)details.append(element('p',`Prüfsumme der Veröffentlichungsfassung: ${receipt.editionHash}`));
  }else if(['APPROVED_FOR_PUBLICATION','PUBLISHING','PUBLISHED'].includes(r.status))
   mount.append(element('p','Für diese Fassung liegt hier keine überprüfbare Freigabequittung vor.','quiet'));
  if(p.source_media){const m=p.source_media;mount.append(element('h3','Besprochen: '+m.show),element('p',m.episode_title),element('p',[m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · ')));}

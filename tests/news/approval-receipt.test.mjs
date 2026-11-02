@@ -2,17 +2,21 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {approvalReceipt} from '../../admin/redaktion/review-state.js';
 import {editorialPreviewHash} from '../../scripts/news/bridge/editorial-approval.mjs';
+import {publicPersonalEdition} from '../../scripts/news/personal-editorial.mjs';
 
 const preview={title:'Ein Beitrag',markdown:'## Meine Einordnung\nText',sources:[{url:'https://example.com',title:'Quelle'}],format:'watched'};
 const hash=editorialPreviewHash(preview);
-const review={status:'PUBLISHING',revision:1,owner:'123456789012345678',preview,preview_hash:hash,
+const review={status:'PUBLISHING',revision:1,owner:'123456789012345678',job_id:'wt_20261101T000000Z_123456789012345678901234',preview,preview_hash:hash,
   approval:{by:'123456789012345678',at:'2026-11-02T08:00:00.000Z',preview_hash:hash}};
+review.publication={edition:publicPersonalEdition(review)};
 
 test('only an exact version-bound owner decision is presented as an approval receipt',async()=>{
-  assert.deepEqual(await approvalReceipt(review),{revision:1,owner:review.owner,at:review.approval.at,previewHash:hash});
+  assert.deepEqual(await approvalReceipt(review),{revision:1,owner:review.owner,at:review.approval.at,previewHash:hash,editionHash:review.publication.edition.content_hash});
   for(const changed of [
     {status:'AWAITING_FINAL_APPROVAL'},{revision:0},{owner:'987654321098765432'},
     {preview_hash:'b'.repeat(64)},{preview:{...preview,markdown:'changed'}},{approval:null},
+    {publication:{edition:{...review.publication.edition,body_markdown:'changed'}}},
+    {publication:{edition:{...review.publication.edition,published_at:'2026-11-02T08:01:00.000Z'}}},
     {approval:{...review.approval,at:'not-a-date'}},
     {approval:{...review.approval,preview_hash:'x'.repeat(64)}},
   ]) assert.equal(await approvalReceipt({...review,...changed}),null);
