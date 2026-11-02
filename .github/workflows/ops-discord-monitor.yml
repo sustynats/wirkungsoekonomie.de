@@ -55,6 +55,8 @@ jobs:
             scripts/news/followup-reuse.mjs
             scripts/news/evidence-packets.mjs
             scripts/news/newsroom-store.mjs
+            scripts/news/release-part.mjs
+            scripts/news/release-hydrate.mjs
             scripts/news/court-case-identity.mjs
             scripts/news/event-identity.mjs
             scripts/news/projection-cache.mjs
@@ -85,6 +87,9 @@ jobs:
         run: node --test tests/ops/discord-monitor.test.mjs tests/ops/news-recovery.test.mjs
       - name: Record the checked-out main revision
         run: echo "WOEK_MONITOR_SOURCE_COMMIT=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
+      - name: Prefetch enabled public ticker data for the existing monitor
+        continue-on-error: true
+        run: node scripts/news/release-hydrate.mjs
       - name: Check live services and deliver private Discord messages
         env:
           GH_TOKEN: ${{ github.token }}
