@@ -135,20 +135,3 @@ jobs:
             reports/navigation/latest.json
             reports/navigation/latest.md
           if-no-files-found: warn
-
-  paid-preflight-runner-audit:
-    name: Read-only historical paid-receipt diagnosis
-    runs-on: ubuntu-latest
-    timeout-minutes: 8
-    permissions:
-      contents: read
-      actions: read
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: "22"
-      - name: Verify historical receipt using the runner's read-only token
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: node scripts/news/diagnose-paid-preflight.mjs

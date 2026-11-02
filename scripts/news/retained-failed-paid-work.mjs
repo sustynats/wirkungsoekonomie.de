@@ -62,6 +62,7 @@ export function zeroAttemptReportFingerprint(report) {
   return {sha256:createHash('sha256').update(lines).digest('hex'),fields:keys.length};
 }
 export function documentedZeroPaidAttempt(run, report) {
+  if (!Number.isSafeInteger(run?.id) || !Object.hasOwn(zeroAttemptRuns,run.id)) return false;
   const expected=zeroAttemptRuns[run?.id];
   if (!expected || run.run_attempt !== 1 || run.status !== 'completed'
       || run.conclusion !== expected.conclusion || run.created_at !== expected.created_at

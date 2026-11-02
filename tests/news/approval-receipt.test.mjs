@@ -1,11 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createHash} from 'node:crypto';
 import {approvalReceipt} from '../../admin/redaktion/review-state.js';
+import {editorialPreviewHash} from '../../scripts/news/bridge/editorial-approval.mjs';
 
-const preview={title:'Ein Beitrag',subtitle:'',markdown:'## Meine Einordnung\nText',sources:[{url:'https://example.com',title:'Quelle'}],
-  visual:null,format:'watched',author_notes:'',source_media:null,news_record:null};
-const hash=createHash('sha256').update(JSON.stringify(preview)).digest('hex');
+const preview={title:'Ein Beitrag',markdown:'## Meine Einordnung\nText',sources:[{url:'https://example.com',title:'Quelle'}],format:'watched'};
+const hash=editorialPreviewHash(preview);
 const review={status:'PUBLISHING',revision:1,owner:'123456789012345678',preview,preview_hash:hash,
   approval:{by:'123456789012345678',at:'2026-11-02T08:00:00.000Z',preview_hash:hash}};
 
@@ -22,4 +21,12 @@ test('only an exact version-bound owner decision is presented as an approval rec
 test('receipt remains readable while publishing and after confirmed publication',async()=>{
   for(const status of ['APPROVED_FOR_PUBLICATION','PUBLISHING','PUBLISHED'])
     assert.equal((await approvalReceipt({...review,status}))?.previewHash,hash);
+});
+
+test('browser check matches the server contract for revision targets',async()=>{
+  const revised={...preview,editorial_revision:{target:'published-1',patch:{subtitle:'neu'}}};
+  const revisionHash=editorialPreviewHash(revised);
+  const r={...review,preview:revised,preview_hash:revisionHash,approval:{...review.approval,preview_hash:revisionHash}};
+  assert.equal((await approvalReceipt(r))?.previewHash,revisionHash);
+  assert.equal(await approvalReceipt({...r,preview:{...revised,editorial_revision:{...revised.editorial_revision,target:'other'}}}),null);
 });
