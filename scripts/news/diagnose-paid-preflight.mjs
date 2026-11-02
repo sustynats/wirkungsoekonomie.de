@@ -20,6 +20,8 @@ const report=reportFromRunLog(log,{nativeStep:native});
 if(!report)throw Error('PINNED_REPORT_NOT_FOUND');
 const {transport,configured_model,...archived}=report;
 const sha=createHash('sha256').update(JSON.stringify(archived)).digest('hex');
+const fieldHashes=Object.fromEntries(Object.entries(archived).map(([key,value])=>
+ [key,createHash('sha256').update(JSON.stringify(value)).digest('hex')]));
 let starts=0;
 for(const line of log.split('\n')){
  const m=line.match(/\t(Import, analyze(?: \(one call per story\))? and build|UNKNOWN STEP)\t/);if(!m)continue;
@@ -30,4 +32,4 @@ for(const line of log.split('\n')){
 const guard=runInterruptedPaidPreflight({write:false});
 console.log(JSON.stringify({node:process.version,run:{id:run.id,run_attempt:run.run_attempt,status:run.status,conclusion:run.conclusion,created_at:run.created_at,updated_at:run.updated_at},
  native:{conclusion:native.conclusion,provider_start_ids:starts},report:{run_id:report.run_id,run_id_type:typeof report.run_id,ai_calls:report.ai_calls,has_attempts:Object.hasOwn(report,'ai_request_attempts'),normalized_sha256:sha},
- exact_documented_zero:documentedZeroPaidAttempt(run,report),guard:{status:guard.status,unresolved_run_ids:guard.unresolved_run_ids,unresolved_reasons:guard.unresolved_reasons,verification_error:guard.verification_error},provider_called:false}));
+ exact_documented_zero:documentedZeroPaidAttempt(run,report),field_hashes:fieldHashes,guard:{status:guard.status,unresolved_run_ids:guard.unresolved_run_ids,unresolved_reasons:guard.unresolved_reasons,verification_error:guard.verification_error},provider_called:false}));
