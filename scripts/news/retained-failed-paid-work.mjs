@@ -43,20 +43,37 @@ const cancelledFingerprints = Object.freeze({
   'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71', 'a66a43ab038fbfc167b6ddb011b642cce63de32282bb65d007273035c8071ac6'],
 });
 
-// The 29 October run finished analysis with no provider starts, then failed
-// its Git push. Its complete recovery archive was independently restored from
-// Dropbox and matched to the native report. The older report omitted the zero
-// counter; bind this exception to that exact report and run only.
+// These two runs completed their native analysis step with zero provider starts
+// and zero usage, then failed/cancelled before the atomic push. The first full
+// recovery archive was independently restored from Dropbox; the second has a
+// completed native report and no sealed paid output. Both omit the zero-attempt
+// counter. The runner and an independently restored report differ only in the
+// unrelated follow-up/freshness sections, so bind every other field separately.
+const zeroAttemptRuns = Object.freeze({
+  40810169757: {conclusion:'failure',created_at:'2026-10-29T03:05:44Z',updated_at:'2026-10-29T03:18:40Z',
+    report_sha256:'081fe9f573d9d95033e947a120c8005b807baa6a0da94791743a2609f53ad637',fields:133,freshness:1457,followups:626},
+  41418607343: {conclusion:'cancelled',created_at:'2026-11-02T09:11:19Z',updated_at:'2026-11-02T09:35:44Z',
+    report_sha256:'c8688879204bf23eef360a844eb4e54e578d3a845d1cecf33db7281c87ffd35a',fields:134,freshness:1258,followups:706},
+});
+export function zeroAttemptReportFingerprint(report) {
+  const ignored=new Set(['transport','configured_model','freshness','followups_due']);
+  const keys=Object.keys(report).filter(key=>!ignored.has(key)).sort();
+  const lines=keys.map(key=>`${key}:${createHash('sha256').update(JSON.stringify(report[key])).digest('hex')}\n`).join('');
+  return {sha256:createHash('sha256').update(lines).digest('hex'),fields:keys.length};
+}
 export function documentedZeroPaidAttempt(run, report) {
-  if (run?.id !== 40810169757 || run.run_attempt !== 1 || run.status !== 'completed'
-      || run.conclusion !== 'failure' || run.created_at !== '2026-10-29T03:05:44Z'
-      || run.updated_at !== '2026-10-29T03:18:40Z' || report?.run_id !== String(run.id)
-      || report.ai_calls !== 0 || Object.hasOwn(report, 'ai_request_attempts')) return false;
-  // The runner log adds these transport annotations after writing the
-  // report; the remaining JSON is exactly the independently restored report.
-  const {transport: _transport, configured_model: _configuredModel, ...archived} = report;
-  return createHash('sha256').update(JSON.stringify(archived)).digest('hex')
-    === '5fd5ee061612d1a035d5f91b1b9a6eedf8f9b09747ced75f82a421894f492764';
+  if (!Number.isSafeInteger(run?.id) || !Object.hasOwn(zeroAttemptRuns,run.id)) return false;
+  const expected=zeroAttemptRuns[run?.id];
+  if (!expected || run.run_attempt !== 1 || run.status !== 'completed'
+      || run.conclusion !== expected.conclusion || run.created_at !== expected.created_at
+      || run.updated_at !== expected.updated_at || report?.run_id !== String(run.id)
+      || report.ai_calls !== 0 || report.input_tokens !== 0 || report.output_tokens !== 0
+      || report.estimated_cost_usd !== 0 || Object.hasOwn(report, 'ai_request_attempts')
+      || !Array.isArray(report.title_images) || report.title_images.length !== 0
+      || !Array.isArray(report.freshness) || report.freshness.length !== expected.freshness
+      || !Array.isArray(report.followups_due) || report.followups_due.length !== expected.followups) return false;
+  const {sha256,fields}=zeroAttemptReportFingerprint(report);
+  return fields===expected.fields && sha256===expected.report_sha256;
 }
 
 export function documentedFailedPaidAttempts(storyId) {

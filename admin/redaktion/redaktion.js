@@ -1,6 +1,6 @@
 import { EDITORIAL_COMMENT_LIMIT, COMMENT_TOO_LONG_MESSAGE } from './feedback-limits.js';
 import {editorialRequest} from './api-client.js';
-import {approvalStates,orderedReviews,readyApprovalCount,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
+import {approvalStates,approvalReceipt,orderedReviews,readyApprovalCount,requestWithReview,requestPresentation,revisionStates,supplementBrief,supplementable} from './review-state.js';
 import {betriebsAnzeige} from './betrieb-view.js';
 import {parkedReason} from './parked-review.js';
 import {enhancePrivateEditorialHtml} from '../../assets/js/editorial-diagrams.js';
@@ -222,6 +222,14 @@ async function openReview(id){
  if(!r.preview||typeof r.html!=='string')throw Error('Die vollständige Vorschau ist noch nicht verfügbar. Bitte erneut versuchen.');
  const p=r.preview;status.remove();
  mount.append(element('p',`${types[p.format]} · Fassung ${r.revision}`,'eyebrow'),element('h2',p.title));if(p.subtitle)mount.append(element('p',p.subtitle));
+ const receipt=await approvalReceipt(r);if(generation!==reviewGeneration)return;
+ if(receipt){
+  const details=element('details'),summary=element('summary','Freigabe für diese Fassung');
+  details.append(summary,element('p',`Fassung ${receipt.revision} · Freigegeben am ${receipt.at}`),
+   element('p',`Konto: ${receipt.owner}`),element('p',`Prüfsumme der freigegebenen Vorschau: ${receipt.previewHash}`));mount.append(details);
+  if(receipt.editionHash)details.append(element('p',`Prüfsumme der Veröffentlichungsfassung: ${receipt.editionHash}`));
+ }else if(['APPROVED_FOR_PUBLICATION','PUBLISHING','PUBLISHED'].includes(r.status))
+  mount.append(element('p','Für diese Fassung liegt hier keine überprüfbare Freigabequittung vor.','quiet'));
  if(p.source_media){const m=p.source_media;mount.append(element('h3','Besprochen: '+m.show),element('p',m.episode_title),element('p',[m.original_release_date,...(m.hosts||[]),...(m.guests||[])].filter(Boolean).join(' · ')));}
  if(p.visual){const img=element('img');img.src=p.visual.url;img.alt=p.visual.alt;img.className='review-image';mount.append(img,element('p',p.visual.credit,'quiet'));}
  const frame=element('iframe');frame.title='Vollständiger Beitragsentwurf';frame.setAttribute('sandbox','');frame.className='review-text';frame.srcdoc=r.html_document?r.html:'<!doctype html><html lang="de"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="https://wirkungsoekonomie.de/assets/css/news.css?v=20260924-erklargrafiken"><style>body{font:17px/1.7 system-ui;color:#173c36;margin:12px;overflow-wrap:anywhere}a{color:inherit}img{max-width:100%}</style><body>'+enhancePrivateEditorialHtml(r.html)+'</body></html>';mount.append(frame);
