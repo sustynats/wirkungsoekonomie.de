@@ -138,6 +138,26 @@ const thirdSeenKey = 'ed3f30127d2175830133a4f201903278da58dda23618303bf4ed5461e3
 const thirdUrl = 'https://www.stern.de/news/suedkoreas-chip-hersteller-sk-hynix-verbucht-erneuten-umsatz--und-gewinnrekord-38462334.html';
 const thirdSeenState = () => ({seen_items: {[thirdSeenKey]: {source_id: 'stern-schlagzeilen', url: thirdUrl}}});
 
+test('newsroom source-item exemptions are exact and do not hide credentials in other fields', () => {
+  const sourceItems = () => ({source_items: {
+    [seenKey]: {source_id: 'manager-magazin-news', url},
+    [earningsSources[1].seen_key]: {source_id: earningsSources[1].source_id, url: earningsSources[1].url},
+  }});
+  const original = sourceItems(), before = structuredClone(original);
+  assert.equal(hasSecretPattern(newsroomSecretScanText(original)), false);
+  assert.deepEqual(original, before);
+  for (const change of [
+    s => { s.source_items.other = s.source_items[seenKey]; delete s.source_items[seenKey]; },
+    s => { s.source_items[seenKey].source_id = 'untrusted'; },
+    s => { s.source_items[seenKey].url += '?token=' + 'sk-' + 'Ab0'.repeat(15); },
+    s => { s.source_items[seenKey].other_field = url; },
+    s => { s.source_items[earningsSources[1].seen_key].provider_error = 'sk-' + 'Ab0'.repeat(15); },
+  ]) {
+    const input = sourceItems(); change(input);
+    assert.equal(hasSecretPattern(newsroomSecretScanText(input)), true);
+  }
+});
+
 test('the third public RSS identifier is exempt only in its exact retained seen row', () => {
   const state = thirdSeenState(), before = structuredClone(state);
   assert.equal(hasSecretPattern(JSON.stringify(state)), true);
