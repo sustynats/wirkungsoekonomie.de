@@ -3,6 +3,7 @@
 // an unpublished answer nor a new publication/review decision enters Git.
 import fs from 'node:fs';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import {repositoryJson} from './newsroom-store.mjs';
 import {recoverUsageReport, verifyInterruptedPaidRuns} from './recover-failed-usage.mjs';
@@ -42,6 +43,22 @@ const cancelledFingerprints = Object.freeze({
   'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71', 'a66a43ab038fbfc167b6ddb011b642cce63de32282bb65d007273035c8071ac6'],
 });
 
+// The 29 October run finished analysis with no provider starts, then failed
+// its Git push. Its complete recovery archive was independently restored from
+// Dropbox and matched to the native report. The older report omitted the zero
+// counter; bind this exception to that exact report and run only.
+export function documentedZeroPaidAttempt(run, report) {
+  if (run?.id !== 40810169757 || run.run_attempt !== 1 || run.status !== 'completed'
+      || run.conclusion !== 'failure' || run.created_at !== '2026-10-29T03:05:44Z'
+      || run.updated_at !== '2026-10-29T03:18:40Z' || report?.run_id !== String(run.id)
+      || report.ai_calls !== 0 || Object.hasOwn(report, 'ai_request_attempts')) return false;
+  // The runner log adds these transport annotations after writing the
+  // report; the remaining JSON is exactly the independently restored report.
+  const {transport: _transport, configured_model: _configuredModel, ...archived} = report;
+  return createHash('sha256').update(JSON.stringify(archived)).digest('hex')
+    === '5fd5ee061612d1a035d5f91b1b9a6eedf8f9b09747ced75f82a421894f492764';
+}
+
 export function documentedFailedPaidAttempts(storyId) {
   if (Object.hasOwn(cancelledFingerprints, storyId)) {
     const [fingerprint, evidence_fingerprint, retained_visual_source_sha256] = cancelledFingerprints[storyId];
@@ -79,7 +96,8 @@ export function runInterruptedPaidPreflight({root = path.resolve(path.dirname(fi
   const file = path.join(root, 'data/news/usage.json');
   const usage = JSON.parse(fs.readFileSync(file, 'utf8'));
   const guard = verifyInterruptedPaidRuns({usage, now, runId:env.GITHUB_RUN_ID,
-    runAttempt:env.GITHUB_RUN_ATTEMPT, gh, documentedAttempts:documentedFailedPaidAttempts});
+    runAttempt:env.GITHUB_RUN_ATTEMPT, gh, documentedAttempts:documentedFailedPaidAttempts,
+    documentedZeroAttempt:documentedZeroPaidAttempt});
   if (write) fs.writeFileSync(file, repositoryJson(usage));
   return {version:guard.version,status:guard.status,checked_at:guard.checked_at,
     unresolved_run_ids:guard.unresolved_run_ids,unresolved_reasons:guard.unresolved_reasons,verification_error:guard.verification_error,
