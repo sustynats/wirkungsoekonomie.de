@@ -1,31 +1,56 @@
-name: Read-only editorial lane verification
+name: Read-only deployed artifact size diagnosis
 on:
   workflow_dispatch:
 permissions:
+  actions: read
   contents: read
 jobs:
   inspect:
-    name: Read bridge lane without taking it
+    name: Inspect sizes in the deployed public artifact
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 22
-      - name: Read bridge monitor only
-        env:
-          WOEK_NEWS_BRIDGE_URL: https://130.162.217.58.sslip.io/api/news-bridge
-          WOEK_NEWS_BRIDGE_TOKEN: ${{ secrets.WOEK_NEWS_BRIDGE_TOKEN }}
+      - name: Check runner capacity before the bounded artifact read
+        shell: bash
         run: |
-          node --input-type=module <<'NODE'
-          import {bridgeSession} from './scripts/news/bridge/remote.mjs';
-          const status=await bridgeSession().monitor();
-          const lane=status?.run_lock;
-          if(!lane || typeof lane.process_holds_lock!=='boolean')throw Error('MONITOR_LANE_UNAVAILABLE');
-          const owner=lane.owner;
-          const owner_state=owner==='41436498548:1'?'previous_ticker_run':owner?'other_owner':'none';
-          console.log(JSON.stringify({checked_at:new Date().toISOString(),lane:lane.lane,
-            process_holds_lock:lane.process_holds_lock,owner_state,acquired_at:lane.acquired_at||null,
-            monitor_read_only:true,provider_called:false}));
-          NODE
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          x = os.statvfs(os.environ['RUNNER_TEMP'])
+          free = x.f_bavail * x.f_frsize
+          print('runner_free_bytes=' + str(free))
+          if free < 5 * 1024**3:
+              raise SystemExit('RUNNER_CAPACITY_TOO_LOW')
+          PY
+      - name: Download the exact already deployed public Pages artifact once
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          run-id: 41440232776
+          repository: sustynats/wirkungsoekonomie.de
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/public-artifact-audit
+      - name: Report public file and directory sizes without extracting the tar
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import collections, json, os, pathlib, tarfile
+          root=pathlib.Path(os.environ['RUNNER_TEMP'])/'public-artifact-audit'
+          files=list(root.iterdir())
+          if len(files)!=1 or files[0].name!='artifact.tar':raise SystemExit('UNEXPECTED_ARTIFACT_LAYOUT')
+          total=0; groups=collections.Counter();largest=[];counts=collections.Counter()
+          with tarfile.open(files[0],mode='r|*') as tar:
+              for member in tar:
+                  if not member.isfile():continue
+                  name=member.name.removeprefix('./')
+                  total+=member.size
+                  parts=name.split('/')
+                  groups['/'.join(parts[:min(3,len(parts))])]+=member.size
+                  counts[pathlib.PurePosixPath(name).suffix.lower()]+=member.size
+                  largest.append((member.size,name))
+          print(json.dumps({'tar_bytes':files[0].stat().st_size,'files':len(largest),'file_bytes':total,
+              'largest_files':sorted(largest,reverse=True)[:40],
+              'largest_groups':groups.most_common(35),'by_extension':counts.most_common(20),
+              'provider_called':False,'repository_write':False}))
+          PY
