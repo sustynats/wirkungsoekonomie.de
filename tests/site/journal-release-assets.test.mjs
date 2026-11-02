@@ -154,3 +154,26 @@ test('die Auslieferung fragt die Release-Liste einmal je Release und stolpert ni
   assert.match(schritt, /cmp --silent "\$source_path"/, 'Byte-Gleichheit bleibt Pflicht');
 });
 
+
+
+test('the approved guide PDFs and historical NATS alias use their existing release assets', () => {
+  const assets = JSON.parse(fs.readFileSync(path.join(repo, 'assets/data/public-release-assets.json'))).assets;
+  const guide = JSON.parse(fs.readFileSync(path.join(repo, 'assets/data/guide-reading-edition-2026-10-12.json')));
+  for (const file of guide.files) assert.equal(assets[file.path], file.url, file.path);
+  assert.equal(assets['public/downloads/originals/NATS_WOeK_allgemein 2.pdf'],
+    assets['public/downloads/originals/NATS_WOeK_allgemein.pdf']);
+  const builder = fs.readFileSync(path.join(repo, 'scripts/quality/build-public-artifact.mjs'), 'utf8');
+  const start = builder.indexOf('function releaseAssetReferenceVariants(');
+  const end = builder.indexOf('function shouldCopyRootFile(', start);
+  assert.ok(start > 0 && end > start);
+  const context = {publicReleaseAssets: new Map(Object.entries(assets))};
+  vm.createContext(context);
+  vm.runInContext(builder.slice(start, end), context);
+  for (const [page, key] of [
+    ['bibliothek/woek-begriffsleitfaden-fuehrend/index.html', 'public/downloads/originals/WOeK_Begriffsleitfaden_fuehrend_v1.8.pdf'],
+    ['bibliothek/eintraege/download-or-document-public-downloads-originals-nats-woek-allgemein-2-pdf/index.html', 'public/downloads/originals/NATS_WOeK_allgemein 2.pdf'],
+  ]) {
+    const html = fs.readFileSync(path.join(repo, page), 'utf8');
+    assert.ok(context.rewritePublicReleaseAssetReferences(html).includes(assets[key]), page);
+  }
+});
