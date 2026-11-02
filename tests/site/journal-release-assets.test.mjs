@@ -111,13 +111,16 @@ test('a clean build retains the approved historical release-only library route a
     assert.equal(doc?.status,'ältere Fassung');assert.equal(doc.pages,60);assert.equal(doc.sizeBytes,9860990);
     execFileSync(process.execPath,[path.join(repo,'scripts/library/build-full-knowledge-library.mjs')],{cwd:root});
     const page=fs.readFileSync(path.join(root,'bibliothek/eintraege',slug,'index.html'),'utf8');
-    assert.ok(fs.existsSync(reader));assert.match(page,/60 Seiten/);assert.match(page,/Historische Onlinefassung öffnen/);
+    assert.ok(fs.existsSync(reader));assert.match(page,/60 Seiten · PDF · 9\.4 MB/);assert.match(page,/Historische Onlinefassung öffnen/);
     assert.ok(page.includes(rel));
     const builder=fs.readFileSync(path.join(repo,'scripts/quality/build-public-artifact.mjs'),'utf8');
     const start=builder.indexOf('function releaseAssetReferenceVariants('),end=builder.indexOf('function shouldCopyRootFile(',start);
     const assets=JSON.parse(fs.readFileSync(path.join(repo,'assets/data/public-release-assets.json'))).assets;
     const context={publicReleaseAssets:new Map(Object.entries(assets))};vm.createContext(context);vm.runInContext(builder.slice(start,end),context);
     assert.ok(context.rewritePublicReleaseAssetReferences(page).includes(assets[rel]));
+    fs.mkdirSync(path.dirname(path.join(root,rel)),{recursive:true});fs.writeFileSync(path.join(root,rel),'untracked collision');
+    execFileSync(process.execPath,[path.join(repo,'scripts/library/build-full-knowledge-library.mjs')],{cwd:root});
+    assert.match(fs.readFileSync(path.join(root,'bibliothek/eintraege',slug,'index.html'),'utf8'),/60 Seiten · PDF · 9\.4 MB/);
   } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
 
