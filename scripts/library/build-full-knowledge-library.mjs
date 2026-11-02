@@ -108,7 +108,9 @@ function extent(doc) {
   const publicFiles = doc.variants?.filter((variant) => /\.(pdf|pptx|xlsx|csv|json)$/i.test(variant.primary || "")) || [];
   const sizeSource = publicFiles.find((variant) => /\.pdf$/i.test(variant.primary || ""))?.sourcePath || primary;
   const pages = doc.pages || pdfPages(sizeSource) || pdfPages(primary) || officePages(primary);
-  const size = fileSize(sizeSource) || fileSize(primary);
+  const knownBytes = Number.isSafeInteger(doc.sizeBytes) && doc.sizeBytes > 0 ? doc.sizeBytes : 0;
+  const releasedSize = knownBytes > 1024 * 1024 ? `${(knownBytes / 1024 / 1024).toFixed(1)} MB` : knownBytes ? `${Math.round(knownBytes / 1024)} KB` : "";
+  const size = fileSize(sizeSource) || fileSize(primary) || releasedSize;
   const bits = [];
   if (pages) bits.push(`${pages} Seiten`);
   bits.push(formats);

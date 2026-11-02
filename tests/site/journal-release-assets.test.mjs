@@ -7,7 +7,9 @@ import { fileURLToPath } from 'node:url';
 import { journalAssetName, journalPdfs, journalReleaseEntries, releaseListe, syncJournalReleaseAssets, JOURNAL_PREFIX, JOURNAL_TAG } from '../../scripts/assets/sync-journal-release-assets.mjs';
 import {publicReleaseImageUrl, verifyPublicReleaseImages} from '../../scripts/assets/public-release-images.mjs';
 import {verifyReleasedVideoSources} from '../../scripts/assets/public-release-video-sources.mjs';
+import {releaseBackedDocuments} from '../../scripts/library/release-backed-documents.mjs';
 import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
 import vm from 'node:vm';
 
 const repo = fileURLToPath(new URL('../../', import.meta.url));
@@ -63,6 +65,60 @@ test('a real page rewrites a removed local video to the existing release in a cl
     assert.ok(page.includes('../' + relative));
     assert.ok(context.rewritePublicReleaseAssetReferences(page).includes(assets.get(relative)));
   } finally { fs.rmSync(clean, {recursive: true, force: true}); }
+});
+
+test('release-only library documents require reviewed immutable bytes and exact links', () => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'release-document-source-'));
+  const rel='public/downloads/example.pdf', bytes=Buffer.from('reviewed document');
+  const url='https://github.com/sustynats/wirkungsoekonomie.de/releases/download/reviewed/example.pdf';
+  const entry={path:rel,release_url:url,sha256:createHash('sha256').update(bytes).digest('hex'),bytes:bytes.length,pages:1};
+  const catalog={version:1,documents:[entry]},assets=new Map([[rel,url]]);
+  try {
+    assert.equal(releaseBackedDocuments(root,catalog,assets).get(rel).sha256,entry.sha256);
+    fs.mkdirSync(path.dirname(path.join(root,rel)),{recursive:true});fs.writeFileSync(path.join(root,rel),bytes);
+    assert.equal(releaseBackedDocuments(root,catalog,assets).size,1);
+    fs.writeFileSync(path.join(root,rel),Buffer.alloc(bytes.length));
+    assert.throws(()=>releaseBackedDocuments(root,catalog,assets),/BYTES_MISMATCH/);
+    assert.equal(releaseBackedDocuments(root,catalog,assets,{trackedFiles:new Set()}).size,1);
+    assert.throws(()=>releaseBackedDocuments(root,catalog,assets,{trackedFiles:new Set([rel])}),/BYTES_MISMATCH/);
+    fs.writeFileSync(path.join(root,rel),bytes);
+    assert.throws(()=>releaseBackedDocuments(root,catalog,new Map()),/REFERENCE_INVALID/);
+    assert.throws(()=>releaseBackedDocuments(root,{version:1,documents:[]},assets),/CATALOG_INVALID/);
+    assert.throws(()=>releaseBackedDocuments(root,{version:1,documents:[entry,entry]},assets),/REFERENCE_INVALID/);
+    assert.throws(()=>releaseBackedDocuments(root,{version:1,documents:[{...entry,path:'public/downloads/../private.pdf'}]},assets),/REFERENCE_INVALID/);
+    const foreign='https://example.com/releases/reviewed/example.pdf';
+    assert.throws(()=>releaseBackedDocuments(root,{version:1,documents:[{...entry,release_url:foreign}]},new Map([[rel,foreign]])),/REFERENCE_INVALID/);
+  } finally {fs.rmSync(root,{recursive:true,force:true});}
+});
+
+test('a clean build retains the approved historical release-only library route and reader', () => {
+  const root=fs.mkdtempSync(path.join(os.tmpdir(),'release-document-library-'));
+  const slug='download-or-document-public-downloads-originals-nats-woek-allgemein-2-pdf';
+  const rel='public/downloads/originals/NATS_WOeK_allgemein 2.pdf';
+  try {
+    fs.mkdirSync(path.join(root,'assets/data'),{recursive:true});fs.mkdirSync(path.join(root,'docs'),{recursive:true});
+    const reader=path.join(root,'bibliothek/eintraege',slug,'lesen/index.html');
+    fs.mkdirSync(path.dirname(reader),{recursive:true});fs.writeFileSync(reader,'<main>historische Onlinefassung</main>');
+    fs.writeFileSync(path.join(root,'downloads.html'),'<main>\n    </main>');
+    fs.copyFileSync(path.join(repo,'assets/data/library-release-documents.json'),path.join(root,'assets/data/library-release-documents.json'));
+    fs.copyFileSync(path.join(repo,'assets/data/public-release-assets.json'),path.join(root,'assets/data/public-release-assets.json'));
+    fs.writeFileSync(path.join(root,'assets/data/library-source-details.json'),JSON.stringify({entries:[{detailSlug:slug}]}));
+    execFileSync('git',['init','--quiet',root]);
+    assert.equal(fs.existsSync(path.join(root,rel)),false);
+    execFileSync(process.execPath,[path.join(repo,'scripts/library/build-library-versioning-stage9.mjs')],{cwd:root});
+    const registry=JSON.parse(fs.readFileSync(path.join(root,'assets/data/library-version-registry.json')));
+    const doc=registry.documents.find(item=>item.urls?.sourcePath===rel);
+    assert.equal(doc?.status,'ältere Fassung');assert.equal(doc.pages,60);assert.equal(doc.sizeBytes,9860990);
+    execFileSync(process.execPath,[path.join(repo,'scripts/library/build-full-knowledge-library.mjs')],{cwd:root});
+    const page=fs.readFileSync(path.join(root,'bibliothek/eintraege',slug,'index.html'),'utf8');
+    assert.ok(fs.existsSync(reader));assert.match(page,/60 Seiten/);assert.match(page,/Historische Onlinefassung öffnen/);
+    assert.ok(page.includes(rel));
+    const builder=fs.readFileSync(path.join(repo,'scripts/quality/build-public-artifact.mjs'),'utf8');
+    const start=builder.indexOf('function releaseAssetReferenceVariants('),end=builder.indexOf('function shouldCopyRootFile(',start);
+    const assets=JSON.parse(fs.readFileSync(path.join(repo,'assets/data/public-release-assets.json'))).assets;
+    const context={publicReleaseAssets:new Map(Object.entries(assets))};vm.createContext(context);vm.runInContext(builder.slice(start,end),context);
+    assert.ok(context.rewritePublicReleaseAssetReferences(page).includes(assets[rel]));
+  } finally {fs.rmSync(root,{recursive:true,force:true});}
 });
 
 test('explicit public PNG release entries are immutable, content-bound and opt-in', () => {
