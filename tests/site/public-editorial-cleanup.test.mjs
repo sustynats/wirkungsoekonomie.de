@@ -8,6 +8,46 @@ import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import vm from 'node:vm';
 
+// Exercise the real artifact reference collection and pruning together using
+// only public-output fixtures; repository source files remain outside the map.
+function projectPrunedArtifact(files) {
+ const source=fs.readFileSync(new URL('../../scripts/quality/build-public-artifact.mjs',import.meta.url),'utf8');
+ const decodeStart=source.indexOf('function decodeReference(');
+ const decodeEnd=source.indexOf('function addPublicDocumentDownloadReferences(',decodeStart);
+ const refStart=source.indexOf('function collectArtifactReferences()');
+ const refEnd=source.indexOf('function copyReferencedPublicFiles()',refStart);
+ const pruneStart=source.indexOf('function prunePublicArtifact()');
+ const pruneEnd=source.indexOf('\nremoveArtifact();',pruneStart);
+ assert.ok(decodeStart>0&&decodeEnd>decodeStart&&refStart>0&&refEnd>refStart&&pruneStart>0&&pruneEnd>pruneStart);
+ const output=new Map(Object.entries(files));
+ vm.runInNewContext(source.slice(decodeStart,decodeEnd)+source.slice(refStart,refEnd)+source.slice(pruneStart,pruneEnd)+'\nprunePublicArtifact();',{
+  path,artifactDir:'/artifact',walkFiles:()=>[...output.keys()],toPosixRelative:file=>file.slice('/artifact/'.length),
+  fs:{readFileSync:file=>output.get(file)},addPublicDocumentDownloadReferences:()=>{},
+  removeFile:file=>output.delete(file),publicReleaseAssets:new Map(),console:{log(){}},
+ });
+ return Object.fromEntries(output);
+}
+
+test('rejected visual drafts stay out of the public artifact while approved visuals remain',()=>{
+ const files={'/artifact/index.html':'<img src="/assets/visuals/woek/current.png">',
+  '/artifact/assets/visuals/rejected/draft.png':'draft',
+  '/artifact/assets/visuals/rejected/draft.webp':'draft',
+  '/artifact/assets/visuals/woek/current.png':'approved',
+  '/artifact/assets/visuals/rejected-sibling/kept.svg':'other'};
+ const projected=projectPrunedArtifact(files);
+ assert.equal(projected['/artifact/assets/visuals/rejected/draft.png'],undefined);
+ assert.equal(projected['/artifact/assets/visuals/rejected/draft.webp'],undefined);
+ assert.equal(projected['/artifact/assets/visuals/woek/current.png'],'approved');
+ assert.equal(projected['/artifact/assets/visuals/rejected-sibling/kept.svg'],'other');
+ assert.equal(files['/artifact/assets/visuals/rejected/draft.png'],'draft','original input is untouched');
+});
+
+test('a public reference to a rejected visual fails rather than producing a broken page',()=>{
+ const files={'/artifact/index.html':'<img src="/assets/visuals/rejected/draft.png">',
+  '/artifact/assets/visuals/rejected/draft.png':'draft'};
+ assert.throws(()=>projectPrunedArtifact(files),/REJECTED_VISUAL_PUBLIC_REFERENCE/);
+});
+
 // Exercise the actual artifact projection without running its full filesystem
 // build. Canonical news, paid answers and approved manuscripts are not inputs
 // to this in-memory, public-output-only fixture.
