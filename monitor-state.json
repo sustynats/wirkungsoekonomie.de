@@ -38,12 +38,7 @@
       "active": true
     }
   },
-  "outbox": [
-    {
-      "id": "bcdd3cff2d7c1ea684dcc5c2",
-      "content": "⚠ WÖk-Betriebsstörung\nSelbstheilung: Die Selbstheilung wurde abgewiesen (wirkungsticker.yml: MONITOR_STATE_HTTP_422). Der Fehler liegt im Aufruf, nicht im Lauf - er wiederholt sich bei jedem Versuch, bis er behoben ist.\nSeit: 2026-11-02T05:51:25.420Z\nhttps://github.com/sustynats/wirkungsoekonomie.de/actions/workflows/ops-discord-monitor.yml"
-    }
-  ],
+  "outbox": [],
   "dailyDate": "2026-10-28",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
