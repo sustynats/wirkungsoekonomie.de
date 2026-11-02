@@ -4682,7 +4682,8 @@
       "workflow": "wirkungsticker.yml",
       "head": "2dac0a347673d5a4aaea0f68990d4c16cab620c2",
       "at": "2026-11-02T07:51:20.737Z",
-      "status": "reserved"
+      "status": "dispatch_rejected",
+      "error": "MONITOR_STATE_HTTP_422"
     }
   ]
 }
