@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {documentedFailedPaidAttempts, documentedZeroPaidAttempt, recoverDocumentedFailedPaidUsage} from '../../scripts/news/retained-failed-paid-work.mjs';
+import {documentedFailedPaidAttempts, documentedZeroPaidAttempt, zeroAttemptReportFingerprint, recoverDocumentedFailedPaidUsage} from '../../scripts/news/retained-failed-paid-work.mjs';
+
+test('the receipt fingerprint excludes only unrelated volatile sections',()=>{
+  const report={run_id:'x',ai_calls:0,input_tokens:0,title_images:[],freshness:[{delay:1}],followups_due:[{claim:'a'}],transport:'one'};
+  const expected=zeroAttemptReportFingerprint(report);
+  assert.deepEqual(zeroAttemptReportFingerprint({...report,freshness:[{delay:2}],followups_due:[{claim:'b'}],transport:'two'}),expected);
+  for(const patch of [{ai_calls:1},{input_tokens:1},{title_images:[{status:'generated'}]},{run_id:'other'},{extra:'new'}])
+    assert.notDeepEqual(zeroAttemptReportFingerprint({...report,...patch}),expected);
+});
 
 test('the archived zero-attempt exception cannot cover a different or modified run', () => {
   const run={id:40810169757,run_attempt:1,status:'completed',conclusion:'failure',

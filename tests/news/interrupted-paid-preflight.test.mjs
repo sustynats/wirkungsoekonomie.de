@@ -81,6 +81,8 @@ test('a separately documented zero can resolve only a completed native step with
   assert.equal(check({runs:[]},harness({nativeLog:log(zero,[])})).status,'open');
   assert.equal(check({runs:[]},harness({nativeLog:log(zero,[])}),{documentedZeroAttempt:allow}).status,'checked');
   assert.equal(check({runs:[]},harness({nativeLog:log(zero,['wt-unknown'])}),{documentedZeroAttempt:allow}).status,'open');
+  const unidentified='update\t'+nativeName+'\t2026-10-28T22:01:01Z '+JSON.stringify({news_import_progress:{stage:'provider_request_started'}});
+  assert.equal(check({runs:[]},harness({nativeLog:unidentified+'\n'+log(zero,[])}),{documentedZeroAttempt:allow}).status,'open');
   const unfinished={total_count:1,jobs:[{conclusion:'cancelled',steps:[{name:nativeName,conclusion:'cancelled'}]}]};
   assert.equal(check({runs:[]},harness({nativeLog:log(zero,[]),jobResponse:unfinished}),{documentedZeroAttempt:allow}).status,'open');
   const paid={...zero,ai_calls:1};

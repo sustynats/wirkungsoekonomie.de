@@ -9,6 +9,40 @@ export const approvalStates = {
   PUBLISHED: 'Veröffentlicht',
 };
 
+// The private review endpoint supplies the owner's actual decision. A card
+// status alone is not a version-bound approval receipt.
+export async function approvalReceipt(review) {
+  if (!['APPROVED_FOR_PUBLICATION', 'PUBLISHING', 'PUBLISHED'].includes(review?.status)) return null;
+  const {approval, preview_hash: previewHash, owner, revision, preview} = review;
+  if (!Number.isSafeInteger(revision) || revision < 1
+      || !/^\d{15,22}$/.test(owner || '') || approval?.by !== owner
+      || !/^[a-f0-9]{64}$/.test(previewHash || '') || approval?.preview_hash !== previewHash
+      || typeof approval?.at !== 'string' || !Number.isFinite(Date.parse(approval.at)) || !preview) return null;
+  // Match the server's editorialPreviewHash contract, including sources,
+  // imagery and any revision target. The receipt must bind the received text.
+  const content={title:preview.title,subtitle:preview.subtitle||'',markdown:preview.markdown,
+    sources:preview.sources,visual:preview.visual||null,format:preview.format,author_notes:preview.author_notes||'',
+    source_media:preview.source_media||null,news_record:preview.news_record||null,
+    ...(preview.editorial_revision?{editorial_revision:preview.editorial_revision}:{})};
+  let editionHash=null;
+  try {
+    const digest=async value=>{
+      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(JSON.stringify(value)));
+      return [...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('');
+    };
+    if (await digest(content)!==previewHash) return null;
+    if (['PUBLISHING','PUBLISHED'].includes(review.status) && preview.format!=='news' && !preview.editorial_revision) {
+      const edition=review.publication?.edition;
+      if (edition?.format!=='approved_editorial' || edition.revision!==revision || edition.published_at!==approval.at
+          || !/^[a-f0-9]{64}$/.test(edition.content_hash||'')) return null;
+      const {content_hash,...published}=edition;
+      if (await digest(published)!==content_hash) return null;
+      editionHash=content_hash;
+    }
+  } catch { return null; }
+  return {revision, owner, at: approval.at, previewHash, editionHash};
+}
+
 const requestStates = {
   draft: 'Noch nicht abgesendet', intake_prepared: 'Wird vorbereitet', queued: 'Wartet auf Bearbeitung',
   claimed: 'In Bearbeitung', accepted: 'Wird übernommen', acknowledged: 'Abgeschlossen',

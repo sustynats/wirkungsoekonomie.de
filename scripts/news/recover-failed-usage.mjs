@@ -109,15 +109,15 @@ export function interruptedPaidWorkBlocked(guard, {requireCurrentRun = false, ru
       || guard.checked_for_run_attempt !== Number(runAttempt));
 }
 
-function providerInputIds(log, nativeStep) {
-  const ids = [];
+function providerInputEvents(log, nativeStep) {
+  const events = [];
   for (const line of nativeLogPayloads(log, nativeStep)) {
     const start = line.indexOf('{"news_import_progress":');
     if (start < 0) continue;
     const progress = JSON.parse(line.slice(start)).news_import_progress;
-    if (progress.stage === 'provider_request_started') ids.push(...(progress.story_ids || []));
+    if (progress.stage === 'provider_request_started') events.push(progress);
   }
-  return ids;
+  return events;
 }
 
 // Verify interrupted native runs before another provider request. This records
@@ -205,7 +205,8 @@ export function verifyInterruptedPaidRuns({usage, now = new Date().toISOString()
             || Date.parse(report.completed_at) < Date.parse(report.started_at)
             || Date.parse(report.completed_at) > Date.parse(run.updated_at)
             || Date.parse(run.updated_at) > Date.parse(now)) throw Error('PAID_PREFLIGHT_REPORT_TIME_INVALID');
-          const inputs = providerInputIds(log, native[0]);
+          const providerEvents = providerInputEvents(log, native[0]);
+          const inputs = providerEvents.flatMap(event => event.story_ids || []);
           const durable = (usage.runs || []).some(row => row.started_at === report.started_at
             && row.processing_version === report.processing_version && !row.recovery
             && row.ai?.requests === report.ai_calls);
@@ -219,7 +220,7 @@ export function verifyInterruptedPaidRuns({usage, now = new Date().toISOString()
           // Only a separately audited, exact receipt can establish that zero;
           // the real native step must also have completed without a start marker.
           const documentedZero = native[0].conclusion === 'success' && documentedZeroAttempt(run, report);
-          const noAnalysisRequest = report.ai_calls === 0 && inputs.length === 0
+          const noAnalysisRequest = report.ai_calls === 0 && providerEvents.length === 0 && inputs.length === 0
             && (report.ai_request_attempts === 0 || documentedZero);
           if (!durable && !noAnalysisRequest && !documented) throw Error('PAID_PREFLIGHT_INPUT_RECEIPT_MISSING');
           if (inputs.length === 0 && report.ai_calls > 0 && !durable) throw Error('PAID_PREFLIGHT_INPUT_IDS_MISSING');
