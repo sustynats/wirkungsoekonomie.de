@@ -5,6 +5,9 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { decodeNewsroom, newsroomParts, writeRepositoryJson } from './newsroom-store.mjs';
+import { readReleasedPart } from './release-part.mjs';
+import { RELEASE_STORE_FORMAT } from './release-part.mjs';
+import { persistEnabledReleaseData } from './release-data.mjs';
 const exec = promisify(execFile);
 
 const GENERATED_PATHS = ["news", "wirkungsticker", "sitemap.xml", "assets/search/search-index.json", "public/data/woek-search-meta.json", "content/taxonomy/site-map.json", "umfragen", "admin/umfragen", "reports/wirkungsticker-source-integrity.json", "reports/wirkungsticker-source-portfolio.json", "data/wirkungsticker/source-audit-2026-09-05.json"];
@@ -91,18 +94,23 @@ export async function fetchPublicationBase(run = git) {
   throw new Error("PUBLISH_COMMON_ANCESTOR_NOT_FOUND");
 }
 
-export async function readGitStoryStore(reference, run = git) {
+async function readGitStorySnapshot(reference, run = git, {readReleasePart = readReleasedPart} = {}) {
   const manifest = JSON.parse(stdout(await run(['show', `${reference}:${STORY_STORE}`])));
-  if (!manifest.storage_format) return manifest;
+  if (!manifest.storage_format) return {store: manifest, manifest};
   const parts = new Map();
   for (const part of newsroomParts(manifest)) {
     if (!/^[a-f0-9]{64}$/.test(part.sha256 || '')) throw Error('NEWSROOM_PART_INVALID');
-    if (!parts.has(part.sha256)) parts.set(part.sha256, Buffer.from(stdout(await run(['show', `${reference}:${STORY_PARTS}/${part.sha256}.json`]))));
+    if (!parts.has(part.sha256)) parts.set(part.sha256, part.release
+      ? await readReleasePart(part)
+      : Buffer.from(stdout(await run(['show', `${reference}:${STORY_PARTS}/${part.sha256}.json`]))));
   }
-  return decodeNewsroom(manifest, part => parts.get(part.sha256));
+  return {store: decodeNewsroom(manifest, part => parts.get(part.sha256)), manifest};
+}
+export async function readGitStoryStore(reference, run = git, options) {
+  return (await readGitStorySnapshot(reference, run, options)).store;
 }
 
-export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = store => writeRepositoryJson(STORY_STORE, store), sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
+export async function publishGitUpdate({ run = git, rebuild = rebuildPublication, writeStoryStore = (store, options) => writeRepositoryJson(STORY_STORE, store, options), persistStoryParts = persistEnabledReleaseData, readReleasePart = readReleasedPart, sleep = ms => new Promise(resolve => setTimeout(resolve, ms)) } = {}) {
   let regenerated = false;
   for (let attempt = 1; attempt <= 3; attempt++) {
     const before = stdout(await run(["rev-parse", "HEAD"])).trim();
@@ -120,14 +128,19 @@ export async function publishGitUpdate({ run = git, rebuild = rebuildPublication
         for (let step = 0; step < 20; step++) {
           const conflicts = step === 0 ? firstConflicts : stdout(await run(["diff", "--name-only", "--diff-filter=U", "-z"])).split("\0").filter(Boolean);
           if (!conflicts.length) throw failure;
-          let combinedStories;
+          let combinedStories, storageOptions;
           if (conflicts.some(storyStoragePath)) {
             try {
               // In a rebase: stage 1 = common base, 2 = upstream, 3 = worker.
               let versions = conflicts.includes(STORY_STORE) ? await Promise.all([1, 2, 3].map(async stage => JSON.parse(stdout(await run(["show", `:${stage}:${STORY_STORE}`]))))) : null;
               if (!versions || versions.some(value => value.storage_format)) {
                 const base = stdout(await run(['merge-base', 'HEAD', 'REBASE_HEAD'])).trim();
-                versions = await Promise.all([base, 'HEAD', 'REBASE_HEAD'].map(ref => readGitStoryStore(ref, run)));
+                const snapshots = await Promise.all([base, 'HEAD', 'REBASE_HEAD'].map(ref => readGitStorySnapshot(ref, run, {readReleasePart})));
+                versions = snapshots.map(snapshot => snapshot.store);
+                if (snapshots.some(snapshot => snapshot.manifest.parts_storage === RELEASE_STORE_FORMAT)) {
+                  storageOptions = {releaseStorage: true, releasedParts: snapshots.flatMap(snapshot =>
+                    snapshot.manifest.storage_format ? newsroomParts(snapshot.manifest).filter(part => part.release) : [])};
+                }
               }
               combinedStories = mergeDisjointStoryStores(...versions);
             } catch { /* Malformed or overlapping records stay blocked. */ }
@@ -136,9 +149,10 @@ export async function publishGitUpdate({ run = git, rebuild = rebuildPublication
             throw new Error(`PUBLISH_CANONICAL_CONFLICT:${conflicts.join(",")}`, { cause: failure });
           }
           if (combinedStories) {
-            const saved = await writeStoryStore(combinedStories);
+            const saved = await writeStoryStore(combinedStories, storageOptions);
+            if (saved?.parts_storage) await persistStoryParts();
             await run(["add", "--", STORY_STORE]);
-            if (saved?.storage_format) await run(['add', '--', STORY_PARTS]);
+            if (saved?.storage_format && !saved.parts_storage) await run(['add', '--', STORY_PARTS]);
           }
           const generatedConflicts = conflicts.filter(regeneratablePublicationPath);
           if (generatedConflicts.length) await run(["restore", "--source=HEAD", "--staged", "--worktree", "--", ...generatedConflicts]);

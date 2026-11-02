@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
+import { readReleasedPart, releasePartUrl, assertRawPart, RELEASE_STORE_FORMAT } from './release-part.mjs';
 
 const FORMAT = 'woek-newsroom-parts-1';
 const RECORD_FORMAT = 'woek-newsroom-parts-2';
@@ -17,11 +18,18 @@ const atomic = (file, text) => {
   fs.renameSync(temp, file);
 };
 
-export function readNewsroom(file, fallback) {
+export function readNewsroom(file, fallback, {readReleasePart = readReleasedPart} = {}) {
   if (file instanceof URL) file = fileURLToPath(file);
   if (!fs.existsSync(file) && fallback !== undefined) return structuredClone(fallback);
   const manifest = JSON.parse(fs.readFileSync(file, 'utf8'));
-  return decodeNewsroom(manifest, part => fs.readFileSync(path.join(`${file}.parts`, `${part.sha256}.json`)));
+  return decodeNewsroom(manifest, part => {
+    const physical = path.join(`${file}.parts`, `${part.sha256}.json`);
+    if (fs.existsSync(physical)) return fs.readFileSync(physical);
+    if (!part.release) return fs.readFileSync(physical); // Preserve legacy ENOENT.
+    const bytes = assertRawPart(readReleasePart(part), part);
+    atomic(physical, bytes); // Local verified materialization, never a new source.
+    return bytes;
+  });
 }
 
 // The same decoder also verifies parts read from an exact Git revision during
@@ -98,13 +106,32 @@ export function newsroomParts(manifest) {
       }
     }
   }
+  for (const part of parts) if (part.release) releasePartUrl(part);
   return parts;
 }
 
-export function writeNewsroom(file, value, { maxPartBytes = LIMIT } = {}) {
+export function writeNewsroom(file, value, { maxPartBytes = LIMIT, releaseStorage = false, releasedParts = [] } = {}) {
   if (file instanceof URL) file = fileURLToPath(file);
   if (!value || typeof value !== 'object' || Array.isArray(value) || !Number.isSafeInteger(maxPartBytes) || maxPartBytes < 64 || maxPartBytes > LIMIT) throw Error('NEWSROOM_STORE_INVALID');
   const manifest = { storage_format: FORMAT, fields: [] };
+  const released = new Map();
+  if (releaseStorage) {
+    manifest.parts_storage = RELEASE_STORE_FORMAT;
+    for (const part of releasedParts) if (part.release) {
+      releasePartUrl(part); released.set(part.sha256, part.release);
+    }
+  }
+  if (fs.existsSync(file)) {
+    let previous;
+    // During verified disjoint rebase recovery this file can contain conflict
+    // markers. Its complete value and release bindings come from pinned Git
+    // snapshots, not by parsing the conflicted working file.
+    try { previous = JSON.parse(fs.readFileSync(file, 'utf8')); } catch { /* explicit replacement */ }
+    if (previous?.parts_storage === RELEASE_STORE_FORMAT) {
+      manifest.parts_storage = RELEASE_STORE_FORMAT;
+      for (const part of newsroomParts(previous)) if (part.release) released.set(part.sha256, part.release);
+    }
+  }
   const dir = `${file}.parts`;
   const keep = new Set();
   const save = bytes => {
@@ -113,7 +140,7 @@ export function writeNewsroom(file, value, { maxPartBytes = LIMIT } = {}) {
     // Reuse unchanged chunks, but never reuse damaged bytes.
     if (!fs.existsSync(target) || digest(fs.readFileSync(target)) !== sha256) atomic(target, bytes);
     keep.add(name);
-    return {sha256, bytes: bytes.length};
+    return {sha256, bytes: bytes.length, ...(released.has(sha256) ? {release: released.get(sha256)} : {})};
   };
   for (const [key, data] of Object.entries(value)) {
     if (!data || typeof data !== 'object') { manifest.fields.push({ key, kind: 'value', value: data }); continue; }
@@ -173,8 +200,8 @@ export function readRepositoryJson(file) {
   return path.basename(filename) === 'stories.json'
     ? readNewsroom(filename) : JSON.parse(fs.readFileSync(filename, 'utf8'));
 }
-export function writeRepositoryJson(file, value) {
+export function writeRepositoryJson(file, value, options) {
   const filename = file instanceof URL ? fileURLToPath(file) : file;
-  if (path.basename(filename) === 'stories.json') return writeNewsroom(filename, value);
+  if (path.basename(filename) === 'stories.json') return writeNewsroom(filename, value, options);
   atomic(filename, repositoryJson(value));
 }

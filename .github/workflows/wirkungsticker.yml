@@ -76,6 +76,9 @@ jobs:
       - name: Record expected run start
         if: steps.slot.outputs.should_run == 'true'
         run: echo "WOEK_NEWS_EXPECTED_AFTER=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_ENV"
+      - name: Verify enabled immutable ticker data before processing
+        if: steps.slot.outputs.should_run == 'true'
+        run: node scripts/news/release-hydrate.mjs
       - name: Unit and security tests
         if: steps.slot.outputs.should_run == 'true'
         run: npm run news:test
@@ -239,11 +242,17 @@ jobs:
           npm run news:source-integrity:audit -- --strict
           npm run news:source-portfolio:audit -- --strict
           npm run news:validate
+      - name: Verify and persist enabled immutable ticker data parts
+        if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/news/release-data.mjs persist --out="$RUNNER_TEMP/ticker-release-data"
       - name: Commit one atomic update
         id: commit
         if: steps.slot.outputs.should_run == 'true' && inputs.dry_run != true
         env:
           SLOT_NAME: ${{ steps.slot.outputs.slot }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config user.name "wirkungsticker-bot"
