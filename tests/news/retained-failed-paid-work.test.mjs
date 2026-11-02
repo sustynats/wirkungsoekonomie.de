@@ -1,6 +1,18 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {documentedFailedPaidAttempts, recoverDocumentedFailedPaidUsage} from '../../scripts/news/retained-failed-paid-work.mjs';
+import {documentedFailedPaidAttempts, documentedZeroPaidAttempt, recoverDocumentedFailedPaidUsage} from '../../scripts/news/retained-failed-paid-work.mjs';
+
+test('the archived zero-attempt exception cannot cover a different or modified run', () => {
+  const run={id:40810169757,run_attempt:1,status:'completed',conclusion:'failure',
+    created_at:'2026-10-29T03:05:44Z',updated_at:'2026-10-29T03:18:40Z'};
+  const report={run_id:String(run.id),ai_calls:0};
+  assert.equal(documentedZeroPaidAttempt(run,report),false, 'an incomplete report cannot match the archived digest');
+  for (const changed of [{id:40810169758},{run_attempt:2},{status:'in_progress'},{conclusion:'cancelled'},
+    {created_at:'2026-10-29T03:05:45Z'},{updated_at:'2026-10-29T03:18:41Z'}])
+    assert.equal(documentedZeroPaidAttempt({...run,...changed},report),false);
+  for (const changed of [{run_id:'40810169758'},{ai_calls:1},{ai_request_attempts:0}])
+    assert.equal(documentedZeroPaidAttempt(run,{...report,...changed}),false);
+});
 
 test('the two confirmed paid inputs retain spending locks without exposing answers', () => {
   for (const id of ['wt-c637d82374e8e890', 'wt-2c796868270ba89b']) {
