@@ -48,10 +48,13 @@ test("public experience pages link to published HTML instead of source Markdown"
 
 test("Wirkungswahl-Kompass exposes its real landing heading before JavaScript runs", () => {
   const html = read("werkzeuge/wirkungswahl-kompass/index.html");
+  // Client templates inside scripts are not visible fallback markup. They may
+  // interpolate the same heading after hydration without leaking a placeholder.
+  const markup = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "");
   const claim = "Wo du stehst. Was Parteien vorschlagen. Was daraus folgen kann.";
   assert.match(
-    html,
+    markup,
     new RegExp(`<main id="main"><div class="wrap" id="view"[^>]*>[\\s\\S]*?<h1>${claim.replaceAll(".", "\\.")}<\\/h1>`),
   );
-  assert.doesNotMatch(html, /<h1>\$\{esc\(DATA\.meta\.claim\)\}<\/h1>/);
+  assert.doesNotMatch(markup, /<h1>\$\{esc\(DATA\.meta\.claim\)\}<\/h1>/);
 });

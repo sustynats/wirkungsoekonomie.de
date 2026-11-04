@@ -264,6 +264,25 @@ function areaGroups(routes) {
   return byHub;
 }
 
+// A source-owned catalog can replace the generic listing only when it covers
+// every public child route. The final, independent directory checker is unchanged.
+export function retainedErlebenDirectory(html, group) {
+  if (group.hubRoute !== '/erleben/' || !html.includes('data-erleben-tool-catalog="true"')) return null;
+  const sections = [...html.matchAll(/<section\b(?=[^>]*\bdata-public-area-directory=["']true["'])[^>]*>[\s\S]*?<\/section>/gi)];
+  if (sections.length !== 1 || !sections[0][0].includes('data-erleben-tool-catalog="true"')) throw new Error('Erleben must have exactly one complete tool directory');
+  const catalog = sections[0][0];
+  if ((catalog.match(/<section\b/g) || []).length !== 1) throw new Error('Erleben catalog must not contain nested sections');
+  const links = new Set();
+  for (const match of catalog.matchAll(/<a\b[^>]*\bhref=["']([^"']+)["']/g)) {
+    const url = new URL(match[1].replaceAll('&amp;', '&'), SITE_ORIGIN + group.hubRoute);
+    if (url.origin === SITE_ORIGIN) links.add(url.pathname);
+  }
+  const missing = group.routes.filter(route => !links.has(route.url));
+  if (missing.length) throw new Error(`Erleben catalog is missing public routes: ${missing.map(r => r.url).join(', ')}`);
+  if (group.routes.length > ROUTES_PER_PAGE) throw new Error('Erleben catalog exceeds the existing route-page limit');
+  return {cards: (catalog.match(/\bdata-method-card\b/g) || []).length};
+}
+
 export function buildPublicAreaDirectories(root, { onlyAreas = null } = {}) {
   const absoluteRoot = path.resolve(root);
   const previousManifestPath = path.join(absoluteRoot, DIRECTORY_MANIFEST);
@@ -284,6 +303,14 @@ export function buildPublicAreaDirectories(root, { onlyAreas = null } = {}) {
     const hubFile = routeToFile(absoluteRoot, group.hubRoute);
     if (!fs.existsSync(hubFile)) throw new Error(`Public area hub is missing: ${group.hubRoute}`);
     const original = fs.readFileSync(hubFile, "utf8");
+    const customCatalog = retainedErlebenDirectory(original, group);
+    if (customCatalog) {
+      if (Buffer.byteLength(original) > MAX_HUB_BYTES) throw new Error(`Public area hub exceeds ${MAX_HUB_BYTES} bytes: ${group.hubRoute}`);
+      for (const route of group.routes) covered.add(route.url);
+      output.push({area: group.area, hub: group.hubRoute, routes: group.routes.length,
+        cards: customCatalog.cards, pages: 1, hubBytes: Buffer.byteLength(original), generatedPages: []});
+      continue;
+    }
     const hubTitle = original.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1]?.replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()
       || group.area;
     const extracted = extractHeavyCards(original, group.area, group.hubRoute);

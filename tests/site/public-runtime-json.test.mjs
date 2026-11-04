@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 import {PUBLIC_RUNTIME_JSON, compactJsonBytes, compactPublicRuntimeJson} from '../../scripts/quality/compact-public-runtime-json.mjs';
 import {writePublicRoutes} from '../../scripts/lib/public-routes.mjs';
 
@@ -211,8 +212,8 @@ test('CLI is artifact-only and does not accept a source-path override', t => {
   const {root, artifact, put} = fixture(t);
   const file = put(`_site/${PUBLIC_RUNTIME_JSON[0]}`, '{ "x": 1 }\n');
   const source = put(PUBLIC_RUNTIME_JSON[0], '{ "x": 1 }\n');
-  assert.match(execFileSync(process.execPath, [script.pathname], {cwd: root, encoding: 'utf8'}), /tokens preserved/);
+  assert.match(execFileSync(process.execPath, [fileURLToPath(script)], {cwd: root, encoding: 'utf8'}), /tokens preserved/);
   assert.equal(fs.readFileSync(file, 'utf8'), '{"x":1}');
   assert.equal(fs.readFileSync(source, 'utf8'), '{ "x": 1 }\n');
-  assert.throws(() => execFileSync(process.execPath, [script.pathname, artifact], {cwd: root, stdio: 'pipe'}));
+  assert.throws(() => execFileSync(process.execPath, [fileURLToPath(script), artifact], {cwd: root, stdio: 'pipe'}));
 });
