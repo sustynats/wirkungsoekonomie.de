@@ -3100,8 +3100,12 @@ const ToolTermInlineLayer = (() => {
 const MethodToolFilterLayer = (() => {
   function initPanel(panel) {
     if (!(panel instanceof HTMLElement) || panel.dataset.ready === "true") return;
-    const cards = Array.from(document.querySelectorAll("[data-method-card]"));
+    const directory = panel.closest("[data-tool-directory]");
+    const scope = directory || document;
+    const cards = Array.from(scope.querySelectorAll("[data-method-card]"));
     if (!cards.length) return;
+    const count = directory?.querySelector("[data-tool-filter-count]");
+    const empty = directory?.querySelector("[data-tool-filter-empty]");
 
     const controls = {
       search: panel.querySelector("[data-tool-filter-search]"),
@@ -3124,12 +3128,16 @@ const MethodToolFilterLayer = (() => {
       const method = valueOf(controls.method);
       const demoOnly = checked(controls.demo);
       const preparedOnly = checked(controls.prepared);
+      const normalizeSearch = (text) => text.normalize("NFKD").replace(/\p{Diacritic}/gu, "").replace(/ß/g, "ss");
+      const words = directory ? normalizeSearch(search).split(/\s+/).filter(Boolean) : [];
+      let visible = 0;
 
       cards.forEach((card) => {
         if (!(card instanceof HTMLElement)) return;
         const text = (card.dataset.search || card.textContent || "").toLowerCase();
+        const matchesSearch = directory ? words.every((word) => normalizeSearch(text).includes(word)) : (!search || text.includes(search));
         const matches =
-          (!search || text.includes(search)) &&
+          matchesSearch &&
           (!cluster || (card.dataset.cluster || "").toLowerCase() === cluster) &&
           (!type || (card.dataset.type || "").toLowerCase().includes(type)) &&
           (!status || (card.dataset.status || "").toLowerCase() === status) &&
@@ -3137,12 +3145,28 @@ const MethodToolFilterLayer = (() => {
           (!demoOnly || card.dataset.demo === "ja") &&
           (!preparedOnly || card.dataset.prepared === "ja");
         card.hidden = !matches;
+        if (matches) visible += 1;
       });
+      if (count instanceof HTMLElement) count.textContent = `${visible} von ${cards.length} Einträgen`;
+      if (empty instanceof HTMLElement) empty.hidden = visible !== 0;
     }
 
     Object.values(controls).forEach((control) => control?.addEventListener("input", applyFilters));
     Object.values(controls).forEach((control) => control?.addEventListener("change", applyFilters));
     panel.dataset.ready = "true";
+    if (directory) {
+      panel.addEventListener("submit", (event) => event.preventDefault());
+      panel.querySelector("[data-tool-filter-reset]")?.addEventListener("click", () => {
+        Object.values(controls).forEach((control) => {
+          if (control instanceof HTMLInputElement && control.type === "checkbox") control.checked = false;
+          else if (control instanceof HTMLInputElement || control instanceof HTMLSelectElement) control.value = "";
+        });
+        applyFilters();
+        controls.search?.focus();
+      });
+      applyFilters();
+      panel.hidden = false;
+    }
   }
 
   function init() {

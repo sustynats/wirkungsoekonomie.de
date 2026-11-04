@@ -908,6 +908,16 @@ function prunePublicArtifact() {
     const ext = path.extname(file).toLowerCase();
     const relative = toPosixRelative(file);
 
+    // These are explicitly rejected drafts, not public embedding assets.
+    // Fail closed on an actual public reference instead of creating a broken
+    // page. Only the generated artifact is pruned; source originals remain.
+    if (relative.startsWith("assets/visuals/rejected/")) {
+      if (references.has(relative)) throw new Error(`REJECTED_VISUAL_PUBLIC_REFERENCE:${relative}`);
+      removeFile(file, "rejected visual draft is not for public embedding");
+      pruned += 1;
+      continue;
+    }
+
     if (forbiddenExtensions.has(ext) || forbiddenPaths.has(relative) || forbiddenPrefixes.some((prefix) => relative.startsWith(prefix))) {
       removeFile(file, "non-public source or workflow file");
       pruned += 1;

@@ -1,5 +1,231 @@
 [
   {
+    "id": "product-impact-simulator",
+    "title": "Produktwirkung und Wirkungssteuer",
+    "route": "/erleben/produktwirkung.html",
+    "type": "simulator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Demo öffnen",
+    "priority": 1,
+    "catalog": {
+      "category": "products",
+      "type": "simulation",
+      "status": "demo",
+      "description": "Beispielprodukte, Lieferketten, Wirkungsfelder und eine modellhafte Steuerlogik vergleichen.",
+      "question": "Was bleibt im Ladenpreis unsichtbar?",
+      "sourceRuntime": "assets/js/erleben.js",
+      "quickStart": {
+        "order": 1,
+        "title": "Produktwirkung und Wirkungssteuer simulieren",
+        "question": "Was würde sich am Preis ändern, wenn Folgekosten sichtbar wären?",
+        "action": "Produktdemo starten"
+      }
+    }
+  },
+  {
+    "id": "risk-resilience-simulation",
+    "title": "Unternehmensrisiken und Resilienz",
+    "route": "/erleben/risiko.html",
+    "type": "simulator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Demo öffnen",
+    "priority": 1,
+    "catalog": {
+      "category": "business",
+      "type": "simulation",
+      "status": "demo",
+      "description": "Stress durch Energie, Klima, Lieferketten und Geopolitik im Modell verändern.",
+      "question": "Wie verwundbar ist eine Wertschöpfungskette?",
+      "sourceRuntime": "assets/js/erleben.js",
+      "quickStart": {
+        "order": 2,
+        "title": "Unternehmensrisiken und Resilienz testen",
+        "question": "Was passiert, wenn Energie oder Lieferketten unter Druck geraten?",
+        "action": "Resilienz testen"
+      }
+    }
+  },
+  {
+    "id": "platform-impact-simulator",
+    "title": "Plattform- und Algorithmuswirkung",
+    "route": "/erleben/plattformen.html",
+    "type": "simulation",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "media",
+      "type": "simulation",
+      "status": "demo",
+      "description": "Mit Reglern erkunden, wie Plattformlogik Aufmerksamkeit und Polarisierungsrisiken verstärkt.",
+      "question": "Warum wirkt derselbe Inhalt je nach Verstärkung anders?",
+      "sourceRuntime": "assets/js/erleben.js",
+      "quickStart": {
+        "order": 3,
+        "title": "Plattform- und Medienwirkung untersuchen",
+        "question": "Was verändert ein Algorithmus am Resonanzraum eines Inhalts?",
+        "action": "Plattformdemo starten"
+      }
+    }
+  },
+  {
+    "id": "housing-impact-calculator",
+    "title": "Wohnwirkungsrechner WIX-Wohn",
+    "route": "/erleben/wohnwirkungsrechner/",
+    "type": "calculator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "climate",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Wohnkosten, Energie, Belastungen und soziale Bedingungen in einer Modellrechnung zusammenführen.",
+      "question": "Welche Folgekosten und Schutzfragen gehören zum Wohnen?",
+      "sourceRuntime": "inline",
+      "quickStart": {
+        "order": 4,
+        "title": "Wohnwirkung und Folgekosten berechnen",
+        "question": "Was kostet Wohnen über die Miete hinaus?",
+        "action": "Wohnrechner öffnen"
+      }
+    }
+  },
+  {
+    "id": "enterprise-impact-profile",
+    "title": "Unternehmens-Wirkungsprofil",
+    "route": "/erleben/unternehmens-wirkungsprofil/",
+    "type": "check",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Beta erkunden",
+    "catalog": {
+      "category": "business",
+      "type": "check",
+      "status": "beta",
+      "description": "Vorhandene Unternehmensprofile mit Rechenweg, Quellen und offenen Datenfragen lesen.",
+      "question": "Was lässt sich aus den Unternehmensdaten tatsächlich ableiten?",
+      "sourceRuntime": "assets/js/uwp/uwp-profile.js",
+      "quickStart": {
+        "order": 5,
+        "title": "Unternehmenswirkung analysieren",
+        "question": "Wo liegen belegte Befunde und wo bleiben Datenlücken?",
+        "action": "Unternehmensprofil erkunden"
+      }
+    }
+  },
+  {
+    "id": "world-impact-compass",
+    "title": "Welt-Wirkungskompass",
+    "route": "/erleben/welt-wirkungskompass/",
+    "type": "compass",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Beta erkunden",
+    "catalog": {
+      "category": "regions",
+      "type": "compass",
+      "status": "beta",
+      "description": "Staaten über vorhandene Indikatoren und getrennte Schutzfragen erkunden; keine Rangliste von Menschen.",
+      "question": "Was zeigt ein Länderprofil jenseits des BIP?",
+      "sourceRuntime": "assets/js/wirkungskompass/territorial-compass.js",
+      "quickStart": {
+        "order": 6,
+        "title": "Wirkungskompass erkunden",
+        "question": "Was erzählen Daten über Lebensbedingungen in einem Land?",
+        "action": "Weltkompass öffnen"
+      }
+    }
+  },
+  {
+    "id": "product-impact-calculator",
+    "title": "Produktwirkungsrechner",
+    "route": "/erleben/produktwirkungsrechner/",
+    "type": "calculator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "products",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Eingaben zu Produkt, Preis und Wirkungsprofil in der vorhandenen Steuersimulation variieren.",
+      "question": "Wie reagiert die Modellrechnung auf andere Produktannahmen?",
+      "sourceRuntime": "assets/js/produktwirkungsrechner.js"
+    }
+  },
+  {
+    "id": "media-impact-check",
+    "title": "Medienwirkung erleben",
+    "route": "/erleben/medienwirkung.html",
+    "type": "scanner",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Demo öffnen",
+    "priority": 1,
+    "catalog": {
+      "category": "media",
+      "type": "check",
+      "status": "demo",
+      "description": "Textbeispiele, Quellenklarheit, Framing und Resonanzrisiken erkunden.",
+      "question": "Was kann Vertrauen stärken und was Polarisierung begünstigen?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "media-profile-calculator",
+    "title": "Medienwirkungscheck",
+    "route": "/erleben/medienwirkungscheck/",
+    "type": "check",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "media",
+      "type": "check",
+      "status": "demo",
+      "description": "Ein vereinfachtes Medienprofil mit vorhandenen Reglern vergleichen; kein Wahrheitsurteil.",
+      "question": "Wie verändert sich das Profil mit Qualität, Framing und Kontext?",
+      "sourceRuntime": "inline"
+    }
+  },
+  {
+    "id": "impact-controlling-calculators",
+    "title": "Impact-Controlling-Rechner",
+    "route": "/erleben/impact-controlling-rechner/",
+    "type": "calculator-suite",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "publicCta": "Demo öffnen",
+    "priority": 2,
+    "catalog": {
+      "category": "business",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Indikatoren, direkte Netto-Geldrechnung und T-SROI im vorhandenen Lernbeispiel auseinanderhalten.",
+      "question": "Welche Veränderung ist belegt und welcher Nutzen ist nur angenommen?",
+      "sourceRuntime": "assets/js/impact-controlling-rechner.js"
+    }
+  },
+  {
     "id": "automation-income-calculator",
     "title": "Automatisierungs- und Wirkungseinkommensrechner",
     "route": "/erleben/automatisierungs-wirkungseinkommensrechner/",
@@ -7,8 +233,73 @@
     "status": "interactive",
     "hasInputs": true,
     "hasResults": true,
-    "publicCta": "Rechner öffnen",
-    "priority": 1
+    "publicCta": "Demo öffnen",
+    "priority": 1,
+    "catalog": {
+      "category": "social",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Modellannahmen zu Automatisierung, Verteilung und Wirkungseinkommen selbst verändern.",
+      "question": "Wie könnten Produktivitätsgewinne verteilt werden?",
+      "sourceRuntime": "inline"
+    }
+  },
+  {
+    "id": "municipal-impact-index",
+    "title": "Kommunaler Wirkungsindex",
+    "route": "/erleben/kommunaler-wirkungsindex/",
+    "type": "compass",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Beta erkunden",
+    "catalog": {
+      "category": "regions",
+      "type": "compass",
+      "status": "beta",
+      "description": "Kommunale Datenstände, Quellen und Schutzfragen getrennt lesen; kein amtliches Gesamtranking.",
+      "question": "Welche Daten tragen das Profil einer Kommune?",
+      "sourceRuntime": "assets/js/kwi-beta.js"
+    }
+  },
+  {
+    "id": "german-states-compass",
+    "title": "Länder-Wirkungskompass Deutschland",
+    "route": "/erleben/laender-wirkungskompass/",
+    "type": "compass",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Beta erkunden",
+    "catalog": {
+      "category": "regions",
+      "type": "compass",
+      "status": "beta",
+      "description": "Die vorhandenen Profile der Bundesländer und ihre Datengrundlagen erkunden.",
+      "question": "Bedeutet Wirtschaftsstärke automatisch bessere Lebensbedingungen?",
+      "sourceRuntime": "assets/js/wirkungskompass/territorial-compass.js"
+    }
+  },
+  {
+    "id": "europe-impact-compass",
+    "title": "Europa-Wirkungskompass",
+    "route": "/erleben/europa-wirkungskompass/",
+    "type": "compass",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Beta erkunden",
+    "catalog": {
+      "category": "regions",
+      "type": "compass",
+      "status": "beta",
+      "description": "EU-Länder anhand dokumentierter Indikatoren und offener Schutzfragen vergleichen.",
+      "question": "Was zeigt der Vergleich jenseits von Wachstum?",
+      "sourceRuntime": "assets/js/wirkungskompass/territorial-compass.js"
+    }
   },
   {
     "id": "woek-scanner",
@@ -18,52 +309,308 @@
     "status": "interactive",
     "hasInputs": true,
     "hasResults": true,
-    "publicCta": "Ersteinschätzung anzeigen",
-    "priority": 1
+    "publicCta": "Demo öffnen",
+    "priority": 1,
+    "catalog": {
+      "category": "learning",
+      "type": "check",
+      "status": "demo",
+      "description": "Eine erste strukturierte Orientierung zu Wirkungspfaden und Datenqualität erhalten.",
+      "question": "Welche Fragen fehlen für eine belastbare Einschätzung?",
+      "sourceRuntime": "assets/js/scanner-mvp.js"
+    }
   },
   {
-    "id": "product-impact-simulator",
-    "title": "Produktwirkung und Wirkungssteuer-Simulator",
-    "route": "/erleben.html#simulator",
-    "type": "simulator",
+    "id": "product-scorecard-dashboard",
+    "title": "Produktpass- und Scorecard-Dashboard",
+    "route": "/scorecard-dashboard.html",
+    "type": "check",
     "status": "interactive",
     "hasInputs": true,
     "hasResults": true,
-    "publicCta": "Produktdemo testen",
-    "priority": 1
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "products",
+      "type": "check",
+      "status": "demo",
+      "description": "Vorhandene Produktpässe, Scorecards und Datenqualitätsangaben zusammen ansehen.",
+      "question": "Wie hängen Produktdaten und die Modellbewertung zusammen?",
+      "sourceRuntime": "assets/js/scorecard-dashboard.js"
+    }
   },
   {
-    "id": "media-impact-check",
-    "title": "Medienwirkung testen",
-    "route": "/erleben.html#medienwirkung",
-    "type": "scanner",
+    "id": "tsroi-example",
+    "title": "T-SROI: Rechenweg und Beispiel",
+    "route": "/werkzeuge/t-sroi/",
+    "type": "calculator",
     "status": "interactive",
     "hasInputs": true,
     "hasResults": true,
-    "publicCta": "Medienwirkung testen",
-    "priority": 1
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "business",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Den vorhandenen T-SROI-Beispielrechner mit offengelegten Annahmen nutzen.",
+      "question": "Ist zusätzlicher Transformationsnutzen separat belegt?",
+      "sourceRuntime": "assets/js/tool-examples-dashboard.js"
+    }
   },
   {
-    "id": "risk-resilience-simulation",
-    "title": "Risiko- und Resilienz-Simulation",
-    "route": "/erleben.html#risikolabor",
-    "type": "simulator",
+    "id": "existing-example-library",
+    "title": "Interaktive Methodenbeispiele",
+    "route": "/werkzeuge/dashboard/",
+    "type": "learning",
     "status": "interactive",
     "hasInputs": true,
     "hasResults": true,
-    "publicCta": "Simulation starten",
-    "priority": 1
+    "priority": 2,
+    "publicCta": "Demo öffnen",
+    "catalog": {
+      "category": "learning",
+      "type": "learning",
+      "status": "demo",
+      "description": "Die bestehende Beispielsammlung zu Rechenwegen, Schutzprüfungen und Datenqualität erkunden.",
+      "question": "Wie wird aus einer Methode ein nachvollziehbarer Rechenweg?",
+      "sourceRuntime": "assets/js/tool-examples-dashboard.js"
+    }
   },
   {
-    "id": "impact-controlling-calculators",
-    "title": "Wirkungsindikatoren-, NWI- und T-SROI-Demo",
-    "route": "/erleben.html#scanner",
-    "type": "calculator-suite",
+    "id": "public-factcheck-entry",
+    "title": "WÖk-Wirkungscheck für Aussagen",
+    "route": "/werkzeuge/faktencheck/",
+    "type": "check",
     "status": "interactive",
     "hasInputs": true,
-    "hasResults": true,
-    "publicCta": "Rechner öffnen",
-    "priority": 2
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Onlinezugang öffnen",
+    "catalog": {
+      "category": "media",
+      "type": "check",
+      "status": "online",
+      "description": "Öffentlicher Basiszugang für Aussagen, Quellen und Frames; die KI-Prüfung ist eine Community-Funktion.",
+      "question": "Welche Quelle trägt eine Behauptung und was bleibt offen?",
+      "sourceRuntime": "assets/js/faktencheck.js"
+    }
+  },
+  {
+    "id": "enterprise-check-method",
+    "title": "Unternehmens-Wirkungscheck",
+    "route": "/erleben/unternehmens-wirkungscheck/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "business",
+      "type": "method",
+      "status": "method",
+      "description": "Vorhandene Prüfstruktur für Unternehmen und Lieferketten; hier noch ohne bedienbaren Rechner.",
+      "question": "Welche Wirkungs- und Datenfragen gehören zur Unternehmensprüfung?"
+    }
+  },
+  {
+    "id": "pension-calculator-method",
+    "title": "Wirkungsrenten-Rechner: Modellbeschreibung",
+    "route": "/erleben/wirkungsrenten-rechner/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "social",
+      "type": "method",
+      "status": "method",
+      "description": "Die beschriebene Renten- und Sicherungslogik verstehen; noch kein bedienbarer Rentenrechner.",
+      "question": "Welche Beiträge und Sicherungswege betrachtet das Modell?"
+    }
+  },
+  {
+    "id": "school-check-method",
+    "title": "Wirkungsschule-Check",
+    "route": "/erleben/wirkungsschule-check/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "learning",
+      "type": "method",
+      "status": "method",
+      "description": "Vorhandener Prototyp und Prüfrahmen für Lernbedingungen; keine angeschlossene Auswertung.",
+      "question": "Wie lassen sich Lernräume prüfen, ohne Kinder zu bewerten?"
+    }
+  },
+  {
+    "id": "learning-portfolio-method",
+    "title": "Wirkungsportfolio-Generator",
+    "route": "/erleben/wirkungsportfolio-generator/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "learning",
+      "type": "method",
+      "status": "method",
+      "description": "Die Struktur für Lernwege und Reflexion ansehen; noch kein arbeitender Generator.",
+      "question": "Wie können Lernwege ohne Personenranking dokumentiert werden?"
+    }
+  },
+  {
+    "id": "future-subject-method",
+    "title": "Fach-Zukunft-Modulgenerator",
+    "route": "/erleben/fach-zukunft-generator/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "learning",
+      "type": "method",
+      "status": "method",
+      "description": "Den vorhandenen Modul-Prototyp zu lokalen Fragen und Lernfeldern lesen; keine automatische Modulerstellung.",
+      "question": "Wie lassen sich Fächer, SDGs und lokale Fragen verbinden?"
+    }
+  },
+  {
+    "id": "support-check-method",
+    "title": "Wirkungsförderungs-Check",
+    "route": "/erleben/wirkungsfoerderungs-check/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "social",
+      "type": "method",
+      "status": "method",
+      "description": "Den beschriebenen Prüfrahmen für Prävention, Mentoring und Teilhabe erkunden; keine berechnete Förderentscheidung.",
+      "question": "Wie kann Förderung frühzeitig und ohne Beschämung ansetzen?"
+    }
+  },
+  {
+    "id": "housing-stranded-method",
+    "title": "Stranded-Asset-Check",
+    "route": "/erleben/wohnwirkungsrechner/stranded-asset-check/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "climate",
+      "type": "method",
+      "status": "method",
+      "description": "Risiken von Gebäuden und Investitionen anhand der vorhandenen Beschreibung einordnen; kein angeschlossener Rechner.",
+      "question": "Wo könnten langfristige Gebäuderisiken entstehen?"
+    }
+  },
+  {
+    "id": "housing-landlord-method",
+    "title": "Vermieter:innen-Wirkungscheck",
+    "route": "/erleben/wohnwirkungsrechner/vermieter-check/",
+    "type": "method",
+    "status": "method",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Beschreibung lesen",
+    "catalog": {
+      "category": "climate",
+      "type": "method",
+      "status": "method",
+      "description": "Die vorhandene Prüfstruktur für Vermietung und Wohnbedingungen lesen; keine berechnete Einzelfallbewertung.",
+      "question": "Welche Folgen von Vermietungsentscheidungen sollten sichtbar werden?"
+    }
+  },
+  {
+    "id": "compass-learning-map",
+    "title": "Wirkungskompass: Ebenen verstehen",
+    "route": "/erleben/wirkungskompass/",
+    "type": "learning",
+    "status": "learning",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Lernmodul öffnen",
+    "catalog": {
+      "category": "regions",
+      "type": "learning",
+      "status": "learning",
+      "description": "Die Einordnung von Kommunen, Regionen und Staaten sowie die vorhandenen Kompasse kennenlernen.",
+      "question": "Welche Systemgrenze passt zur jeweiligen Frage?"
+    }
+  },
+  {
+    "id": "radar-learning-example",
+    "title": "Wirkungsradar: ausgearbeitetes Beispiel",
+    "route": "/erleben/wirkungsradar-demo/",
+    "type": "learning",
+    "status": "learning",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Lernmodul öffnen",
+    "catalog": {
+      "category": "media",
+      "type": "learning",
+      "status": "learning",
+      "description": "Einen vorhandenen Prüfweg für Aussagen Schritt für Schritt lesen; keine freie automatische Analyse.",
+      "question": "Wie lässt sich eine Behauptung prüfen, ohne ihren Frame zu verstärken?"
+    }
+  },
+  {
+    "id": "tax-learning-examples",
+    "title": "Wirkungssteuer: bestehende Beispiele",
+    "route": "/erleben/wirkungssteuer-beispiele/",
+    "type": "learning",
+    "status": "learning",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Lernmodul öffnen",
+    "catalog": {
+      "category": "products",
+      "type": "learning",
+      "status": "learning",
+      "description": "Die bestehende Weiterleitung zu den Steuerbeispielen nutzen; Modellannahmen sind kein geltendes Steuerrecht.",
+      "question": "Was zeigen die Beispiele und wo endet die steuerliche Aussage?"
+    }
+  },
+  {
+    "id": "political-language-learning",
+    "title": "Wirkung politischer Sprache",
+    "route": "/sdg-plus/medien-demokratie/wirkung-politischer-sprache.html",
+    "type": "learning",
+    "status": "learning",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Lernmodul öffnen",
+    "catalog": {
+      "category": "media",
+      "type": "learning",
+      "status": "learning",
+      "description": "Vorhandene Narrative und Frames als demokratische Resonanzräume erkunden.",
+      "question": "Welches Wirkungspotenzial liegt in Sprache und ihrer Wiederholung?"
+    }
   },
   {
     "id": "wirkungsfonds-method",
@@ -73,8 +620,15 @@
     "status": "method",
     "hasInputs": false,
     "hasResults": false,
-    "publicCta": "Methodik lesen",
-    "priority": 3
+    "publicCta": "Beschreibung lesen",
+    "priority": 3,
+    "catalog": {
+      "category": "social",
+      "type": "method",
+      "status": "method",
+      "description": "Die vorhandene Fonds- und Rückverteilungslogik lesen; kein bedienbarer Fondsrechner.",
+      "question": "Wie könnten Entlastung und positive Netto-Wirkung verbunden werden?"
+    }
   },
   {
     "id": "machine-value-method",
@@ -84,8 +638,15 @@
     "status": "method",
     "hasInputs": false,
     "hasResults": false,
-    "publicCta": "Methodik lesen",
-    "priority": 3
+    "publicCta": "Beschreibung lesen",
+    "priority": 3,
+    "catalog": {
+      "category": "social",
+      "type": "method",
+      "status": "method",
+      "description": "Das bestehende Konzept zum Beitrag automatisierter Wertschöpfung nachvollziehen.",
+      "question": "Wie könnte automatisierte Wertschöpfung zur Finanzierung beitragen?"
+    }
   },
   {
     "id": "automation-dividend-method",
@@ -95,7 +656,260 @@
     "status": "method",
     "hasInputs": false,
     "hasResults": false,
-    "publicCta": "Methodik lesen",
-    "priority": 3
+    "publicCta": "Beschreibung lesen",
+    "priority": 3,
+    "catalog": {
+      "category": "social",
+      "type": "method",
+      "status": "method",
+      "description": "Die vorhandene Beschreibung möglicher Verteilungswege lesen; keine individuelle Anspruchsberechnung.",
+      "question": "Wer könnte an Automatisierungsgewinnen teilhaben?"
+    }
+  },
+  {
+    "id": "decision-compass",
+    "title": "Entscheidungskompass",
+    "route": "/erleben/#politik-sprache",
+    "type": "compass",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "learning",
+      "type": "compass",
+      "status": "demo",
+      "description": "Preis, Steuer, Demokratie und Schutzgrenzen im vorhandenen Kompass verändern.",
+      "question": "Wie unterscheiden sich Entscheidungslogiken?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "price-truth-mini",
+    "title": "Preiswahrheits-Rechner",
+    "route": "/erleben/#mini-preiswahrheit",
+    "type": "calculator",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "products",
+      "type": "calculator",
+      "status": "demo",
+      "description": "Ladenpreis und modellhafte Folgekosten an vorhandenen Beispielen gegenüberstellen.",
+      "question": "Ist billig im Laden auch günstig für das System?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "impact-radar-mini",
+    "title": "Wirkungsradar",
+    "route": "/erleben/#mini-wirkungsradar",
+    "type": "check",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "learning",
+      "type": "check",
+      "status": "demo",
+      "description": "Für ein Thema das vorhandene vereinfachte Wirkungsprofil aufrufen.",
+      "question": "Welche Wirkungsfelder berührt das Beispiel?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "policy-check-mini",
+    "title": "Politik-Folgencheck",
+    "route": "/erleben/#mini-politik-folgencheck",
+    "type": "check",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "regions",
+      "type": "check",
+      "status": "demo",
+      "description": "Vorhandene Maßnahmenbeispiele und ihre Folgen erster bis dritter Ordnung vergleichen.",
+      "question": "Welche Neben- und Rückwirkungen sollte man mitprüfen?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "tax-game-mini",
+    "title": "Wirkungssteuer-Spiel",
+    "route": "/erleben/#mini-wirkungssteuer-spiel",
+    "type": "simulation",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "products",
+      "type": "simulation",
+      "status": "demo",
+      "description": "Die bestehende Lernentscheidung zwischen nachträglicher Reparatur und Ursachenvermeidung spielen.",
+      "question": "Welche Anreize verändern die Ursache eines Schadens?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "communication-mini",
+    "title": "Kommunikations-Wirkungscheck",
+    "route": "/erleben/#mini-kommunikation",
+    "type": "check",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "media",
+      "type": "check",
+      "status": "demo",
+      "description": "Eine Aussage im vorhandenen lokalen Sprachbeispiel untersuchen; keine Tatsachenprüfung.",
+      "question": "Welche Resonanzrisiken enthält eine Formulierung?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "quick-impact-quiz",
+    "title": "Wirkung kurz erkennen",
+    "route": "/erleben/#mini-quiz",
+    "type": "quiz",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "learning",
+      "type": "quiz",
+      "status": "demo",
+      "description": "Das vorhandene kurze Quiz mit direkter Rückmeldung ausprobieren.",
+      "question": "Welche Aussage verwechselt Reichweite und Wirkung?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "impact-cycle-mini",
+    "title": "Interaktiver Wirkungskreislauf",
+    "route": "/erleben/#mini-wirkungskreislauf",
+    "type": "learning",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "products",
+      "type": "learning",
+      "status": "demo",
+      "description": "Den vorhandenen Kreislauf vom Produkt zu veränderten Anreizen schrittweise durchgehen.",
+      "question": "Wo greift Rückkopplung in Entscheidungen ein?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "case-learning-mini",
+    "title": "Fallbeispiele: alte und neue Logik",
+    "route": "/erleben/#mini-fallbeispiele",
+    "type": "learning",
+    "status": "learning",
+    "hasInputs": false,
+    "hasResults": false,
+    "priority": 2,
+    "publicCta": "Hier ansehen",
+    "catalog": {
+      "category": "learning",
+      "type": "learning",
+      "status": "learning",
+      "description": "Die vorhandenen Gegenüberstellungen als Lernbeispiele lesen.",
+      "question": "Was ändert sich mit einer anderen Entscheidungslogik?"
+    }
+  },
+  {
+    "id": "impact-learning-quiz",
+    "title": "Quiz: Wirkung erkennen",
+    "route": "/erleben/#quiz-wirkung",
+    "type": "quiz",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "learning",
+      "type": "quiz",
+      "status": "demo",
+      "description": "Das vorhandene Grundlagenquiz mit direkter Rückmeldung beantworten.",
+      "question": "Was ist eine Veränderung und was nur eine Kennzahl?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "product-learning-quiz",
+    "title": "Quiz: Produkt und Preis",
+    "route": "/erleben/#quiz-produkt",
+    "type": "quiz",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "products",
+      "type": "quiz",
+      "status": "demo",
+      "description": "Das bestehende Produktquiz zu Preis, Folgekosten und Schutzgrenzen nutzen.",
+      "question": "Was sagt ein Preis über die Produktfolgen aus?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "media-learning-quiz",
+    "title": "Quiz: Medien und Demokratie",
+    "route": "/erleben/#quiz-medien",
+    "type": "quiz",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "media",
+      "type": "quiz",
+      "status": "demo",
+      "description": "Das vorhandene Medienquiz zu Reichweite und Wirkungspotenzial beantworten.",
+      "question": "Wann hilft Reichweite der demokratischen Debatte?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
+  },
+  {
+    "id": "capital-learning-quiz",
+    "title": "Quiz: Kapital und Wirkung",
+    "route": "/erleben/#quiz-kapital",
+    "type": "quiz",
+    "status": "interactive",
+    "hasInputs": true,
+    "hasResults": true,
+    "priority": 2,
+    "publicCta": "Hier ausprobieren",
+    "catalog": {
+      "category": "business",
+      "type": "quiz",
+      "status": "demo",
+      "description": "Das bestehende Kapitalquiz zu Rendite, Risiko und Wirkung nutzen.",
+      "question": "Ist ein finanzieller Erfolg schon ein Wirkungsnachweis?",
+      "sourceRuntime": "assets/js/erleben.js"
+    }
   }
 ]
