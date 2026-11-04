@@ -1,0 +1,69 @@
+/* Erleben uses the shared palette, typography and native accessible controls. */
+.erleben-portal { color: var(--text); }
+.portal-hero { padding: clamp(1rem, 2.5vw, 2.2rem) 0 1.4rem; background: var(--paper); }
+.portal-hero h1 { font: 700 clamp(2rem, 4vw, 3.25rem)/1.08 var(--font-heading); margin: .4rem 0 .8rem; color: var(--navy); }
+.portal-hero-intro { max-width: 78ch; margin: 0 0 1rem; font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.55; }
+.portal-start-question { font-size: clamp(1.15rem, 2vw, 1.5rem); margin: 0 0 .75rem; }
+.portal-quick-grid, .portal-tool-grid, .portal-learning-grid { display: grid; gap: .9rem; }
+.portal-quick-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.portal-quick-card { display: grid; grid-template-columns: 1.7rem minmax(0, 1fr); gap: .2rem .6rem; padding: 1rem; color: var(--navy); background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; }
+.portal-quick-card h3 { font: 700 1.1rem/1.3 var(--font-body); margin: 0; }
+.portal-quick-card p { grid-column: 2; font-size: .92rem; line-height: 1.45; margin: .25rem 0 .6rem; }
+.portal-quick-number { color: var(--green-dark); font-size: .85rem; font-weight: 800; }
+.portal-quick-action { grid-column: 2; color: var(--green-dark); font-weight: 750; text-decoration: underline; text-underline-offset: .2em; }
+.portal-quick-status { grid-column: 2; color: var(--muted); font-size: .78rem; }
+.portal-quick-card:hover { border-color: var(--green-dark); background: var(--cream); }
+.portal-jump-links { display: flex; flex-wrap: wrap; gap: .35rem 1.25rem; margin: .9rem 0 .45rem; }
+.portal-jump-links a { color: var(--green-dark); display: inline-flex; align-items: center; min-height: 44px; text-underline-offset: .2em; }
+.portal-model-note { margin: .2rem 0 0; color: var(--muted); font-size: .85rem; }
+.tool-directory { background: var(--ivory); }
+.tool-directory h2, .portal-explanations h2 { max-width: 34ch; }
+.portal-tool-filters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem 1rem; padding: 1.1rem; margin: 1.25rem 0 .5rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); }
+.portal-tool-filters[hidden], .tool-directory [data-method-card][hidden], .tool-directory [data-tool-filter-empty][hidden] { display: none !important; }
+.portal-tool-search { grid-column: 1 / -1; }
+.portal-tool-filters label { display: block; font-weight: 700; font-size: .92rem; margin-bottom: .35rem; }
+.portal-tool-filters input, .portal-tool-filters select { box-sizing: border-box; width: 100%; min-width: 0; min-height: 46px; padding: .65rem .75rem; font: inherit; color: var(--text); background: var(--white); border: 1px solid var(--muted); border-radius: var(--radius); }
+.portal-tool-filters input::placeholder { color: var(--muted); opacity: 1; }
+.portal-tool-filters button { grid-column: 1 / -1; justify-self: start; min-height: 44px; }
+.portal-tool-count { font-weight: 700; color: var(--muted); font-size: .9rem; margin: .75rem 0; }
+.portal-tool-empty { padding: 1rem; border-left: 3px solid var(--green-dark); background: var(--paper); }
+.portal-tool-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.portal-tool-card { display: flex; flex-direction: column; gap: .55rem; padding: 1.15rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); min-width: 0; }
+.portal-tool-card > p, .portal-tool-card h3 { margin: 0; }
+.portal-tool-card h3 { font-size: 1.2rem; line-height: 1.3; }
+.portal-tool-card > p { font-size: .95rem; line-height: 1.5; }
+.portal-tool-card .portal-tool-topic { font-size: .78rem; font-weight: 750; color: var(--green-dark); }
+.portal-tool-question { font-weight: 650; color: var(--navy); }
+.portal-tool-meta { display: flex; flex-wrap: wrap; gap: .35rem 1rem; margin: .3rem 0 .5rem; }
+.portal-tool-meta div { min-width: 0; }
+.portal-tool-meta dt { color: var(--muted); font-size: .75rem; }
+.portal-tool-meta dd { margin: 0; font-size: .8rem; font-weight: 650; }
+.portal-tool-start { margin-top: auto; display: flex; align-items: center; gap: .4rem; min-height: 44px; }
+.portal-embedded { padding-top: var(--space-section); }
+.portal-embedded [id], .portal-explanations [id], .tool-directory { scroll-margin-top: 7rem; }
+.portal-embedded > .section { margin-top: 0; }
+.portal-original-explanation, .portal-model-questions details { border: 1px solid var(--line); border-radius: var(--radius); padding: .3rem 1rem; margin: .75rem 0; background: var(--paper); }
+.portal-explanations summary { cursor: pointer; padding: .8rem 0; min-height: 44px; font-weight: 700; color: var(--navy); }
+.portal-context-intro { padding: 1rem 0; }
+.portal-context-intro .hero-title { font-size: 1.5rem; }
+.portal-context-intro .hero-subtitle { font-size: 1rem; }
+.portal-explanations .tool-card-overview { display: block; }
+.portal-explanations .tool-summary-card { margin: 1rem 0; box-shadow: none; }
+.portal-learning-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); margin-top: 1.25rem; }
+.portal-learning-link { display: grid; gap: .5rem; color: var(--navy); background: var(--paper); padding: 1rem; border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; }
+.portal-learning-link strong { color: var(--green-dark); text-decoration: underline; text-underline-offset: .2em; }
+.portal-learning-link span { font-size: .92rem; }
+.erleben-portal :is(a, button, input, select, textarea, summary):focus-visible { outline: 3px solid var(--green-dark); outline-offset: 4px; box-shadow: 0 0 0 4px var(--paper); }
+@media (max-width: 960px) {
+  .portal-quick-grid, .portal-tool-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .portal-quick-grid, .portal-tool-grid, .portal-tool-filters { grid-template-columns: minmax(0, 1fr); }
+  .portal-quick-card { padding: .85rem; }
+  .portal-quick-card p { margin-bottom: .3rem; }
+  .portal-hero h1 { font-size: 2rem; }
+  .portal-tool-card { padding: 1rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .erleben-portal { scroll-behavior: auto; }
+}
