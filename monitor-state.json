@@ -29,13 +29,22 @@
       "firstSeen": "2026-11-02T05:36:17.145Z",
       "active": true
     },
-    "self-healing": {
-      "firstSeen": "2026-11-02T05:51:25.420Z",
-      "active": true
+    "lage": {
+      "firstSeen": "2026-11-04T16:50:56.708Z",
+      "active": false
     }
   },
-  "outbox": [],
-  "dailyDate": "2026-11-02",
+  "outbox": [
+    {
+      "id": "be44bc4820b4c86b40611259",
+      "content": "✓ WÖk-Störung behoben\nSelbstheilung\nPrüfung: 2026-11-04T16:50:56.708Z"
+    },
+    {
+      "id": "4592036001e6cbd4c7b0d312",
+      "content": "WÖk Tagesbericht · 2026-11-04 · Europe/Berlin\n✓ Hauptseite: erreichbar\n✓ Wirkungsticker: erreichbar\n✓ Ticker-RSS: erreichbar\n✓ Akademie: erreichbar\n✓ Parlament: erreichbar\n✓ Institut: erreichbar\n✓ Oracle-API: erreichbar\n✓ Push-Konfiguration: erreichbar\nTicker: 1164 live · 959 aktuelle Lagen und Einzelakten aus 985 aktiven Wirkungsakten · 8 Lageakten.\nIm Redaktionsbestand als veröffentlicht vermerkt: gestern (2026-11-03) 0; heute bisher 0 (inkl. später archivierter/zusammengeführter Akten; Live-Nachweis separat).\nLetzter Lauf: 2026-11-02T11:44:31.162Z; 1004 offene Prüfungen, 42 aktive Quellen.\nQueue: 1005 offen (0 Kapazität · 759 technisch · 246 redaktionell); Status technical_delay.\nQuellen-Funnel heute: 0 Feed-Einträge → 0 neu/aktualisiert → 0 Story-Kandidaten → noch nicht historisch erfasst geeignet → 0 KI → 0 Veröffentlichungen/Aktualisierungen. Lokal verworfen: 0; redaktionelle Quellenbeiträge: 0.\nProduktive Quellen im letzten Lauf: keine im letzten Lauf.\nEreignischeck (begrenzter Quellenbestand): 16 größere Ereignisse · 0 mit Veröffentlichung · 16 nachzuprüfen (einschließlich berechtigter Qualitätsvorbehalte).\nKI-Gesamtschätzung inkl. offener Reserven: gestern $0.00 · heute $0.00 · Monat $0.00.\nDirekte Nachrichtenverarbeitung seit 2026-09-06T05:24:43.333Z: 159 Erstveröffentlichungen · 31 Aktualisierungen · 341 KI-Anfragen, inklusive Ablehnungen und Wiederholungen.\nKI-Kosten je Erstveröffentlichung inkl. Prüf-/Updateaufwand: geschätzt 3.03 Cent inkl. Steuerreserve; Ziel unter 4 Cent. 4 Läufe mit Ersatzschätzung.\nWÖk-Analysen separat: 0 neu · 0 aktualisiert · $0.00 geschätzter KI-Aufwand. Keine Anbieterabrechnung; Einrichtungsverbrauch bleibt im Monatsbudget enthalten.\nBatch-Hintergrundjobs separat im Messfenster: 0 abgeglichen · 0 angewendet · $0.000 nach Anbieter-Nutzungsdaten; $0.000 für 0 Aufträge reserviert. Enthält auch bezahlte Qualitätsablehnungen; keine neuen Nachrichten durch reine Nachprüfungen.\nHeute noch keine veröffentlichte oder aktualisierte Akte für eine Kostenquote.\nMonat umgerechnet inkl. 19 % Steuerreserve: ca. €0.00 (Limit €25.00).\nKosten ohne Higgsfield-Abo/Bildcredits und Hosting; 0 KI-Läufe ohne verwertbaren Kostenwert. Keine Abrechnung.\nBesucher/Besuche, Installationen, aktive Push-Nutzer und RSS-Nutzung: noch nicht in diesen Bericht integriert; nicht als null gezählt.\n⚠ Automatische Nachrichtenläufe: Seit über 45 Minuten kein abgeschlossener Laufbericht.\n⚠ Nachrichten-Warteschlange: 759 technisch blockierte Akte(n); älteste technische Blockade seit 78741 Minuten. Kapazitätswarteschlange: 0; redaktionelle Ablehnungen: 246.\n⚠ Liegengebliebene Redaktionsauftraege: 2 Auftrag/Auftraege haben ihren bezahlten Versuch verbraucht, ohne einen Entwurf abzuliefern (aeltester seit 2026-10-09T21:03:10.095Z; Grund: AI_MALFORMED_JSON). Sie kehren erst mit einer Vertragskorrektur zurueck und stehen bis dahin in keiner Freigabeliste.\n⚠ Nachrichtenimport: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\n⚠ Redaktionslauf: Der letzte Lauf ist fehlgeschlagen. Fertige Ergebnisse sind damit nicht als ausgeliefert bestätigt.\n⚠ Redaktionelle Lage: Die jüngste Lage ist 53.8 Stunden alt; spätestens alle sechs Stunden muss eine neue vorliegen. Der Schritt im Ticker-Lauf bricht absichtlich nicht ab, damit eine bezahlte Analyse nicht verloren geht - deshalb muss sein Ausfall hier auffallen.\nhttps://wirkungsoekonomie.de/wirkungsticker/"
+    }
+  ],
+  "dailyDate": "2026-11-04",
   "public_delivery": {
     "started_at": "2026-09-14T05:06:00.782Z",
     "entries": {
@@ -3981,7 +3990,7 @@
       }
     },
     "last_new_at": "2026-10-29T02:06:18.194Z",
-    "checked_at": "2026-11-02T12:05:53.740Z",
+    "checked_at": "2026-11-04T16:50:56.708Z",
     "last_current_new_at": "2026-10-29T02:06:18.194Z"
   },
   "recovery_attempts": [
