@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import {previousPublicationDates, publicationDate} from "./rss-publication-dates.mjs";
 
 const root = process.cwd();
 const site = "https://wirkungsoekonomie.de";
@@ -416,7 +417,7 @@ function canonicalFor(rel, html) {
   return `${site}/${clean}`.replace(/\/$/, "/");
 }
 
-function dateFromHtml(html, stat) {
+function dateFromHtml(html, stat, previousDate) {
   const candidates = [
     htmlMeta(html, "search_date"),
     htmlMeta(html, "date"),
@@ -426,14 +427,10 @@ function dateFromHtml(html, stat) {
     html.match(/data-date="(\d{4}-\d{2}-\d{2})"/i)?.[1],
     html.match(/Datenstand:\s*(\d{4}-\d{2}-\d{2})/i)?.[1],
   ].filter(Boolean);
-  for (const candidate of candidates) {
-    const parsed = new Date(candidate);
-    if (!Number.isNaN(parsed.getTime())) return parsed;
-  }
-  return stat.mtime;
+  return publicationDate(candidates, previousDate, stat.mtime);
 }
 
-function pageData(file) {
+function pageData(file, previousDates) {
   const rel = path.relative(root, file).split(path.sep).join("/");
   const html = fs.readFileSync(file, "utf8");
   const title = entityDecode(htmlMeta(html, "search_title") || html.match(/<title>([\s\S]*?)<\/title>/i)?.[1] || rel);
@@ -449,6 +446,7 @@ function pageData(file) {
     description: cleanDescription,
     url,
     date: dateFromHtml(html, stat),
+    feedDate: dateFromHtml(html, stat, previousDates.get(url)),
     image: imageFromHtml(rel, html, url),
     tags: uniqueTags([...tagsFromHtml(html), ...tagsFromPathAndText(rel, cleanTitle, cleanDescription, raw)], 10),
     raw,
@@ -494,19 +492,21 @@ function enrichItemTags(item, fallbackTags = []) {
   };
 }
 
-function itemsFor(patterns) {
+function itemsFor(patterns, previousDates) {
   const regexes = patterns.map(patternToRegExp);
   const matched = walk(root)
     .map((file) => path.relative(root, file).split(path.sep).join("/"))
     .filter((rel) => regexes.some((regex) => regex.test(rel)))
     .map((rel) => path.join(root, rel))
-    .map(pageData)
+    .map((file) => pageData(file, previousDates))
     .filter((item) => !item.isRedirect)
     .filter((item) => !/^Weiterleitung\b/i.test(item.title))
     .filter((item) => !/Diese Aussage wurde zusammengef[uü]hrt|alte Adresse|Zentrale Seite [öo]ffnen/i.test(`${item.title} ${item.description} ${item.raw}`))
     .filter((item, index, all) => all.findIndex((other) => other.url === item.url) === index)
     .sort((a, b) => b.date - a.date);
-  return matched.slice(0, 120);
+  // Keep the existing selection policy. Restoring a fallback publication time
+  // must not replace current feed members with unrelated undated older pages.
+  return matched.slice(0, 120).map(({ feedDate, ...item }) => ({ ...item, date: feedDate }));
 }
 
 function itemsFromBlogIndex() {
@@ -754,7 +754,9 @@ function upsertHeadLinks(file, specs) {
 fs.mkdirSync(feedDir, { recursive: true });
 
 for (const spec of feedSpecs) {
-  const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : spec.fromQuellenarchiv ? itemsFromQuellenarchiv() : itemsFor(spec.patterns))
+  const historyFile = path.join(feedDir, spec.file);
+  const previousDates = fs.existsSync(historyFile) ? previousPublicationDates(fs.readFileSync(historyFile, "utf8")) : new Map();
+  const items = (spec.fromHomeIndex ? itemsFromHomeIndex() : spec.fromBlogIndex ? itemsFromBlogIndex() : spec.fromPodcastIndex ? itemsFromPodcastIndex() : spec.fromQuellenarchiv ? itemsFromQuellenarchiv() : itemsFor(spec.patterns, previousDates))
     .map((item) => enrichItemTags(item));
   fs.writeFileSync(path.join(feedDir, spec.file), spec.fromPodcastIndex ? renderPodcastFeed(spec, items) : renderFeed(spec, items));
   console.log(`rss: ${spec.file} (${items.length} Einträge)`);

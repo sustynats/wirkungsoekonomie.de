@@ -15,7 +15,7 @@ function nativeLogPayloads(log, nativeStep) {
     const match = line.match(step);
     if (!match) return [];
     const payload = line.slice(match.index + match[0].length), split = payload.indexOf(' ');
-    const at = Date.parse(payload.slice(0, split));
+    const at = Date.parse(payload.slice(0, split).replace(/^\uFEFF/, ''));
     // Cancelled GitHub logs may lose step labels. Only the independently
     // recorded native step's time interval can recover those labels.
     if (match[1] === 'UNKNOWN STEP' && (!bounded || !Number.isFinite(at) || at < start || at >= end + 1000)) return [];

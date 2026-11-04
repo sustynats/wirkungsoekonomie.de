@@ -43,17 +43,19 @@ const cancelledFingerprints = Object.freeze({
   'wt-01433c0b78d3c46b': ['8d80d4cdc153cea572b698b67880cad5994ad436448e9dfb54afc1dc807e34cf', '54886038c43db25f67909d2514e2e8491e2bc53078fb60223e568dade19bab71', 'a66a43ab038fbfc167b6ddb011b642cce63de32282bb65d007273035c8071ac6'],
 });
 
-// These two runs completed their native analysis step with zero provider starts
-// and zero usage, then failed/cancelled before the atomic push. The first full
-// recovery archive was independently restored from Dropbox; the second has a
-// completed native report and no sealed paid output. Both omit the zero-attempt
-// counter. The runner and an independently restored report differ only in the
-// unrelated follow-up/freshness sections, so bind every other field separately.
+// These runs completed their native analysis step with zero provider starts and
+// zero usage. The first full recovery archive was independently restored from
+// Dropbox; the other native reports and absence of paid starts were verified.
+// They omit the zero-attempt counter. Bind every nonvolatile report field and
+// the exact terminal run metadata; a matching report alone never bypasses the
+// independent provider-start check in verifyInterruptedPaidRuns.
 const zeroAttemptRuns = Object.freeze({
   40810169757: {conclusion:'failure',created_at:'2026-10-29T03:05:44Z',updated_at:'2026-10-29T03:18:40Z',
     report_sha256:'081fe9f573d9d95033e947a120c8005b807baa6a0da94791743a2609f53ad637',fields:133,freshness:1457,followups:626},
   41418607343: {conclusion:'cancelled',created_at:'2026-11-02T09:11:19Z',updated_at:'2026-11-02T09:35:44Z',
     report_sha256:'c8688879204bf23eef360a844eb4e54e578d3a845d1cecf33db7281c87ffd35a',fields:134,freshness:1258,followups:706},
+  41436498548: {conclusion:'failure',created_at:'2026-11-02T11:23:48Z',updated_at:'2026-11-02T11:53:07Z',
+    report_sha256:'abd3bca66c91c763ba6d7a55bdefe0a9432d5405fff5df501763d6eb47e4a6d4',fields:134,freshness:1254,followups:706},
 });
 export function zeroAttemptReportFingerprint(report) {
   const ignored=new Set(['transport','configured_model','freshness','followups_due']);

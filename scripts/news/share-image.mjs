@@ -49,7 +49,10 @@ ${text(kind.lines[0], 72, 148, kind.size, { color: PALETTE.goldLight })}
 ${fit.lines.map((line, index) => text(line, 72, 222 + index * fit.size * 1.15, fit.size, { serif: true, weight: 700 })).join("")}
 <path d="M72 544H1128" stroke="${PALETTE.gold}" stroke-opacity=".55"/>
 ${text(footer.lines[0], 72, 587, footer.size)}${text("wirkungsoekonomie.de", 835, 587, 23, { color: PALETTE.goldLight })}</svg>`;
-  return { svg, width: 1200, height: 630, format: "jpeg", quality: 88, truncated: fit.truncated };
+  // Keep the same public card and full resolution while leaving room in the
+  // bounded Pages artifact as the ticker grows. The source/paid images and
+  // article data are never recompressed or modified by this derived card.
+  return { svg, width: 1200, height: 630, format: "jpeg", quality: 84, truncated: fit.truncated };
 }
 
 export function articleFromPage(html) {

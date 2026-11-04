@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {verifyInterruptedPaidRuns, interruptedPaidWorkBlocked, INTERRUPTED_PAID_GUARD_VERSION as version} from '../../scripts/news/recover-failed-usage.mjs';
+import {reportFromRunLog, verifyInterruptedPaidRuns, interruptedPaidWorkBlocked, INTERRUPTED_PAID_GUARD_VERSION as version} from '../../scripts/news/recover-failed-usage.mjs';
 
 const now='2026-10-28T22:05:00Z';
 const run=(id,patch={})=>({id,run_attempt:1,status:'completed',conclusion:'cancelled',
@@ -184,6 +184,23 @@ test('cancelled UNKNOWN STEP lines require the independently recorded native tim
   assert.equal(check({runs:[]},harness({nativeLog:unknown}),{documentedAttempts:documented}).status,'open');
   jobResponse.jobs[0].steps[0].completed_at='2026-10-28T22:00:59Z';
   assert.equal(check({runs:[]},harness({nativeLog:unknown,jobResponse}),{documentedAttempts:documented}).status,'open');
+});
+
+test('a BOM before an UNKNOWN STEP timestamp keeps the in-range report intact and paid markers fail closed',()=>{
+  const native={name:nativeName,conclusion:'success',started_at:'2026-10-28T22:00:00Z',completed_at:'2026-10-28T22:01:01Z'};
+  const jobResponse={total_count:1,jobs:[{conclusion:'cancelled',steps:[native]}]};
+  const zero=report({ai_calls:0,ai_stories:0,ai_request_attempts:0,input_tokens:0,output_tokens:0,estimated_cost_usd:0,published_stories:0,diagnostic:'\uFEFF is data'});
+  const ordinary=log(zero,[]).replaceAll(nativeName,'UNKNOWN STEP');
+  const before='\t2026-10-28T22:01:01Z   "output_tokens": 0,';
+  assert.ok(ordinary.includes(before));
+  const marked=ordinary.replace(before,'\t\uFEFF2026-10-28T22:01:01Z   "output_tokens": 0,');
+  assert.deepEqual(reportFromRunLog(marked,{nativeStep:native}),zero);
+  assert.equal(check({runs:[]},harness({nativeLog:marked,jobResponse})).status,'checked');
+  const event=JSON.stringify({news_import_progress:{stage:'provider_request_started'}});
+  const inRange='update\tUNKNOWN STEP\t\uFEFF2026-10-28T22:01:01Z '+event;
+  assert.equal(check({runs:[]},harness({nativeLog:inRange+'\n'+marked,jobResponse})).status,'open');
+  const outside='update\tUNKNOWN STEP\t\uFEFF2026-10-28T21:59:30Z '+event;
+  assert.equal(check({runs:[]},harness({nativeLog:outside+'\n'+marked,jobResponse})).status,'checked');
 });
 
 test('a short page cannot hide more recent runs, and an exhausted pagination cap cannot permit paid work',()=>{
