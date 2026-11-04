@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import {tmpdir} from 'node:os';
 import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {previousPublicationDates,publicationDate} from '../../scripts/feeds/rss-publication-dates.mjs';
@@ -20,7 +21,7 @@ test('duplicate identities and malformed historical dates fail closed',()=>{for(
 test('DTD/entity declarations and invalid documents are not accepted',()=>{for(const x of ['', 'not xml','<!DOCTYPE rss><rss><channel></channel></rss>'])assert.throws(()=>previousPublicationDates(x));});
 test('empty feed and immutable date copies work without inventing history',()=>{assert.equal(previousPublicationDates(wrap('')).size,0);const old=new Date(past),copy=publicationDate([],old,new Date());copy.setUTCFullYear(2000);assert.equal(old.toUTCString(),past);assert.throws(()=>publicationDate([],undefined,new Date('invalid')));});
 test('the real generator does not republish undated pages after touching or rebuilding them',t=>{
- const root=fs.mkdtempSync('/private/tmp/woek-rss-date-');t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const root=fs.mkdtempSync(path.join(tmpdir(),'woek-rss-date-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
  fs.mkdirSync(path.join(root,'bibliothek/example'),{recursive:true});fs.mkdirSync(path.join(root,'feeds'));
  const page=path.join(root,'bibliothek/example/index.html');fs.writeFileSync(page,'<html><head><title>Example</title><meta name="description" content="Description"><link rel="canonical" href="https://wirkungsoekonomie.de/bibliothek/example/"></head><body><main>Example</main></body></html>');
  fs.writeFileSync(path.join(root,'feeds/bibliothek.xml'),wrap(item()));
@@ -40,7 +41,7 @@ test('CDATA entities remain literal while malformed XML entity fields fail close
 });
 
 test('restoring dates leaves the existing 120-item selection unchanged', t => {
- const root=fs.mkdtempSync('/private/tmp/woek-rss-selection-');t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
+ const root=fs.mkdtempSync(path.join(tmpdir(),'woek-rss-selection-'));t.after(()=>fs.rmSync(root,{recursive:true,force:true}));
  fs.mkdirSync(path.join(root,'feeds'));
  const expected=[];
  for(let i=0;i<121;i++){
