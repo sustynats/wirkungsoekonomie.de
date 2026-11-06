@@ -4,6 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {ROOT,read,atomic,sha} from './model.mjs';
 import {V9,loadStore,snapshot,digest,event} from './v9-store.mjs';
 import {schemaCheck,structured,escape} from './v9-review.mjs';
+import {V11_FIELD,validateV11} from './v11-content.mjs';
 
 export const supplementBase=base=>path.join(base||V9,'editorial_narrative_candidates');
 export const supplementIndex=(base=V9)=>fs.existsSync(path.join(supplementBase(base),'store.json'))?read(path.join(supplementBase(base),'store.json')):null;
@@ -65,7 +66,9 @@ export function saveSupplement({id,entry,expectedHash,reason},principal,base=V9)
  if(typeof reason!=='string'||reason.trim().length<10||reason.length>2000)throw Error('REASON_REQUIRED');
  const index=supplementIndex(base),o=index?.objects[id];if(!o)throw Error('UNKNOWN_SUPPLEMENT');
  if(expectedHash!==o.draftHash)throw Error('REVISION_CONFLICT');if(idOf(o.type,entry)!==id)throw Error('IMMUTABLE_SUPPLEMENT_ID');
- validateSupplement(o.type,entry,loadStore(base));const revision=snapshot(entry,supplementBase(base));
+ validateSupplement(o.type,entry,loadStore(base));
+ if(entry[V11_FIELD]){const sources=read(path.join(base,'research_candidates/store.json'));validateV11(entry[V11_FIELD],new Set(Object.values(sources.objects).filter(o=>o.type==='source').map(o=>o.id)));}
+ const revision=snapshot(entry,supplementBase(base));
  o.draftHash=revision;o.title=entry.lemma||entry.titel;o.status='ENTWURF';o.reviewer=null;o.reviewedAt=null;o.publicHash=null;
  o.history.push({at:new Date().toISOString(),subject:principal.subject,reason,revision});
  event(index,{action:'narrative_supplement_draft_saved',object:id,subject:principal.subject,role:principal.role,reason,revision,approvalsCreated:0},supplementBase(base));

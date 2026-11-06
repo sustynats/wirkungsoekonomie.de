@@ -5,11 +5,11 @@ import {researchIndex,researchValue,researchPresentation,saveResearch,validateRe
 import {methodIndex,methodValue,saveMethod} from './methodology-drafts.mjs';
 const principal={role:'editor',subject:'isolated-test-editor'},main=loadStore(),mainHash=digest(main),storeHash=sha(fs.readFileSync(path.join(V9,'store.json')));
 const fixture=()=>{const base=fs.mkdtempSync(path.join(os.tmpdir(),'wl-private-addenda-'));fs.copyFileSync(path.join(V9,'store.json'),path.join(base,'store.json'));for(const d of ['editorial_narrative_candidates','research_candidates','methodology-drafts'])fs.cpSync(path.join(V9,d),path.join(base,d),{recursive:true});return base;};
-test('Private imports validate 17+4 and 73+23+43+4; exact V3 and canonical 221 remain unchanged',()=>{
- const s=supplementIndex(),r=researchIndex(),m=methodIndex();assert.equal(Object.keys(s.objects).length,21);assert.equal(Object.keys(r.objects).length,143);assert.equal(Object.keys(m.objects).length,2);
+test('Growing private registers validate; exact V3 and canonical 221 remain unchanged',()=>{
+ const s=supplementIndex(),r=researchIndex(),m=methodIndex();assert.equal(Object.keys(s.objects).length,21);assert(Object.keys(r.objects).length>=143);assert.equal(Object.keys(m.objects).length,2);
  for(const o of Object.values(s.objects)){validateSupplement(o.type,supplementValue(o),main);assert.equal(o.publicHash,null);assert.equal(o.reviewer,null);}
  for(const o of Object.values(r.objects)){validateResearch(o.type,researchValue(o),r,main);assert.equal(o.is_public,false);assert.equal(o.review_state,'SOURCE_NEEDED');assert.equal(o.verified_by,null);assert.equal(o.publicHash,null);}
- const candidates=Object.values(r.objects).filter(o=>o.type==='candidate').map(o=>researchValue(o));assert.equal(candidates.filter(e=>e.belegmodus==='DIREKT_VERWENDET').length,7);assert.equal(candidates.filter(e=>e.belegmodus==='META_ERWAEHNT').length,47);assert.equal(candidates.filter(e=>e.belegmodus==='ANALYTISCHES_LEMMA').length,19);assert.equal(candidates.filter(e=>e.identischer_vorarbeitskandidat.length).length,1);
+ const candidates=Object.values(r.objects).filter(o=>o.type==='candidate').map(o=>researchValue(o));assert.equal(candidates.filter(e=>e.belegmodus==='DIREKT_VERWENDET').length,7);assert.equal(candidates.filter(e=>e.belegmodus==='META_ERWAEHNT').length,47);assert(candidates.filter(e=>e.belegmodus==='ANALYTISCHES_LEMMA').length>=19);assert.equal(candidates.filter(e=>e.identischer_vorarbeitskandidat.length).length,1);
  assert.equal(sha(fs.readFileSync(path.join(main.source,'01_DATEN/V3_ORIGINAL_MASTER_UNVERAENDERT.json'))),'33a5f10db91b74d6eb799a0696c0cf4d14086b4683c2d2a69a94ae88111623ae');assert.equal(Object.keys(main.objects).length,221);
 });
 test('Unknown references, quote upgrades and artificial human attestations fail closed',()=>{
@@ -29,7 +29,7 @@ test('Editors save independent, revision-checked drafts; published scientific ob
  }finally{fs.rmSync(base,{recursive:true,force:true});}
 });
 test('Private presentation preserves source roles, uncertainties and escaping',()=>{
- const r=researchPresentation(),s=supplementPresentation();assert.equal(r.extraPages.length,144);assert.equal(s.extraPages.length,22);
+ const r=researchPresentation(),s=supplementPresentation();assert.equal(r.extraPages.length,Object.keys(researchIndex().objects).length+1);assert.equal(s.extraPages.length,22);
  assert(r.extraPages[0].html.includes('DIREKT_VERWENDET'));assert(r.extraPages[0].html.includes('ANALYTISCHES_LEMMA'));assert(s.extraPages.some(p=>p.html.includes('keine durchgängige kausale Wirkungskette')));
  const base=fixture();try{const o=Object.values(researchIndex(base).objects).find(o=>o.type==='candidate'),e=researchValue(o,base);saveResearch({id:o.id,entry:{...e,lemma:'<script>window.bad=true</script>'},expectedHash:o.draftHash,reason:'Isolierter Test von HTML-Escaping.'},principal,base);const html=researchPresentation(base).extraPages.map(p=>p.html).join('');assert(!html.includes('<script>window.bad'));assert(html.includes('&lt;script&gt;'));}finally{fs.rmSync(base,{recursive:true,force:true});}
 });
